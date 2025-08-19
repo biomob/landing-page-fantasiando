@@ -1,0 +1,188 @@
+{
+  "Header": {
+    "leitorAudio": "Leitor de áudio",
+    "acessibilidade": "Acessibilidade",
+    "switchWithIcon": {
+      "light": "Trocar para o tema claro",
+      "dark": "Trocar para o tema escuro"
+    },
+    "ativarVLibras": "Ativar VLibras",
+    "trocarIdioma": "Trocar idioma",
+    "desenvolvida": {
+      "ferramenta": "Ferramenta",
+      "desenvolvida": "desenvolvida pela"
+    },
+    "logo": "Logo da Biomob",
+    "barraLateral": "Alterar estado da barra lateral do site",
+    "nossasSolucoes": "Nossas soluções",
+    "nossasSolucoesLabel": "Ver as soluções",
+    "acessibilidadeArq": "Acessibilidade Arquitetônica",
+    "acessibilidadeArqLabel": "Ir para a tela de Acessibilidade Arquitetônica",
+    "acessibilidadeDig": "Acessibilidade Digital",
+    "acessibilidadeDigLabel": "Ir para a tela de Acessibilidade Digital",
+    "noticias": "Notícias",
+    "noticiasLabel": "Ir para a tela de Notícias",
+    "institudo": "Instituição",
+    "institudoLabel": "Ir para a tela do Institudo",
+    "empregabilidade": "Empregabilidade",
+    "empregabilidadeLabel": "Ir para a tela de Empregabilidade",
+    "papoDiverso": "DIFERENTE PAPO",
+    "papoDiversoLabel": "Ir para o site do Papo Diverso"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "Áudio descrição",
+        "ariaLabel": "Ativar áudio descrição"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "Pequise seu idioma...",
+    "language": "Português (BR)",
+    "Portuguese": "Português (BR)",
+    "ChineseTraditional": "Chinês (Tradicional)",
+    "ChineseSimplified": "Chinês (Simplificado)",
+    "English": "Inglês",
+    "French": "Francês",
+    "German": "Alemão",
+    "Italian": "italiano",
+    "Bengali": "bengali",
+    "Hindi": "hindi",
+    "Russian": "Russa",
+    "Japanese": "Japonês",
+    "Korean": "Coreano",
+    "Vietnamese": "vietnamita",
+    "Telugu": "Telugu",
+    "Cantonese": "Cantonês",
+    "Marathi": "Marathi",
+    "Tamil": "Tâmil",
+    "Turkish": "Turca",
+    "Urdu": "urdu",
+    "Gujarati": "Gujarati",
+    "Polish": "Polonês",
+    "Ukrainian": "ucraniano",
+    "Malay": "Migo",
+    "Kannada": "Canárias",
+    "Oriya": "Oriya",
+    "Punjabi": "Punjabi",
+    "Romanian": "romeno",
+    "Azerbaijani": "Azerbaijana",
+    "Farsi": "Perdido",
+    "Burmese": "Birmanês",
+    "Thai": "Tailandês",
+    "Dutch": "Holandês",
+    "Yoruba": "Iorubá",
+    "Sindhi": "Sindhi"
+  },
+
+  "MainBanner": {
+    "topTitle": "Formando futuras cientistas",
+    "title": "Meninas STEM",
+    "paragraph": "Impactar meninas que, ainda em idade escolar, enfrentam os desafios para seu engajamento nas áreas de ciências",
+    "buttonText": "Entrar em contato"
+  },
+
+  "OQueEBanner": {
+    "topTitle": "O que é?",
+    "title": "Projeto Meninas STEM Petrópolis Tec  Hub",
+    "paragraph": "O projeto que busca reduzir a desigualdade de gênero e ampliar a participação feminina em ciência, tecnologia, engenharia e matemática (STEM). Esta iniciativa foca no letramento tecnológico e na promoção da inclusão feminina na cidade de Petrópolis, no Rio de Janeiro."
+  },
+
+  "ObjetivoBanner": {
+    "title": "Objetivo do projeto",
+    "paragraph": "O projeto visa incentivar o letramento tecnológico entre estudantes e educadores(as), promovendo uma cultura inclusiva nas ciências exatas.",
+    "altImage": "Meninas STEM"
+  },
+
+  "ComoBanner": "O projeto utiliza a plataforma Scratch para ensinar programação de maneira lúdica e interdisciplinar, incorporando debates sobre gênero, direitos humanos e desigualdades.",
+
+  "MetodologiaBanner": {
+    "title": "Motodologia",
+    "paragraph": "O projeto visa incentivar o letramento tecnológico entre estudantes e educadores(as), promovendo uma cultura inclusiva nas ciências exatas.",
+    "altImage": "Meninas STEM"
+  },
+
+  "IconWithTextBanner": {
+    "title": "Quem desenvolve?",
+    "topTitle": "Nossos colaboradores",
+    "paragraph": "O projeto é realizado por uma rede de instituições de pesquisa, ciência e educação, juntamente com organizações sociais e empresariais. Participam dessa iniciativa:",
+    "iconCards": [
+      {
+        "title": "LNCC",
+        "description": "O Laboratório Nacional de Computação Científica é uma instituição de pesquisa e desenvolvimento tecnológico brasileira, especializada em computação científica, vinculada ao Ministério da Ciência, Tecnologia e Inovação."
+      },
+      {
+        "title": "SERRATEC",
+        "description": "O Serratec é um parque tecnológico sem fins lucrativos do interior do estado do Rio de Janeiro, atuando como indutor de negócios em TI e abrangendo as cidades de Petrópolis, Teresópolis, Nova Friburgo e Areal."
+      },
+      {
+        "title": "FAETERJ Petrópolis",
+        "description": "A Faeterj Petrópolis é uma Instituição de Ensino Superior pública vinculada à FAETEC, oferecendo cursos técnicos e superiores em diversas áreas."
+      },
+      {
+        "title": "CEFET/RJ Uned Petrópolis",
+        "description": "O Cefet/RJ Petrópolis é a primeira instituição pública de ensino superior da cidade, oferecendo cursos na modalidade presencial e pertencente ao sistema Cefet/RJ."
+      },
+      {
+        "title": "UFF",
+        "description": "A Universidade Federal Fluminense (UFF) é uma instituição de ensino superior pública de referência nacional, destacando-se em diversas áreas do conhecimento."
+      },
+      {
+        "title": "UFBA",
+        "description": "A Universidade Federal da Bahia (UFBA) é uma instituição pública de ensino superior sediada em Salvador, vinculada ao Ministério da Educação, com autonomia administrativa e jurídica."
+      },
+      {
+        "title": "BIOMOB",
+        "description": "A BIOMOB é especializada em soluções de acessibilidade e projetos sociais, com foco na promoção de uma sociedade mais inclusiva e igualitária."
+      },
+      {
+        "title": "QUIPOTEC",
+        "description": "A Quipo Tech desenvolve projetos de Pesquisa, Desenvolvimento e Inovação para empresas e instituições governamentais, visando a inovação e o avanço tecnológico."
+      },
+      {
+        "title": "TJ-RJ",
+        "description": "O Tribunal de Justiça do Rio de Janeiro (TJ-RJ) é responsável pela administração da justiça no estado, com jurisdição sobre todo o território fluminense."
+      },
+      {
+        "title": "Prefeitura de Petrópolis",
+        "description": "A Prefeitura de Petrópolis administra a cidade histórica localizada na região serrana do Rio de Janeiro, implementando políticas públicas e serviços para a população."
+      },
+      {
+        "title": "SEEDUC-RJ",
+        "description": "A SEEDUC-RJ é responsável pela gestão das políticas educacionais do estado do Rio de Janeiro, garantindo o acesso à educação de qualidade nas escolas públicas estaduais."
+      }
+    ]
+  },
+
+  "OqueSeEsperaBanner": {
+    "topTitle": "BUSCA",
+    "title": "O que se espera do projeto?",
+    "paragraph": "O projeto busca fortalecer a imaginação e autoestima das meninas, combater a evasão escolar e contribuir para a construção de uma sociedade mais justa. Espera-se estimular e ampliar a participação feminina em STEM, ao mesmo tempo em que se reduzem estigmas e discriminações.",
+    "altImage": ""
+  },
+
+  "QuemParticipaBanner": {
+    "topTitle": "FAÇA PARTE",
+    "title": "Quem participa?",
+    "paragraph": "Serão selecionadas alunas do 8º e 9º anos do Ensino Fundamental II e do 1º, 2º e 3º anos do Ensino Médio, seguindo os critérios do projeto, juntamente com pelo menos um(a) professor(a) de cada uma das escolas participantes. As bolsistas estarão envolvidas nas seguintes atividades e objetivos:",
+    "iconCards": [
+      { "title": "Aprendizado em programação" },
+      { "title": "Desenvolvimento de jogos educacionais na plataforma Scratch" },
+      { "title": "Participação em um Clube de Ciências" },
+      { "title": "Presença em eventos de divulgação científica" },
+      { "title": "Participação em palestras e seminários" },
+      { "title": "Elaboração de relatórios intermediários e finais" }
+    ]
+  },
+
+  "ContatoBanner": {
+    "topTitle": "contato",
+    "title": "Fale conosco",
+    "paragraph": "Para entrar em contato conosco, envie uma mensagem para o nosso e-mail meninasstempetropolis@gmail.com. Respondemos o mais rápido possível!"
+  },
+
+  "Outros": {
+    "ondinhas": "Grafismo de onda"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "冇障礙性",
+    "switchWithIcon": {
+      "light": "更改為清晰主題",
+      "dark": "黑暗主題"
+    },
+    "ativarVLibras": "啟用視頻",
+    "trocarIdioma": "改變",
+    "desenvolvida": {
+      "ferramenta": "工具",
+      "desenvolvida": "由"
+    },
+    "logo": "生物摩擋標誌",
+    "barraLateral": "更改本網站側棒職員",
+    "nossasSolucoes": "我哋嘅解決方案",
+    "nossasSolucoesLabel": "睇下解決方法",
+    "acessibilidadeArq": "建築冇障礙性",
+    "acessibilidadeArqLabel": "去建築冇障礙畫面",
+    "acessibilidadeDig": "數碼冇障礙性",
+    "acessibilidadeDigLabel": "去數碼冇障礙畫面",
+    "noticias": "新聞",
+    "noticiasLabel": "去新聞畫面",
+    "institudo": "機構",
+    "institudoLabel": "去研究所嘅畫面",
+    "empregabilidade": "就業能力",
+    "empregabilidadeLabel": "去就業畫面",
+    "papoDiverso": "唔同嘅聊天",
+    "papoDiversoLabel": "去多元化嘅聊天網站"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "音頻描述",
+        "ariaLabel": "啟動音頻描述"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "裕嘶嘥你嘅語言 ...",
+    "language": "葡萄牙 ( BR )",
+    "Portuguese": "葡萄牙 ( BR )",
+    "ChineseTraditional": "中文 ( 傳統 )",
+    "ChineseSimplified": "中文 ( 簡化 )",
+    "English": "英文",
+    "French": "法文",
+    "German": "德國人",
+    "Italian": "意大利人",
+    "Bengali": "貝加利",
+    "Hindi": "印地語",
+    "Russian": "俄文",
+    "Japanese": "日本人",
+    "Korean": "韓文",
+    "Vietnamese": "越南人",
+    "Telugu": "泰盧固語",
+    "Cantonese": "廣州話",
+    "Marathi": "馬拉提",
+    "Tamil": "泰米爾文",
+    "Turkish": "土耳其文",
+    "Urdu": "urdu",
+    "Gujarati": "古吉拉蒂",
+    "Polish": "波蘭人",
+    "Ukrainian": "烏克蘭人",
+    "Malay": "米高",
+    "Kannada": "金錢獎",
+    "Oriya": "奧里亞",
+    "Punjabi": "旁遮普",
+    "Romanian": "羅馬尼亞人",
+    "Azerbaijani": "作為阿塞拜疆",
+    "Farsi": "唔見咗",
+    "Burmese": "緬甸",
+    "Thai": "泰國",
+    "Dutch": "荷蘭人",
+    "Yoruba": "約魯巴",
+    "Sindhi": "辛德"
+  },
+  "MainBanner": {
+    "topTitle": "形成未來科學家",
+    "title": "女仔茎",
+    "paragraph": "影響女仔，仲係學校，面對佢哋參與科學嘅挑戰",
+    "buttonText": "聯絡"
+  },
+  "OQueEBanner": {
+    "topTitle": "係咩？",
+    "title": "女生莖彼得羅波利斯特克樞紐計劃",
+    "paragraph": "試圖減少性別不平等，擴大女性參與科技、工程與數學 ( STEM ) 之項目。 呢個計劃重點係科技素養，同埋喺里約熱內盧嘅佩特羅波利斯市推動女性包容。"
+  },
+  "ObjetivoBanner": {
+    "title": "項目目標",
+    "paragraph": "項目旨在鼓勵學生與教育工作者之間科技素養，促進精確科學中包容文化。",
+    "altImage": "女仔茎"
+  },
+  "ComoBanner": "呢個項目係用 Scratch 平台以玩味同跨學科嘅方式去教編程，納入性別、人權同不平等嘅辯論。",
+  "MetodologiaBanner": {
+    "title": "莫托科科",
+    "paragraph": "項目旨在鼓勵學生與教育工作者之間科技素養，促進精確科學中包容文化。",
+    "altImage": "女仔茎"
+  },
+  "IconWithTextBanner": {
+    "title": "邊個發展？",
+    "topTitle": "我哋嘅員工",
+    "paragraph": "呢個項目係由一個研究、科學教育機構網絡，同社會同商業組織一齊進行。 參與呢個計劃 :",
+    "iconCards": [
+      {
+        "title": "LNCC",
+        "description": "國家科學計算實驗室為巴西研究技術研究機構，專研科學運算，與科技創新部有關。"
+      },
+      {
+        "title": "塞爾拉特",
+        "description": "塞拉特係里約熱內盧內部嘅非牟利科技公園，擔任 IT 商業電感器，亦覆蓋咗彼得羅波利斯、特雷索波利斯、新弗里伯諾同阿雷爾嘅城市。"
+      },
+      {
+        "title": "福特爾吉 · 佩特羅波利斯",
+        "description": "Feeterj Petrópolis 係一個同 Feetec 有關嘅公共高等教育機構，喺唔同領域提供技術同更高嘅課程。"
+      },
+      {
+        "title": "中意 / 羅傑 · 烏德 · 佩特羅波利斯",
+        "description": "CEFET / RJ Petrópolis 係全市首間公共高等教育機構，提供面部 - 面模式嘅課程，並屬於 CEFET / RJ System 。"
+      },
+      {
+        "title": "UFF",
+        "description": "弗霉斯聯邦大學 ( UFF ) 係一個公共高等教育嘅國家參考機構，喺各種知識領域脫穎而出。"
+      },
+      {
+        "title": "UFBA",
+        "description": "巴伊亞聯邦大學 ( UFBA ) 係一間公共高等教育機構，據點係薩爾瓦多，同教育部有關，行政同法律自治。"
+      },
+      {
+        "title": "BIOMOB",
+        "description": "Biomob 專做冇障礙解決方案同社會項目，重點係促進更包容同平等嘅社會。"
+      },
+      {
+        "title": "問題",
+        "description": "奎波科技為公司和政府機構開發研發創新項目，目標創新和技術進步。"
+      },
+      {
+        "title": "TJ-RJ",
+        "description": "里約熱內盧司法法院 ( TJ-RJ ) 負責州內司法行政，管轄整個弗明意義領土。"
+      },
+      {
+        "title": "佩特羅波利斯市政廳",
+        "description": "彼得羅波利斯市政廳管理位於里約熱內盧山區地區嘅歷史悠久嘅城市，為人口實施公共政策同服務。"
+      },
+      {
+        "title": "塞德烏克 -RJ",
+        "description": "Seeduc-RJ 負責管理里約熱內盧州教育政策，確保州公立學校獲得優質教育。"
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "搜尋",
+    "title": "呢個項目有咩期望？",
+    "paragraph": "項目試圖加強女童想像力與自我尊重、戰鬥退學，並貢獻更公平社會建設。 預計會刺激同擴大女性參與 STEM ，同時減少污名同歧視。",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "yue"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "部分",
+    "title": "邊個參與？",
+    "paragraph": "學生將從小學 8 、 9 週年及高中 1 、 2 、 3 年級，按照項目標準，與每間參與學校至少一位教師一齊入選。 獎學金持有人將參與以下活動及目標 : 1.",
+    "iconCards": [
+      {
+        "title": "學習編程"
+      },
+      {
+        "title": "刮痕平台上教育運動會發展"
+      },
+      {
+        "title": "參與科學會"
+      },
+      {
+        "title": "科學傳播事件嘅存在"
+      },
+      {
+        "title": "參與講座與研討會"
+      },
+      {
+        "title": "中級及最終報告之準備"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "聯絡",
+    "title": "聯絡我哋",
+    "paragraph": "要聯絡我哋，請向我哋嘅電郵女生 stempropos @ gmail . com 發送訊息。 我哋盡快回應！"
+  },
+  "Outros": {
+    "ondinhas": "波浪"
+  }
+}

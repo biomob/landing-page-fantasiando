@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "Iyẹ",
+    "switchWithIcon": {
+      "light": "Yi pada si akori ti o ye",
+      "dark": "Akọle dudu"
+    },
+    "ativarVLibras": "Mu vlibra ṣiṣẹ",
+    "trocarIdioma": "Yipada",
+    "desenvolvida": {
+      "ferramenta": "Irinṣẹ",
+      "desenvolvida": "dagbasoke nipasẹ"
+    },
+    "logo": "Aami biomob",
+    "barraLateral": "Yi ọtun Bam Oṣiṣẹ ti aaye naa",
+    "nossasSolucoes": "Awọn ipinnu wa",
+    "nossasSolucoesLabel": "Wo awọn solusan",
+    "acessibilidadeArq": "Wiwọle ti ayaworan",
+    "acessibilidadeArqLabel": "Lọ si iboju wiwole ti ayaworan",
+    "acessibilidadeDig": "Wiwọn oni-nọmba",
+    "acessibilidadeDigLabel": "Lọ si iboju ti o wa ni ibaramu",
+    "noticias": "Irohin",
+    "noticiasLabel": "Lọ si iboju iroyin",
+    "institudo": "Ile-ẹkọ",
+    "institudoLabel": "Lọ si iboju Ile-iṣẹ",
+    "empregabilidade": "Gba oojọ",
+    "empregabilidadeLabel": "Lọ si iboju oojọ",
+    "papoDiverso": "Oriṣiriṣi iwiregbe",
+    "papoDiversoLabel": "Lọ si oju opo wẹẹbu Oniruuru"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "Apejuwe ohun",
+        "ariaLabel": "Muu apejuwe ohun"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "Pequisis Ede ...",
+    "language": "Portuguese (bru)",
+    "Portuguese": "Portuguese (bru)",
+    "ChineseTraditional": "Kannada (ibile)",
+    "ChineseSimplified": "Kannada (irọrun)",
+    "English": "Gẹẹsi",
+    "French": "Faranse",
+    "German": "Jẹmánì",
+    "Italian": "Ilu Italia",
+    "Bengali": "bengali",
+    "Hindi": "ẹlẹsin Hindi",
+    "Russian": "Ara ilu Rọsia",
+    "Japanese": "Japanese",
+    "Korean": "Ara ẹni",
+    "Vietnamese": "Vietnamese",
+    "Telugu": "Dariga",
+    "Cantonese": "Kopipose",
+    "Marathi": "Marathi",
+    "Tamil": "Tomil",
+    "Turkish": "Turk",
+    "Urdu": "uru",
+    "Gujarati": "Gujarati",
+    "Polish": "Ohun didan nkan",
+    "Ukrainian": "Ti Ukarain",
+    "Malay": "Mito",
+    "Kannada": "Cannaries",
+    "Oriya": "Oriya",
+    "Punjabi": "Punjabi",
+    "Romanian": "Romania",
+    "Azerbaijani": "Bi azerbaija",
+    "Farsi": "Ti sọnu",
+    "Burmese": "Burmese",
+    "Thai": "Thai",
+    "Dutch": "Dutch",
+    "Yoruba": "Yoruba",
+    "Sindhi": "Poinhi"
+  },
+  "MainBanner": {
+    "topTitle": "Ti awọn onimo ijinlẹ iwaju",
+    "title": "Awọn ọmọbirin yio",
+    "paragraph": "Awọn ọmọbirin ti o ni ipa ti o wa, tun wa ni ile-iwe, koju awọn italaya fun adehun igbeyawo wọn ninu awọn sá",
+    "buttonText": "Kan"
+  },
+  "OQueEBanner": {
+    "topTitle": "Kini o?",
+    "title": "Awọn ọmọbirin Stem Petóópolis Tec sub",
+    "paragraph": "Ise agbese ti n wa lati dinku aidogba abo ati gbooro igbe ikopa obinrin ni imọ-jinlẹ, imọ-ẹrọ, imọ-ẹrọ ati mathimatiki (yio). Ifọwọsi yii dojukọ imọ-ẹrọ imọ-ẹrọ ati igbega ti ibajẹ obinrin ni Ilu Petṣópolis, ni Rio de Janeioro."
+  },
+  "ObjetivoBanner": {
+    "title": "Ise agbese",
+    "paragraph": "Ise agbese naa n ni iyanju imọ-ẹrọ laarin awọn ọmọ ile-iwe ati awọn ẹkọ, igbelaruge aṣa ti o wa ni awọn imọ aṣa gangan.",
+    "altImage": "Awọn ọmọbirin yio"
+  },
+  "ComoBanner": "Ise agbese na nlo Syeed Street lati kọ siseto ni ere idaraya ati isọdọkan, kopopo awọn ariyanjiyan lori abo, awọn ẹtọ eniyan ati aidogba eniyan.",
+  "MetodologiaBanner": {
+    "title": "Motodogia",
+    "paragraph": "Ise agbese naa n ni iyanju imọ-ẹrọ laarin awọn ọmọ ile-iwe ati awọn ẹkọ, igbelaruge aṣa ti o wa ni awọn imọ aṣa gangan.",
+    "altImage": "Awọn ọmọbirin yio"
+  },
+  "IconWithTextBanner": {
+    "title": "Tani o ndagba?",
+    "topTitle": "Awọn oṣiṣẹ wa",
+    "paragraph": "Ise agbese na ni a ṣe nipasẹ nẹtiwọọki ti iwadii, imọ-jinlẹ ati awọn ile-iṣẹ ti ẹkọ, papọ pẹlu awujọ ati awọn ajọ iṣowo. Kopa ninu ipilẹṣẹ yii:",
+    "iconCards": [
+      {
+        "title": "Lncc",
+        "description": "Ile-iṣẹ ilu ti ti kariaye jẹ iwadi Brazil kan ati imọ-ẹrọ iwadii imọ-ẹrọ, amọja ni iṣiro ni iṣiro ti imọ-jinlẹ, sopọ si iṣẹ-iranṣẹ ti imọ-jinlẹ, imọ-ẹrọ ati innodàsation."
+      },
+      {
+        "title": "Serratec",
+        "description": "Serratec jẹ ọgba-ẹrọ imọ-ẹrọ ti kii ṣe -PoroFit ni inu ti rio de Janeiro, ṣiṣe bi awọn ilu ti o iṣowo ati bo awọn ilu Patópolis, Nosa Friburgo ati Areal."
+      },
+      {
+        "title": "Faopopolis",
+        "description": "Irisi - Ile-ẹkọ giga ti Ẹjọ giga ti gbogbo eniyan ni ọna asopọ si Taeec, nfunni awọn iṣẹ giga ati giga ni awọn agbegbe pupọ."
+      },
+      {
+        "title": "Ceedet / rj ti o wa ti o wa fun ọsin",
+        "description": "Cefet / Rj Totópolis jẹ ile-iṣẹ eto-ẹkọ giga ti gbogbo eniyan ni ilu, funni ni ipo-iṣẹ ni oju-aye ati pe o jẹ ti eto Cefet / Rj."
+      },
+      {
+        "title": "Isunkan eniyan",
+        "description": "Ile-ẹkọ giga Fliminal kan (UFF) jẹ ile-ẹkọ giga ti gbogbo eniyan ti itọkasi orilẹ-ede, duro jade ni ọpọlọpọ awọn agbegbe ti imo."
+      },
+      {
+        "title": "Ufba",
+        "description": "Ile-ẹkọ giga Ile-ẹkọ giga ti Bahia (UFBA) jẹ ile-ẹkọ ti ile-iṣẹ giga ti gbogbo eniyan ti o da lori Salvador, sopọ si Ile-iṣẹ ti Ẹkọ, pẹlu Isakoso ati Idaduro Ofin."
+      },
+      {
+        "title": "Biomob",
+        "description": "Biomob ṣe pataki ni awọn solusan ipamọ ati awọn iṣẹ-ṣiṣe awujọ, dojukọ lori igbega si awujọ diẹ sii ati Egalitaritarion."
+      },
+      {
+        "title": "Quipotec",
+        "description": "Quipo Tech Asopọmọra, idagbasoke ati awọn iṣẹ itan ati awọn iṣẹ imotunda fun awọn ile-iṣẹ ati awọn ile-iṣẹ ijọba, ifojusi ni imotuntun ati ilọsiwaju imọ-ẹrọ."
+      },
+      {
+        "title": "Tj-rj",
+        "description": "Awọn Rio de Janeiro Ogbon ti Oṣoju (TJ-RJ) jẹ lodidi fun iṣakoso ti ododo ni ipinle, pẹlu aṣẹ lori gbogbo agbegbe agbegbe ti fumunsense."
+      },
+      {
+        "title": "Gbongan Ilu Pantópolis",
+        "description": "Gbanc Hall of Petóópolis ṣafihan ilu nla ti Rio de Janeioro, mu awọn eto ati awọn iṣẹ ati awọn iṣẹ gbogbo eniyan fun olugbe."
+      },
+      {
+        "title": "Seurtuu-rj",
+        "description": "Seuc-RJ jẹ lodidi fun ṣakoso iṣakoso awọn ilana eto ẹkọ ti ipinlẹ ti Rio de Janeiro, aridaju iraye si ẹkọ didara ni awọn ile-iwe gbogbogbo."
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "Ṣewadii",
+    "title": "Kini o ti ṣe yẹ ti ise agbese?",
+    "paragraph": "Ise agbese na n wa lati mu inu inu inu ati ti ara ẹni, ija-ija kuro ati ṣe alabapin si ikole ti awujọ Faler. O nireti lati ṣaro ati faagun ikopa obinrin ni yio, lakoko ti o dinku awọn ọlọ ati iyasoto.",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "yo"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "Apakan",
+    "title": "Tani o kopa?",
+    "paragraph": "Awọn ọmọ ile-iwe yoo ti yan lati ọdun kẹrin ati 9th ti ile-iwe alakọbẹrẹ II ati 1std ati awọn ọdun ti ile-iwe giga, ni atẹle pe o kere ju olukọ kan ti awọn ile-iwe ti o kopa kọọkan. Awọn olutọju sikolashipu yoo kopa ninu awọn iṣẹ atẹle ati awọn ipinnu:",
+    "iconCards": [
+      {
+        "title": "Kọ ẹkọ lori siseto"
+      },
+      {
+        "title": "Idagbasoke ti awọn ere ẹkọ lori pẹpẹ hip"
+      },
+      {
+        "title": "Ilowosi ni ile-iṣẹ imọ-jinlẹ"
+      },
+      {
+        "title": "Wiwa ni awọn iṣẹlẹ imọ-jinlẹ"
+      },
+      {
+        "title": "Ikopa ninu awọn ikowe ati awọn apejọ"
+      },
+      {
+        "title": "Igbaradi ti awọn ijabọ agbedemeji ati ikẹhin"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "kan",
+    "title": "Pe wa",
+    "paragraph": "Lati Kan si Wa, fi ifiranṣẹ ranṣẹ si ọmọbirin imeeli wa@gmail.com. A fesi ni kete bi o ti ṣee!"
+  },
+  "Outros": {
+    "ondinhas": "Igbi"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "Khả năng tiếp cận",
+    "switchWithIcon": {
+      "light": "Thay đổi thành chủ đề rõ ràng",
+      "dark": "Chủ đề tối"
+    },
+    "ativarVLibras": "Kích hoạt vlibras",
+    "trocarIdioma": "Thay đổi",
+    "desenvolvida": {
+      "ferramenta": "Dụng cụ",
+      "desenvolvida": "Được phát triển bởi"
+    },
+    "logo": "Logo Biomob",
+    "barraLateral": "Thay đổi nhân viên thanh bên của trang web",
+    "nossasSolucoes": "Giải pháp của chúng tôi",
+    "nossasSolucoesLabel": "Xem các giải pháp",
+    "acessibilidadeArq": "Khả năng tiếp cận kiến ​​trúc",
+    "acessibilidadeArqLabel": "Chuyển đến màn hình khả năng truy cập kiến ​​trúc",
+    "acessibilidadeDig": "Khả năng tiếp cận kỹ thuật số",
+    "acessibilidadeDigLabel": "Chuyển đến màn hình khả năng truy cập kỹ thuật số",
+    "noticias": "Tin tức",
+    "noticiasLabel": "Đi đến màn hình tin tức",
+    "institudo": "Tổ chức",
+    "institudoLabel": "Truy cập màn hình của Viện",
+    "empregabilidade": "Việc làm",
+    "empregabilidadeLabel": "Truy cập màn hình việc làm",
+    "papoDiverso": "Trò chuyện khác nhau",
+    "papoDiversoLabel": "Truy cập trang web trò chuyện đa dạng"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "Mô tả âm thanh",
+        "ariaLabel": "Kích hoạt mô tả âm thanh"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "Pequisis ngôn ngữ của bạn ...",
+    "language": "Bồ Đào Nha (BR)",
+    "Portuguese": "Bồ Đào Nha (BR)",
+    "ChineseTraditional": "Trung Quốc (truyền thống)",
+    "ChineseSimplified": "Trung Quốc (đơn giản hóa)",
+    "English": "Tiếng Anh",
+    "French": "Tiếng Pháp",
+    "German": "Đức",
+    "Italian": "Ý",
+    "Bengali": "Tiếng Bengal",
+    "Hindi": "Tiếng Hindi",
+    "Russian": "Tiếng Nga",
+    "Japanese": "Nhật Bản",
+    "Korean": "Hàn Quốc",
+    "Vietnamese": "Việt Nam",
+    "Telugu": "Telugu",
+    "Cantonese": "Tiếng Quảng Đông",
+    "Marathi": "Marathi",
+    "Tamil": "Tamil",
+    "Turkish": "Thổ Nhĩ Kỳ",
+    "Urdu": "tiếng Urdu",
+    "Gujarati": "Gujarati",
+    "Polish": "Đánh bóng",
+    "Ukrainian": "Ukraine",
+    "Malay": "Migo",
+    "Kannada": "Pháo",
+    "Oriya": "Oriya",
+    "Punjabi": "Punjabi",
+    "Romanian": "Rumani",
+    "Azerbaijani": "Như Azerbaija",
+    "Farsi": "Mất",
+    "Burmese": "Người Miến Điện",
+    "Thai": "Thái",
+    "Dutch": "Hà Lan",
+    "Yoruba": "Yoruba",
+    "Sindhi": "Sindhi"
+  },
+  "MainBanner": {
+    "topTitle": "Hình thành các nhà khoa học trong tương lai",
+    "title": "Cô gái bắt giữ",
+    "paragraph": "Tác động đến những cô gái, vẫn còn ở trường, đối mặt với những thách thức cho sự tham gia của họ vào khoa học",
+    "buttonText": "Liên hệ"
+  },
+  "OQueEBanner": {
+    "topTitle": "Nó là gì?",
+    "title": "Girls STEM PETRAPOLIS TEC HUB",
+    "paragraph": "Dự án tìm cách giảm bất bình đẳng giới và mở rộng sự tham gia của phụ nữ vào khoa học, công nghệ, kỹ thuật và toán học (STEM). Sáng kiến ​​này tập trung vào kiến ​​thức công nghệ và thúc đẩy sự bao gồm nữ vào thành phố Petrópolis, ở Rio de Janeiro."
+  },
+  "ObjetivoBanner": {
+    "title": "Mục tiêu dự án",
+    "paragraph": "Dự án nhằm mục đích khuyến khích kiến ​​thức công nghệ giữa sinh viên và các nhà giáo dục, thúc đẩy một nền văn hóa bao gồm trong các ngành khoa học chính xác.",
+    "altImage": "Cô gái bắt giữ"
+  },
+  "ComoBanner": "Dự án sử dụng nền tảng cào để dạy lập trình theo cách vui tươi và liên ngành, kết hợp các cuộc tranh luận về giới tính, nhân quyền và bất bình đẳng.",
+  "MetodologiaBanner": {
+    "title": "Motodologia",
+    "paragraph": "Dự án nhằm mục đích khuyến khích kiến ​​thức công nghệ giữa sinh viên và các nhà giáo dục, thúc đẩy một nền văn hóa bao gồm trong các ngành khoa học chính xác.",
+    "altImage": "Cô gái bắt giữ"
+  },
+  "IconWithTextBanner": {
+    "title": "Ai phát triển?",
+    "topTitle": "Nhân viên của chúng tôi",
+    "paragraph": "Dự án được thực hiện bởi một mạng lưới các tổ chức nghiên cứu, khoa học và giáo dục, cùng với các tổ chức xã hội và kinh doanh. Tham gia vào sáng kiến ​​này:",
+    "iconCards": [
+      {
+        "title": "LNCC",
+        "description": "Phòng thí nghiệm máy tính khoa học quốc gia là một tổ chức nghiên cứu và nghiên cứu công nghệ của Brazil, chuyên về điện toán khoa học, liên quan đến Bộ Khoa học, Công nghệ và Đổi mới."
+      },
+      {
+        "title": "Serratec",
+        "description": "SERRATEC là một công viên công nghệ phi lợi nhuận trong nội địa của Rio de Janeiro, đóng vai trò là một người có cuộn cảm doanh nghiệp CNTT và bao gồm các thành phố của Petrópolis, Teresótolis, Nova Friburgo và Areal."
+      },
+      {
+        "title": "Faeterj Petropolis",
+        "description": "Faeterj Petrópolis là một tổ chức giáo dục đại học công cộng liên quan đến FAETEC, cung cấp các khóa học kỹ thuật và cao hơn trong các lĩnh vực khác nhau."
+      },
+      {
+        "title": "CEFET/RJ Uned Petrópolis",
+        "description": "CEFET/RJ Petrópolis là tổ chức giáo dục đại học công cộng đầu tiên trong thành phố, cung cấp các khóa học về phương thức Face -to -face và thuộc hệ thống CEFET/RJ."
+      },
+      {
+        "title": "Uff",
+        "description": "Đại học liên bang Fluminense (UFF) là một tổ chức giáo dục đại học công cộng tham khảo quốc gia, nổi bật trong các lĩnh vực kiến ​​thức khác nhau."
+      },
+      {
+        "title": "UFBA",
+        "description": "Đại học liên bang Bahia (UFBA) là một tổ chức giáo dục đại học công cộng có trụ sở tại Salvador, liên quan đến Bộ Giáo dục, với quyền tự chủ hành chính và hợp pháp."
+      },
+      {
+        "title": "Biomob",
+        "description": "Biomob chuyên về các giải pháp tiếp cận và các dự án xã hội, tập trung vào việc thúc đẩy một xã hội toàn diện và bình đẳng hơn."
+      },
+      {
+        "title": "Quipotec",
+        "description": "Quipo Tech phát triển các dự án nghiên cứu, phát triển và đổi mới cho các công ty và các tổ chức chính phủ, nhằm mục đích đổi mới và tiến bộ công nghệ."
+      },
+      {
+        "title": "TJ-RJ",
+        "description": "Tòa án Công lý Rio de Janeiro (TJ-RJ) chịu trách nhiệm quản lý công lý tại Bang, với quyền tài phán đối với toàn bộ lãnh thổ Fluminense."
+      },
+      {
+        "title": "Tòa thị chính Petr Đau",
+        "description": "Tòa thị chính của Petrópolis quản lý thành phố lịch sử nằm ở khu vực miền núi Rio de Janeiro, thực hiện các chính sách và dịch vụ công cộng cho người dân."
+      },
+      {
+        "title": "Seeduc-rj",
+        "description": "Seeduc-RJ chịu trách nhiệm quản lý các chính sách giáo dục của tiểu bang Rio de Janeiro, đảm bảo tiếp cận với giáo dục chất lượng trong các trường công lập tiểu bang."
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "TÌM KIẾM",
+    "title": "Những gì được mong đợi của dự án?",
+    "paragraph": "Dự án tìm cách củng cố trí tưởng tượng và lòng tự trọng của các cô gái, chiến đấu bỏ học và đóng góp cho việc xây dựng một xã hội công bằng hơn. Người ta dự kiến ​​sẽ kích thích và mở rộng sự tham gia của phụ nữ vào STEM, đồng thời giảm bớt sự kỳ thị và phân biệt đối xử.",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "vi"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "Phần",
+    "title": "Ai tham gia?",
+    "paragraph": "Học sinh sẽ được chọn từ kỷ niệm 8 và 9 của Trường tiểu học II và năm thứ 1, 2 và 3 của trường trung học, theo tiêu chí của dự án, cùng với ít nhất một giáo viên của mỗi trường tham gia. Người nắm giữ học bổng sẽ tham gia vào các hoạt động và mục tiêu sau:",
+    "iconCards": [
+      {
+        "title": "Học về lập trình"
+      },
+      {
+        "title": "Phát triển các trò chơi giáo dục trên nền tảng cào"
+      },
+      {
+        "title": "Tham gia vào một câu lạc bộ khoa học"
+      },
+      {
+        "title": "Sự hiện diện trong các sự kiện phổ biến khoa học"
+      },
+      {
+        "title": "Tham gia vào các bài giảng và hội thảo"
+      },
+      {
+        "title": "Chuẩn bị các báo cáo trung gian và cuối cùng"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "liên hệ",
+    "title": "Liên hệ với chúng tôi",
+    "paragraph": "Để liên hệ với chúng tôi, hãy gửi một tin nhắn đến e-mail của chúng tôi cô gái của chúng tôi của chúng tôi@gmail. Chúng tôi trả lời càng sớm càng tốt!"
+  },
+  "Outros": {
+    "ondinhas": "Sóng"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "Accessibilità",
+    "switchWithIcon": {
+      "light": "Cambiare al tema chiaro",
+      "dark": "Tema oscuro"
+    },
+    "ativarVLibras": "Abilita vlibras",
+    "trocarIdioma": "Modifica",
+    "desenvolvida": {
+      "ferramenta": "Attrezzo",
+      "desenvolvida": "sviluppato da"
+    },
+    "logo": "Logo biomobo",
+    "barraLateral": "Cambia il personale della barra del lato del sito",
+    "nossasSolucoes": "Le nostre soluzioni",
+    "nossasSolucoesLabel": "Vedere le soluzioni",
+    "acessibilidadeArq": "Accessibilità architettonica",
+    "acessibilidadeArqLabel": "Vai alla schermata di accessibilità architettonica",
+    "acessibilidadeDig": "Accessibilità digitale",
+    "acessibilidadeDigLabel": "Vai alla schermata di accessibilità digitale",
+    "noticias": "Notizia",
+    "noticiasLabel": "Vai allo schermo di notizie",
+    "institudo": "Istituzione",
+    "institudoLabel": "Vai allo schermo dell'Istituto",
+    "empregabilidade": "Occupabilità",
+    "empregabilidadeLabel": "Vai allo schermo di occupabilità",
+    "papoDiverso": "Chat diversa",
+    "papoDiversoLabel": "Vai al sito Web di chat diversificato"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "Descrizione audio",
+        "ariaLabel": "Attiva la descrizione audio"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "Pequisis la tua lingua ...",
+    "language": "Portoghese (BR)",
+    "Portuguese": "Portoghese (BR)",
+    "ChineseTraditional": "Cinese (tradizionale)",
+    "ChineseSimplified": "Cinese (semplificato)",
+    "English": "Inglese",
+    "French": "francese",
+    "German": "tedesco",
+    "Italian": "italiano",
+    "Bengali": "bengalese",
+    "Hindi": "hindi",
+    "Russian": "Russa",
+    "Japanese": "giapponese",
+    "Korean": "coreano",
+    "Vietnamese": "vietnamita",
+    "Telugu": "Telugu",
+    "Cantonese": "Cantonese",
+    "Marathi": "Marathi",
+    "Tamil": "Tamil",
+    "Turkish": "Turca",
+    "Urdu": "urdu",
+    "Gujarati": "Gujarati",
+    "Polish": "Polacco",
+    "Ukrainian": "ucraino",
+    "Malay": "Migo",
+    "Kannada": "Cannari",
+    "Oriya": "Oriya",
+    "Punjabi": "Punjabi",
+    "Romanian": "romeno",
+    "Azerbaijani": "Come Azerbaija",
+    "Farsi": "Perduto",
+    "Burmese": "birmano",
+    "Thai": "Thai",
+    "Dutch": "Olandese",
+    "Yoruba": "Yoruba",
+    "Sindhi": "Sindhi"
+  },
+  "MainBanner": {
+    "topTitle": "Formare futuri scienziati",
+    "title": "Le ragazze stessono",
+    "paragraph": "Impact Girls che, ancora a scuola, affrontano le sfide per il loro fidanzamento nelle scienze",
+    "buttonText": "Contatto"
+  },
+  "OQueEBanner": {
+    "topTitle": "Che cos'è?",
+    "title": "Girls Stem Petrópolis TEC Hub Project",
+    "paragraph": "Il progetto che cerca di ridurre la disuguaglianza di genere ed espandere la partecipazione femminile a scienza, tecnologia, ingegneria e matematica (STEM). Questa iniziativa si concentra sull'alfabetizzazione tecnologica e sulla promozione dell'inclusione femminile nella città di Petrópolis, a Rio de Janeiro."
+  },
+  "ObjetivoBanner": {
+    "title": "Obiettivo del progetto",
+    "paragraph": "Il progetto mira a incoraggiare l'alfabetizzazione tecnologica tra studenti ed educatori, promuovendo una cultura inclusiva nelle scienze esatte.",
+    "altImage": "Le ragazze stessono"
+  },
+  "ComoBanner": "Il progetto utilizza la piattaforma Scratch per insegnare la programmazione in modo giocoso e interdisciplinare, incorporando dibattiti su genere, diritti umani e disuguaglianze.",
+  "MetodologiaBanner": {
+    "title": "Motodologia",
+    "paragraph": "Il progetto mira a incoraggiare l'alfabetizzazione tecnologica tra studenti ed educatori, promuovendo una cultura inclusiva nelle scienze esatte.",
+    "altImage": "Le ragazze stessono"
+  },
+  "IconWithTextBanner": {
+    "title": "Chi si sviluppa?",
+    "topTitle": "I nostri dipendenti",
+    "paragraph": "Il progetto è realizzato da una rete di istituti di ricerca, scienze e istruzione, insieme a organizzazioni sociali e aziendali. Partecipa a questa iniziativa:",
+    "iconCards": [
+      {
+        "title": "Lncc",
+        "description": "Il National Laboratory of Scientific Computing è un istituto di ricerca e ricerca tecnologica brasiliana, specializzata in calcolo scientifico, collegato al Ministero della scienza, della tecnologia e dell'innovazione."
+      },
+      {
+        "title": "Serratec",
+        "description": "Serratec è un parco tecnologico senza scopo di lucro all'interno di Rio de Janeiro, fungendo da induttore commerciale IT e che copre le città di Petrópolis, Teresópolis, Nova Friburgo e Areal."
+      },
+      {
+        "title": "Faeterj Petropolis",
+        "description": "Faeterj Petrópolis è un istituto di istruzione superiore pubblica legata a FAETEC, offrendo corsi tecnici e superiori in varie aree."
+      },
+      {
+        "title": "Cefet/rj und petrópolis",
+        "description": "Cefet/RJ Petrópolis è il primo istituto di istruzione superiore pubblica in città, offrendo corsi nella modalità facciale e appartenente al sistema Cefet/RJ."
+      },
+      {
+        "title": "Uff",
+        "description": "La Fluminense Federal University (UFF) è un istituto di istruzione superiore pubblica di riferimento nazionale, che si distingue in varie aree di conoscenza."
+      },
+      {
+        "title": "Ufba",
+        "description": "La Federal University of Bahia (UFBA) è un istituto di istruzione superiore pubblica con sede a Salvador, collegato al Ministero della Pubblica Istruzione, con autonomia amministrativa e legale."
+      },
+      {
+        "title": "Biomobo",
+        "description": "Biomob è specializzata in soluzioni di accessibilità e progetti sociali, concentrandosi sulla promozione di una società più inclusiva ed egualitaria."
+      },
+      {
+        "title": "Quipotec",
+        "description": "Quipo Tech sviluppa progetti di ricerca, sviluppo e innovazione per aziende e istituzioni governative, mirando a innovazione e progresso tecnologico."
+      },
+      {
+        "title": "TJ-RJ",
+        "description": "La Corte di giustizia di Rio de Janeiro (TJ-RJ) è responsabile dell'amministrazione della giustizia nello stato, con la giurisdizione sull'intero territorio della fluminense."
+      },
+      {
+        "title": "Municipio di Petrópolis",
+        "description": "Il municipio di Petrópolis gestisce la città storica situata nella regione montuosa di Rio de Janeiro, implementando politiche e servizi pubblici per la popolazione."
+      },
+      {
+        "title": "Seeduc-Rj",
+        "description": "Seeduc-RJ è responsabile della gestione delle politiche educative dello stato di Rio de Janeiro, garantendo l'accesso all'istruzione di qualità nelle scuole pubbliche statali."
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "RICERCA",
+    "title": "Cosa ci si aspetta dal progetto?",
+    "paragraph": "Il progetto cerca di rafforzare l'immaginazione e l'autostima delle ragazze, l'abbandono di combattimento e contribuire alla costruzione di una società più giusta. Si prevede che stimoli ed espanderà la partecipazione femminile allo STEM, riducendo allo stesso tempo stimmi e discriminazioni.",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "it"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "Parte",
+    "title": "Chi partecipa?",
+    "paragraph": "Verranno selezionati l'ottava e il 9 ° grado della scuola elementare II e il 1 °, 2 ° e 3 ° anno di liceo, seguendo i criteri del progetto, insieme ad almeno un insegnante di ciascuna delle scuole partecipanti. I titolari di borse di studio saranno coinvolti nelle seguenti attività e obiettivi:",
+    "iconCards": [
+      {
+        "title": "Imparare sulla programmazione"
+      },
+      {
+        "title": "Sviluppo di giochi educativi sulla piattaforma Scratch"
+      },
+      {
+        "title": "Partecipazione a un club scientifico"
+      },
+      {
+        "title": "Presenza in eventi di diffusione scientifica"
+      },
+      {
+        "title": "Partecipazione a lezioni e seminari"
+      },
+      {
+        "title": "Preparazione di rapporti intermedi e finali"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "contatto",
+    "title": "Contattaci",
+    "paragraph": "Per contattarci, inviare un messaggio alla nostra e-mail girmstempetropolis@gmail.com. Rispondiamo il prima possibile!"
+  },
+  "Outros": {
+    "ondinhas": "Onda"
+  }
+}

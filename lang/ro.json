@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "Accesibilitate",
+    "switchWithIcon": {
+      "light": "Schimbați tema clară",
+      "dark": "Tema întunecată"
+    },
+    "ativarVLibras": "Activați Vlibras",
+    "trocarIdioma": "Schimba",
+    "desenvolvida": {
+      "ferramenta": "Instrument",
+      "desenvolvida": "Dezvoltat de"
+    },
+    "logo": "Logo -ul biomob",
+    "barraLateral": "Schimbați personalul de bare lateral al site -ului",
+    "nossasSolucoes": "Soluțiile noastre",
+    "nossasSolucoesLabel": "Vezi soluțiile",
+    "acessibilidadeArq": "Accesibilitate arhitecturală",
+    "acessibilidadeArqLabel": "Accesați ecranul de accesibilitate arhitecturală",
+    "acessibilidadeDig": "Accesibilitate digitală",
+    "acessibilidadeDigLabel": "Accesați ecranul de accesibilitate digitală",
+    "noticias": "Ştiri",
+    "noticiasLabel": "Mergeți la ecranul de știri",
+    "institudo": "Instituţie",
+    "institudoLabel": "Mergeți la ecranul Institutului",
+    "empregabilidade": "Angabilitate",
+    "empregabilidadeLabel": "Accesați ecranul de angajabilitate",
+    "papoDiverso": "Chat diferit",
+    "papoDiversoLabel": "Accesați site -ul Diverse Chat"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "Descriere audio",
+        "ariaLabel": "Activați descrierea audio"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "Pequisis Limba ta ...",
+    "language": "Portugheză (BR)",
+    "Portuguese": "Portugheză (BR)",
+    "ChineseTraditional": "Chineză (tradițional)",
+    "ChineseSimplified": "Chineză (simplificată)",
+    "English": "Engleză",
+    "French": "franceză",
+    "German": "german",
+    "Italian": "italian",
+    "Bengali": "Bengaleză",
+    "Hindi": "hindi",
+    "Russian": "Rusă",
+    "Japanese": "japonez",
+    "Korean": "coreean",
+    "Vietnamese": "Vietnameză",
+    "Telugu": "Telugu",
+    "Cantonese": "Cantoneză",
+    "Marathi": "Marathi",
+    "Tamil": "Tamil",
+    "Turkish": "turc",
+    "Urdu": "urdu",
+    "Gujarati": "Gujarati",
+    "Polish": "Lustrui",
+    "Ukrainian": "ucrainean",
+    "Malay": "Migo",
+    "Kannada": "Canare",
+    "Oriya": "Oriya",
+    "Punjabi": "Punjabi",
+    "Romanian": "România",
+    "Azerbaijani": "Ca Azerbaija",
+    "Farsi": "Pierdut",
+    "Burmese": "Birman",
+    "Thai": "Thailandez",
+    "Dutch": "Olandez",
+    "Yoruba": "Yoruba",
+    "Sindhi": "Sindhi"
+  },
+  "MainBanner": {
+    "topTitle": "Formând viitori oameni de știință",
+    "title": "Fetele tulpină",
+    "paragraph": "Impact fetele care, încă la școală, se confruntă cu provocările pentru implicarea lor în științe",
+    "buttonText": "Contact"
+  },
+  "OQueEBanner": {
+    "topTitle": "Ce este?",
+    "title": "Fete Stem Petrópolis TEC Hub Project",
+    "paragraph": "Proiectul care încearcă să reducă inegalitatea de gen și să extindă participarea femeilor la știință, tehnologie, inginerie și matematică (STEM). Această inițiativă se concentrează pe alfabetizarea tehnologică și pe promovarea incluziunii feminine în orașul Petrópolis, în Rio de Janeiro."
+  },
+  "ObjetivoBanner": {
+    "title": "Obiectivul proiectului",
+    "paragraph": "Proiectul își propune să încurajeze alfabetizarea tehnologică între studenți și educatori, promovând o cultură incluzivă în științele exacte.",
+    "altImage": "Fetele tulpină"
+  },
+  "ComoBanner": "Proiectul folosește platforma zgârieturi pentru a preda programarea într -un mod jucăuș și interdisciplinar, încorporând dezbateri despre gen, drepturi omului și inegalități.",
+  "MetodologiaBanner": {
+    "title": "Motodologia",
+    "paragraph": "Proiectul își propune să încurajeze alfabetizarea tehnologică între studenți și educatori, promovând o cultură incluzivă în științele exacte.",
+    "altImage": "Fetele tulpină"
+  },
+  "IconWithTextBanner": {
+    "title": "Cine se dezvoltă?",
+    "topTitle": "Angajații noștri",
+    "paragraph": "Proiectul este realizat de o rețea de instituții de cercetare, știință și educație, împreună cu organizații sociale și de afaceri. Participați la această inițiativă:",
+    "iconCards": [
+      {
+        "title": "Lncc",
+        "description": "Laboratorul național de calcul științific este o instituție de cercetare și cercetare tehnologică braziliană, specializată în calcul științific, legată de Ministerul Științei, Tehnologiei și Inovării."
+      },
+      {
+        "title": "Serratec",
+        "description": "Serratec este un parc tehnologic non -profit din interiorul Rio de Janeiro, acționând ca un inductor de afaceri IT și care acoperă orașele Petrópolis, Teresópolis, Nova Friburgo și Areal."
+      },
+      {
+        "title": "Faeterj Petropolis",
+        "description": "Faeterj Petrópolis este o instituție publică de învățământ superior legată de FAETEC, oferind cursuri tehnice și superioare în diferite domenii."
+      },
+      {
+        "title": "Cefet/RJ Uned Petrópolis",
+        "description": "Cefet/RJ Petrópolis este prima instituție publică de învățământ superior din oraș, oferind cursuri în modalitatea de față și aparținând sistemului CEFET/RJ."
+      },
+      {
+        "title": "Uff",
+        "description": "Universitatea Fluminense Federal (UFF) este o instituție publică de învățământ superior de referință națională, ieșind în diferite domenii de cunoștințe."
+      },
+      {
+        "title": "Ufba",
+        "description": "Universitatea Federală din Bahia (UFBA) este o instituție publică de învățământ superior cu sediul în Salvador, legată de Ministerul Educației, cu autonomie administrativă și legală."
+      },
+      {
+        "title": "Biomob",
+        "description": "BioMob este specializată în soluții de accesibilitate și proiecte sociale, concentrându -se pe promovarea unei societăți mai incluzive și egalitare."
+      },
+      {
+        "title": "Quipotec",
+        "description": "Quipo Tech dezvoltă proiecte de cercetare, dezvoltare și inovare pentru companii și instituții guvernamentale, care vizează inovația și avansarea tehnologică."
+      },
+      {
+        "title": "TJ-RJ",
+        "description": "Curtea de Justiție din Rio de Janeiro (TJ-RJ) este responsabilă pentru administrarea justiției în stat, cu jurisdicție pe întregul teritoriu Fluminense."
+      },
+      {
+        "title": "Primăria Petrópolis",
+        "description": "Primăria Petrópolis gestionează orașul istoric situat în regiunea muntoasă din Rio de Janeiro, impleând politici și servicii publice pentru populație."
+      },
+      {
+        "title": "Seeduc-RJ",
+        "description": "Seeduc-RJ este responsabil pentru gestionarea politicilor educaționale ale statului Rio de Janeiro, asigurând accesul la educația de calitate în școlile publice de stat."
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "CĂUTARE",
+    "title": "Ce se așteaptă de la proiect?",
+    "paragraph": "Proiectul urmărește să consolideze imaginația și autoestima fetelor, să combată abandonul și să contribuie la construcția unei societăți mai echitabile. Se așteaptă să stimuleze și să extindă participarea femeilor la STEM, reducând în același timp stigmele și discriminarea.",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "ro"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "Parte",
+    "title": "Cine participă?",
+    "paragraph": "Se vor selecta clasele a VIII -a și a IX -a ale școlii elementare II și al primului, al 2 -lea și al 3 -lea an de liceu, urmând criteriile proiectului, împreună cu cel puțin un profesor al fiecăreia dintre școlile participante. Deținătorii de burse vor fi implicați în următoarele activități și obiective:",
+    "iconCards": [
+      {
+        "title": "Învățarea la programare"
+      },
+      {
+        "title": "Dezvoltarea jocurilor educaționale pe platforma de zgârieturi"
+      },
+      {
+        "title": "Participarea la un club de știință"
+      },
+      {
+        "title": "Prezența evenimentelor de diseminare științifică"
+      },
+      {
+        "title": "Participarea la prelegeri și seminarii"
+      },
+      {
+        "title": "Pregătirea rapoartelor intermediare și finale"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "contact",
+    "title": "Contactaţi-ne",
+    "paragraph": "Pentru a ne contacta, trimiteți un mesaj la e-mail-ul nostru Girlstempetropolis@gmail.com. Răspundem cât mai curând posibil!"
+  },
+  "Outros": {
+    "ondinhas": "Val"
+  }
+}

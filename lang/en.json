@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "Accessibility",
+    "switchWithIcon": {
+      "light": "Change to the Clear theme",
+      "dark": "Dark theme"
+    },
+    "ativarVLibras": "Enable vlibras",
+    "trocarIdioma": "Change",
+    "desenvolvida": {
+      "ferramenta": "Tool",
+      "desenvolvida": "developed by"
+    },
+    "logo": "Biomob logo",
+    "barraLateral": "Change Side Bar Staff of the Site",
+    "nossasSolucoes": "Our solutions",
+    "nossasSolucoesLabel": "See the solutions",
+    "acessibilidadeArq": "Architectural accessibility",
+    "acessibilidadeArqLabel": "Go to the architectural accessibility screen",
+    "acessibilidadeDig": "Digital Accessibility",
+    "acessibilidadeDigLabel": "Go to the digital accessibility screen",
+    "noticias": "News",
+    "noticiasLabel": "Go to the news screen",
+    "institudo": "Institution",
+    "institudoLabel": "Go to the institute's screen",
+    "empregabilidade": "Employability",
+    "empregabilidadeLabel": "Go to the employability screen",
+    "papoDiverso": "Different Chat",
+    "papoDiversoLabel": "Go to the diverse chat website"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "Audio Description",
+        "ariaLabel": "Activate Audio Description"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "Pequisis your language ...",
+    "language": "Portuguese (BR)",
+    "Portuguese": "Portuguese (BR)",
+    "ChineseTraditional": "Chinese (traditional)",
+    "ChineseSimplified": "Chinese (simplified)",
+    "English": "English",
+    "French": "French",
+    "German": "German",
+    "Italian": "Italian",
+    "Bengali": "bengali",
+    "Hindi": "hindi",
+    "Russian": "Russian",
+    "Japanese": "Japanese",
+    "Korean": "Korean",
+    "Vietnamese": "Vietnamese",
+    "Telugu": "Telugu",
+    "Cantonese": "Cantonese",
+    "Marathi": "Marathi",
+    "Tamil": "Tamil",
+    "Turkish": "Turkish",
+    "Urdu": "urdu",
+    "Gujarati": "Gujarati",
+    "Polish": "Polish",
+    "Ukrainian": "Ukrainian",
+    "Malay": "Migo",
+    "Kannada": "Cannaries",
+    "Oriya": "Oriya",
+    "Punjabi": "Punjabi",
+    "Romanian": "Romanian",
+    "Azerbaijani": "As azerbaija",
+    "Farsi": "Lost",
+    "Burmese": "Burmese",
+    "Thai": "Thai",
+    "Dutch": "Dutch",
+    "Yoruba": "Yoruba",
+    "Sindhi": "Sindhi"
+  },
+  "MainBanner": {
+    "topTitle": "Forming future scientists",
+    "title": "Girls stem",
+    "paragraph": "Impact girls who, still at school, face the challenges for their engagement in the sciences",
+    "buttonText": "Contact"
+  },
+  "OQueEBanner": {
+    "topTitle": "What is it?",
+    "title": "Girls Stem Petrópolis Tec Hub Project",
+    "paragraph": "The project that seeks to reduce gender inequality and expand female participation in Science, Technology, Engineering and Mathematics (STEM). This initiative focuses on technological literacy and the promotion of female inclusion in the city of Petrópolis, in Rio de Janeiro."
+  },
+  "ObjetivoBanner": {
+    "title": "Project objective",
+    "paragraph": "The project aims to encourage technological literacy between students and educators, promoting an inclusive culture in the exact sciences.",
+    "altImage": "Girls stem"
+  },
+  "ComoBanner": "The project uses the Scratch platform to teach programming in a playful and interdisciplinary way, incorporating debates on gender, human rights and inequalities.",
+  "MetodologiaBanner": {
+    "title": "Motodologia",
+    "paragraph": "The project aims to encourage technological literacy between students and educators, promoting an inclusive culture in the exact sciences.",
+    "altImage": "Girls stem"
+  },
+  "IconWithTextBanner": {
+    "title": "Who develops?",
+    "topTitle": "Our employees",
+    "paragraph": "The project is carried out by a network of research, science and education institutions, together with social and business organizations. Participate in this initiative:",
+    "iconCards": [
+      {
+        "title": "LNCC",
+        "description": "The National Laboratory of Scientific Computing is a Brazilian Research and Technological Research Institution, specializing in scientific computing, linked to the Ministry of Science, Technology and Innovation."
+      },
+      {
+        "title": "SERRATEC",
+        "description": "Serratec is a non -profit technology park in the interior of Rio de Janeiro, acting as an IT business inductor and covering the cities of Petrópolis, Teresópolis, Nova Friburgo and Areal."
+      },
+      {
+        "title": "FAETERJ PETROPOLIS",
+        "description": "Faeterj Petrópolis is a public higher education institution linked to Faetec, offering technical and higher courses in various areas."
+      },
+      {
+        "title": "CEFET/RJ UNED Petrópolis",
+        "description": "CEFET/RJ Petrópolis is the first public higher education institution in the city, offering courses in the face -to -face modality and belonging to the CEFET/RJ System."
+      },
+      {
+        "title": "UFF",
+        "description": "The Fluminense Federal University (UFF) is a public higher education institution of national reference, standing out in various areas of knowledge."
+      },
+      {
+        "title": "UFBA",
+        "description": "The Federal University of Bahia (UFBA) is a public higher education institution based in Salvador, linked to the Ministry of Education, with administrative and legal autonomy."
+      },
+      {
+        "title": "BIOMOB",
+        "description": "Biomob specializes in accessibility solutions and social projects, focusing on promoting a more inclusive and egalitarian society."
+      },
+      {
+        "title": "QUIPOTEC",
+        "description": "Quipo Tech develops research, development and innovation projects for companies and government institutions, aiming at innovation and technological advancement."
+      },
+      {
+        "title": "TJ-RJ",
+        "description": "The Rio de Janeiro Court of Justice (TJ-RJ) is responsible for the administration of justice in the state, with jurisdiction over the entire Fluminense territory."
+      },
+      {
+        "title": "Petrópolis City Hall",
+        "description": "The City Hall of Petrópolis manages the historic city located in the mountainous region of Rio de Janeiro, implementing public policies and services for the population."
+      },
+      {
+        "title": "SEEDUC-RJ",
+        "description": "Seeduc-RJ is responsible for managing the educational policies of the State of Rio de Janeiro, ensuring access to quality education in state public schools."
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "SEARCH",
+    "title": "What is expected of the project?",
+    "paragraph": "The project seeks to strengthen girls' imagination and self -esteem, combat dropout and contribute to the construction of a fairer society. It is expected to stimulate and expand female participation in STEM, while reducing stigmas and discrimination.",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "en"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "Part",
+    "title": "Who participates?",
+    "paragraph": "Students will be selected from the 8th and 9th anniversary of Elementary School II and the 1st, 2nd and 3rd years of high school, following the criteria of the project, together with at least one teacher of each of the participating schools. Scholarship holders will be involved in the following activities and objectives:",
+    "iconCards": [
+      {
+        "title": "Learning on Programming"
+      },
+      {
+        "title": "Development of Educational Games on the Scratch platform"
+      },
+      {
+        "title": "Participation in a Science Club"
+      },
+      {
+        "title": "Presence in scientific dissemination events"
+      },
+      {
+        "title": "Participation in lectures and seminars"
+      },
+      {
+        "title": "Preparation of intermediate and final reports"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "contact",
+    "title": "Contact us",
+    "paragraph": "To contact us, send a message to our e-mail girlstempetropolis@gmail.com. We respond as soon as possible!"
+  },
+  "Outros": {
+    "ondinhas": "Wave"
+  }
+}

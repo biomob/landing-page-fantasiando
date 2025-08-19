@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "アクセシビリティ",
+    "switchWithIcon": {
+      "light": "明確なテーマに変更します",
+      "dark": "暗いテーマ"
+    },
+    "ativarVLibras": "vlibrasを有効にします",
+    "trocarIdioma": "変化",
+    "desenvolvida": {
+      "ferramenta": "道具",
+      "desenvolvida": "によって開発されました"
+    },
+    "logo": "Biomobロゴ",
+    "barraLateral": "サイトのサイドバースタッフを変更します",
+    "nossasSolucoes": "私たちのソリューション",
+    "nossasSolucoesLabel": "ソリューションを参照してください",
+    "acessibilidadeArq": "アーキテクチャのアクセシビリティ",
+    "acessibilidadeArqLabel": "アーキテクチャのアクセシビリティ画面に移動します",
+    "acessibilidadeDig": "デジタルアクセシビリティ",
+    "acessibilidadeDigLabel": "デジタルアクセシビリティ画面に移動します",
+    "noticias": "ニュース",
+    "noticiasLabel": "ニュース画面に移動します",
+    "institudo": "機関",
+    "institudoLabel": "研究所のスクリーンに移動します",
+    "empregabilidade": "雇用可能性",
+    "empregabilidadeLabel": "Employability画面に移動します",
+    "papoDiverso": "別のチャット",
+    "papoDiversoLabel": "多様なチャットWebサイトにアクセスしてください"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "オーディオの説明",
+        "ariaLabel": "オーディオの説明をアクティブにします"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "あなたの言語をpequisis ...",
+    "language": "ポルトガル（BR）",
+    "Portuguese": "ポルトガル（BR）",
+    "ChineseTraditional": "中国語（伝統）",
+    "ChineseSimplified": "中国語（簡素化）",
+    "English": "英語",
+    "French": "フランス語",
+    "German": "ドイツ語",
+    "Italian": "イタリア語",
+    "Bengali": "ベンガル語",
+    "Hindi": "ヒンディー語",
+    "Russian": "ロシア",
+    "Japanese": "日本語",
+    "Korean": "韓国語",
+    "Vietnamese": "ベトナム人",
+    "Telugu": "テルグ語",
+    "Cantonese": "広東語",
+    "Marathi": "マラーティー",
+    "Tamil": "タミル語",
+    "Turkish": "トルコ語",
+    "Urdu": "ウルドゥー語",
+    "Gujarati": "グジャラート語",
+    "Polish": "研磨",
+    "Ukrainian": "ウクライナ人",
+    "Malay": "ミゴ",
+    "Kannada": "カンリス",
+    "Oriya": "オリヤ",
+    "Punjabi": "パンジャブ",
+    "Romanian": "ルーマニア人",
+    "Azerbaijani": "アゼルバイジャとして",
+    "Farsi": "失った",
+    "Burmese": "ビルマ",
+    "Thai": "タイ",
+    "Dutch": "オランダ語",
+    "Yoruba": "ヨルバ",
+    "Sindhi": "シンディ"
+  },
+  "MainBanner": {
+    "topTitle": "将来の科学者を形成する",
+    "title": "女の子の茎",
+    "paragraph": "まだ学校にいる女の子が科学への関与の課題に直面している女の子に影響を与える",
+    "buttonText": "接触"
+  },
+  "OQueEBanner": {
+    "topTitle": "それは何ですか？",
+    "title": "Girls STEMPetrópolisTecHubプロジェクト",
+    "paragraph": "ジェンダーの不平等を減らし、科学、技術、工学、数学（STEM）への女性の参加を拡大しようとするプロジェクト。 このイニシアチブは、リオデジャネイロのペトロポリス市での技術リテラシーと女性の包摂の促進に焦点を当てています。"
+  },
+  "ObjetivoBanner": {
+    "title": "プロジェクト目標",
+    "paragraph": "このプロジェクトの目的は、学生と教育者の間の技術リテラシーを奨励し、正確な科学の包括的な文化を促進することを目指しています。",
+    "altImage": "女の子の茎"
+  },
+  "ComoBanner": "このプロジェクトは、スクラッチプラットフォームを使用して、性別、人権、不平等に関する議論を取り入れ、遊び心のある学際的な方法でプログラミングを教えることです。",
+  "MetodologiaBanner": {
+    "title": "Motodologia",
+    "paragraph": "このプロジェクトの目的は、学生と教育者の間の技術リテラシーを奨励し、正確な科学の包括的な文化を促進することを目指しています。",
+    "altImage": "女の子の茎"
+  },
+  "IconWithTextBanner": {
+    "title": "誰が開発しますか？",
+    "topTitle": "私たちの従業員",
+    "paragraph": "このプロジェクトは、社会およびビジネス組織とともに、研究、科学、教育機関のネットワークによって実施されます。 このイニシアチブに参加してください：",
+    "iconCards": [
+      {
+        "title": "LNCC",
+        "description": "科学コンピューティングの国立研究所は、科学、技術、革新省に関連する科学的コンピューティングに特化したブラジルの研究および技術研究機関です。"
+      },
+      {
+        "title": "Serratec",
+        "description": "Serratecは、Rio de Janeiroの内部にある非営利のテクノロジーパークで、ITビジネスインダクタとして機能し、ペトロポリス、テレソポリス、ノバフリバルゴ、面積の都市をカバーしています。"
+      },
+      {
+        "title": "Faeterj Petropolis",
+        "description": "FaeterjPetrópolisは、FAETECにリンクされた公立高等教育機関であり、さまざまな分野で技術的およびより高いコースを提供しています。"
+      },
+      {
+        "title": "cefet/rj UnedPetrópolis",
+        "description": "CEFET/RJPetrópolisは、市内で最初の公立高等教育機関であり、Face -to -Faceのモダリティでコースを提供し、CEFET/RJシステムに属します。"
+      },
+      {
+        "title": "uff",
+        "description": "Fluminense Federal University（UFF）は、国家参照の公立高等教育機関であり、さまざまな知識の分野で際立っています。"
+      },
+      {
+        "title": "ufba",
+        "description": "バイア連邦大学（UFBA）は、サルバドールに拠点を置く公立高等教育機関であり、管理および法的自治を伴う教育省に関連しています。"
+      },
+      {
+        "title": "Biomob",
+        "description": "Biomobは、アクセシビリティソリューションとソーシャルプロジェクトを専門としており、より包括的で平等な社会の促進に焦点を当てています。"
+      },
+      {
+        "title": "Quipotec",
+        "description": "Quipo Techは、イノベーションと技術の進歩を目的とした企業や政府機関向けの研究、開発、イノベーションプロジェクトを開発しています。"
+      },
+      {
+        "title": "TJ-RJ",
+        "description": "リオデジャネイロ司法裁判所（TJ-RJ）は、フルミネンスの領土全体を管轄して、州の司法行政を担当しています。"
+      },
+      {
+        "title": "ペトロポリス市役所",
+        "description": "ペトロポリス市のホールは、リオデジャネイロの山岳地帯にある歴史的な都市を管理し、人口向けの公共政策とサービスを実施しています。"
+      },
+      {
+        "title": "Seduc-rj",
+        "description": "Seeduc-RJは、リオデジャネイロ州の教育政策を管理し、州の公立学校の質の高い教育へのアクセスを確保する責任があります。"
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "検索",
+    "title": "プロジェクトに何が期待されていますか？",
+    "paragraph": "このプロジェクトは、少女の想像力と自尊心を強化し、戦闘中退を強化し、より公正な社会の建設に貢献しようとしています。 スティグマと差別を減らしながら、STEMへの女性の参加を刺激し、拡大することが期待されています。",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "ja"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "一部",
+    "title": "誰が参加しますか？",
+    "paragraph": "小学校IIの8年生と9年生は、プロジェクトの基準に従って、参加している各学校の少なくとも1人の教師とともに、高校の1年生、2年生、3年生が選ばれます。 奨学金保有者は、次の活動と目的に関与します。",
+    "iconCards": [
+      {
+        "title": "プログラミングの学習"
+      },
+      {
+        "title": "スクラッチプラットフォームでの教育ゲームの開発"
+      },
+      {
+        "title": "サイエンスクラブへの参加"
+      },
+      {
+        "title": "科学的普及イベントにおける存在"
+      },
+      {
+        "title": "講義とセミナーへの参加"
+      },
+      {
+        "title": "中間および最終レポートの準備"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "接触",
+    "title": "お問い合わせ",
+    "paragraph": "私たちに連絡するには、私たちの電子メールgirlystempetropolis@gmail.comにメッセージを送信してください。 できるだけ早く応答します！"
+  },
+  "Outros": {
+    "ondinhas": "波"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "Əlçatanlıq",
+    "switchWithIcon": {
+      "light": "Aydın mövzuya dəyişdirin",
+      "dark": "Qaranlıq mövzu"
+    },
+    "ativarVLibras": "Vlibras-ı aktivləşdirin",
+    "trocarIdioma": "Dəyişmək",
+    "desenvolvida": {
+      "ferramenta": "Alət",
+      "desenvolvida": "tərəfindən hazırlanmışdır"
+    },
+    "logo": "Biomob loqotipi",
+    "barraLateral": "Saytın yan bar heyətini dəyişdirin",
+    "nossasSolucoes": "Həlllərimiz",
+    "nossasSolucoesLabel": "Həllərə baxın",
+    "acessibilidadeArq": "Memarlıq əlçatanlığı",
+    "acessibilidadeArqLabel": "Memarlıq əlçatanlığı ekranına gedin",
+    "acessibilidadeDig": "Rəqəmsal əlçatanlıq",
+    "acessibilidadeDigLabel": "Rəqəmsal əlçatanlıq ekranına gedin",
+    "noticias": "Xəbəri",
+    "noticiasLabel": "Xəbər ekranına gedin",
+    "institudo": "Qurum",
+    "institudoLabel": "İnstitutun ekranına gedin",
+    "empregabilidade": "Məşğulluq",
+    "empregabilidadeLabel": "İşəgötürmə ekranına gedin",
+    "papoDiverso": "Fərqli söhbət",
+    "papoDiversoLabel": "Müxtəlif söhbət saytına gedin"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "Səsin təsviri",
+        "ariaLabel": "Audio Təsvirini aktivləşdirin"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "Dilinizdə pequisis ...",
+    "language": "Portuqal (br)",
+    "Portuguese": "Portuqal (br)",
+    "ChineseTraditional": "Çin (ənənəvi)",
+    "ChineseSimplified": "Çin (sadələşdirilmiş)",
+    "English": "İngilisləşdirmək",
+    "French": "Fransız",
+    "German": "Almanca",
+    "Italian": "İtalyan",
+    "Bengali": "benqal",
+    "Hindi": "hindi",
+    "Russian": "Rus",
+    "Japanese": "Yaponca",
+    "Korean": "Koreyalı",
+    "Vietnamese": "Vyetnam",
+    "Telugu": "Teluqu",
+    "Cantonese": "Kanton",
+    "Marathi": "Marathi",
+    "Tamil": "Tamil",
+    "Turkish": "Türk",
+    "Urdu": "urdu",
+    "Gujarati": "Gujarati",
+    "Polish": "Cilalamaq",
+    "Ukrainian": "Ukraynalı",
+    "Malay": "Migo",
+    "Kannada": "Canxanalar",
+    "Oriya": "Oriya",
+    "Punjabi": "Punjabi",
+    "Romanian": "Rumın",
+    "Azerbaijani": "Azərbaycan kimi",
+    "Farsi": "Məğlubedici",
+    "Burmese": "Burme",
+    "Thai": "Tay",
+    "Dutch": "Holland",
+    "Yoruba": "Yoruba",
+    "Sindhi": "Sindhi"
+  },
+  "MainBanner": {
+    "topTitle": "Gələcək elm adamlarını formalaşdırmaq",
+    "title": "Qızlar kök",
+    "paragraph": "Hələ məktəbdə olan qızların təsiri, elmlərdə nişanlarına görə çətinliklərlə üzləşirlər",
+    "buttonText": "Əlaqə"
+  },
+  "OQueEBanner": {
+    "topTitle": "Bu nədir?",
+    "title": "Qızlar Stem Petrópolis Tec Hub Layihəsi",
+    "paragraph": "Gender bərabərsizliyini azaltmağa və elm, texnologiya, mühəndislik və riyaziyyatda (kök) qadın iştirakını genişləndirməyə çalışan layihə. Bu təşəbbüs texnoloji savadlılığa və Rio de-Janeyro şəhərində petrópolis şəhərində qadın daxil edilməsinə diqqət yetirir."
+  },
+  "ObjetivoBanner": {
+    "title": "Layihə məqsədi",
+    "paragraph": "Layihə, tələbələr və müəllimlər arasında texnoloji savadlılığı, dəqiq elmlərdə inklüziv mədəniyyətin təşviqi ilə təşviq etmək məqsədi daşıyır.",
+    "altImage": "Qızlar kök"
+  },
+  "ComoBanner": "Layihə, cinsiyyət, insan hüquqları və bərabərsizliklərə dair mübahisələri birləşdirən, oynaq və fənlərarası bir şəkildə proqramlaşdırma platformasını öyrətmək üçün cızma platformasından istifadə edir.",
+  "MetodologiaBanner": {
+    "title": "Motodologiyası",
+    "paragraph": "Layihə, tələbələr və müəllimlər arasında texnoloji savadlılığı, dəqiq elmlərdə inklüziv mədəniyyətin təşviqi ilə təşviq etmək məqsədi daşıyır.",
+    "altImage": "Qızlar kök"
+  },
+  "IconWithTextBanner": {
+    "title": "Kim inkişaf edir?",
+    "topTitle": "İşçilərimiz",
+    "paragraph": "Layihə ictimai və biznes təşkilatları ilə birlikdə tədqiqat, elm və təhsil müəssisələri şəbəkəsi tərəfindən həyata keçirilir. Bu təşəbbüsdə iştirak edin:",
+    "iconCards": [
+      {
+        "title": "Lncc",
+        "description": "Elmi hesablama Milli Elmi Hesablama Laboratoriyası, Elm, Texnologiya və İnnovasiya Nazirliyi ilə əlaqəli elmi hesablama sahəsində ixtisaslaşmış Braziliyanın tədqiqat və texnoloji tədqiqat müəssisəsidir."
+      },
+      {
+        "title": "Serratec",
+        "description": "SERRATEC, Rio-de-Janeyro-nın daxili hissəsində, İT biznes induktoru kimi fəaliyyət göstərən və Petropolis, Teresópolis, Nova Friburgo və Areal şəhərlərini əhatə edən Rio de Janeyro-nun daxili hissəsində qeyri-kommersiya parkıdır."
+      },
+      {
+        "title": "Faeterj Petropopolis",
+        "description": "Faeterj Petrópolis, müxtəlif sahələrdə texniki və daha yüksək kurslar təklif edən Faetec ilə əlaqəli bir ictimai ali təhsil müəssisəsidir."
+      },
+      {
+        "title": "CEFET / RJ BUTED PETROóPOLIS",
+        "description": "CEFET / RJ PETROPLOLIS, şəhərdəki ilk ictimai ali təhsil müəssisəsidir, Üzdə kurslar təklif edir - -Tefet modallıq və CEFET / RJ sisteminə aid kurslar təqdim edir."
+      },
+      {
+        "title": "Uff",
+        "description": "Fluminense Federal Universiteti (UFF), müxtəlif bilik sahələrində ortaya çıxan, milli arayışın ictimai ali təhsil müəssisəsidir."
+      },
+      {
+        "title": "Ufba",
+        "description": "Bahia Federal Universiteti (UFBA), İnzibati və hüquqi muxtariyyət ilə Təhsil Nazirliyi ilə əlaqəli Salvadorda yerləşən bir ictimai ali təhsil müəssisəsidir."
+      },
+      {
+        "title": "Biomob",
+        "description": "Biomob, daha inklüziv və egalitar cəmiyyətinin təbliğinə yönəlmiş, əlçatanlıq həlləri və sosial layihələrdə ixtisaslaşmışdır."
+      },
+      {
+        "title": "Quipotek",
+        "description": "Quipo Tech, innovasiya və texnoloji inkişaf məqsədi ilə şirkət və dövlət qurumları üçün tədqiqat, inkişaf və innovasiya layihələrini inkişaf etdirir."
+      },
+      {
+        "title": "Tj-rj",
+        "description": "Rio de Janeiro Ədalət Məhkəməsi (TJ-RJ) dövlətdəki ədliyyə rəhbərliyinə, bütün fluminensense ərazisində yurisdiksiyaya görə məsuliyyət daşıyır."
+      },
+      {
+        "title": "Petrópolis City Hall",
+        "description": "Petrópolis şəhər zalı Petrópolis, əhalinin ictimai siyasətini və xidmətləri həyata keçirən Rio de-Janeyro dağ rayonunda yerləşən tarixi şəhəri idarə edir."
+      },
+      {
+        "title": "Seeduc-rj",
+        "description": "SeedUc-RJ, Rio-de-Janeyro əyalətinin təhsil siyasətinin idarə olunmasına cavabdehdir, dövlət dövlət məktəblərində keyfiyyətli təhsil almağa imkan verir."
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "Axtarış",
+    "title": "Layihənin nə gözlənilir?",
+    "paragraph": "Layihə qızların təxəyyülünü və özünü gücləndirməyə, döyüş açılmasını gücləndirməyə və daha ədalətli cəmiyyətin inşasına töhfə verir. Stiqmas və ayrıseçkiliyin azaldılması halında, qadın iştirakını stimullaşdırması və genişləndirilməsi və genişləndirilməsi gözlənilir.",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "az"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "Qismən",
+    "title": "Kim iştirak edir?",
+    "paragraph": "Tələbələr, İbtidai məktəbinin 8 və 9-cu ildönümündən seçiləcək, Layihə meyarlarının ardınca, iştirakçı məktəblərin ən azı bir müəllimi ilə birlikdə layihə meyarlarından sonra. Təqaüd sahibləri aşağıdakı fəaliyyətlərdə və məqsədlərdə iştirak edəcəklər:",
+    "iconCards": [
+      {
+        "title": "Proqramlaşdırma öyrənmək"
+      },
+      {
+        "title": "Scratch platformasında təhsil oyunlarının inkişafı"
+      },
+      {
+        "title": "Elm klubunda iştirak"
+      },
+      {
+        "title": "Elmi yayma tədbirlərində iştirak"
+      },
+      {
+        "title": "Mühazirələrdə və seminarlarda iştirak"
+      },
+      {
+        "title": "Aralıq və yekun hesabatların hazırlanması"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "əlaqə",
+    "title": "Bizimlə əlaqə saxlayın",
+    "paragraph": "Bizimlə əlaqə qurmaq üçün elektron poçtumuza girlStempetropolis@gmail.com elektron poçtumuza bir mesaj göndərin. Ən qısa müddətdə cavab veririk!"
+  },
+  "Outros": {
+    "ondinhas": "Dalğalanmaq"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "Accessibilité",
+    "switchWithIcon": {
+      "light": "Passer au thème clair",
+      "dark": "Thème sombre"
+    },
+    "ativarVLibras": "Activer les vlibras",
+    "trocarIdioma": "Changement",
+    "desenvolvida": {
+      "ferramenta": "Outil",
+      "desenvolvida": "développé par"
+    },
+    "logo": "Logo biomob",
+    "barraLateral": "Changer le personnel de la barre latérale du site",
+    "nossasSolucoes": "Nos solutions",
+    "nossasSolucoesLabel": "Voir les solutions",
+    "acessibilidadeArq": "Accessibilité architecturale",
+    "acessibilidadeArqLabel": "Accédez à l'écran d'accessibilité architecturale",
+    "acessibilidadeDig": "Accessibilité numérique",
+    "acessibilidadeDigLabel": "Accédez à l'écran d'accessibilité numérique",
+    "noticias": "Nouvelles",
+    "noticiasLabel": "Aller à l'écran d'actualités",
+    "institudo": "Institution",
+    "institudoLabel": "Aller à l'écran de l'institut",
+    "empregabilidade": "Employabilité",
+    "empregabilidadeLabel": "Accédez à l'écran d'employabilité",
+    "papoDiverso": "Chat différent",
+    "papoDiversoLabel": "Allez sur le site Web de chat diversifié"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "Description audio",
+        "ariaLabel": "Activer la description de l'audio"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "Pequisis votre langue ...",
+    "language": "Portugais (BR)",
+    "Portuguese": "Portugais (BR)",
+    "ChineseTraditional": "Chinois (traditionnel)",
+    "ChineseSimplified": "Chinois (simplifié)",
+    "English": "Anglais",
+    "French": "Français",
+    "German": "Allemand",
+    "Italian": "italien",
+    "Bengali": "bengali",
+    "Hindi": "hindi",
+    "Russian": "russe",
+    "Japanese": "japonais",
+    "Korean": "coréen",
+    "Vietnamese": "vietnamien",
+    "Telugu": "Telugu",
+    "Cantonese": "Cantonais",
+    "Marathi": "Marathi",
+    "Tamil": "Tamoul",
+    "Turkish": "turc",
+    "Urdu": "ourdou",
+    "Gujarati": "Gujarati",
+    "Polish": "polonais",
+    "Ukrainian": "ukrainien",
+    "Malay": "Migo",
+    "Kannada": "Canaux",
+    "Oriya": "Oriya",
+    "Punjabi": "Punjabi",
+    "Romanian": "roumain",
+    "Azerbaijani": "En Azerbaïdja",
+    "Farsi": "Perdu",
+    "Burmese": "birman",
+    "Thai": "thaïlandais",
+    "Dutch": "Néerlandais",
+    "Yoruba": "Yoruba",
+    "Sindhi": "Sindhi"
+  },
+  "MainBanner": {
+    "topTitle": "Former les futurs scientifiques",
+    "title": "Les filles tiennent",
+    "paragraph": "Impact les filles qui, toujours à l'école, sont confrontées aux défis de leur engagement dans les sciences",
+    "buttonText": "Contact"
+  },
+  "OQueEBanner": {
+    "topTitle": "Qu'est-ce que c'est?",
+    "title": "Girls STEM PETERópolis Tec Hub Project",
+    "paragraph": "Le projet qui cherche à réduire les inégalités entre les sexes et à étendre la participation des femmes à la science, la technologie, l'ingénierie et les mathématiques (STEM). Cette initiative se concentre sur la littératie technologique et la promotion de l'inclusion féminine dans la ville de Petrópolis, à Rio de Janeiro."
+  },
+  "ObjetivoBanner": {
+    "title": "Objectif du projet",
+    "paragraph": "Le projet vise à encourager la littératie technologique entre les étudiants et les éducateurs, promouvant une culture inclusive dans les sciences exactes.",
+    "altImage": "Les filles tiennent"
+  },
+  "ComoBanner": "Le projet utilise la plate-forme à gratter pour enseigner la programmation de manière ludique et interdisciplinaire, incorporant des débats sur le sexe, les droits de l'homme et les inégalités.",
+  "MetodologiaBanner": {
+    "title": "Motodologia",
+    "paragraph": "Le projet vise à encourager la littératie technologique entre les étudiants et les éducateurs, promouvant une culture inclusive dans les sciences exactes.",
+    "altImage": "Les filles tiennent"
+  },
+  "IconWithTextBanner": {
+    "title": "Qui se développe?",
+    "topTitle": "Nos employés",
+    "paragraph": "Le projet est réalisé par un réseau d'établissements de recherche, de science et d'éducation, ainsi que des organisations sociales et commerciales. Participer à cette initiative:",
+    "iconCards": [
+      {
+        "title": "LNCC",
+        "description": "Le Laboratoire national de l'informatique scientifique est une institution brésilienne de recherche et de recherche technologique, spécialisée dans l'informatique scientifique, liée au ministère des Sciences, de la Technologie et de l'innovation."
+      },
+      {
+        "title": "Serratec",
+        "description": "Serratec est un parc technologique à but non lucratif à l'intérieur de Rio de Janeiro, agissant en tant qu'inductance informatique et couvrant les villes de Petrópolis, Teresópolis, Nova Friburgo et areal."
+      },
+      {
+        "title": "Faeterj Petropolis",
+        "description": "Faeterj Petrópolis est un établissement public d'enseignement supérieur lié à Faetec, offrant des cours techniques et plus élevés dans divers domaines."
+      },
+      {
+        "title": "CEFET / RJ UNED Petrópolis",
+        "description": "CEFET / RJ Petrópolis est la première institution publique d'enseignement supérieur de la ville, offrant des cours en matière de modalité à face et appartenant au système CEFET / RJ."
+      },
+      {
+        "title": "Uff",
+        "description": "La Fluminense Federal University (UFF) est un établissement public d'enseignement supérieur de référence nationale, se démarquant dans divers domaines de la connaissance."
+      },
+      {
+        "title": "UFBA",
+        "description": "L'Université fédérale de Bahia (UFBA) est un établissement public d'enseignement supérieur basé à Salvador, lié au ministère de l'Éducation, à l'autonomie administrative et juridique."
+      },
+      {
+        "title": "Biomob",
+        "description": "Biomob est spécialisé dans les solutions d'accessibilité et les projets sociaux, en se concentrant sur la promotion d'une société plus inclusive et égalitaire."
+      },
+      {
+        "title": "Quipotec",
+        "description": "Quipo Tech développe des projets de recherche, de développement et d'innovation pour les entreprises et les institutions gouvernementales, visant l'innovation et les progrès technologiques."
+      },
+      {
+        "title": "TJ-RJ",
+        "description": "La Cour de justice de Rio de Janeiro (TJ-RJ) est responsable de l'administration de la justice dans l'État, avec compétence sur tout le territoire de Fluminense."
+      },
+      {
+        "title": "Hôtel de ville de Petrópolis",
+        "description": "La mairie de Petrópolis gère la ville historique située dans la région montagneuse de Rio de Janeiro, mettant en œuvre des politiques et des services publics pour la population."
+      },
+      {
+        "title": "Semec-rj",
+        "description": "Seecc-RJ est responsable de la gestion des politiques éducatives de l'État de Rio de Janeiro, garantissant l'accès à une éducation de qualité dans les écoles publiques d'État."
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "RECHERCHE",
+    "title": "Qu'attend-on du projet?",
+    "paragraph": "Le projet vise à renforcer l'imagination et l'estime de soi des filles, l'abandon de combat et contribuer à la construction d'une société plus équitable. Il devrait stimuler et développer la participation des femmes à la STEM, tout en réduisant les stigmates et la discrimination.",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "fr"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "Partie",
+    "title": "Qui participe?",
+    "paragraph": "Les élèves seront sélectionnés parmi les 8e et 9e anniversaire de l'école primaire II et les 1er, 2e et 3e années du lycée, suivant les critères du projet, avec au moins un enseignant de chacune des écoles participantes. Les détenteurs de bourses seront impliqués dans les activités et objectifs suivants:",
+    "iconCards": [
+      {
+        "title": "Apprendre sur la programmation"
+      },
+      {
+        "title": "Développement de jeux éducatifs sur la plate-forme à gratter"
+      },
+      {
+        "title": "Participation à un club scientifique"
+      },
+      {
+        "title": "Présence dans des événements de diffusion scientifique"
+      },
+      {
+        "title": "Participation aux conférences et séminaires"
+      },
+      {
+        "title": "Préparation des rapports intermédiaires et finaux"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "contact",
+    "title": "Contactez-nous",
+    "paragraph": "Pour nous contacter, envoyez un message à notre e-mail girlstempetropolis@gmail.com. Nous répondons dès que possible!"
+  },
+  "Outros": {
+    "ondinhas": "Vague"
+  }
+}

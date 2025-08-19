@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "Zugänglichkeit",
+    "switchWithIcon": {
+      "light": "Änderung zum klaren Thema",
+      "dark": "Dunkles Thema"
+    },
+    "ativarVLibras": "Aktivieren Sie Vlibras",
+    "trocarIdioma": "Ändern",
+    "desenvolvida": {
+      "ferramenta": "Werkzeug",
+      "desenvolvida": "entwickelt von"
+    },
+    "logo": "Biomob -Logo",
+    "barraLateral": "Seitbalkenpersonal der Website ändern",
+    "nossasSolucoes": "Unsere Lösungen",
+    "nossasSolucoesLabel": "Siehe die Lösungen",
+    "acessibilidadeArq": "Architektonische Zugänglichkeit",
+    "acessibilidadeArqLabel": "Gehen Sie zum Bildschirm \"Architectural Barrierefreiheit\"",
+    "acessibilidadeDig": "Digitale Zugänglichkeit",
+    "acessibilidadeDigLabel": "Gehen Sie zum Bildschirm Digital Barrierefreiheit",
+    "noticias": "Nachricht",
+    "noticiasLabel": "Gehen Sie zum Nachrichtenbildschirm",
+    "institudo": "Institution",
+    "institudoLabel": "Gehen Sie zum Bildschirm des Instituts",
+    "empregabilidade": "Beschäftigungsfähigkeit",
+    "empregabilidadeLabel": "Gehen Sie zum Bildschirm zur Beschäftigungsfähigkeit",
+    "papoDiverso": "Anderer Chat",
+    "papoDiversoLabel": "Gehen Sie zur vielfältigen Chat -Website"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "Audiobeschreibung",
+        "ariaLabel": "Aktivieren Sie die Audiobeschreibung"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "Pequisis deine Sprache ...",
+    "language": "Portugiesisch (Br)",
+    "Portuguese": "Portugiesisch (Br)",
+    "ChineseTraditional": "Chinesisch (traditionell)",
+    "ChineseSimplified": "Chinesisch (vereinfacht)",
+    "English": "Englisch",
+    "French": "Französisch",
+    "German": "Deutsch",
+    "Italian": "Italienisch",
+    "Bengali": "Bengali",
+    "Hindi": "Hindi",
+    "Russian": "Russisch",
+    "Japanese": "japanisch",
+    "Korean": "Koreanisch",
+    "Vietnamese": "Vietnamesisch",
+    "Telugu": "Telugu",
+    "Cantonese": "Kantonesisch",
+    "Marathi": "Marathi",
+    "Tamil": "Tamil",
+    "Turkish": "Türkisch",
+    "Urdu": "Urdu",
+    "Gujarati": "Gujarati",
+    "Polish": "Polieren",
+    "Ukrainian": "ukrainisch",
+    "Malay": "Migo",
+    "Kannada": "Kanaren",
+    "Oriya": "Oriya",
+    "Punjabi": "Punjabi",
+    "Romanian": "rumänisch",
+    "Azerbaijani": "Als Aserbaija",
+    "Farsi": "Verloren",
+    "Burmese": "birmanisch",
+    "Thai": "Thai",
+    "Dutch": "Niederländisch",
+    "Yoruba": "Yoruba",
+    "Sindhi": "Sindhi"
+  },
+  "MainBanner": {
+    "topTitle": "Zukünftige Wissenschaftler bilden",
+    "title": "Mädchen Stamm",
+    "paragraph": "Impact Girl",
+    "buttonText": "Kontakt"
+  },
+  "OQueEBanner": {
+    "topTitle": "Was ist das?",
+    "title": "Mädchen Stamm Petrópolis TEC Hub -Projekt",
+    "paragraph": "Das Projekt, das die Ungleichheit der Geschlechter verringert und die Teilnahme von Frauen an Wissenschaft, Technologie, Ingenieurwesen und Mathematik (STEM) erweitert. Diese Initiative konzentriert sich auf die technologische Kompetenz und die Förderung der weiblichen Eingliederung in die Stadt Petrópolis in Rio de Janeiro."
+  },
+  "ObjetivoBanner": {
+    "title": "Projektziel",
+    "paragraph": "Das Projekt zielt darauf ab, die technologische Kompetenz zwischen Studenten und Pädagogen zu fördern und eine integrative Kultur in den genauen Wissenschaften zu fördern.",
+    "altImage": "Mädchen Stamm"
+  },
+  "ComoBanner": "Das Projekt nutzt die Scratch -Plattform, um Programmierung auf spielerische und interdisziplinäre Weise zu unterrichten und Debatten über Geschlecht, Menschenrechte und Ungleichheiten zu berücksichtigen.",
+  "MetodologiaBanner": {
+    "title": "Motodologia",
+    "paragraph": "Das Projekt zielt darauf ab, die technologische Kompetenz zwischen Studenten und Pädagogen zu fördern und eine integrative Kultur in den genauen Wissenschaften zu fördern.",
+    "altImage": "Mädchen Stamm"
+  },
+  "IconWithTextBanner": {
+    "title": "Wer entwickelt sich?",
+    "topTitle": "Unsere Mitarbeiter",
+    "paragraph": "Das Projekt wird von einem Netzwerk von Forschungs-, Wissenschafts- und Bildungsinstitutionen zusammen mit sozialen und Unternehmensorganisationen durchgeführt. Nehmen Sie an dieser Initiative teil:",
+    "iconCards": [
+      {
+        "title": "Lncc",
+        "description": "Das National Laboratory of Scientific Computing ist eine brasilianische Forschungs- und technologische Forschungseinrichtung, die sich auf wissenschaftliches Computing spezialisiert hat und mit dem Ministerium für Wissenschaft, Technologie und Innovation verbunden ist."
+      },
+      {
+        "title": "Serratec",
+        "description": "Serratec ist ein nicht profitierender Technologiepark im Inneren von Rio de Janeiro, der als IT -Business -Induktor fungiert und die Städte Petrópolis, Teresópolis, Nova Friburgo und Areal abdeckt."
+      },
+      {
+        "title": "Faeterj Petroolis",
+        "description": "Faeterj Petrópolis ist eine öffentliche Hochschuleinrichtung, die mit FAETEC verbunden ist und technische und höhere Kurse in verschiedenen Bereichen bietet."
+      },
+      {
+        "title": "Cefet/RJ UNED Petrópolis",
+        "description": "CEFET/RJ Petrópolis ist die erste öffentliche Hochschuleinrichtung in der Stadt, die Kurse in der Modalität der Gesichtsgesicht anbietet und zum Cefet/RJ -System gehört."
+      },
+      {
+        "title": "Uff",
+        "description": "Die Fluminense Federal University (UFF) ist eine öffentliche Hochschuleinrichtung nationaler Referenz, die in verschiedenen Wissensbereichen auffällt."
+      },
+      {
+        "title": "UFBA",
+        "description": "Die Federal University of Bahia (UFBA) ist eine in Salvador ansässige öffentliche Hochschuleinrichtung, die mit dem Bildungsministerium mit administrativen und rechtlichen Autonomie verbunden ist."
+      },
+      {
+        "title": "Biomob",
+        "description": "Biomob ist auf Barrierefreiheitslösungen und soziale Projekte spezialisiert und konzentriert sich auf die Förderung einer integrativeren und egalitären Gesellschaft."
+      },
+      {
+        "title": "Quipotec",
+        "description": "Quipo Tech entwickelt Forschungs-, Entwicklungs- und Innovationsprojekte für Unternehmen und staatliche Institutionen, die auf Innovation und technologischen Fortschritt abzielen."
+      },
+      {
+        "title": "TJ-rj",
+        "description": "Der Rio de Janeiro Court of Justice (TJ-RJ) ist für die Justizverwaltung im Staat mit der Zuständigkeit für das gesamte Fluminense-Territorium verantwortlich."
+      },
+      {
+        "title": "Petrópolis Rathaus",
+        "description": "Das Rathaus von Petrópolis verwaltet die historische Stadt in der Bergregion Rio de Janeiro und führt die öffentlichen Richtlinien und Dienstleistungen für die Bevölkerung um."
+      },
+      {
+        "title": "Seeduc-rj",
+        "description": "Seeduc-RJ ist für die Verwaltung der Bildungspolitik des Bundesstaates Rio de Janeiro verantwortlich und gewährleistet den Zugang zu qualitativ hochwertiger Bildung in staatlichen öffentlichen Schulen."
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "SUCHEN",
+    "title": "Was wird vom Projekt erwartet?",
+    "paragraph": "Das Projekt versucht, die Vorstellungskraft und das Selbstwertgefühl der Mädchen zu stärken, den Ausfall zu bekämpfen und zur Konstruktion einer gerechteren Gesellschaft beizutragen. Es wird erwartet, dass die weibliche Teilnahme an STEM anregt und erweitert wird und gleichzeitig die Stigmen und Diskriminierung reduziert.",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "de"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "Teil",
+    "title": "Wer beteiligt sich?",
+    "paragraph": "Die Schüler werden vom 8. und 9. Jahrestag der Grundschule II und der 1., 2. und 3. Jahre der High School nach den Kriterien des Projekts zusammen mit mindestens einem Lehrer jeder der teilnehmenden Schulen ausgewählt. Stipendieninhaber werden an folgenden Aktivitäten und Zielen beteiligt sein:",
+    "iconCards": [
+      {
+        "title": "Beim Programmieren lernen"
+      },
+      {
+        "title": "Entwicklung von Bildungsspielen auf der Scratch -Plattform"
+      },
+      {
+        "title": "Teilnahme an einem Science Club"
+      },
+      {
+        "title": "Präsenz in wissenschaftlichen Verbreitungsereignissen"
+      },
+      {
+        "title": "Teilnahme an Vorträgen und Seminaren"
+      },
+      {
+        "title": "Vorbereitung von Zwischen- und Abschlussberichten"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "Kontakt",
+    "title": "Kontaktieren Sie uns",
+    "paragraph": "Um uns zu kontaktieren, senden Sie eine Nachricht an unsere E-Mail-GirlStempetropolis@gmail.com. Wir antworten so schnell wie möglich!"
+  },
+  "Outros": {
+    "ondinhas": "Welle"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "Kebolehcapaian",
+    "switchWithIcon": {
+      "light": "Tukar ke Tema Jelas",
+      "dark": "Tema gelap"
+    },
+    "ativarVLibras": "Dayakan Vlibras",
+    "trocarIdioma": "Perubahan",
+    "desenvolvida": {
+      "ferramenta": "Alat",
+      "desenvolvida": "dibangunkan oleh"
+    },
+    "logo": "Logo Biomob",
+    "barraLateral": "Tukar kakitangan bar sisi laman web ini",
+    "nossasSolucoes": "Penyelesaian kami",
+    "nossasSolucoesLabel": "Lihat penyelesaiannya",
+    "acessibilidadeArq": "Kebolehcapaian Senibina",
+    "acessibilidadeArqLabel": "Pergi ke skrin kebolehaksesan seni bina",
+    "acessibilidadeDig": "Kebolehcapaian digital",
+    "acessibilidadeDigLabel": "Pergi ke skrin kebolehaksesan digital",
+    "noticias": "Berita",
+    "noticiasLabel": "Pergi ke skrin berita",
+    "institudo": "Institusi",
+    "institudoLabel": "Pergi ke skrin Institut",
+    "empregabilidade": "Kebolehpasaran",
+    "empregabilidadeLabel": "Pergi ke skrin kebolehpasaran",
+    "papoDiverso": "Berbual berbeza",
+    "papoDiversoLabel": "Pergi ke laman web sembang yang pelbagai"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "Penerangan audio",
+        "ariaLabel": "Aktifkan penerangan audio"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "Pequisis bahasa anda ...",
+    "language": "Portugis (BR)",
+    "Portuguese": "Portugis (BR)",
+    "ChineseTraditional": "Cina (tradisional)",
+    "ChineseSimplified": "Cina (dipermudahkan)",
+    "English": "Bahasa Inggeris",
+    "French": "Perancis",
+    "German": "Jerman",
+    "Italian": "Bahasa Itali",
+    "Bengali": "Bengali",
+    "Hindi": "Hindi",
+    "Russian": "Rusia",
+    "Japanese": "Jepun",
+    "Korean": "Korea",
+    "Vietnamese": "Vietnam",
+    "Telugu": "Telugu",
+    "Cantonese": "Kantonis",
+    "Marathi": "Marathi",
+    "Tamil": "Tamil",
+    "Turkish": "Turki",
+    "Urdu": "urdu",
+    "Gujarati": "Gujarati",
+    "Polish": "Menggilap",
+    "Ukrainian": "Ukraine",
+    "Malay": "Migo",
+    "Kannada": "Meriam",
+    "Oriya": "Oriya",
+    "Punjabi": "Punjabi",
+    "Romanian": "Romania",
+    "Azerbaijani": "Sebagai Azerbaija",
+    "Farsi": "Hilang",
+    "Burmese": "Burma",
+    "Thai": "Thai",
+    "Dutch": "Belanda",
+    "Yoruba": "Yoruba",
+    "Sindhi": "Sindhi"
+  },
+  "MainBanner": {
+    "topTitle": "Membentuk saintis masa depan",
+    "title": "Gadis batang",
+    "paragraph": "Impak gadis yang, masih di sekolah, menghadapi cabaran untuk penglibatan mereka dalam sains",
+    "buttonText": "Hubungi"
+  },
+  "OQueEBanner": {
+    "topTitle": "Apa itu?",
+    "title": "Projek Hub Petrópolis Tec Girls Stem",
+    "paragraph": "Projek yang bertujuan untuk mengurangkan ketidaksamaan jantina dan mengembangkan penyertaan wanita dalam sains, teknologi, kejuruteraan dan matematik (STEM). Inisiatif ini memberi tumpuan kepada literasi teknologi dan promosi kemasukan wanita di bandar Petrópolis, di Rio de Janeiro."
+  },
+  "ObjetivoBanner": {
+    "title": "Objektif Projek",
+    "paragraph": "Projek ini bertujuan untuk menggalakkan literasi teknologi antara pelajar dan pendidik, mempromosikan budaya inklusif dalam sains yang tepat.",
+    "altImage": "Gadis batang"
+  },
+  "ComoBanner": "Projek ini menggunakan platform awal untuk mengajar pengaturcaraan dengan cara yang suka bermain dan interdisipliner, menggabungkan perdebatan mengenai jantina, hak asasi manusia dan ketidaksamaan.",
+  "MetodologiaBanner": {
+    "title": "Motodologia",
+    "paragraph": "Projek ini bertujuan untuk menggalakkan literasi teknologi antara pelajar dan pendidik, mempromosikan budaya inklusif dalam sains yang tepat.",
+    "altImage": "Gadis batang"
+  },
+  "IconWithTextBanner": {
+    "title": "Siapa yang berkembang?",
+    "topTitle": "Pekerja kami",
+    "paragraph": "Projek ini dijalankan oleh rangkaian institusi penyelidikan, sains dan pendidikan, bersama dengan organisasi sosial dan perniagaan. Mengambil bahagian dalam inisiatif ini:",
+    "iconCards": [
+      {
+        "title": "Lncc",
+        "description": "Makmal Pengkomputeran Saintifik Kebangsaan adalah institusi penyelidikan dan penyelidikan teknologi Brazil, yang mengkhususkan diri dalam pengkomputeran saintifik, yang dikaitkan dengan Kementerian Sains, Teknologi dan Inovasi."
+      },
+      {
+        "title": "Serratec",
+        "description": "Serratec adalah taman teknologi bukan keuntungan di pedalaman Rio de Janeiro, bertindak sebagai induktor perniagaan IT dan meliputi bandar -bandar Petrópolis, Teresópolis, Nova Friburgo dan Areal."
+      },
+      {
+        "title": "Faeterj petropolis",
+        "description": "Faeterj Petrópolis adalah institusi pengajian tinggi awam yang dikaitkan dengan Faetec, yang menawarkan kursus teknikal dan lebih tinggi di pelbagai bidang."
+      },
+      {
+        "title": "Cefet/rj uned petrópolis",
+        "description": "CEFET/RJ Petrópolis adalah institusi pengajian tinggi awam yang pertama di bandar, menawarkan kursus -kursus di wajah -face -face modality dan kepunyaan sistem CEFET/RJ."
+      },
+      {
+        "title": "Uff",
+        "description": "Universiti Persekutuan Fluminense (UFF) adalah institusi pengajian tinggi awam rujukan kebangsaan, yang berdiri di pelbagai bidang pengetahuan."
+      },
+      {
+        "title": "UFBA",
+        "description": "Universiti Persekutuan Bahia (UFBA) adalah institusi pendidikan tinggi awam yang berpusat di Salvador, yang dikaitkan dengan Kementerian Pendidikan, dengan autonomi pentadbiran dan undang -undang."
+      },
+      {
+        "title": "Biomob",
+        "description": "Biomob mengkhususkan diri dalam penyelesaian aksesibiliti dan projek sosial, yang memberi tumpuan kepada mempromosikan masyarakat yang lebih inklusif dan egalitarian."
+      },
+      {
+        "title": "Quipotec",
+        "description": "Quipo Tech membangunkan projek penyelidikan, pembangunan dan inovasi untuk syarikat dan institusi kerajaan, yang bertujuan untuk inovasi dan kemajuan teknologi."
+      },
+      {
+        "title": "TJ-RJ",
+        "description": "Mahkamah Keadilan Rio de Janeiro (TJ-RJ) bertanggungjawab untuk pentadbiran keadilan di negeri ini, dengan bidang kuasa ke atas seluruh wilayah fluminense."
+      },
+      {
+        "title": "Dewan Bandaraya Petrópolis",
+        "description": "Dewan Bandaraya Petrópolis menguruskan bandar bersejarah yang terletak di rantau pergunungan Rio de Janeiro, melaksanakan dasar dan perkhidmatan awam untuk penduduk."
+      },
+      {
+        "title": "Seeduc-RJ",
+        "description": "Seeduc-RJ bertanggungjawab untuk menguruskan dasar pendidikan negeri Rio de Janeiro, memastikan akses kepada pendidikan berkualiti di sekolah awam negeri."
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "Cari",
+    "title": "Apa yang diharapkan dari projek itu?",
+    "paragraph": "Projek ini bertujuan untuk mengukuhkan imaginasi gadis dan diri sendiri, kejatuhan pertempuran dan menyumbang kepada pembinaan masyarakat yang lebih adil. Ia dijangka merangsang dan mengembangkan penyertaan wanita di STEM, sambil mengurangkan stigma dan diskriminasi.",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "ms"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "Bahagian",
+    "title": "Siapa yang mengambil bahagian?",
+    "paragraph": "Pelajar akan dipilih dari ulang tahun ke -8 dan ke -9 Sekolah Rendah II dan tahun ke -1, ke -2 dan ke -3 sekolah menengah, berikutan kriteria projek, bersama -sama dengan sekurang -kurangnya seorang guru dari setiap sekolah yang mengambil bahagian. Pemegang biasiswa akan terlibat dalam aktiviti dan objektif berikut:",
+    "iconCards": [
+      {
+        "title": "Belajar pada pengaturcaraan"
+      },
+      {
+        "title": "Pembangunan permainan pendidikan di platform awal"
+      },
+      {
+        "title": "Penyertaan dalam Kelab Sains"
+      },
+      {
+        "title": "Kehadiran dalam peristiwa penyebaran saintifik"
+      },
+      {
+        "title": "Penyertaan dalam kuliah dan seminar"
+      },
+      {
+        "title": "Penyediaan laporan pertengahan dan akhir"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "hubungi",
+    "title": "Hubungi kami",
+    "paragraph": "Untuk menghubungi kami, hantar mesej ke girlstempetropolis@gmail.com e-mel kami. Kami bertindak balas secepat mungkin!"
+  },
+  "Outros": {
+    "ondinhas": "Gelombang"
+  }
+}

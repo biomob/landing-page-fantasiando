@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "Toegankelijkheid",
+    "switchWithIcon": {
+      "light": "Wijzig naar het duidelijke thema",
+      "dark": "Donker thema"
+    },
+    "ativarVLibras": "Schakel Vlibras in",
+    "trocarIdioma": "Wijziging",
+    "desenvolvida": {
+      "ferramenta": "Hulpmiddel",
+      "desenvolvida": "ontwikkeld door"
+    },
+    "logo": "Biomob -logo",
+    "barraLateral": "Verander de zijbalkpersoneel van de site",
+    "nossasSolucoes": "Onze oplossingen",
+    "nossasSolucoesLabel": "Zie de oplossingen",
+    "acessibilidadeArq": "Architecturale toegankelijkheid",
+    "acessibilidadeArqLabel": "Ga naar het architecturale toegankelijkheidsscherm",
+    "acessibilidadeDig": "Digitale toegankelijkheid",
+    "acessibilidadeDigLabel": "Ga naar het scherm Digitale toegankelijkheid",
+    "noticias": "Nieuws",
+    "noticiasLabel": "Ga naar het nieuwscherm",
+    "institudo": "Instelling",
+    "institudoLabel": "Ga naar het scherm van het instituut",
+    "empregabilidade": "Inzetbaarheid",
+    "empregabilidadeLabel": "Ga naar het inzetbaarheidsscherm",
+    "papoDiverso": "Andere chat",
+    "papoDiversoLabel": "Ga naar de diverse chatwebsite"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "Audiobeschrijving",
+        "ariaLabel": "Activeer de audiobeschrijving"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "Pequisis uw taal ...",
+    "language": "Portugees (Br)",
+    "Portuguese": "Portugees (Br)",
+    "ChineseTraditional": "Chinees (traditioneel)",
+    "ChineseSimplified": "Chinees (vereenvoudigd)",
+    "English": "Engels",
+    "French": "Frans",
+    "German": "Duits",
+    "Italian": "Italiaans",
+    "Bengali": "Bengaals",
+    "Hindi": "Hindi",
+    "Russian": "Russisch",
+    "Japanese": "Japanse",
+    "Korean": "Koreaans",
+    "Vietnamese": "Vietnamees",
+    "Telugu": "Telugu",
+    "Cantonese": "Kantonees",
+    "Marathi": "Marathi",
+    "Tamil": "Tamil",
+    "Turkish": "Turks",
+    "Urdu": "Urdu",
+    "Gujarati": "Gujarati",
+    "Polish": "Pools",
+    "Ukrainian": "Oekraïens",
+    "Malay": "Migo",
+    "Kannada": "Overdaad",
+    "Oriya": "Oriya",
+    "Punjabi": "Punjabi",
+    "Romanian": "Roemeense",
+    "Azerbaijani": "Als Azerbeidzja",
+    "Farsi": "Kwijt",
+    "Burmese": "Birmaans",
+    "Thai": "Thais",
+    "Dutch": "Nederlands",
+    "Yoruba": "Yoruba",
+    "Sindhi": "Sindhi"
+  },
+  "MainBanner": {
+    "topTitle": "Toekomstige wetenschappers vormen",
+    "title": "Meisjes stelen",
+    "paragraph": "Impact meisjes die, nog op school, worden geconfronteerd met de uitdagingen voor hun betrokkenheid in de wetenschapsgebieden",
+    "buttonText": "Contact"
+  },
+  "OQueEBanner": {
+    "topTitle": "Wat is het?",
+    "title": "Meisjes stam Petrópolis TEC Hub Project",
+    "paragraph": "Het project dat ernaar streeft om genderongelijkheid te verminderen en vrouwelijke participatie in wetenschap, technologie, engineering en wiskunde (STEM) uit te breiden. Dit initiatief richt zich op technologische geletterdheid en de promotie van vrouwelijke inclusie in de stad Petrópolis, in Rio de Janeiro."
+  },
+  "ObjetivoBanner": {
+    "title": "Projectdoelstelling",
+    "paragraph": "Het project is bedoeld om technologische geletterdheid tussen studenten en opvoeders aan te moedigen, een inclusieve cultuur te promoten in de exacte wetenschappen.",
+    "altImage": "Meisjes stelen"
+  },
+  "ComoBanner": "Het project gebruikt het krasplatform om programmeren op een speelse en interdisciplinaire manier te onderwijzen, met debatten over geslacht, mensenrechten en ongelijkheden.",
+  "MetodologiaBanner": {
+    "title": "Motodologia",
+    "paragraph": "Het project is bedoeld om technologische geletterdheid tussen studenten en opvoeders aan te moedigen, een inclusieve cultuur te promoten in de exacte wetenschappen.",
+    "altImage": "Meisjes stelen"
+  },
+  "IconWithTextBanner": {
+    "title": "Wie ontwikkelt zich?",
+    "topTitle": "Onze werknemers",
+    "paragraph": "Het project wordt uitgevoerd door een netwerk van onderzoek, wetenschap en onderwijsinstellingen, samen met sociale en zakelijke organisaties. Deelnemen aan dit initiatief:",
+    "iconCards": [
+      {
+        "title": "Lncc",
+        "description": "Het National Laboratory of Scientific Computing is een Braziliaans onderzoeks- en technologisch onderzoeksinstelling, gespecialiseerd in wetenschappelijk computergebruik, gekoppeld aan het ministerie van Wetenschap, Technologie en Innovatie."
+      },
+      {
+        "title": "Serratec",
+        "description": "Serratec is een niet -profit technologiepark in het interieur van Rio de Janeiro, die fungeert als een IT -zakelijke inductor en de steden Petrópolis, Teresópolis, Nova Friburgo en Areal."
+      },
+      {
+        "title": "Faeterj petropolis",
+        "description": "Faeterj Petrópolis is een openbare instelling voor hoger onderwijs gekoppeld aan FAetec en biedt technische en hogere cursussen op verschillende gebieden."
+      },
+      {
+        "title": "Cefet/RJ Uned Petrópolis",
+        "description": "Cefet/RJ Petrópolis is de eerste openbare instelling in het hoger onderwijs in de stad en biedt cursussen in het gezicht -op -face -modaliteit en behorend tot het Cefet/RJ -systeem."
+      },
+      {
+        "title": "Uff",
+        "description": "De Fluminense Federal University (UFF) is een openbare instelling voor hoger onderwijs voor nationale referentie, die opvalt op verschillende kennisgebieden."
+      },
+      {
+        "title": "UFBA",
+        "description": "De Federal University of Bahia (UFBA) is een openbare instelling in het hoger onderwijs gevestigd in Salvador, gekoppeld aan het ministerie van Onderwijs, met administratieve en juridische autonomie."
+      },
+      {
+        "title": "Biomob",
+        "description": "Biomob is gespecialiseerd in toegankelijkheidsoplossingen en sociale projecten, gericht op het promoten van een meer inclusieve en egalitaire samenleving."
+      },
+      {
+        "title": "Quipotec",
+        "description": "Quipo Tech ontwikkelt onderzoeks-, ontwikkelings- en innovatieprojecten voor bedrijven en overheidsinstellingen, gericht op innovatie en technologische vooruitgang."
+      },
+      {
+        "title": "Tj-rj",
+        "description": "Het Rio de Janeiro Court of Justice (TJ-RJ) is verantwoordelijk voor de rechtspersoon in de staat, met jurisdictie over het hele fluminense-gebied."
+      },
+      {
+        "title": "Petrópolis City Hall",
+        "description": "Het stadhuis van Petrópolis beheert de historische stad in de bergachtige regio van Rio de Janeiro en implementeert openbaar beleid en diensten voor de bevolking."
+      },
+      {
+        "title": "Zaad-rj",
+        "description": "Seeduc-RJ is verantwoordelijk voor het beheren van het onderwijsbeleid van de staat Rio de Janeiro, waardoor de toegang tot kwaliteitsonderwijs op openbare scholen voor staatsonderwijs wordt gewaarborgd."
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "ZOEKOPDRACHT",
+    "title": "Wat wordt van het project verwacht?",
+    "paragraph": "Het project beoogt de verbeelding van meisjes en zelfvertrouwen te versterken, drop -out te bestrijden en bij te dragen aan de constructie van een eerlijkere samenleving. Verwacht wordt dat het de vrouwelijke deelname aan STEM stimuleert en uitbreidt, terwijl het stigma's en discriminatie vermindert.",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "nl"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "Deel",
+    "title": "Wie neemt er deel aan?",
+    "paragraph": "De 8e en 9e graden van de basisschool II en de 1e, 2e en 3e jaar van de middelbare school zullen worden geselecteerd, na de projectcriteria, samen met ten minste één leraar van elk van de deelnemende scholen. Scholarshiphouders zullen betrokken zijn bij de volgende activiteiten en doelstellingen:",
+    "iconCards": [
+      {
+        "title": "Leren over programmeren"
+      },
+      {
+        "title": "Ontwikkeling van educatieve spellen op het krasplatform"
+      },
+      {
+        "title": "Deelname aan een wetenschapsclub"
+      },
+      {
+        "title": "Aanwezigheid in wetenschappelijke verspreidingsgebeurtenissen"
+      },
+      {
+        "title": "Deelname aan lezingen en seminars"
+      },
+      {
+        "title": "Voorbereiding van tussenliggende en uiteindelijke rapporten"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "contact",
+    "title": "Neem contact met ons op",
+    "paragraph": "Stuur een bericht naar onze e-mail girlstempetropolis@gmail.com om contact met ons op te nemen. We reageren zo snel mogelijk!"
+  },
+  "Outros": {
+    "ondinhas": "Golf"
+  }
+}

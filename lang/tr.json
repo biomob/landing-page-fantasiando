@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "Erişilebilirlik",
+    "switchWithIcon": {
+      "light": "Net temaya geç",
+      "dark": "Karanlık tema"
+    },
+    "ativarVLibras": "Vlibras'ı etkinleştir",
+    "trocarIdioma": "Değiştirmek",
+    "desenvolvida": {
+      "ferramenta": "Alet",
+      "desenvolvida": "tarafından geliştirilen"
+    },
+    "logo": "Biyomob logosu",
+    "barraLateral": "Sitenin yan bar personelini değiştir",
+    "nossasSolucoes": "Çözümlerimiz",
+    "nossasSolucoesLabel": "Çözümlere bakın",
+    "acessibilidadeArq": "Mimari Erişilebilirlik",
+    "acessibilidadeArqLabel": "Mimari Erişilebilirlik Ekranına Git",
+    "acessibilidadeDig": "Dijital Erişilebilirlik",
+    "acessibilidadeDigLabel": "Dijital Erişilebilirlik Ekranına Git",
+    "noticias": "Haberler",
+    "noticiasLabel": "Haber ekranına git",
+    "institudo": "Kurum",
+    "institudoLabel": "Enstitünün ekranına git",
+    "empregabilidade": "İstihdam edilebilirlik",
+    "empregabilidadeLabel": "İstihdam edilebilirlik ekranına git",
+    "papoDiverso": "Farklı sohbet",
+    "papoDiversoLabel": "Çeşitli sohbet web sitesine git"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "Ses Açıklaması",
+        "ariaLabel": "Ses Açıklamasını Etkinleştir"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "Pequisis diliniz ...",
+    "language": "Portekizce (BR)",
+    "Portuguese": "Portekizce (BR)",
+    "ChineseTraditional": "Çince (geleneksel)",
+    "ChineseSimplified": "Çince (basitleştirilmiş)",
+    "English": "İngilizce",
+    "French": "Fransızca",
+    "German": "Almanca",
+    "Italian": "İtalyan",
+    "Bengali": "Bengal",
+    "Hindi": "Hintçe",
+    "Russian": "Rusça",
+    "Japanese": "Japonca",
+    "Korean": "Koreli",
+    "Vietnamese": "Vietnam",
+    "Telugu": "Telugu",
+    "Cantonese": "Kantonlu",
+    "Marathi": "Marathi",
+    "Tamil": "Tamil",
+    "Turkish": "Türkçe",
+    "Urdu": "urdu",
+    "Gujarati": "Gujarati",
+    "Polish": "Cila",
+    "Ukrainian": "Ukrayna",
+    "Malay": "Migo",
+    "Kannada": "Kanal",
+    "Oriya": "Oriya",
+    "Punjabi": "Punjabi",
+    "Romanian": "Romanya",
+    "Azerbaijani": "Azerbaija olarak",
+    "Farsi": "Kayıp",
+    "Burmese": "Birmanya",
+    "Thai": "Tayland",
+    "Dutch": "Flemenkçe",
+    "Yoruba": "Yoruba",
+    "Sindhi": "Sindhi"
+  },
+  "MainBanner": {
+    "topTitle": "Gelecek Bilim Adamları Oluşturma",
+    "title": "Kızlar sap",
+    "paragraph": "Halen okulda, bilimlere katılmalarının zorluklarıyla karşı karşıya olan etkiler",
+    "buttonText": "Temas etmek"
+  },
+  "OQueEBanner": {
+    "topTitle": "Nedir?",
+    "title": "Kızlar Petrópolis Tec Hub Projesi STEM",
+    "paragraph": "Cinsiyet eşitsizliğini azaltmayı ve kadınların bilim, teknoloji, mühendislik ve matematiğe (STEM) katılımını genişletmeyi amaçlayan proje. Bu girişim, teknolojik okuryazarlık ve Rio de Janeiro'daki Petrópolis şehrinde kadınların dahil edilmesinin tanıtımına odaklanmaktadır."
+  },
+  "ObjetivoBanner": {
+    "title": "Proje hedefi",
+    "paragraph": "Proje, öğrenciler ve eğitimciler arasında teknolojik okuryazarlığı teşvik etmeyi ve tam bilimlerde kapsayıcı bir kültürü teşvik etmeyi amaçlamaktadır.",
+    "altImage": "Kızlar sap"
+  },
+  "ComoBanner": "Proje, programlamayı, cinsiyet, insan hakları ve eşitsizlikler üzerine tartışmalar içeren eğlenceli ve disiplinlerarası bir şekilde öğretmek için Scratch platformunu kullanıyor.",
+  "MetodologiaBanner": {
+    "title": "Motodoloji",
+    "paragraph": "Proje, öğrenciler ve eğitimciler arasında teknolojik okuryazarlığı teşvik etmeyi ve tam bilimlerde kapsayıcı bir kültürü teşvik etmeyi amaçlamaktadır.",
+    "altImage": "Kızlar sap"
+  },
+  "IconWithTextBanner": {
+    "title": "Kim gelişir?",
+    "topTitle": "Çalışanlarımız",
+    "paragraph": "Proje, sosyal ve iş organizasyonlarıyla birlikte bir araştırma, bilim ve eğitim kurumları ağı tarafından gerçekleştirilmektedir. Bu girişime katılın:",
+    "iconCards": [
+      {
+        "title": "LNCC",
+        "description": "Ulusal Bilimsel Hesap Laboratuvarı, Bilim, Teknoloji ve Yenilik Bakanlığı ile bağlantılı bilimsel bilgi işlem konusunda uzmanlaşmış Brezilya araştırma ve teknolojik araştırma kurumudur."
+      },
+      {
+        "title": "Serratek",
+        "description": "Serratec, Rio de Janeiro'nun iç kısmında, BT iş indüktörü olarak görev yapan ve Petrópolis, Teresópolis, Nova Friburgo ve Areal şehirlerini kapsayan kar amacı gütmeyen bir teknoloji parkıdır."
+      },
+      {
+        "title": "Faeterj Petropolis",
+        "description": "Faeterj Petrópolis, FAETEC ile bağlantılı bir kamu yükseköğretim kurumudur ve çeşitli alanlarda teknik ve yüksek dersler sunmaktadır."
+      },
+      {
+        "title": "Cefet/rj uned petrópolis",
+        "description": "CEFET/RJ Petrópolis, şehirdeki ilk kamu yüksek öğrenim kurumudur ve yüz yüze modalitede ve CEFET/RJ sistemine ait kurslar sunmaktadır."
+      },
+      {
+        "title": "UFF",
+        "description": "Fluminense Federal Üniversitesi (UFF), çeşitli bilgi alanlarında öne çıkan ulusal referansların kamusal yüksek öğrenim kurumudur."
+      },
+      {
+        "title": "UFBA",
+        "description": "Bahia Federal Üniversitesi (UFBA), Salvador merkezli, Eğitim Bakanlığı ile bağlantılı, idari ve yasal özerklik ile bir kamu yükseköğretim kurumudur."
+      },
+      {
+        "title": "Biyomob",
+        "description": "Biomob, daha kapsayıcı ve eşitlikçi bir toplumu teşvik etmeye odaklanan erişilebilirlik çözümleri ve sosyal projeler konusunda uzmanlaşmıştır."
+      },
+      {
+        "title": "Quipotec",
+        "description": "Quipo Tech, inovasyon ve teknolojik ilerlemeyi hedefleyen şirketler ve devlet kurumları için araştırma, geliştirme ve inovasyon projeleri geliştirmektedir."
+      },
+      {
+        "title": "TJ-RJ",
+        "description": "Rio de Janeiro Adalet Mahkemesi (TJ-RJ), tüm Fluminense bölgesi üzerinde yargı yetkisi ile eyaletteki adaletin yönetiminden sorumludur."
+      },
+      {
+        "title": "Petrópolis Belediye Binası",
+        "description": "Petrópolis Belediye Binası, Rio de Janeiro'nun dağlık bölgesinde bulunan tarihi şehri yöneterek nüfus için kamu politikaları ve hizmetleri uyguluyor."
+      },
+      {
+        "title": "Seduc-rj",
+        "description": "Seenduc-RJ, Rio de Janeiro eyaletinin eğitim politikalarını yönetmekten sorumludur ve devlet devlet okullarında kaliteli eğitime erişim sağlamaktan sorumludur."
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "ARAMAK",
+    "title": "Projeden ne bekleniyor?",
+    "paragraph": "Proje, kızların hayal gücünü ve benlik sayısını güçlendirmeyi, terk edilmeyi ve daha adil bir toplumun inşasına katkıda bulunmayı amaçlıyor. Stigmaları ve ayrımcılığı azaltırken, kadınların STEM'e katılımını teşvik etmesi ve genişletmesi beklenmektedir.",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "tr"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "Parça",
+    "title": "Kim Katılır?",
+    "paragraph": "Öğrenciler, ilkokul II'nin 8. ve 9. yıldönümlerinden ve projenin kriterlerini takip ederek, katılımcı okulların her birinin en az bir öğretmeni ile birlikte lisenin 1., 2. ve 3. yılından seçilecektir. Burs sahipleri aşağıdaki faaliyetlere ve hedeflere katılacaktır:",
+    "iconCards": [
+      {
+        "title": "Programlama konusunda öğrenme"
+      },
+      {
+        "title": "Scratch platformunda eğitim oyunlarının geliştirilmesi"
+      },
+      {
+        "title": "Bir Bilim Kulübüne Katılım"
+      },
+      {
+        "title": "Bilimsel yayılma olaylarında varlık"
+      },
+      {
+        "title": "Derslere ve seminerlere katılım"
+      },
+      {
+        "title": "Ara ve nihai raporların hazırlanması"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "temas etmek",
+    "title": "Bize Ulaşın",
+    "paragraph": "Bizimle iletişime geçmek için e-posta Girlstempetropolis@gmail.com'a bir mesaj gönderin. Mümkün olan en kısa sürede cevap veriyoruz!"
+  },
+  "Outros": {
+    "ondinhas": "Dalga"
+  }
+}

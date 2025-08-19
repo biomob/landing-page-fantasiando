@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "접근성",
+    "switchWithIcon": {
+      "light": "명확한 테마로 변경하십시오",
+      "dark": "어두운 테마"
+    },
+    "ativarVLibras": "Vlibras를 활성화합니다",
+    "trocarIdioma": "변화",
+    "desenvolvida": {
+      "ferramenta": "도구",
+      "desenvolvida": "개발"
+    },
+    "logo": "바이오 브로고",
+    "barraLateral": "사이트의 사이드 바 직원을 변경하십시오",
+    "nossasSolucoes": "우리의 솔루션",
+    "nossasSolucoesLabel": "솔루션을 참조하십시오",
+    "acessibilidadeArq": "건축 적 접근성",
+    "acessibilidadeArqLabel": "건축 접근성 화면으로 이동하십시오",
+    "acessibilidadeDig": "디지털 접근성",
+    "acessibilidadeDigLabel": "디지털 접근성 화면으로 이동하십시오",
+    "noticias": "소식",
+    "noticiasLabel": "뉴스 화면으로 이동하십시오",
+    "institudo": "기관",
+    "institudoLabel": "연구소의 화면으로 이동하십시오",
+    "empregabilidade": "고용 가능성",
+    "empregabilidadeLabel": "고용 가능성 화면으로 이동하십시오",
+    "papoDiverso": "다른 채팅",
+    "papoDiversoLabel": "다양한 채팅 웹 사이트로 이동하십시오"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "오디오 설명",
+        "ariaLabel": "오디오 설명을 활성화하십시오"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "Pequisis 당신의 언어 ...",
+    "language": "포르투갈어 (BR)",
+    "Portuguese": "포르투갈어 (BR)",
+    "ChineseTraditional": "중국어 (전통)",
+    "ChineseSimplified": "중국어 (단순화)",
+    "English": "영어",
+    "French": "프랑스 국민",
+    "German": "독일 사람",
+    "Italian": "이탈리아 사람",
+    "Bengali": "벵골 사람",
+    "Hindi": "힌디 어",
+    "Russian": "러시아인",
+    "Japanese": "일본어",
+    "Korean": "한국인",
+    "Vietnamese": "베트남 사람",
+    "Telugu": "텔루구 어",
+    "Cantonese": "광동어",
+    "Marathi": "마라 티",
+    "Tamil": "타밀 사람",
+    "Turkish": "터키",
+    "Urdu": "우르두어",
+    "Gujarati": "구자라트",
+    "Polish": "광택",
+    "Ukrainian": "우크라이나 말",
+    "Malay": "미구",
+    "Kannada": "대마초",
+    "Oriya": "오리 야",
+    "Punjabi": "펀 자브",
+    "Romanian": "루마니아 사람",
+    "Azerbaijani": "아제르바이자로",
+    "Farsi": "잃어버린",
+    "Burmese": "버마 사람",
+    "Thai": "태국",
+    "Dutch": "네덜란드 사람",
+    "Yoruba": "요 루바",
+    "Sindhi": "신디"
+  },
+  "MainBanner": {
+    "topTitle": "미래 과학자 형성",
+    "title": "여자 줄기",
+    "paragraph": "여전히 학교에서 과학에 참여하는 데 어려움을 겪는 소녀들에게 영향을 미칩니다.",
+    "buttonText": "연락하다"
+  },
+  "OQueEBanner": {
+    "topTitle": "무엇입니까?",
+    "title": "여자 줄기 petrópolis tec 허브 프로젝트",
+    "paragraph": "성 불평등을 줄이고 과학, 기술, 공학 및 수학 (STEM)에 대한 여성 참여를 확대하려는 프로젝트. 이 이니셔티브는 리우데 자네이루에있는 Petrópolis시의 기술 문해력과 여성 포용 홍보에 중점을 둡니다."
+  },
+  "ObjetivoBanner": {
+    "title": "프로젝트 목표",
+    "paragraph": "이 프로젝트는 학생과 교육자 사이의 기술 문해력을 장려하여 정확한 과학의 포괄적 인 문화를 장려하는 것을 목표로합니다.",
+    "altImage": "여자 줄기"
+  },
+  "ComoBanner": "이 프로젝트는 스크래치 플랫폼을 사용하여 성별, 인권 및 불평등에 대한 토론을 통합하여 장난스럽고 학제 간 방식으로 프로그래밍을 가르칩니다.",
+  "MetodologiaBanner": {
+    "title": "Motodologia",
+    "paragraph": "이 프로젝트는 학생과 교육자 사이의 기술 문해력을 장려하여 정확한 과학의 포괄적 인 문화를 장려하는 것을 목표로합니다.",
+    "altImage": "여자 줄기"
+  },
+  "IconWithTextBanner": {
+    "title": "누가 발전합니까?",
+    "topTitle": "우리 직원",
+    "paragraph": "이 프로젝트는 사회 및 비즈니스 조직과 함께 연구, 과학 및 교육 기관의 네트워크에 의해 수행됩니다. 이 이니셔티브에 참여하십시오.",
+    "iconCards": [
+      {
+        "title": "LNCC",
+        "description": "국립 과학 컴퓨팅 실험실은 브라질 연구 및 기술 연구 기관으로 과학 기술 및 혁신부와 관련된 과학 컴퓨팅을 전문으로합니다."
+      },
+      {
+        "title": "Serratec",
+        "description": "Serratec은 Rio de Janeiro 내부의 비영리 기술 공원으로 IT 비즈니스 인덕터 역할을하며 Petrópolis, Teresópolis, Nova Friburgo 및 Areal의 도시를 덮고 있습니다."
+      },
+      {
+        "title": "Faeterj Petropolis",
+        "description": "Faeterj Petrópolis는 FAETEC와 관련된 공공 고등 교육 기관으로 다양한 분야에서 기술 및 고등 과정을 제공합니다."
+      },
+      {
+        "title": "Cefet/RJ Uned Petrópolis",
+        "description": "CEFET/RJ PETRópolis는 도시에서 최초의 공립 고등 교육 기관으로, 얼굴에 과정을 제공하고 CEFET/RJ 시스템에 속하는 과정을 제공합니다."
+      },
+      {
+        "title": "UFF",
+        "description": "Fluminense Federal University (UFF)는 다양한 지식 영역에서 눈에 띄는 공공 고등 교육 기관입니다."
+      },
+      {
+        "title": "UFBA",
+        "description": "BAHIA 연방 대학교 (UFBA)는 규칙 및 법적 자율성과 함께 교육부와 관련된 살바도르에 본사를 둔 공공 고등 교육 기관입니다."
+      },
+      {
+        "title": "바이오 브",
+        "description": "BiOMOB는 접근성 솔루션 및 사회 프로젝트를 전문으로하며보다 포괄적이고 평등 한 사회를 홍보하는 데 중점을 둡니다."
+      },
+      {
+        "title": "Quipotec",
+        "description": "Quipo Tech는 혁신 및 기술 발전을 목표로 회사 및 정부 기관을위한 연구, 개발 및 혁신 프로젝트를 개발합니다."
+      },
+      {
+        "title": "TJ-RJ",
+        "description": "리우데 자네이로 법원 (TJ-RJ)은 전체 Fluminense 영토에 대한 관할권을 가진 국가의 정의 행정을 담당합니다."
+      },
+      {
+        "title": "Petrópolis 시청",
+        "description": "Petrópolis 시청은 리우데 자네이루의 산악 지역에 위치한 역사적인 도시를 관리하여 인구를위한 공공 정책과 서비스를 구현합니다."
+      },
+      {
+        "title": "Seeduc-rj",
+        "description": "SEEDUC-RJ는 리우데 자네이루 (Rio de Janeiro) 주의 교육 정책을 관리하여 주립 공립학교의 양질의 교육에 접근 할 책임이 있습니다."
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "찾다",
+    "title": "프로젝트의 예상 사항은 무엇입니까?",
+    "paragraph": "이 프로젝트는 소녀들의 상상력과 자기 평가를 강화하고, 탈락을 해결하고, 공정한 사회의 건설에 기여하고자합니다. STEM에 대한 여성 참여를 자극하고 확대하는 동시에 낙인과 차별을 줄일 것으로 예상됩니다.",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "ko"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "부분",
+    "title": "누가 참여합니까?",
+    "paragraph": "초등학교 II의 8 학년과 9 학년과 9 학년과 고등학교의 1, 2, 3 년은 프로젝트 기준에 따라 각 참여 학교의 최소 한 명의 교사와 함께 선정됩니다. 장학금 소지자는 다음 활동과 목표에 참여합니다.",
+    "iconCards": [
+      {
+        "title": "프로그래밍에 대한 학습"
+      },
+      {
+        "title": "스크래치 플랫폼에서 교육 게임 개발"
+      },
+      {
+        "title": "과학 클럽 참여"
+      },
+      {
+        "title": "과학적 보급 사건의 존재"
+      },
+      {
+        "title": "강의 및 세미나 참여"
+      },
+      {
+        "title": "중간 및 최종 보고서 준비"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "연락하다",
+    "title": "저희에게 연락하십시오",
+    "paragraph": "저희에게 연락하려면 이메일 Girlstempetropolis@gmail.com으로 메시지를 보내십시오. 우리는 가능한 빨리 응답합니다!"
+  },
+  "Outros": {
+    "ondinhas": "파도"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "Header": {
+    "acessibilidade": "可访问性",
+    "switchWithIcon": {
+      "light": "更改为清晰的主题",
+      "dark": "黑暗主题"
+    },
+    "ativarVLibras": "启用vlibras",
+    "trocarIdioma": "改变",
+    "desenvolvida": {
+      "ferramenta": "工具",
+      "desenvolvida": "开发"
+    },
+    "logo": "BioMob徽标",
+    "barraLateral": "更改网站的侧栏工作人员",
+    "nossasSolucoes": "我们的解决方案",
+    "nossasSolucoesLabel": "请参阅解决方案",
+    "acessibilidadeArq": "建筑可访问性",
+    "acessibilidadeArqLabel": "转到“建筑可访问性”屏幕",
+    "acessibilidadeDig": "数字可访问性",
+    "acessibilidadeDigLabel": "进入数字可访问性屏幕",
+    "noticias": "消息",
+    "noticiasLabel": "进入新闻屏幕",
+    "institudo": "机构",
+    "institudoLabel": "去研究所的屏幕",
+    "empregabilidade": "就业能力",
+    "empregabilidadeLabel": "进入就业屏幕",
+    "papoDiverso": "不同的聊天",
+    "papoDiversoLabel": "访问多元化的聊天网站"
+  },
+  "ObraPage": {
+    "buttons": {
+      "audiodescricao": {
+        "text": "音频描述",
+        "ariaLabel": "激活音频描述"
+      }
+    }
+  },
+  "Language": {
+    "pesquise": "你的语言...",
+    "language": "葡萄牙（BR）",
+    "Portuguese": "葡萄牙（BR）",
+    "ChineseTraditional": "中国（传统）",
+    "ChineseSimplified": "中文（简化）",
+    "English": "英语",
+    "French": "法语",
+    "German": "德语",
+    "Italian": "意大利人",
+    "Bengali": "孟加拉",
+    "Hindi": "印地语",
+    "Russian": "俄语",
+    "Japanese": "日本人",
+    "Korean": "韩国人",
+    "Vietnamese": "越南人",
+    "Telugu": "泰卢固语",
+    "Cantonese": "广东话",
+    "Marathi": "马拉地语",
+    "Tamil": "泰米尔人",
+    "Turkish": "土耳其",
+    "Urdu": "乌尔都语",
+    "Gujarati": "古吉拉特语",
+    "Polish": "抛光",
+    "Ukrainian": "乌克兰",
+    "Malay": "Migo",
+    "Kannada": "大麻",
+    "Oriya": "奥里亚",
+    "Punjabi": "旁遮普",
+    "Romanian": "罗马尼亚人",
+    "Azerbaijani": "作为阿塞拜亚",
+    "Farsi": "丢失的",
+    "Burmese": "缅甸",
+    "Thai": "泰国",
+    "Dutch": "荷兰",
+    "Yoruba": "约鲁巴",
+    "Sindhi": "信德"
+  },
+  "MainBanner": {
+    "topTitle": "组成未来的科学家",
+    "title": "女孩茎",
+    "paragraph": "影响仍在学校的女孩面临着参与科学的挑战",
+    "buttonText": "接触"
+  },
+  "OQueEBanner": {
+    "topTitle": "这是什么？",
+    "title": "女子茎PetrópolisTec Hub项目",
+    "paragraph": "试图减少性别不平等并扩大女性参与科学，技术，工程和数学（STEM）的项目。 该计划的重点是技术素养和在里约热内卢市彼得罗波利斯市促进女性包容性。"
+  },
+  "ObjetivoBanner": {
+    "title": "项目目标",
+    "paragraph": "该项目旨在鼓励学生与教育者之间的技术素养，并在确切的科学中促进包容性文化。",
+    "altImage": "女孩茎"
+  },
+  "ComoBanner": "该项目使用刮擦平台以一种嬉戏而跨学科的方式教授编程，并结合了有关性别，人权和不平等的辩论。",
+  "MetodologiaBanner": {
+    "title": "Motodologia",
+    "paragraph": "该项目旨在鼓励学生与教育者之间的技术素养，并在确切的科学中促进包容性文化。",
+    "altImage": "女孩茎"
+  },
+  "IconWithTextBanner": {
+    "title": "谁发展？",
+    "topTitle": "我们的员工",
+    "paragraph": "该项目由研究，科学和教育机构网络以及社会和商业组织进行。 参加这项倡议：",
+    "iconCards": [
+      {
+        "title": "lncc",
+        "description": "国家科学计算实验室是一家巴西研究与技术研究机构，专门研究科学计算，与科学，技术和创新部有关。"
+      },
+      {
+        "title": "Serratec",
+        "description": "Serratec是在里约热内卢内部的非营利技术公园，充当IT商业电感器，涵盖了Petrópolis，Teresópolis，Nova Friburgo和Areal的城市。"
+      },
+      {
+        "title": "Faeterj Petropolis",
+        "description": "Faeterjpetrópolis是与Faetec相关的公共高等教育机构，在各个领域提供技术和更高的课程。"
+      },
+      {
+        "title": "Cefet/RJ UnedPetrópolis",
+        "description": "Cefet/RJPetrópolis是该市的第一家公共高等教育机构，提供面对面的课程 - 面向 - 面式的方式，属于CEFET/RJ系统。"
+      },
+      {
+        "title": "uff",
+        "description": "Fluminense联邦大学（UFF）是一家公共高等教育机构，在各个知识领域中脱颖而出。"
+      },
+      {
+        "title": "UFBA",
+        "description": "巴伊亚联邦大学（UFBA）是位于萨尔瓦多的公共高等教育机构，与教育部有关，具有行政和法律自治。"
+      },
+      {
+        "title": "生物莫布",
+        "description": "Biomob专门从事可访问性解决方案和社会项目，专注于促进一个更具包容性和平等的社会。"
+      },
+      {
+        "title": "Quipotec",
+        "description": "Quipo Tech为公司和政府机构开发了研究，开发和创新项目，旨在创新和技术进步。"
+      },
+      {
+        "title": "TJ-RJ",
+        "description": "里约热内卢法院（TJ-RJ）负责该州的司法管理，并在整个Fluminense领土上具有管辖权。"
+      },
+      {
+        "title": "Petrópolis市政厅",
+        "description": "Petrópolis市政厅管理着位于里约热内卢山区的历史城市，为人口实施公共政策和服务。"
+      },
+      {
+        "title": "SEEDUC-RJ",
+        "description": "SEEDUC-RJ负责管理里约热内卢州的教育政策，以确保在州立公立学校获得优质教育。"
+      }
+    ]
+  },
+  "OqueSeEsperaBanner": {
+    "topTitle": "搜索",
+    "title": "该项目的期望是什么？",
+    "paragraph": "该项目旨在加强女孩的想象力和自尊心，战斗辍学，并为建立更公平的社会做出贡献。 预计它将刺激和扩大女性参与STEM的参与，同时减少污名和歧视。",
+    "altImage": {
+      "text": "",
+      "from": "auto",
+      "raw": "",
+      "to": "zh-Hans"
+    }
+  },
+  "QuemParticipaBanner": {
+    "topTitle": "部分",
+    "title": "谁参加？",
+    "paragraph": "遵循该项目的标准，将从小学II八周年和9周年中选出学生，以及至少一名参与学校的教师。 奖学金持有人将参与以下活动和目标：",
+    "iconCards": [
+      {
+        "title": "学习编程"
+      },
+      {
+        "title": "在刮擦平台上开发教育游戏"
+      },
+      {
+        "title": "参加科学俱乐部"
+      },
+      {
+        "title": "科学传播事件中的存在"
+      },
+      {
+        "title": "参加讲座和研讨会"
+      },
+      {
+        "title": "准备中间报告和最终报告"
+      }
+    ]
+  },
+  "ContatoBanner": {
+    "topTitle": "接触",
+    "title": "联系我们",
+    "paragraph": "要与我们联系，请发送一条消息到我们的电子邮件girlstemporpolis@gmail.com。 我们尽快回复！"
+  },
+  "Outros": {
+    "ondinhas": "海浪"
+  }
+}
