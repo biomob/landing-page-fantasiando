@@ -1,8 +1,13 @@
 "use server";
-
-import { HomePage } from "@/components/pages/HomePage";
 import React from "react";
+import { MainBanner } from "./_components/MainBanner";
 
 export default async function Home() {
-  return <HomePage />;
+  await new Promise((resolve) => setTimeout(resolve, 500));
+
+  return (
+    <div className="w-full min-h-screen flex flex-col gap-12 h-full">
+      <MainBanner />
+    </div>
+  );
 }

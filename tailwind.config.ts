@@ -13,7 +13,9 @@ const config: Config = {
       transitionProperty: {
         width: "width",
       },
-      fontFamily: {},
+      fontFamily: {
+        GeistSans: ["var(--font-geist-sans)"],
+      },
       screens: {
         "2sm": "481px",
         "max-2sm": { raw: "(max-width: 480px)" },
@@ -31,27 +33,63 @@ const config: Config = {
         "max-2xl": { raw: "(max-width: 1536px)" },
       },
       colors: {
-        border: "hsl(var(--border))",
+        border: {
+          DEFAULT: "hsl(var(--border))",
+        },
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: {
           DEFAULT: "hsl(var(--background))",
           hover: "hsl(var(--background-hover))",
+          secondary: "hsl(var(--background-secondary))",
         },
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
           hover: "hsl(var(--primary-hover))",
-          teste: "hsl(var(--funcional-success-teste))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        tertiary: {
+          DEFAULT: "hsl(var(--tertiary))",
+          foreground: "hsl(var(--tertiary-foreground))",
+          hover: "hsl(var(--tertiary-hover))",
+        },
+        quaternary: {
+          DEFAULT: "hsl(var(--quaternary))",
+          foreground: "hsl(var(--quaternary-foreground))",
+          hover: "hsl(var(--quaternary-hover))",
+        },
+        quinary: {
+          DEFAULT: "hsl(var(--quinary))",
+          foreground: "hsl(var(--quinary-foreground))",
+          hover: "hsl(var(--quinary-hover))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
+          hover: "hsl(var(--destructive-hover))",
+        },
+
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+          hover: "hsl(var(--warning-hover))",
+        },
+
+        info: {
+          DEFAULT: "hsl(var(--info))",
+          foreground: "hsl(var(--info-foreground))",
+          hover: "hsl(var(--info-hover))",
+        },
+
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+          hover: "hsl(var(--success-hover))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -68,22 +106,29 @@ const config: Config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+          gradient: "hsl(var(--card-gradient))",
         },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        miniSectionBackgroundTexture: "url(/img/miniSectionBackgroundTexture.svg)",
       },
       animation: {
         scroll: "scroll 40s linear infinite",
+        scroll2: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        aurora: "aurora 60s linear infinite",
       },
       keyframes: {
         scroll: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(calc(-250px * 14))" },
+        },
+        scroll2: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
         },
         "accordion-down": {
           from: { height: "0" },
@@ -93,7 +138,12 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        aurora: {
+          "0%": { backgroundPosition: "50% 50%, 50% 50%" },
+          "100%": { backgroundPosition: "350% 50%, 350% 50%" },
+        },
       },
+      // Tipografia customizada como utilitários Tailwind
       fontSize: {
         "display-01": "4.5rem",
         "display-02": "4rem",
@@ -120,18 +170,19 @@ const config: Config = {
       const newUtilities = {
         ".scrollbar-thin": {
           scrollbarWidth: "thin",
-          scrollbarColor: "hsl(var(--rev-azul-principal))",
+          scrollbarColor: "rgb(var(--rev-azul-principal))",
         },
         ".scrollbar-webkit": {
           "&::-webkit-scrollbar": {
             width: "8px",
           },
           "&::-webkit-scrollbar-thumb": {
-            backgroundColor: "hsl(var(--rev-azul-principal))",
+            backgroundColor: "rgb(var(--rev-azul-principal))",
             borderRadius: "20px",
             border: "1px solid white",
           },
         },
+        // Utilitários de tipografia customizados
         ".display-01": { fontWeight: "700", fontSize: "4.5rem" },
         ".display-02": { fontWeight: "700", fontSize: "4rem" },
         ".heading-01": { fontWeight: "700", fontSize: "3.5rem" },
@@ -148,7 +199,7 @@ const config: Config = {
         ".heading-04-light": { fontWeight: "300", fontSize: "1.75rem" },
         ".heading-05-bold": { fontWeight: "700", fontSize: "1.5rem" },
         ".heading-05-medium": { fontWeight: "500", fontSize: "1.5rem" },
-        ".heading-05": { fontWeight: "500", fontSize: "1.5rem" },
+        ".heading-05": { fontSize: "1.5rem" },
         ".heading-05-light": { fontWeight: "300", fontSize: "1.5rem" },
         ".body-title-bold": { fontWeight: "700", fontSize: "1.25rem" },
         ".body-title-medium": { fontWeight: "500", fontSize: "1.25rem" },
@@ -170,6 +221,12 @@ const config: Config = {
       addUtilities(newUtilities, ["responsive", "hover"]);
     },
     require("tailwind-scrollbar-hide"),
+  ],
+  safelist: [
+    "*:data-[slot=card]:bg-red",
+    "*:data-[slot=card]:bg-gradient-to-t",
+    "*:data-[slot=card]:shadow-xs",
+    // adicione outras que quiser usar
   ],
 };
 

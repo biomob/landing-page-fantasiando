@@ -4,20 +4,20 @@
 
 @layer base {
   * {
-    --brand-primary-dark: 358, 83%, 33%;
-    --brand-primary-mid: 358, 77%, 49%;
-    --brand-primary-light: 357, 84%, 67%;
-    --brand-primary-lightest: 0, 100%, 92%;
+    --brand-primary-dark: 261, 100%, 65%;
+    --brand-primary-mid: 264, 100%, 75%;
+    --brand-primary-light: 264, 100%, 83%;
+    --brand-primary-lightest: 261, 100%, 93%;
 
-    --brand-secondary-dark: 274, 37%, 32%;
-    --brand-secondary-mid: 275, 37%, 50%;
-    --brand-secondary-light: 276, 45%, 77%;
-    --brand-secondary-lightest: 276, 59%, 90%;
+    --brand-secondary-dark: 174, 100%, 29%;
+    --brand-secondary-mid: 174, 72%, 56%;
+    --brand-secondary-light: 174, 78%, 72%;
+    --brand-secondary-lightest: 174, 80%, 90%;
 
-    --brand-terciary-dark: 274, 37%, 32%;
-    --brand-terciary-mid: 275, 37%, 50%;
-    --brand-terciary-light: 276, 45%, 77%;
-    --brand-terciary-lightest: 276, 59%, 90%;
+    --brand-terciary-dark: 21, 100%, 45%;
+    --brand-terciary-mid: 36, 100%, 59%;
+    --brand-terciary-light: 46, 100%, 63%;
+    --brand-terciary-lightest: 33, 100%, 90%;
 
     --brand-quaternary-dark: 274, 37%, 32%;
     --brand-quaternary-mid: 275, 37%, 50%;
