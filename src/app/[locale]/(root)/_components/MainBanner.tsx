@@ -25,9 +25,8 @@ export const MainBanner = () => {
         className={`flex flex-col gap-8 py-[6.375rem] px-12 rounded-ee-[9.25rem] col-span-3
             ${getBgClass()}`}
       >
-        <h1 className="heading-01 text-start">
-          Transformando lindos <span className="text-primary">SONHOS</span> em lindas
-          <span className="text-primary"> FANTASIAS</span>
+        <h1 className="heading-01 text-start mt-10">
+          Transformando <span className="text-primary">SONHOS</span> em<span className="text-primary"> FANTASIAS</span>
         </h1>
         <p className="heading-05 max-w-[32rem]">
           Somos de Petrópolis - RJ, mas enviamos com carinho para todo o Brasil.
@@ -61,7 +60,7 @@ export const MainBanner = () => {
         height={1280}
         quality={100}
         priority
-        className="aspect-square w-full h-auto col-span-2"
+        className="aspect-square w-full h-auto col-span-2 mt-2"
       />
     </section>
   );
