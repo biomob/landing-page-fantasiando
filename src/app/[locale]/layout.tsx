@@ -1,16 +1,16 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import CombinedHeader from "@/components/header/CombinedHeader";
+import { CombinedHeader } from "@/components/header/CombinedHeader";
 import Providers from "@/components/layout/providers";
 import { Footer } from "@/components/footer/footer";
 import { GeistSans } from "geist/font/sans";
 import { Toaster } from "sonner";
 import { getMessages } from "next-intl/server";
 
-const APP_NAME = "Biomob";
-const APP_DEFAULT_TITLE = "Biomob";
+const APP_NAME = "Fantasiando";
+const APP_DEFAULT_TITLE = "Fantasiando";
 const APP_TITLE_TEMPLATE = "%s";
-const APP_DESCRIPTION = "Biomob!";
+const APP_DESCRIPTION = "Fantasiando!";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_FRONTEND_URL || "http://localhost:3000"),
@@ -20,16 +20,6 @@ export const metadata: Metadata = {
     template: APP_TITLE_TEMPLATE,
   },
   description: APP_DESCRIPTION,
-  manifest: "/manifest.json",
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: "default",
-    title: APP_DEFAULT_TITLE,
-    // startUpImage: [],
-  },
-  formatDetection: {
-    telephone: false,
-  },
   openGraph: {
     type: "website",
     siteName: APP_NAME,
@@ -61,8 +51,7 @@ export default async function RootLayout({
 
   return (
     <html className={`${GeistSans.variable}`} suppressHydrationWarning lang="pt-BR">
-      {/* <Script defer data-domain="biomob.org" src="https://plausible.biomob.app/js/script.js" /> */}
-      <body className={""}>
+      <body>
         <Providers messages={messages} locale={resolvedParams.locale}>
           <CombinedHeader locale={resolvedParams.locale} />
           {children}
