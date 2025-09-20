@@ -15,6 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         GeistSans: ["var(--font-geist-sans)"],
+        lato: ["Lato", "sans-serif"],
       },
       screens: {
         "2sm": "481px",
