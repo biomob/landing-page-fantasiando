@@ -278,7 +278,7 @@ export const MainBanner = () => {
         </div>
       </section>
       <section
-        className="relative flex justify-between items-start w-full max-w-[1244px] mx-auto mt-16 px-8"
+        className="relative flex justify-between items-start w-full max-w-[1244px] mx-auto mt-16 px-8 mb-16"
         style={{ backgroundColor: "#fff" }}
       >
         <div className="flex flex-wrap gap-12 text-[#383838]">
