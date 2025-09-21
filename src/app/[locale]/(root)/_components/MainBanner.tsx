@@ -23,19 +23,19 @@ export const MainBanner = () => {
 
   return (
     <>
-      <section className="flex flex-col md:grid grid-cols-5 gap-12 w-full items-start">
+      <section className="flex flex-col md:grid md:grid-cols-5 gap-8 md:gap-12 w-full items-start mt-12">
         <div
-          className={`flex flex-col gap-8 py-[6.375rem] px-12 rounded-ee-[9.25rem] col-span-3 ${getBgClass()}`}
+          className={`flex flex-col gap-6 md:gap-8 py-16 px-6 md:px-12 rounded-ee-[9.25rem] col-span-3 ${getBgClass()}`}
         >
-          <h1 className="heading-01 text-start mt-10">
+          <h1 className="heading-01 text-start mt-10 text-[28px] md:text-[48px] leading-snug md:leading-tight">
             Transformando <span className="text-primary">SONHOS</span> em
             <span className="text-primary"> FANTASIAS</span>
           </h1>
-          <p className="heading-05 max-w-[32rem]">
+          <p className="heading-05 max-w-full md:max-w-[32rem]">
             Somos de Petrópolis - RJ, mas enviamos com carinho para todo o Brasil.
           </p>
 
-          <div className="flex flex-wrap gap-10 max-w-[32rem]">
+          <div className="flex flex-wrap gap-6 md:gap-10 max-w-full md:max-w-[32rem]">
             <div className="flex flex-col gap-2">
               <h2 className="heading-05-medium">30+</h2>
               <div className="w-12 h-1 bg-foreground rounded-full" />
@@ -63,16 +63,14 @@ export const MainBanner = () => {
           height={1280}
           quality={100}
           priority
-          className="aspect-square w-full h-auto col-span-2 mt-28"
+          className="w-full h-auto col-span-2 mt-8 md:mt-28"
         />
       </section>
 
-      <section className="flex gap-6 justify-center mt-10">
-        <div className="flex flex-col gap-3">
+      <section className="flex gap-6 justify-start mt-10 overflow-x-auto px-4">
+        <div className="flex flex-col gap-3 flex-shrink-0">
           <section
-            className="relative flex flex-col items-start text-left text-white 
-                       w-[324px] h-[242.5px] rounded-[16px] 
-                       pt-[57px] pr-[22px] pb-[57px] pl-[22px] gap-[10px] mx-0 my-0"
+            className="relative flex flex-col items-start text-left text-white w-[324px] h-[242.5px] rounded-[16px] pt-[57px] pr-[22px] pb-[57px] pl-[22px] gap-[10px] flex-shrink-0"
             style={{ backgroundColor: "#8C4DFF" }}
           >
             <Image
@@ -103,9 +101,7 @@ export const MainBanner = () => {
           </section>
 
           <section
-            className="relative flex flex-col items-start text-left text-white 
-                       w-[324px] h-[242.5px] rounded-[16px] 
-                       pt-[57px] pr-[22px] pb-[57px] pl-[22px] gap-[10px] mx-0"
+            className="relative flex flex-col items-start text-left text-white w-[324px] h-[242.5px] rounded-[16px] pt-[57px] pr-[22px] pb-[57px] pl-[22px] gap-[10px] flex-shrink-0"
             style={{ backgroundColor: "#8C4DFF" }}
           >
             <Image
@@ -137,13 +133,16 @@ export const MainBanner = () => {
           </section>
         </div>
 
-        <a href="/colecao-nova" className="flex-shrink-0 h-[496px]">
+        <a
+          href="/colecao-nova"
+          className="flex-shrink-0 h-[496px] w-[calc((242.5+242.5+3)*912/493)] max-w-full"
+        >
           <Image
             src="/img/linhaInfantil.png"
             alt="Coleção Nova"
             width={((242.5 + 242.5 + 3) * 912) / 493}
             height={242.5 + 242.5 + 3}
-            className="rounded-[20px] object-cover h-full"
+            className="rounded-[20px] object-cover h-full w-full"
           />
         </a>
       </section>
@@ -200,11 +199,10 @@ export const MainBanner = () => {
         </div>
 
         <div className="grid grid-cols-2 gap-4">
-          {[
-            { icon: "/img/Icon1.png", title: "Text", description: "Lorem ipsum dolor sit amet. Aut doloribus accusantium est omnis officia qui ullam voluptas cum tempore voluptatem ut ipsum corrupti ex unde quis aut dolor consequatur", link: "#" },
+          {[{ icon: "/img/Icon1.png", title: "Text", description: "Lorem ipsum dolor sit amet. Aut doloribus accusantium est omnis officia qui ullam voluptas cum tempore voluptatem ut ipsum corrupti ex unde quis aut dolor consequatur", link: "#" },
             { icon: "/img/Icon2.png", title: "Text", description: "Lorem ipsum dolor sit amet. Aut doloribus accusantium est omnis officia qui ullam voluptas cum tempore voluptatem ut ipsum corrupti ex unde quis aut dolor consequatur", link: "#" },
             { icon: "/img/Icon3.png", title: "Text", description: "Lorem ipsum dolor sit amet. Aut doloribus accusantium est omnis officia qui ullam voluptas cum tempore voluptatem ut ipsum corrupti ex unde quis aut dolor consequatur", link: "#" },
-            { icon: "/img/Icon4.png", title: "Text", description: "Lorem ipsum dolor sit amet. Aut doloribus accusantium est omnis officia qui ullam voluptas cum tempore voluptatem ut ipsum corrupti ex unde quis aut dolor consequatur", link: "#" },
+            { icon: "/img/Icon4.png", title: "Text", description: "Lorem ipsum dolor sit amet. Aut doloribus accusantium est omnis officia qui ullam voluptas cum tempore voluptatem ut ipsum corrupti ex unde quis aut dolor consequatur", link: "#" }
           ].map((card, index) => (
             <InfoCard
               key={index}
@@ -217,9 +215,9 @@ export const MainBanner = () => {
           ))}
         </div>
       </section>
+
       <section
-        className="relative flex items-center justify-start 
-                  w-[1244px] h-[324px] mx-auto mt-10 rounded-[8px] overflow-hidden"
+        className="relative flex items-center justify-start w-[1244px] h-[324px] mx-auto mt-10 rounded-[8px] overflow-hidden"
         style={{ backgroundColor: "#B380FF" }}
       >
         <Image
@@ -230,18 +228,16 @@ export const MainBanner = () => {
         />
 
         <div className="relative z-10 flex items-center gap-4 px-8">
-          <button
-            className="flex items-center justify-center bg-white/70 rounded-full p-2 hover:bg-white/90 transition"
-          >
+          <button className="flex items-center justify-center bg-white/70 rounded-full p-2 hover:bg-white/90 transition">
             <Image src="/img/setaEsquerda.png" alt="Anterior" width={24} height={24} />
           </button>
 
           <div className="flex gap-6">
-            {["/img/vestido.png","/img/vestido.png","/img/vestido.png"].map((v,i)=>(
+            {["/img/vestido.png", "/img/vestido.png", "/img/vestido.png"].map((v, i) => (
               <Image
                 key={i}
                 src={v}
-                alt={`Vestido ${i+1}`}
+                alt={`Vestido ${i + 1}`}
                 width={150}
                 height={200}
                 className="rounded-[8px] object-cover shadow-md"
@@ -249,16 +245,14 @@ export const MainBanner = () => {
             ))}
           </div>
 
-          <button
-            className="flex items-center justify-center bg-white/70 rounded-full p-2 hover:bg-white/90 transition"
-          >
+          <button className="flex items-center justify-center bg-white/70 rounded-full p-2 hover:bg-white/90 transition">
             <Image src="/img/setaDireita.png" alt="Próximo" width={24} height={24} />
           </button>
         </div>
 
         <div className="relative z-10 flex flex-col max-w-[469px] text-left text-white">
           <div className="flex items-center gap-2 mb-2">
-            <Image src="/img/linha2.png" alt="Linha decorativa" width={22} height={1}/>
+            <Image src="/img/linha2.png" alt="Linha decorativa" width={22} height={1} />
             <span className="text-[16px] font-medium" style={{ fontFamily: "Geist", lineHeight: "150%" }}>
               Estoque
             </span>
@@ -277,10 +271,8 @@ export const MainBanner = () => {
           </p>
         </div>
       </section>
-      <section
-        className="relative flex justify-between items-start w-full max-w-[1244px] mx-auto mt-16 px-8 mb-16"
-        style={{ backgroundColor: "#fff" }}
-      >
+
+      <section className="relative flex justify-between items-start w-full max-w-[1244px] mx-auto mt-16 px-8 mb-16" style={{ backgroundColor: "#fff" }}>
         <div className="flex flex-wrap gap-12 text-[#383838]">
           <div className="flex flex-col gap-[18px] w-[275px]">
             <p className="text-[16px] font-roboto font-medium leading-[100%]">Lorem ipsum dol</p>
