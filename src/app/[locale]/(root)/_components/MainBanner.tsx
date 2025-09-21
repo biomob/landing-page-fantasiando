@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import { InfoCard } from "./InfoCard";
 
 export const MainBanner = () => {
   const { theme, resolvedTheme } = useTheme();
@@ -15,16 +16,16 @@ export const MainBanner = () => {
 
   const getBgClass = () => {
     if (!mounted) return "";
-
-    return theme === "light" || resolvedTheme === "light" ? "bg-[hsl(var(--neutral-light))]" : "bg-black";
+    return theme === "light" || resolvedTheme === "light"
+      ? "bg-[hsl(var(--neutral-light))]"
+      : "bg-black";
   };
 
   return (
     <>
       <section className="flex flex-col md:grid grid-cols-5 gap-12 w-full items-start">
         <div
-          className={`flex flex-col gap-8 py-[6.375rem] px-12 rounded-ee-[9.25rem] col-span-3
-            ${getBgClass()}`}
+          className={`flex flex-col gap-8 py-[6.375rem] px-12 rounded-ee-[9.25rem] col-span-3 ${getBgClass()}`}
         >
           <h1 className="heading-01 text-start mt-10">
             Transformando <span className="text-primary">SONHOS</span> em
@@ -65,15 +66,21 @@ export const MainBanner = () => {
           className="aspect-square w-full h-auto col-span-2 mt-28"
         />
       </section>
+
       <section className="flex gap-6 justify-center mt-10">
         <div className="flex flex-col gap-3">
           <section
             className="relative flex flex-col items-start text-left text-white 
-           w-[324px] h-[242.5px] rounded-[16px] 
-           pt-[57px] pr-[22px] pb-[57px] pl-[22px] gap-[10px] mx-0 my-0"
+                       w-[324px] h-[242.5px] rounded-[16px] 
+                       pt-[57px] pr-[22px] pb-[57px] pl-[22px] gap-[10px] mx-0 my-0"
             style={{ backgroundColor: "#8C4DFF" }}
           >
-            <Image src="/img/textura_1.png" alt="Textura" fill className="absolute inset-0 object-cover opacity-60" />
+            <Image
+              src="/img/textura_1.png"
+              alt="Textura"
+              fill
+              className="absolute inset-0 object-cover opacity-60"
+            />
             <div className="relative z-10 flex flex-col items-start gap-2">
               <h2 className="w-[280px] h-[23px] font-lato font-bold text-[20px] leading-[115%] tracking-[0.16em] uppercase text-white">
                 OFERTAS DA SEMANA
@@ -97,11 +104,16 @@ export const MainBanner = () => {
 
           <section
             className="relative flex flex-col items-start text-left text-white 
-           w-[324px] h-[242.5px] rounded-[16px] 
-           pt-[57px] pr-[22px] pb-[57px] pl-[22px] gap-[10px] mx-0"
+                       w-[324px] h-[242.5px] rounded-[16px] 
+                       pt-[57px] pr-[22px] pb-[57px] pl-[22px] gap-[10px] mx-0"
             style={{ backgroundColor: "#8C4DFF" }}
           >
-            <Image src="/img/textura_1.png" alt="Textura" fill className="absolute inset-0 object-cover opacity-60" />
+            <Image
+              src="/img/textura_1.png"
+              alt="Textura"
+              fill
+              className="absolute inset-0 object-cover opacity-60"
+            />
             <div className="relative z-10 flex flex-col items-start gap-2">
               <h2 className="w-[280px] h-[23px] font-lato font-bold text-[20px] leading-[115%] tracking-[0.16em] uppercase text-white">
                 PERSONALIZE
@@ -134,6 +146,173 @@ export const MainBanner = () => {
             className="rounded-[20px] object-cover h-full"
           />
         </a>
+      </section>
+
+      <section className="flex flex-col md:flex-row items-start gap-8 mt-10 ml-[80px]">
+        <div className="flex flex-col gap-6">
+          <Image
+            src="/img/unicornioCards.png"
+            alt="Unicórnio"
+            width={523}
+            height={519.74}
+            className="rounded-[20px] object-cover"
+          />
+
+          <div className="flex items-center gap-2">
+            <div className="w-[22px] h-[2px] bg-[#E65100]" />
+            <span className="text-[16px] font-medium" style={{ fontFamily: "Geist", color: "#E65100" }}>
+              Fantasiando
+            </span>
+          </div>
+
+          <h2
+            className="mt-3"
+            style={{ fontFamily: "Geist", fontWeight: 500, fontSize: "32px", lineHeight: "125%", color: "#383838" }}
+          >
+            Um pouco sobre a loja
+          </h2>
+
+          <p
+            className="mt-2 max-w-[523px]"
+            style={{ fontFamily: "Geist", fontWeight: 500, fontSize: "16px", lineHeight: "150%", color: "#4C4C4C" }}
+          >
+            Ações sociais e projetos com foco nas pessoas com deficiência. <br />
+            Participe e faça a diferença!
+          </p>
+
+          <button
+            className="mt-4 flex items-center justify-center"
+            style={{
+              width: "120px",
+              height: "44px",
+              borderRadius: "16px",
+              backgroundColor: "#FFAA2D",
+              color: "#FFFFFF",
+              fontFamily: "Montserrat",
+              fontWeight: 500,
+              fontSize: "16px",
+              lineHeight: "100%",
+              textAlign: "center",
+            }}
+          >
+            Saiba mais
+          </button>
+        </div>
+
+        <div className="grid grid-cols-2 gap-4">
+          {[
+            { icon: "/img/Icon1.png", title: "Text", description: "Lorem ipsum dolor sit amet. Aut doloribus accusantium est omnis officia qui ullam voluptas cum tempore voluptatem ut ipsum corrupti ex unde quis aut dolor consequatur", link: "#" },
+            { icon: "/img/Icon2.png", title: "Text", description: "Lorem ipsum dolor sit amet. Aut doloribus accusantium est omnis officia qui ullam voluptas cum tempore voluptatem ut ipsum corrupti ex unde quis aut dolor consequatur", link: "#" },
+            { icon: "/img/Icon3.png", title: "Text", description: "Lorem ipsum dolor sit amet. Aut doloribus accusantium est omnis officia qui ullam voluptas cum tempore voluptatem ut ipsum corrupti ex unde quis aut dolor consequatur", link: "#" },
+            { icon: "/img/Icon4.png", title: "Text", description: "Lorem ipsum dolor sit amet. Aut doloribus accusantium est omnis officia qui ullam voluptas cum tempore voluptatem ut ipsum corrupti ex unde quis aut dolor consequatur", link: "#" },
+          ].map((card, index) => (
+            <InfoCard
+              key={index}
+              icon={card.icon}
+              title={card.title}
+              description={card.description}
+              link={card.link}
+              className={index % 2 === 0 ? "mt-0" : "mt-16"}
+            />
+          ))}
+        </div>
+      </section>
+      <section
+        className="relative flex items-center justify-start 
+                  w-[1244px] h-[324px] mx-auto mt-10 rounded-[8px] overflow-hidden"
+        style={{ backgroundColor: "#B380FF" }}
+      >
+        <Image
+          src="/img/textura2.png"
+          alt="Textura de fundo"
+          fill
+          className="absolute inset-0 object-cover opacity-60"
+        />
+
+        <div className="relative z-10 flex items-center gap-4 px-8">
+          <button
+            className="flex items-center justify-center bg-white/70 rounded-full p-2 hover:bg-white/90 transition"
+          >
+            <Image src="/img/setaEsquerda.png" alt="Anterior" width={24} height={24} />
+          </button>
+
+          <div className="flex gap-6">
+            {["/img/vestido.png","/img/vestido.png","/img/vestido.png"].map((v,i)=>(
+              <Image
+                key={i}
+                src={v}
+                alt={`Vestido ${i+1}`}
+                width={150}
+                height={200}
+                className="rounded-[8px] object-cover shadow-md"
+              />
+            ))}
+          </div>
+
+          <button
+            className="flex items-center justify-center bg-white/70 rounded-full p-2 hover:bg-white/90 transition"
+          >
+            <Image src="/img/setaDireita.png" alt="Próximo" width={24} height={24} />
+          </button>
+        </div>
+
+        <div className="relative z-10 flex flex-col max-w-[469px] text-left text-white">
+          <div className="flex items-center gap-2 mb-2">
+            <Image src="/img/linha2.png" alt="Linha decorativa" width={22} height={1}/>
+            <span className="text-[16px] font-medium" style={{ fontFamily: "Geist", lineHeight: "150%" }}>
+              Estoque
+            </span>
+          </div>
+
+          <h2 className="text-[32px] font-medium leading-[125%]" style={{ fontFamily: "Geist" }}>
+            Alguns vestidos disponíveis
+          </h2>
+
+          <p className="mt-4 text-[16px] leading-[150%]" style={{ fontFamily: "Geist", fontWeight: 500 }}>
+            Lorem ipsum dolor sit amet. Sit ratione perferendis est
+            consequatur nobis in doloribus reprehenderit est saepe vel est
+            dolorem quaerat. Est adipisci laborum qui aliquam sit
+            consequatur distinctio. Est ipsa fugit ut reprehenderit rem et
+            nostrum nisi.
+          </p>
+        </div>
+      </section>
+      <section
+        className="relative flex justify-between items-start w-full max-w-[1244px] mx-auto mt-16 px-8"
+        style={{ backgroundColor: "#fff" }}
+      >
+        <div className="flex flex-wrap gap-12 text-[#383838]">
+          <div className="flex flex-col gap-[18px] w-[275px]">
+            <p className="text-[16px] font-roboto font-medium leading-[100%]">Lorem ipsum dol</p>
+            <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
+            <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
+            <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
+            <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
+            <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
+          </div>
+
+          <div className="flex flex-col gap-[18px] w-[275px]">
+            <p className="text-[16px] font-roboto font-medium leading-[100%]">Lorem ipsum dol</p>
+            <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
+            <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
+            <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
+          </div>
+
+          <div className="flex flex-col gap-[18px] w-[275px]">
+            <p className="text-[16px] font-roboto font-medium leading-[100%]">Lorem ipsum dol</p>
+            <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
+            <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
+            <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
+          </div>
+        </div>
+
+        <Image
+          src="/img/seloBioMob.png"
+          alt="Selo de certificação"
+          width={114}
+          height={114}
+          className="shrink-0"
+        />
       </section>
     </>
   );
