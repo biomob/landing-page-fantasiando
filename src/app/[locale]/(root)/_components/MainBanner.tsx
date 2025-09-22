@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { InfoCard } from "./InfoCard";
+import Link from "next/link";
 
 export const MainBanner = () => {
   const { theme, resolvedTheme } = useTheme();
@@ -75,8 +76,9 @@ export const MainBanner = () => {
               <p className="body-callout-medium">Estados atendidos</p>
             </div>
           </div>
-
-          <Button className="w-full max-w-[32rem]">Quero conhecer mais</Button>
+          <Link href="/sobre">
+            <Button className="w-full max-w-[32rem]">Quero conhecer mais</Button>
+          </Link>
         </div>
 
         <Image
@@ -109,10 +111,12 @@ export const MainBanner = () => {
               <p className="w-[280px] h-[19px] font-lato font-normal text-[10px] leading-[100%] tracking-[0.04em] text-white break-words">
                 As melhores ofertas desta semana <br /> fresquinhas para você.
               </p>
-              <button className="flex items-center justify-center gap-2 mt-2 w-[73px] h-[23px] rounded-full px-2 py-1 bg-[#CBA8FF] text-white text-[10px] font-lato font-normal transition-all duration-300 ease-out hover:opacity-90">
-                Avançar
-                <Image src="/img/ArrowRight.png" alt="Seta" width={12} height={12} />
-              </button>
+              <Link href="/ofertas">
+                <button className="flex items-center justify-center gap-2 mt-2 w-[73px] h-[23px] rounded-full px-2 py-1 bg-[#CBA8FF] text-white text-[10px] font-lato font-normal transition-all duration-300 ease-out hover:opacity-90">
+                  Avançar
+                  <Image src="/img/ArrowRight.png" alt="Seta" width={12} height={12} />
+                </button>
+              </Link>
             </div>
             <Image
               src="/img/unicornioOferta.png"
@@ -141,10 +145,12 @@ export const MainBanner = () => {
                 Monte um vestido personalizado <br /> usando como base um <br /> modelo do nosso estoque e <br /> gere
                 uma imagem da sua <br /> criança vestindo ele.
               </p>
-              <button className="flex items-center justify-center gap-2 mt-2 w-[73px] h-[23px] rounded-full px-2 py-1 bg-[#CBA8FF] text-white text-[10px] font-lato font-normal transition-all duration-300 ease-out hover:opacity-90">
-                Avançar
-                <Image src="/img/ArrowRight.png" alt="Seta" width={12} height={12} />
-              </button>
+              <Link href="/simulador">
+                <button className="flex items-center justify-center gap-2 mt-2 w-[73px] h-[23px] rounded-full px-2 py-1 bg-[#CBA8FF] text-white text-[10px] font-lato font-normal transition-all duration-300 ease-out hover:opacity-90">
+                  Avançar
+                  <Image src="/img/ArrowRight.png" alt="Seta" width={12} height={12} />
+                </button>
+              </Link>
             </div>
             <Image
               src="/img/unicornio_2.png"
@@ -202,23 +208,25 @@ export const MainBanner = () => {
             Participe e faça a diferença!
           </p>
 
-          <button
-            className="mt-4 flex items-center justify-center"
-            style={{
-              width: "120px",
-              height: "44px",
-              borderRadius: "16px",
-              backgroundColor: "#FFAA2D",
-              color: "#FFFFFF",
-              fontFamily: "Montserrat",
-              fontWeight: 500,
-              fontSize: "16px",
-              lineHeight: "100%",
-              textAlign: "center",
-            }}
-          >
-            Saiba mais
-          </button>
+          <Link href="/sobre">
+            <button
+              className="mt-4 flex items-center justify-center"
+              style={{
+                width: "120px",
+                height: "44px",
+                borderRadius: "16px",
+                backgroundColor: "#FFAA2D",
+                color: "#FFFFFF",
+                fontFamily: "Montserrat",
+                fontWeight: 500,
+                fontSize: "16px",
+                lineHeight: "100%",
+                textAlign: "center",
+              }}
+            >
+              Saiba mais
+            </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-2 gap-4">

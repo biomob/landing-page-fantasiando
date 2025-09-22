@@ -20,7 +20,7 @@ export const CombinedHeader: React.FC<CombinedHeaderProps> = ({ locale }) => {
         
         <nav className="flex gap-6 text-sm font-semibold py-2 text-black pl-10">
           <Link href={`/${locale}/simulador`}>Simulador</Link>
-          <Link href={`/${locale}/inicio`}>Início</Link>
+          <Link href={`/${locale}/`}>Início</Link>
           <Link href={`/${locale}/sobre`}>Sobre a loja</Link>
           <Link href={`/${locale}/contato`}>Contato</Link>
         </nav>

@@ -65,7 +65,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({ icon, title, description, li
       </p>
 
       <a
-        href={link}
+        href="/sobre"
         style={{
           fontFamily: "Montserrat",
           fontWeight: 400,

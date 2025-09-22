@@ -20,8 +20,7 @@ export default async function NotFoundPage() {
           </Link>
         </div>
       </div>
-      <Footer />
-    </PageContainer>
+      </PageContainer>
   );
 }
 
