@@ -9,9 +9,14 @@ interface InfoCardProps {
   description: string;
   link: string;
   className?: string;
+  darkMode?: boolean;
 }
 
-export const InfoCard: React.FC<InfoCardProps> = ({ icon, title, description, link, className }) => {
+export const InfoCard: React.FC<InfoCardProps> = ({ icon, title, description, link, className, darkMode }) => {
+  const bgColor = darkMode ? "#4B4B4B" : "#FFFFFF";
+  const textColorTitle = darkMode ? "#FFFFFF" : "#383838";
+  const textColorDesc = darkMode ? "#FFFFFF" : "#000000";
+
   return (
     <div
       className={`flex flex-col items-start ${className ?? ""}`}
@@ -20,7 +25,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({ icon, title, description, li
         height: "288px",
         padding: "24px",
         borderRadius: "8px",
-        background: "#FFFFFF",
+        background: bgColor,
         boxShadow: "0px 4px 46.3px 0px #00000021",
       }}
     >
@@ -41,7 +46,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({ icon, title, description, li
           fontWeight: 500,
           fontSize: "20px",
           lineHeight: "120%",
-          color: "#383838",
+          color: textColorTitle,
         }}
       >
         {title}
@@ -53,7 +58,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({ icon, title, description, li
           fontWeight: 300,
           fontSize: "14px",
           lineHeight: "140%",
-          color: "#000000",
+          color: textColorDesc,
         }}
       >
         {description}

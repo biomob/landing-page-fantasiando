@@ -9,6 +9,29 @@ import { InfoCard } from "./InfoCard";
 export const MainBanner = () => {
   const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const textColorClass = !mounted
+    ? ""
+    : theme === "dark" || resolvedTheme === "dark"
+    ? "text-white"
+    : "text-[#383838]";
+
+  const textColorParagraph = !mounted
+    ? ""
+    : theme === "dark" || resolvedTheme === "dark"
+    ? "text-white"
+    : "text-[#4C4C4C]";
+
+  const sectionBg = !mounted
+    ? "#fff"
+    : theme === "dark" || resolvedTheme === "dark"
+    ? "bg-black"
+    : "#ffffff";
+
+  const textColor = !mounted
+    ? "#383838"
+    : theme === "dark" || resolvedTheme === "dark"
+    ? "#FFFFFF"
+    : "#383838";
 
   useEffect(() => {
     setMounted(true);
@@ -165,15 +188,15 @@ export const MainBanner = () => {
           </div>
 
           <h2
-            className="mt-3"
-            style={{ fontFamily: "Geist", fontWeight: 500, fontSize: "32px", lineHeight: "125%", color: "#383838" }}
+            className={`mt-3 ${textColorClass}`}
+            style={{ fontFamily: "Geist", fontWeight: 500, fontSize: "32px", lineHeight: "125%" }}
           >
             Um pouco sobre a loja
           </h2>
 
           <p
-            className="mt-2 max-w-[523px]"
-            style={{ fontFamily: "Geist", fontWeight: 500, fontSize: "16px", lineHeight: "150%", color: "#4C4C4C" }}
+            className={`mt-2 max-w-[523px] ${textColorParagraph}`}
+            style={{ fontFamily: "Geist", fontWeight: 500, fontSize: "16px", lineHeight: "150%" }}
           >
             Ações sociais e projetos com foco nas pessoas com deficiência. <br />
             Participe e faça a diferença!
@@ -210,6 +233,7 @@ export const MainBanner = () => {
               title={card.title}
               description={card.description}
               link={card.link}
+              darkMode={theme === "dark" || resolvedTheme === "dark"}
               className={index % 2 === 0 ? "mt-0" : "mt-16"}
             />
           ))}
@@ -272,8 +296,8 @@ export const MainBanner = () => {
         </div>
       </section>
 
-      <section className="relative flex justify-between items-start w-full max-w-[1244px] mx-auto mt-16 px-8 mb-16" style={{ backgroundColor: "#fff" }}>
-        <div className="flex flex-wrap gap-12 text-[#383838]">
+      <section className="relative flex justify-between items-start w-full max-w-[1244px] mx-auto mt-16 px-8 mb-16">
+        <div className={`flex flex-wrap gap-12 ${theme === "dark" || resolvedTheme === "dark" ? "text-white" : "text-[#383838]"}`}>
           <div className="flex flex-col gap-[18px] w-[275px]">
             <p className="text-[16px] font-roboto font-medium leading-[100%]">Lorem ipsum dol</p>
             <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
@@ -282,14 +306,12 @@ export const MainBanner = () => {
             <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
             <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
           </div>
-
           <div className="flex flex-col gap-[18px] w-[275px]">
             <p className="text-[16px] font-roboto font-medium leading-[100%]">Lorem ipsum dol</p>
             <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
             <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
             <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
           </div>
-
           <div className="flex flex-col gap-[18px] w-[275px]">
             <p className="text-[16px] font-roboto font-medium leading-[100%]">Lorem ipsum dol</p>
             <p className="text-[16px] font-roboto font-normal leading-[100%]">Lorem ipsum dol</p>
