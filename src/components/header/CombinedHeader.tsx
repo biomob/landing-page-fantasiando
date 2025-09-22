@@ -100,6 +100,15 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
         <Link href="/contato" className="flex items-center gap-2 font-semibold text-gray-600 hover:opacity-50 transition-opacity">Contato</Link>
 
       </nav>
+
+      <div className="absolute right-5 top-2 transform -translate-x-1">
+        <Image
+          src={"/img/logofantasiandowhite.svg"}
+          alt="logo-fantasiando-kids"
+          width={116}
+          height={116}
+          className="h-24 w-auto" />
+      </div>
     </header >
   );
 };
