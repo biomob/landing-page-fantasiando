@@ -81,8 +81,8 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
             src={theme == "light" ? "/ico/libras.svg" : "/ico/librasDark.svg"}
             onClick={ativarVLibras}
             alt={t("ativarVLibras")}
-            height={32}
-            width={32}
+            height={31}
+            width={31}
             className="text-card cursor-pointer"
           />
         </div>
