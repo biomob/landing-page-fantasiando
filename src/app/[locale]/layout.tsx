@@ -1,11 +1,14 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import CombinedHeader from "@/components/header/CombinedHeader";
+// import CombinedHeader from "@/components/header/CombinedHeader";
 import Providers from "@/components/layout/providers";
-import { Footer } from "@/components/footer/footer";
+
 import { GeistSans } from "geist/font/sans";
 import { Toaster } from "sonner";
 import { getMessages } from "next-intl/server";
+import { Header } from "./(root)/_components/Header";
+import { FooterEnd } from "./(root)/_components/FooterEnd";
+import { FooterSite } from "./(root)/_components/FooterSite";
 
 const APP_NAME = "Biomob";
 const APP_DEFAULT_TITLE = "Biomob";
@@ -64,10 +67,12 @@ export default async function RootLayout({
       {/* <Script defer data-domain="biomob.org" src="https://plausible.biomob.app/js/script.js" /> */}
       <body className={""}>
         <Providers messages={messages} locale={resolvedParams.locale}>
-          <CombinedHeader locale={resolvedParams.locale} />
+          {/* <CombinedHeader locale={resolvedParams.locale} /> */}
           {children}
+          <Header />
           <Toaster />
-          <Footer />
+          <FooterSite />
+          <FooterEnd />
         </Providers>
       </body>
     </html>
