@@ -7,10 +7,10 @@ import { GeistSans } from "geist/font/sans";
 import { Toaster } from "sonner";
 import { getMessages } from "next-intl/server";
 
-const APP_NAME = "Biomob";
+const APP_NAME = "Fantasiado";
 const APP_DEFAULT_TITLE = "Biomob";
 const APP_TITLE_TEMPLATE = "%s";
-const APP_DESCRIPTION = "Biomob!";
+const APP_DESCRIPTION = "Fantasiado!";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_FRONTEND_URL || "http://localhost:3000"),
@@ -47,6 +47,11 @@ export const metadata: Metadata = {
     },
     description: APP_DESCRIPTION,
   },
+  icons: {
+    icon: "/img/LOGO_INSTITUTO_BRANCA.png",
+    shortcut: "/img/LOGO_INSTITUTO_BRANCA.png",
+    apple: "/img/LOGO_INSTITUTO_BRANCA.png",
+  }
 };
 
 export default async function RootLayout({
