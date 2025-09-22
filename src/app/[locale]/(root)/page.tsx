@@ -2,6 +2,7 @@
 import React from "react";
 import { MainBanner } from "./_components/MainBanner";
 import { HighlightsSection } from "./_components/HighlightsSection";
+import { AboutSection } from "./_components/AboutSection";
 
 
 export default async function Home() {
@@ -10,7 +11,8 @@ export default async function Home() {
   return (
     <div className="w-full min-h-screen flex flex-col gap-12 h-full">
       <MainBanner />
-      <HighlightsSection/>
+      <HighlightsSection />
+      <AboutSection />
     </div>
     
   );
