@@ -5,6 +5,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { FaLinkedinIn, FaFacebookF, FaYoutube, FaGooglePlay, FaApple } from "react-icons/fa";
 import { BsArrowUpCircleFill } from "react-icons/bs";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Footer = () => {
   function scrollToTop(): void {
@@ -21,8 +22,8 @@ export const Footer = () => {
           <div className="grid grid-cols-5 gap-6">
 
             <div className="flex flex-auto">
-              <ul className="space-y-2 text-sm text-900">
-                <li className="font-medium">Lorem ipsum dol</li>
+              <ul className="space-y-3 text-sm text-900">
+                <li className="text-l font-bold">Lorem ipsum dol</li>
                 <li>Lorem ipsum dol</li>
                 <li>Lorem ipsum dol</li>
                 <li>Lorem ipsum dol</li>
@@ -34,18 +35,18 @@ export const Footer = () => {
             </div>
 
 
-            <div className="flex flex-col">
-              <ul className="space-y-2 text-sm text-700">
-                <li className="font-medium">Lorem ipsum dol</li>
+            <div className="flex flex-auto">
+              <ul className="space-y-3 text-sm text-900">
+                <li className="text-l font-bold">Lorem ipsum dol</li>
                 <li>Lorem ipsum dol</li>
                 <li>Lorem ipsum dol</li>
               </ul>
             </div>
 
 
-            <div className="flex flex-col">
-              <ul className="space-y-2 text-sm text-700">
-                <li className="font-medium">Lorem ipsum dol</li>
+            <div className="flex flex-auto">
+              <ul className="space-y-3 text-sm text-900">
+                <li className="text-l font-bold">Lorem ipsum dol</li>
                 <li>Lorem ipsum dol</li>
                 <li>Lorem ipsum dol</li>
                 <li>Lorem ipsum dol</li>
@@ -53,33 +54,35 @@ export const Footer = () => {
             </div>
 
 
-            <div className="flex flex-col">
-              <ul className="space-y-2 text-sm text-700">
-                <li className="font-medium">Lorem ipsum dol</li>
+            <div className="flex flex-auto">
+              <ul className="space-y-3 text-sm text-900">
+                <li className="text-l font-bold">Lorem ipsum dol</li>
                 <li>Lorem ipsum dol</li>
               </ul>
             </div>
 
 
-            <div className="flex flex-col">
-              <ul className="space-y-2 text-sm text-700">
-                <li className="font-medium">Lorem ipsum dol</li>
+            <div className="flex flex-auto">
+              <ul className="space-y-3 text-sm text-900">
+                <li className="text-l font-bold">Lorem ipsum dol</li>
                 <li>Lorem ipsum dol</li>
               </ul>
             </div>
           </div>
 
 
-          <div className="absolute top-1/2 right-12 transform -translate-y-1/2">
-            <img
+          <div className="absolute top-3 right-12 ">
+            <Image
               src="/img/seloneutro.png"
-              alt="Selo Biomob"
+              alt="SeloBiomobNeutro"
               width={114}
               height={114}
-              className="w-20 h-20 object-contain"
+              className=" flex items-center mr-auto"
             />
+
           </div>
         </div>
+        <hr className="border-gray-200 mt-24 " />
       </section>
 
 
@@ -117,7 +120,7 @@ export const Footer = () => {
               <p className="text-lg text-gray">|</p>
             </div>
 
-            <p className="">R. Afrânio de Melo Franco, 333 - Quitandinha - Petrópolis/RJ - CEP: 25651-000</p>
+            <p className="py-1 px-3 text-sm/snug font-medium">R. Afrânio de Melo Franco, 333 - Quitandinha - Petrópolis/RJ - CEP: 25651-000</p>
             <button onClick={scrollToTop}>
               <BsArrowUpCircleFill className="text-5xl text-grey-800" />
             </button>

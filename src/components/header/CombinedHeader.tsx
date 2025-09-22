@@ -9,6 +9,7 @@ import { NextImage } from "../ui/NextImage";
 import { useTranslations } from "next-intl";
 import { VLibrasIntegration } from "./VLibrasIntegration";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
   const [dropdownVisible, setDropdownVisible] = React.useState(false);
@@ -86,7 +87,20 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
           />
         </div>
       </div>
-    </header>
+
+      {/*navegacao menu*/}
+      <nav className="sticky top-0 w-full h-[80px] z-50 flex items-center gap-8 mr-6">
+
+        <Link href="/simulador" className="flex items-center gap-2 font-semibold text-gray-600 hover:opacity-50 transition-opacity">Simulador</Link>
+
+        <Link href="#" className="flex items-center gap-2 font-semibold text-gray-600 hover:opacity-50 transition-opacity">Início</Link>
+
+        <Link href="/sobrenos" className="flex items-center gap-2 font-semibold text-gray-600 hover:opacity-50 transition-opacity">Sobre a Loja</Link>
+
+        <Link href="/contato" className="flex items-center gap-2 font-semibold text-gray-600 hover:opacity-50 transition-opacity">Contato</Link>
+
+      </nav>
+    </header >
   );
 };
 
