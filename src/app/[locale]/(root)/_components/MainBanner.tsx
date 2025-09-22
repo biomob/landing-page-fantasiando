@@ -20,7 +20,7 @@ export const MainBanner = () => {
   };
 
   return (
-    <section className="flex flex-col md:grid grid-cols-5 gap-12 w-full items-start">
+    <section className="pt-10 flex flex-col md:grid grid-cols-5 gap-12 w-full items-start">
       <div
         className={`flex flex-col gap-8 py-[6.375rem] px-12 rounded-ee-[9.25rem] col-span-3
             ${getBgClass()}`}

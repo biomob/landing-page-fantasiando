@@ -28,7 +28,7 @@ export const AboutSection = () => {
                         <h2 className="text-2xl md:text-3xl font-bold mt-1">
                             Um pouco sobre a loja
                         </h2>
-                        <p className="text-gray-700 mt-2 max-w-sm">
+                        <p className="mt-2 max-w-sm">
                             Ações sociais e projetos com foco nas pessoas com deficiência. <br />
                             Participe e faça a diferença!
                         </p>

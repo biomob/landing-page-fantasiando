@@ -10,6 +10,7 @@ import { useTranslations } from "next-intl";
 import { VLibrasIntegration } from "./VLibrasIntegration";
 import { useTheme } from "next-themes";
 
+
 export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
   const [dropdownVisible, setDropdownVisible] = React.useState(false);
   const dropdownRef = React.useRef<HTMLDivElement>(null);
@@ -54,10 +55,7 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50  flex flex-col bg-card-foreground">
       <div
-        className="max-h-12 overflow-y-hidden relative flex justify-center 
-        md:justify-start gap-4 items-center 
-        w-full 
-        px-4 py-1 my-0 mx-auto text-card "
+        className="max-w-[1200px] mx-auto px-6 py-2 flex items-center justify-start gap-4 w-full"
       >
         <VLibrasIntegration />
         <div className="flex gap-4 text-card items-center max-md:mx-auto mr-auto">
@@ -86,6 +84,7 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
           />
         </div>
       </div>
+      
     </header>
   );
 };

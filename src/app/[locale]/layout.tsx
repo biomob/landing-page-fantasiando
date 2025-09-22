@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer/footer";
 import { GeistSans } from "geist/font/sans";
 import { Toaster } from "sonner";
 import { getMessages } from "next-intl/server";
+import Header from "@/components/header/HeaderFantasia";
 
 const APP_NAME = "Biomob";
 const APP_DEFAULT_TITLE = "Biomob";
@@ -65,6 +66,7 @@ export default async function RootLayout({
       <body className={""}>
         <Providers messages={messages} locale={resolvedParams.locale}>
           <CombinedHeader locale={resolvedParams.locale} />
+          <Header/>
           {children}
           <Toaster />
           <Footer />
