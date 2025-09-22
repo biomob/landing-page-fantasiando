@@ -5,7 +5,7 @@ import { HighlightCard } from "./HighlightCard";
 
 export const HighlightsSection = () => {
   return (
-    <section className="w-full flex justify-center px-4">
+    <section className="max-w-7xl mx-auto flex justify-center px-4">
       <div className="grid md:grid-cols-3 gap-6 max-w-7xl w-full items-stretch">
 
         {/* Coluna Esquerda */}

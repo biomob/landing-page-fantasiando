@@ -3,6 +3,7 @@ import React from "react";
 import { MainBanner } from "./_components/MainBanner";
 import { HighlightsSection } from "./_components/HighlightsSection";
 import { AboutSection } from "./_components/AboutSection";
+import { ProductCarousel } from "./_components/ProductCarousel";
 
 
 export default async function Home() {
@@ -13,6 +14,7 @@ export default async function Home() {
       <MainBanner />
       <HighlightsSection />
       <AboutSection />
+      <ProductCarousel/> 
     </div>
     
   );
