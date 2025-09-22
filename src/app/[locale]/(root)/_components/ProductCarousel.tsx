@@ -10,14 +10,14 @@ import 'swiper/css/navigation';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 
-// 1. Criamos um tipo para o objeto de vestido
+
 interface Dress {
     id: number;
     src: string;
     alt: string;
 }
 
-// 2. Tipamos o nosso array de dados
+
 const dresses: Dress[] = [
     { id: 1, src: '/img/vestido-1.jpg', alt: 'Vestido de festa junina azul' },
     { id: 2, src: '/img/vestido-1.jpg', alt: 'Vestido de festa junina azul' },
@@ -26,11 +26,11 @@ const dresses: Dress[] = [
     { id: 5, src: '/img/vestido-1.jpg', alt: 'Vestido de festa junina azul' },
 ];
 
-// O componente em si não recebe props, mas a tipagem interna já ajuda
+
 export const ProductCarousel: React.FC = () => {
     return (
         <section className="relative flex items-center max-w-7xl h-[324px] mx-auto rounded-2xl bg-[#B380FF] px-12 py-12 sm:px-16 md:pl-24 bg-[url('/img/textura.png')] bg-cover bg-no-repeat bg-center">
-            <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+            <div className="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
                 <div className="relative ">
                     <Swiper
                         modules={[Navigation]}
@@ -43,7 +43,7 @@ export const ProductCarousel: React.FC = () => {
                         }}
                         className="!pb-2"
                     >
-                        {/* O TypeScript agora sabe que 'dress' é do tipo 'Dress' */}
+                        
                         {dresses.map((dress) => (
                             <SwiperSlide key={dress.id}>
                                 <div className="h-64 overflow-hidden rounded-xl border-4 border-white bg-pink-100 p-3 shadow-lg">
@@ -70,7 +70,9 @@ export const ProductCarousel: React.FC = () => {
                 </div>
 
                 <div className="text-left text-white">
-                    {/* ... */}
+                    <span className="text-lg font-semibold text-white/80">—  Estoque</span>
+                    <h2 className="mt-2 text-4xl font-weight text-white tracking-tight">Alguns vestidos disponíveis</h2>
+                    <p className="mt-4 max-w-lg text-base text-white/90 leading-relaxed">Lorem ipsum dolor sit amet. Sit ratione perferendis est consequatur nobis in doloribus reprehenderit est saepe velit sed dolorum quaerat. Est adipisci laborum qui dolor galisum sit consequatur distinctio. Est ipsa fugit ut reprehenderit nemo et nostrum nisi At illum molestias.</p>
                 </div>
             </div>
         </section>

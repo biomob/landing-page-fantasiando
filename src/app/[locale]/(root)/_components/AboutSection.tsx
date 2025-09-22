@@ -11,7 +11,7 @@ import {
 
 export const AboutSection = () => {
     return (
-        <section className="w-full py-16 px-4 md:px-16 bg-white">
+        <section className="w-full py-16 px-4 md:px-16">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row">
                 {/* Lado esquerdo */}
                 <div className="flex-1 flex flex-col items-center md:items-start">
