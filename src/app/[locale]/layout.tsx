@@ -8,7 +8,7 @@ import { Toaster } from "sonner";
 import { getMessages } from "next-intl/server";
 
 const APP_NAME = "Fantasiado";
-const APP_DEFAULT_TITLE = "Biomob";
+const APP_DEFAULT_TITLE = "Biomob - Fantasiando Kids";
 const APP_TITLE_TEMPLATE = "%s";
 const APP_DESCRIPTION = "Fantasiado!";
 

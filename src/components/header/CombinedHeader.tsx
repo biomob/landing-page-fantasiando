@@ -89,25 +89,20 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
       </div>
 
       {/*navegacao menu*/}
-      <nav className="sticky top-0 w-full h-[80px] z-50 flex items-center gap-8 mr-6">
-
-        <Link href="/simulador" className="flex items-center gap-2 font-semibold text-gray-600 hover:opacity-50 transition-opacity">Simulador</Link>
-
-        <Link href="#" className="flex items-center gap-2 font-semibold text-gray-600 hover:opacity-50 transition-opacity">Início</Link>
-
-        <Link href="/sobrenos" className="flex items-center gap-2 font-semibold text-gray-600 hover:opacity-50 transition-opacity">Sobre a Loja</Link>
-
-        <Link href="/contato" className="flex items-center gap-2 font-semibold text-gray-600 hover:opacity-50 transition-opacity">Contato</Link>
-
+      <nav className="sticky top-5 w-full h-[40px] z-50 flex items-center gap-8 -mr-10">
+        <Link href="/simulador" className="font-semibold text-gray-600 hover:opacity-50 transition-opacity">Simulador</Link>
+        <Link href="#" className="font-semibold text-gray-600 hover:opacity-50 transition-opacity">Início</Link>
+        <Link href="/sobrenos" className="font-semibold text-gray-600 hover:opacity-50 transition-opacity">Sobre a Loja</Link>
+        <Link href="/contato" className="font-semibold text-gray-600 hover:opacity-50 transition-opacity">Contato</Link>
       </nav>
 
-      <div className="absolute right-5 top-2 transform -translate-x-1">
+      <div className="absolute right-5 top-2 transform -translate-x-1 mr-3">
         <Image
           src={"/img/logofantasiandowhite.svg"}
           alt="logo-fantasiando-kids"
           width={116}
           height={116}
-          className="h-24 w-auto" />
+          className="h-16 w-auto" />
       </div>
     </header >
   );

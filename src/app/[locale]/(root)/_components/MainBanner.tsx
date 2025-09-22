@@ -39,11 +39,13 @@ export const MainBanner = () => {
             <div className="w-12 h-1 bg-foreground rounded-full" />
             <p className="body-callout-medium">Tipos de peças em estoque</p>
           </div>
+
           <div className="flex flex-col gap-2">
             <h2 className="heading-05-medium">1000+</h2>
             <div className="w-12 h-1 bg-foreground rounded-full" />
             <p className="body-callout-medium">Clientes satisfeitos</p>
           </div>
+
           <div className="flex flex-col gap-2">
             <h2 className="heading-05-medium">20</h2>
             <div className="w-12 h-1 bg-foreground rounded-full" />
@@ -54,15 +56,16 @@ export const MainBanner = () => {
         <Button className="w-full max-w-[32rem]">Quero conhecer mais</Button>
       </div>
 
-      <Image
-        src="/img/unicornio1.png"
-        alt="Mascote da Fantasiando Kids"
-        width={1280}
-        height={1280}
-        quality={100}
-        priority
-        className="aspect-square w-full h-auto col-span-2"
-      />
+      <div className="aspect-auto w-full h-auto col-span-2 mb-5 mr-5 mt-14">
+        <Image
+          src="/img/unicornio1.png"
+          alt="Mascote da Fantasiando Kids"
+          width={1280}
+          height={1280}
+          quality={100}
+          priority
+        />
+      </div>
     </section>
   );
 };
