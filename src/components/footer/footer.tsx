@@ -5,6 +5,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { FaLinkedinIn, FaFacebookF, FaYoutube, FaGooglePlay, FaApple } from "react-icons/fa";
 import { BsArrowUpCircleFill } from "react-icons/bs";
 import Link from "next/link";
+import SolutionsSection from "./combinedFooter";
 
 export const Footer = () => {
   function scrollToTop(): void {
@@ -16,6 +17,10 @@ export const Footer = () => {
 
   return (
     <div className="flex flex-col m-auto py-[52px]">
+      <div className="flex flex-col container m-auto pt-8">
+        <SolutionsSection />
+      </div>
+      <hr className="w-full my-4 border-gray-600"></hr>
       <div className="md:flex items-center justify-center h-12 px-2 gap-x-4">
         <div className="flex items-center justify-center h-[1.925rem] px-2 gap-x-4">
           <Link href="https://www.instagram.com/biomobguia/" target="_blank">
