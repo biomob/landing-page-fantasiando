@@ -85,7 +85,7 @@ export const Footer = () => {
     <div className="flex flex-col m-auto py-[52px]">
       <div className="md:flex items-center justify-center h-16 px-2 gap-x-4  border-t border-black-300">
         <div className="flex items-center justify-center h-[1.925rem] px-2 gap-x-4">
-          <Link href="https://www.instagram.com/biomobguia/" target="_blank">
+          <Link href="https://www.instagram.com/biomobguia/" target="_blank" aria-label="Pagina do instagram da empresa biomob(abre nova guia)">
             <IoLogoInstagram className="text-lg text-text-grey" />
           </Link>
 
