@@ -14,9 +14,76 @@ export const Footer = () => {
     });
   }
 
-  return (
+ return (
+    <>
+     <section className="py-16 px-12 relative">
+  <div className="max-w-7xl mx-auto">
+    <div className="grid grid-cols-5 gap-8">
+     
+      <div className="flex flex-col">
+        <ul className="space-y-2 text-sm text-900">
+          <li className="font-medium">Lorem ipsum dol</li>
+          <li>Lorem ipsum dol</li>
+          <li>Lorem ipsum dol</li>
+          <li>Lorem ipsum dol</li>
+          <li>BioGuia Cultural</li>
+          <li>Lorem ipsum dol</li>
+          <li>Lorem ipsum dol</li>
+          <li>Lorem ipsum dol</li>
+        </ul>
+      </div>
+
+     
+      <div className="flex flex-col">
+        <ul className="space-y-2 text-sm text-700">
+          <li className="font-medium">Lorem ipsum dol</li>
+          <li>Lorem ipsum dol</li>
+          <li>Lorem ipsum dol</li>
+        </ul>
+      </div>
+
+     
+      <div className="flex flex-col">
+        <ul className="space-y-2 text-sm text-700">
+          <li className="font-medium">Lorem ipsum dol</li>
+          <li>Lorem ipsum dol</li>
+          <li>Lorem ipsum dol</li>
+          <li>Lorem ipsum dol</li>
+        </ul>
+      </div>
+
+     
+      <div className="flex flex-col">
+        <ul className="space-y-2 text-sm text-700">
+          <li className="font-medium">Lorem ipsum dol</li>
+          <li>Lorem ipsum dol</li>
+        </ul>
+      </div>
+
+      
+      <div className="flex flex-col">
+        <ul className="space-y-2 text-sm text-700">
+          <li className="font-medium">Lorem ipsum dol</li>
+          <li>Lorem ipsum dol</li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <div className="absolute top-1/2 right-12 transform -translate-y-1/2">
+      <img
+        src="/img/selobiomob.png"
+        alt="Selo Biomob"
+        width={80}
+        height={80}
+        className="w-20 h-20 object-contain"
+      />
+    </div>
+  </div>
+</section>
+
     <div className="flex flex-col m-auto py-[52px]">
-      <div className="md:flex items-center justify-center h-12 px-2 gap-x-4">
+      <div className="md:flex items-center justify-center h-16 px-2 gap-x-4  border-t border-black-300">
         <div className="flex items-center justify-center h-[1.925rem] px-2 gap-x-4">
           <Link href="https://www.instagram.com/biomobguia/" target="_blank">
             <IoLogoInstagram className="text-lg text-text-grey" />
@@ -47,11 +114,12 @@ export const Footer = () => {
           </Link>
           <p className="text-lg text-gray">|</p>
         </div>
-
+<address>R. Afrânio de Melo Franco, 333 - Quitandinha - Petrópolis/RJ - CEP: 25651-000</address>
         <button onClick={scrollToTop}>
           <BsArrowUpCircleFill className="text-5xl text-grey-800" />
         </button>
       </div>
     </div>
+    </>
   );
 };

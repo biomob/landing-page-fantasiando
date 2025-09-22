@@ -9,6 +9,7 @@ import { NextImage } from "../ui/NextImage";
 import { useTranslations } from "next-intl";
 import { VLibrasIntegration } from "./VLibrasIntegration";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
   const [dropdownVisible, setDropdownVisible] = React.useState(false);
@@ -52,27 +53,26 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50  flex flex-col bg-card-foreground">
-      <div
-        className="max-h-12 overflow-y-hidden relative flex justify-center 
-        md:justify-start gap-4 items-center 
-        w-full 
-        px-4 py-1 my-0 mx-auto text-card "
-      >
+    <header className="fixed top-0 left-0 right-0 z-50 flex flex-col bg-card-foreground">
+      <div className="relative flex items-center w-full px-4 py-2 text-card">
         <VLibrasIntegration />
-        <div className="flex gap-4 text-card items-center max-md:mx-auto mr-auto">
-          <div className="hidden lg:flex gap-1 items-center text-end max-h-[3.125rem] overflow-hidden">
-            <span className="flex flex-col text-sm justify-end ">
-              <span className="w-max text-end ">by</span>
-            </span>
-            <NextImage
-              imageUrl={"/img/LOGO_INSTITUTO_BRANCA.png"}
-              altImage={t("logo")}
-              ariaLabel={t("logo")}
-              sizes="100vw"
-              className="w-auto h-[1.625rem]"
-            />
-          </div>
+
+        <div className="flex flex-col gap-2 flex-1 ml-6">
+
+        {/* barra de acessibilidade */}
+          <div className="flex gap-4 items-center">
+            <div className="hidden lg:flex gap-1 items-center text-end max-h-[3.125rem] overflow-hidden">
+              <span className="flex flex-col text-sm justify-end">
+                <span className="w-max text-end">by</span>
+              </span>
+              <NextImage
+                imageUrl={"/img/LOGO_INSTITUTO_BRANCA.png"}
+                altImage={t("logo")}
+                ariaLabel={t("logo")}
+                sizes="100vw"
+                className="w-auto h-[1.625rem]"
+              />
+            </div>
           <span className="md:contents hidden font-semibold text-[1.4rem] font-montserrat">{t("acessibilidade")}</span>
           <SwitchWithIcon />
           <FontSizeSlider />
@@ -85,8 +85,27 @@ export const CombinedHeader = ({ locale }: Readonly<{ locale: string }>) => {
             className="text-card cursor-pointer"
           />
         </div>
+
+          {/* navbar*/}
+          <nav className="hidden md:flex gap-8 font-semibold text-card">
+            <Link href="/simulador" className="hover:text-primary transition">Simulador</Link>
+            <Link href="/" className="hover:text-primary transition">Início</Link>
+            <Link href="/sobre" className="hover:text-primary transition">Sobre a loja</Link>
+            <Link href="/contato" className="hover:text-primary transition">Contato</Link>
+          </nav>
+        </div>
+
+        <div className="absolute right-4 top-1/2 transform -translate-y-1/2">
+          <Image
+            src={theme == "light" ? "/img/unicornioheaderdark.png" : "/img/unicornioheader.png"}
+            alt="Logo Fantasiando Kids"
+            width={180}
+            height={72}
+            className="h-24 w-auto"
+          />
+        </div>
       </div>
-    </header>
+</header>
   );
 };
 
