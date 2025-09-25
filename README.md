@@ -38,7 +38,7 @@ Este documento contém as instruções do teste técnico. Leia com atenção ant
 
 ## ⏰ Prazo
 
-- A entrega deve ser feita **até segunda-feira, às 11h59**.
+- A entrega deve ser feita **até sexta-feira, às 11h59**.
 - **Somente commits feitos até esse horário serão aceitos.**
 - Commits após esse horário **não serão considerados**.
 
