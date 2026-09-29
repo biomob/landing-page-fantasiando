@@ -2216,7 +2216,7 @@ function useTheme() {
     mq.addEventListener('change', f);
     return () => mq.removeEventListener('change', f);
   }, []);
-  const theme = stored || sys;
+  const theme = stored || 'light';
   React.useEffect(() => {
     document.documentElement.dataset.theme = theme;
   }, [theme]);

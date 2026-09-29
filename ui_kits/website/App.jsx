@@ -34,7 +34,7 @@ function useTheme() {
   const [stored, setStored] = React.useState(() => localStorage.getItem('annape-theme'));
   const [sys, setSys] = React.useState(mq.matches ? 'dark' : 'light');
   React.useEffect(() => { const f = (e) => setSys(e.matches ? 'dark' : 'light'); mq.addEventListener('change', f); return () => mq.removeEventListener('change', f); }, []);
-  const theme = stored || sys;
+  const theme = stored || 'light';
   React.useEffect(() => {
     document.documentElement.dataset.theme = theme;
   }, [theme]);
