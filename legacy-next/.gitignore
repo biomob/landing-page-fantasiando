@@ -36,13 +36,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Preserve the archived Next configuration
-!legacy-next/next-env.d.ts
-
-# Keep a focused set of visual review captures
-/reference/*.png
-!/reference/qa-desktop-home.png
-!/reference/qa-mobile-home.png
-!/reference/qa-mobile-category.png
-!/reference/qa-mobile-product.png
-!/reference/qa-mobile-prova.png
+# Keep the archived Next type declarations
+!next-env.d.ts

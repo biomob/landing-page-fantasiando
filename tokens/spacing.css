@@ -1,0 +1,35 @@
+/* ============================================================
+   Fantasiando — Spacing, radii & layout tokens
+   8px-based rhythm. Card radii kept moderate (≤8px) per brand
+   rules; only organic illustration containers go rounder.
+   ============================================================ */
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Radii — moderate per brand rule (cards max 8px) */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;     /* default card / button radius */
+  --radius-lg: 12px;    /* large surfaces, modals */
+  --radius-pill: 999px; /* badges, chips, pills */
+  --radius-organic: 28px; /* only for mascot / illustration wells */
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-wide: 1320px;
+  --gutter: 24px;
+  --header-h: 76px;
+  --topbar-h: 38px;
+}

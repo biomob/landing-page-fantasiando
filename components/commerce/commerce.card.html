@@ -1,0 +1,39 @@
+<!-- @dsCard group="Components" viewport="700x620" name="Commerce — Product & Category cards" subtitle="Product cards with dual CTAs, category tiles, price & rating" -->
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body{margin:0;background:var(--bg-base);font-family:var(--font-body);color:var(--text-body);padding:24px}
+  .h{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-subtle);font-weight:700;margin:0 0 12px}
+  .prods{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-bottom:26px}
+  .cats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+</style></head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script type="text/babel">
+  const { ProductCard, CategoryCard } = window.FantasiandoDesignSystem_43d79f;
+  function App(){
+    return (<>
+      <div className="h">Product cards</div>
+      <div className="prods">
+        <ProductCard name="Vestido Princesa Aurora" theme="Princesas" price={129.9} installments={3}
+          rating={4.8} reviews={32} sizes={['2','4','6','8']} image="../../assets/vestido-princesa-rosa.png"
+          badge={{label:'Mais vendido', tone:'violet'}} />
+        <ProductCard name="Fantasia Arco-Íris" theme="Fantasia temática" price={99.9} original={139.9}
+          rating={4.6} reviews={18} sizes={['4','6','8']} image="../../assets/vestido-arco-iris.png"
+          badge={{label:'-28%', tone:'pink'}} favorite />
+      </div>
+      <div className="h">Category tiles</div>
+      <div className="cats">
+        <CategoryCard label="Princesas" count={24} image="../../assets/vestido-princesa-rosa.png" tone="pink" />
+        <CategoryCard label="Festa junina" count={12} image="../../assets/vestido-festa-junina.png" tone="coral" />
+        <CategoryCard label="Aniversário" count={31} image="../../assets/vestido-floral-rosa.png" tone="sky" />
+      </div>
+    </>);
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body></html>

@@ -1,0 +1,42 @@
+<!-- @dsCard group="Website" viewport="1280x880" name="Annapê Ateliê Storefront" subtitle="Home, prova virtual (wizard), contato conversacional, produto, categoria, conta · claro/escuro" -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <base href="./ui_kits/website/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Annapê Ateliê — loja</title>
+  <link rel="icon" href="../../assets/simbolo-cor.png">
+  <link rel="stylesheet" href="../../styles.css">
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg-base);font-family:var(--font-body);color:var(--text-body)}
+    a{color:var(--brand-ink)}a:hover{color:var(--rosa-800)}
+    ::selection{background:var(--rosa-200)}
+    button:focus-visible, a:focus-visible, input:focus-visible{outline:none;box-shadow:var(--ring);border-radius:var(--radius-sm)}
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script>(function(){var t=localStorage.getItem("annape-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t;})();</script>
+  <script src="image-slot.js"></script>
+  <script src="../../_ds_bundle.js"></script>
+  <script type="text/babel" src="lib.jsx"></script>
+  <script type="text/babel" src="App.jsx"></script>
+  <script type="text/babel" src="Home.jsx"></script>
+  <script type="text/babel" src="ProvaVirtual.jsx"></script>
+  <script type="text/babel" src="Product.jsx"></script>
+  <script type="text/babel" src="Category.jsx"></script>
+  <script type="text/babel" src="Account.jsx"></script>
+  <script type="text/babel" src="Contato.jsx"></script>
+  <script type="text/babel" data-presets="react">
+    (function mount(){
+      if (!window.App || !window.Home || !window.Contato || !window.ProvaVirtual) { return setTimeout(mount, 60); }
+      ReactDOM.createRoot(document.getElementById('root')).render(<window.App />);
+    })();
+  </script>
+</body>
+</html>

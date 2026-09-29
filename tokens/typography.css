@@ -1,0 +1,52 @@
+/* ============================================================
+   Fantasiando — Typography tokens
+   Display: Fredoka (rounded, magical-but-clean headings)
+   Body/UI: Nunito (warm, highly legible)
+   ============================================================ */
+
+:root {
+  --font-display: 'Fredoka', 'Trebuchet MS', sans-serif;
+  --font-body: 'Nunito', -apple-system, 'Segoe UI', sans-serif;
+
+  /* Weights */
+  --fw-regular: 400; /* @kind other */
+  --fw-medium: 500; /* @kind other */
+  --fw-semibold: 600; /* @kind other */
+  --fw-bold: 700; /* @kind other */
+  --fw-extra: 800; /* @kind other */
+
+  /* ---- Type scale (px) ----
+     Display sizes use --font-display; text sizes use --font-body */
+  --fs-display-xl: 60px;   /* hero headline */
+  --fs-display-lg: 46px;   /* section hero */
+  --fs-display-md: 34px;   /* section titles */
+  --fs-display-sm: 26px;   /* card / block titles */
+
+  --fs-title:   21px;      /* sub-section, product name large */
+  --fs-lg:      18px;      /* lead paragraph */
+  --fs-body:    16px;      /* default body */
+  --fs-sm:      14px;      /* secondary, captions */
+  --fs-xs:      12.5px;    /* labels, badges, fine print */
+
+  /* Line heights */
+  --lh-tight: 1.08; /* @kind other */
+  --lh-snug: 1.25; /* @kind other */
+  --lh-normal: 1.5; /* @kind other */
+  --lh-relaxed: 1.65; /* @kind other */
+
+  /* Letter spacing */
+  --ls-display: -0.01em; /* @kind other */
+  --ls-tight: -0.005em; /* @kind other */
+  --ls-normal: 0; /* @kind other */
+  --ls-label: 0.06em; /* @kind other */
+}
+
+/* Optional convenience classes for specimens & quick use */
+.fz-display-xl { font-family: var(--font-display); font-weight: var(--fw-bold); font-size: var(--fs-display-xl); line-height: var(--lh-tight); letter-spacing: var(--ls-display); }
+.fz-display-lg { font-family: var(--font-display); font-weight: var(--fw-bold); font-size: var(--fs-display-lg); line-height: var(--lh-tight); letter-spacing: var(--ls-display); }
+.fz-display-md { font-family: var(--font-display); font-weight: var(--fw-semibold); font-size: var(--fs-display-md); line-height: var(--lh-snug); }
+.fz-display-sm { font-family: var(--font-display); font-weight: var(--fw-semibold); font-size: var(--fs-display-sm); line-height: var(--lh-snug); }
+.fz-title { font-family: var(--font-display); font-weight: var(--fw-medium); font-size: var(--fs-title); line-height: var(--lh-snug); }
+.fz-lead  { font-family: var(--font-body); font-size: var(--fs-lg); line-height: var(--lh-relaxed); }
+.fz-body  { font-family: var(--font-body); font-size: var(--fs-body); line-height: var(--lh-normal); }
+.fz-eyebrow { font-family: var(--font-body); font-weight: var(--fw-bold); font-size: var(--fs-xs); letter-spacing: var(--ls-label); text-transform: uppercase; }

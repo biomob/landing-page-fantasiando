@@ -1,70 +1,29 @@
-# Teste Técnico - Fantasiando
+﻿# Annapê Ateliê — loja em HTML
 
-Este documento contém as instruções do teste técnico. Leia com atenção antes de começar.
+Esta é a versão HTML interativa da loja Annapê Ateliê. Abra `index.html` por um servidor local. As telas de home, categoria, produto, prova virtual, contato e conta ficam em `ui_kits/website/`. Os cartões HTML de componentes, diretrizes e template também fazem parte do projeto.
 
----
+## Prévia local
 
-## 📎 Links úteis
+Na raiz do projeto:
 
-- 🎨 [Figma - Layout do projeto](https://www.figma.com/design/SQy8yq94qkmcKVtBrwTcKt/FANTASIANDO---Site-principal?node-id=0-1&t=kD9qFQ5zguOtPddB-1)
-- 💻 [Repositório - Código base](https://github.com/biomob/landing-page-fantasiando)
+```powershell
+python -m http.server 4173
+```
 
----
+Depois acesse `http://localhost:4173/`. `ui_kits/website/index.html` também abre a loja diretamente.
 
-## 🚀 O que deve ser feito
+## Organização
 
-1. **Clonar o repositório** na sua máquina local.
-2. **Criar uma branch com o seu nome**.
-   - Exemplo:
-     ```bash
-     git checkout -b joao-silva
-     ```
-3. **Usar o código base do projeto** para implementar as telas de acordo com o layout disponível no Figma.
-4. O código deve ser desenvolvido utilizando:
-   - **Next.js**
-   - **TypeScript**
-   - **Tailwind CSS** (todas as estilizações devem ser feitas com Tailwind)
-5. **Tela obrigatória:** implementar a **Home**.
-6. **Tela opcional:** caso consiga, implemente também outras telas — isso será avaliado como diferencial.
-7. Já existem configurações parciais no `tailwind.config.ts` e no `globals.css`.
-   - Essas configurações são **apenas uma base**.
-   - Ajuste e configure o que for necessário para atender ao layout.
-8. O projeto deve ser **totalmente responsivo**, funcionando bem em diferentes tamanhos de tela (desktop, tablet e mobile).
-9. O projeto deve ter **um modo de exibição** (claro ou escuro).
-   - Implementar **apenas um dos modos** já é suficiente.
-   - Caso implemente **os dois modos (claro e escuro)**, isso será considerado um diferencial positivo.
+- `assets/`: logos oficiais do ZIP Annapê, símbolo, novo mascote coração/sol, vestidos ilustrativos e banner;
+- `ui_kits/website/`: telas e dados de demonstração;
+- `components/`, `guidelines/`, `templates/`, `tokens/`: sistema visual do ZIP, com referências de imagem atualizadas;
+- `reference/`: exportação HTML original e documentação anterior do design system;
+- `legacy-next/`: código Next.js que estava na raiz antes desta versão, preservado para consulta.
 
----
+O caramelo usa `#C38A67`, valor correspondente a RGB 195, 138, 103. O hexadecimal `#F598A4` informado junto ao caramelo é o rosa.
 
-## ⏰ Prazo
+## Estado da demonstração
 
-- A entrega deve ser feita **até segunda-feira, às 11h59**.
-- **Somente commits feitos até esse horário serão aceitos.**
-- Commits após esse horário **não serão considerados**.
+Este pacote é uma demonstração visual. Catálogo, valores, avaliações, carrinho, conta, créditos e prova virtual usam dados e fluxos simulados; não há integração com estoque, pagamento, autenticação ou geração de imagem. Os vestidos foram gerados por IA para direção visual e não são fotografias de peças reais. Confirme modelos, detalhes e preços antes de publicar como produtos à venda. O banner também é uma composição gerada por IA. Veja `assets/README.md` para a origem e os prompts.
 
----
-
-## 📢 Apresentação
-
-A apresentação do que foi desenvolvido será feita posteriormente, em contato direto com você.  
-Nela, você deverá mostrar:
-
-- O **código desenvolvido**
-- As **telas implementadas** funcionando no navegador
-
----
-
-## ✅ Resumo das exigências
-
-- Clonar o repositório
-- Criar uma branch com o seu nome
-- Utilizar **Next.js + TypeScript**
-- Fazer todas as estilizações em **Tailwind CSS**
-- Implementar **pelo menos a Home**
-- Ajustar configurações no `tailwind.config.ts` e `globals.css` (não obrigatório, mas recomendado)
-- Garantir que o projeto seja **responsivo**
-- Implementar **um modo de exibição (claro ou escuro)**
-- Implementar **os dois modos (claro e escuro)** será bem visto como diferencial
-- Realizar commits **até segunda-feira, 11h59**
-
-Boa sorte 🚀
+As dependências de React e Babel do HTML são carregadas por CDN, então a prévia precisa de conexão à internet. A versão Next anterior continua íntegra em `legacy-next/` e pode ser executada separadamente com as instruções dela.

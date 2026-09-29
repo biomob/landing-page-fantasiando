@@ -1,0 +1,136 @@
+.atelier-hero {
+  --text-strong: #2e2226;
+  --text-muted: #59494c;
+  --text-body: #45373b;
+  --rosa-200: #fbced4;
+  min-height: 640px;
+  background-image: linear-gradient(90deg, rgba(252, 248, 245, 0.98) 0%, rgba(252, 248, 245, 0.92) 35%, rgba(252, 248, 245, 0.16) 74%), url('assets/banner-atelie.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.atelier-hero h1 {
+  font-size: clamp(42px, 5vw, 68px) !important;
+}
+
+.mobile-header { display: none; }
+
+.mobile-header-bar {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: var(--bg-base);
+  border-bottom: 1px solid var(--line-200);
+}
+.mobile-header-bar a img { height: 48px; width: auto; display: block; }
+.mobile-header-bar button { border: 0; background: transparent; color: var(--text-body); min-width: 42px; min-height: 42px; cursor: pointer; }
+.mobile-header-actions { display: flex; gap: 4px; }
+.mobile-nav { display: grid; background: var(--bg-base); padding: 10px 20px 18px; box-shadow: var(--shadow-md); }
+.mobile-nav a { display: flex; align-items: center; gap: 9px; padding: 10px 0; color: var(--text-body); text-decoration: none; font-weight: 700; border-bottom: 1px solid var(--line-200); }
+.mobile-nav a::before { display: inline-flex; width: 18px; justify-content: center; color: var(--brand-ink); font-size: 16px; line-height: 1; }
+.mobile-nav a:nth-child(1)::before { content: '✂'; }
+.mobile-nav a:nth-child(2)::before { content: '✦'; }
+.mobile-nav a:nth-child(3)::before { content: '✧'; }
+.mobile-nav a:nth-child(4)::before { content: '♡'; }
+.mobile-nav a:nth-child(5)::before { content: '◌'; }
+html, body { overflow-x: hidden; }
+img { max-width: 100%; }
+.atelier-hero-content > *,
+.atelier-stack-mobile > *,
+.atelier-category-layout > *,
+.atelier-footer-grid > * { min-width: 0; }
+.atelier-product-tile { min-width: 0; display: flex; flex-direction: column; }
+.atelier-product-tile > div { flex: 1; }
+.atelier-product-tile > button { border: 0; background: transparent; color: var(--brand-ink); padding: 12px 8px; font: 800 13px var(--font-body); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.atelier-product-tile > button:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
+
+.atelier-hero button:nth-child(2) {
+  background: #fff7f5 !important;
+  color: #3a1d25 !important;
+  border-color: #d9b7ac !important;
+}
+
+@media (max-width: 1100px) {
+  .atelier-hero-content { gap: 32px !important; padding-inline: 32px !important; }
+  .atelier-hero-mascot img { width: 150px !important; }
+  .atelier-category-layout { grid-template-columns: 210px minmax(0, 1fr) !important; gap: 24px !important; }
+  .atelier-products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .atelier-footer-grid { grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(0, 1fr)) !important; gap: 24px !important; }
+  .atelier-footer-grid > :first-child { grid-row: span 2; }
+}
+
+@media (max-width: 920px) {
+  .atelier-hero-content { grid-template-columns: minmax(0, 1fr) !important; padding-block: 72px 80px !important; }
+  .atelier-hero-mascot { display: none; }
+  .atelier-stack-mobile { grid-template-columns: minmax(0, 1fr) !important; gap: 36px !important; }
+  .atelier-category-layout { grid-template-columns: minmax(0, 1fr) !important; }
+  .atelier-category-layout aside { position: static !important; }
+  .atelier-contact-cta { grid-template-columns: minmax(0, 1fr) auto !important; padding: 40px !important; }
+  .atelier-wizard-header { padding-inline: 20px !important; gap: 14px !important; }
+  .atelier-wizard-steps { order: 3; flex-basis: 100% !important; justify-content: flex-start !important; overflow-x: auto; padding-bottom: 2px !important; }
+  .atelier-pv-selected { max-width: calc(100vw - 24px); }
+}
+
+@media (max-width: 760px) {
+  .desktop-header { display: none; }
+  .mobile-header { display: block; }
+  .atelier-stack-mobile,
+  .atelier-category-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 28px !important;
+  }
+  .atelier-category-layout { padding-inline: 18px !important; }
+  .atelier-category-layout aside { position: static !important; }
+  .atelier-stack-mobile img[src$="mascote-prova-virtual.png"] { right: 0 !important; width: 108px !important; }
+  .atelier-products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .atelier-footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; padding-inline: 20px !important; }
+  .atelier-footer-grid > :first-child { grid-column: 1 / -1; }
+  .atelier-contact-cta { padding: 32px 24px !important; }
+  .atelier-wizard-header { gap: 14px !important; }
+  .atelier-wizard-steps { flex: 1 1 100% !important; min-width: 0 !important; overflow-x: auto; justify-content: flex-start !important; }
+  .atelier-wizard-steps li, .atelier-wizard-steps > span { flex: 0 0 auto; white-space: nowrap; }
+  .atelier-hero {
+    min-height: 570px;
+    background-image: linear-gradient(90deg, rgba(252, 248, 245, 0.97), rgba(252, 248, 245, 0.76)), url('assets/banner-atelie.png');
+    background-position: 65% center;
+  }
+  .atelier-hero-content {
+    display: block !important;
+    padding: 72px 20px 64px !important;
+  }
+  .atelier-hero-mascot {
+    display: none;
+  }
+  .atelier-hero h1 { font-size: clamp(38px, 11vw, 52px) !important; }
+  .atelier-hero p { font-size: 17px !important; }
+  .atelier-category-layout { padding: 24px 16px 48px !important; }
+  .atelier-category-layout aside { padding: 18px !important; }
+  .atelier-products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 12px !important; }
+  .atelier-footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; padding: 40px 20px 24px !important; gap: 28px 18px !important; }
+  .atelier-footer-grid > :first-child { grid-column: 1 / -1; grid-row: auto; }
+  .atelier-contact-cta { grid-template-columns: minmax(0, 1fr) !important; padding: 32px 24px !important; border-radius: 22px !important; }
+  .atelier-contact-cta > img:last-child { display: none; }
+  .atelier-pv-selected { left: 12px !important; right: 12px !important; bottom: 12px !important; transform: none !important; width: auto !important; justify-content: space-between; gap: 8px !important; }
+  .atelier-pv-selected > div { min-width: 0 !important; flex: 1; }
+  .atelier-pv-selected button { padding-inline: 14px !important; white-space: nowrap; }
+  .atelier-wizard-header > div:last-child { width: 100%; justify-content: space-between; }
+  .atelier-wizard-steps { width: 100%; }
+  .atelier-wizard-steps > span { flex: 0 0 18px !important; }
+  .atelier-wizard-steps li button { padding-inline: 4px 8px !important; font-size: 12px !important; }
+  .atelier-wizard-steps li button > span { width: 24px !important; height: 24px !important; }
+  .atelier-stack-mobile .atelier-pv-photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+
+@media (max-width: 420px) {
+  .mobile-header-bar { padding-inline: 10px; }
+  .mobile-header-bar a img { height: 42px; }
+  .atelier-hero-content { padding-inline: 18px !important; }
+  .atelier-products-grid { gap: 10px !important; }
+  .atelier-product-tile > button { padding-inline: 2px; font-size: 12px; }
+  .atelier-footer-grid { grid-template-columns: 1fr !important; }
+  .atelier-footer-grid > :first-child { grid-column: auto; }
+  .atelier-pv-selected img { width: 36px !important; height: 36px !important; }
+  .atelier-pv-selected button { padding-inline: 10px !important; font-size: 13px !important; }
+}

@@ -1,0 +1,36 @@
+<!-- @dsCard group="Components" viewport="700x420" name="Forms — Inputs, Select, Upload" subtitle="Text fields, select, checkbox and the try-on photo dropzone" -->
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body{margin:0;background:var(--bg-base);font-family:var(--font-body);color:var(--text-body);padding:24px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 22px;align-items:start}
+  .stack{display:flex;flex-direction:column;gap:14px}
+</style></head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script type="text/babel">
+  const { Input, Select, Checkbox, PhotoUpload } = window.FantasiandoDesignSystem_43d79f;
+  function App(){
+    const [nome,setNome]=React.useState('');
+    const [ok,setOk]=React.useState(true);
+    const [tema,setTema]=React.useState('Princesas');
+    return (
+      <div className="grid">
+        <div className="stack">
+          <Input label="Nome" placeholder="Como devemos te chamar?" value={nome} onChange={e=>setNome(e.target.value)} />
+          <Input label="E-mail" type="email" placeholder="voce@email.com" helper="Para novidades e reposições." />
+          <Input label="E-mail" type="email" error="Digite um e-mail válido" />
+          <Select label="Tema de interesse" value={tema} onChange={e=>setTema(e.target.value)} options={['Princesas','Festa junina','Fantasia temática','Aniversário']} />
+          <Checkbox label="Autorizo o uso da foto para gerar a prévia" checked={ok} onChange={e=>setOk(e.target.checked)} />
+        </div>
+        <PhotoUpload assetsPath="../../assets/" />
+      </div>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body></html>

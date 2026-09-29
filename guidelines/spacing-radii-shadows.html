@@ -1,0 +1,26 @@
+<!-- @dsCard group="Spacing" viewport="700x150" name="Radii & shadows" subtitle="Moderate radii (cards ≤8px) · soft violet-tinted shadows" -->
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>
+  body{margin:0;background:var(--bg-base);font-family:var(--font-body);color:var(--text-body);padding:22px;display:flex;gap:30px;flex-wrap:wrap}
+  .grp{display:flex;gap:14px;flex-wrap:wrap}
+  .item{display:flex;flex-direction:column;align-items:center;gap:8px}
+  .b{width:70px;height:54px;background:#fff;border:1px solid var(--line-200)}
+  .lbl{font-size:11px;font-weight:700}
+  .val{font-size:10.5px;color:var(--text-muted)}
+  .sh{width:78px;height:54px;background:#fff;border-radius:var(--radius-md)}
+  h4{width:100%;margin:0 0 2px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-subtle)}
+</style></head>
+<body>
+  <div><h4>Radii</h4><div class="grp">
+    <div class="item"><div class="b" style="border-radius:var(--radius-sm)"></div><div class="lbl">sm</div><div class="val">6px</div></div>
+    <div class="item"><div class="b" style="border-radius:var(--radius-md)"></div><div class="lbl">md</div><div class="val">8px</div></div>
+    <div class="item"><div class="b" style="border-radius:var(--radius-lg)"></div><div class="lbl">lg</div><div class="val">12px</div></div>
+    <div class="item"><div class="b" style="border-radius:var(--radius-pill)"></div><div class="lbl">pill</div><div class="val">999</div></div>
+  </div></div>
+  <div><h4>Shadows</h4><div class="grp">
+    <div class="item"><div class="sh" style="box-shadow:var(--shadow-sm)"></div><div class="lbl">sm</div></div>
+    <div class="item"><div class="sh" style="box-shadow:var(--shadow-card)"></div><div class="lbl">card</div></div>
+    <div class="item"><div class="sh" style="box-shadow:var(--shadow-lg)"></div><div class="lbl">lg</div></div>
+    <div class="item"><div class="sh" style="box-shadow:var(--shadow-brand)"></div><div class="lbl">brand</div></div>
+  </div></div>
+</body></html>

@@ -1,0 +1,152 @@
+/* ============================================================
+   Annapê Ateliê — Color tokens
+   Rosa #F598A4 + Caramelo #C38A67 on warm paper, cocoa ink.
+   Light by default · dark via [data-theme="dark"] on <html>.
+   To follow the OS, set data-theme from matchMedia on load
+   (see readme §3 "Dark mode").
+   Brand buttons use DARK text on rosa (6.4:1) — never white.
+   ============================================================ */
+
+:root {
+  /* ---- Brand: Rosa Annapê (signature #F598A4 · C0 M50 Y20 K0) ---- */
+  --rosa-50:  #FFF4F5;
+  --rosa-100: #FDE5E8;
+  --rosa-200: #FBCED4;
+  --rosa-300: #F8B4BD;
+  --rosa-400: #F598A4;   /* signature rosa — CTAs, brand areas */
+  --rosa-500: #EC8394;   /* hover */
+  --rosa-600: #C95E73;
+  --rosa-700: #A8475D;   /* rosa text on light */
+  --rosa-800: #7C3344;
+
+  /* ---- Brand: Caramelo (#C38A67 · C22 M48 Y63 K0) ---- */
+  --caramelo-50:  #FBF5F0;
+  --caramelo-100: #F4E6DB;
+  --caramelo-200: #E8CDB9;
+  --caramelo-300: #D8AE93;
+  --caramelo-400: #C38A67;   /* signature caramelo */
+  --caramelo-500: #AE7552;
+  --caramelo-600: #925F42;
+  --caramelo-700: #734A34;
+  --caramelo-800: #4F3325;
+
+  /* ---- Support (discreet accents only) ---- */
+  --yellow-100: #FFF4D6; --yellow-200: #FFE7A8; --yellow-300: #FFD87A; --yellow-400: #F7C35A; --yellow-500: #9A6B00;
+  --sky-100: #E6F2F7; --sky-200: #C6E2EE; --sky-300: #9CCBE0; --sky-400: #6FB2D0; --sky-500: #2F7EA3;
+  --coral-100: #FCE9E4; --coral-200: #F7CBBF; --coral-300: #EFA896; --coral-400: #E3826C; --coral-500: #B8513B;
+  --mint-100: #E3F4EC; --mint-300: #9BD6BC; --mint-500: #2F8A66;
+
+  /* ---- Neutrals: warm cocoa ---- */
+  --ink-900: #2E2226;
+  --ink-800: #45373B;
+  --ink-600: #6F6064;
+  --ink-400: #9C8E91;
+  --ink-300: #CDC2C3;
+  --line-200: #EEE3DF;
+  --line-100: #F6EEEA;
+
+  /* ---- Surfaces ---- */
+  --bg-base:    #FCF8F5;   /* warm paper */
+  --bg-tint:    #FEF1F2;   /* rosa wash */
+  --bg-cream:   #F8EFE7;   /* caramelo wash */
+  --surface-card:   #FFFFFF;
+  --surface-sunken: #F7F0EB;
+  --surface-raised: #FFFFFF;
+  --surface-inverse: #2E2226;
+  --overlay: rgba(46, 34, 38, 0.46);
+  --white: #FFFFFF;
+
+  --text-on-brand:  #3A1D25;
+  --text-on-accent: #2A1810;
+  --text-on-inverse: #FCF8F5;
+  --brand-ink: var(--rosa-700);      /* rosa for links / text accents */
+  --accent-ink: var(--caramelo-600);
+  color-scheme: light;
+
+  /* ---- Legacy aliases (components written before the rebrand) ---- */
+  --violet-50: var(--rosa-50); --violet-100: var(--rosa-100); --violet-200: var(--rosa-200);
+  --violet-300: var(--rosa-300); --violet-400: var(--rosa-400); --violet-500: var(--rosa-400);
+  --violet-600: var(--rosa-700); --violet-700: var(--rosa-700); --violet-800: var(--rosa-800);
+  --pink-50: var(--caramelo-50); --pink-100: var(--caramelo-100); --pink-200: var(--caramelo-200);
+  --pink-300: var(--caramelo-300); --pink-400: var(--caramelo-400); --pink-500: var(--caramelo-500);
+  --pink-600: var(--caramelo-700);
+
+  /* ---- Semantic aliases — use these ---- */
+  --brand:        var(--rosa-400);
+  --brand-strong: var(--rosa-500);
+  --brand-soft:   var(--rosa-100);
+  --brand-wash:   var(--rosa-50);
+  --accent:        var(--caramelo-400);
+  --accent-strong: var(--caramelo-500);
+  --accent-soft:   var(--caramelo-100);
+
+  --accent-pink:   var(--rosa-400);
+  --accent-yellow: var(--yellow-400);
+  --accent-sky:    var(--sky-400);
+  --accent-coral:  var(--coral-400);
+
+  --text-strong: var(--ink-900);
+  --text-body:   var(--ink-800);
+  --text-muted:  var(--ink-600);
+  --text-subtle: var(--ink-400);
+
+  --border-subtle: var(--line-200);
+  --border-strong: var(--ink-300);
+  --focus-ring:    var(--rosa-400);
+
+  --success: var(--mint-500); --success-soft: var(--mint-100);
+  --warning: var(--yellow-500); --warning-soft: var(--yellow-100);
+  --danger:  var(--coral-500); --danger-soft: var(--coral-100);
+  --info:    var(--sky-500); --info-soft: var(--sky-100);
+
+  --price: var(--ink-900);
+  --sale:  var(--coral-500);
+}
+
+:root[data-theme="dark"] {
+  --rosa-50:  #2A1A1E;
+  --rosa-100: #3A2328;
+  --rosa-200: #553038;
+  --rosa-300: #7E4553;
+  --rosa-400: #F598A4;
+  --rosa-500: #F8ABB5;
+  --rosa-600: #F9B8C1;
+  --rosa-700: #FBC6CE;
+  --rosa-800: #FDDDE1;
+
+  --caramelo-50:  #231A15;
+  --caramelo-100: #33251D;
+  --caramelo-200: #4B3629;
+  --caramelo-300: #6D4E3B;
+  --caramelo-400: #C38A67;
+  --caramelo-500: #D29E7F;
+  --caramelo-600: #DDB196;
+  --caramelo-700: #E7C5AF;
+  --caramelo-800: #F1DCCD;
+
+  --yellow-100: #3A3018; --yellow-200: #5A4A20; --yellow-500: #F2CF7A;
+  --sky-100: #172C36; --sky-200: #1F4252; --sky-500: #9CCBE0;
+  --coral-100: #3B221B; --coral-200: #5A3226; --coral-500: #F0A895;
+  --mint-100: #17332A; --mint-300: #2F6B52; --mint-500: #8FD8B8;
+
+  --ink-900: #FAF1F1;
+  --ink-800: #E8DBDC;
+  --ink-600: #B9A8AB;
+  --ink-400: #8A7B7F;
+  --ink-300: #5C4F53;
+  --line-200: #3A2F32;
+  --line-100: #2F2629;
+
+  --bg-base:    #181214;
+  --bg-tint:    #21171A;
+  --bg-cream:   #201915;
+  --surface-card:   #241B1E;
+  --surface-sunken: #1D1618;
+  --surface-raised: #2C2225;
+  --surface-inverse: #FCF8F5;
+  --overlay: rgba(8, 5, 6, 0.64);
+
+  --text-on-inverse: #2E2226;
+  color-scheme: dark;
+}
+

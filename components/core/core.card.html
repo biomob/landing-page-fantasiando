@@ -1,0 +1,51 @@
+<!-- @dsCard group="Components" viewport="700x340" name="Core — Buttons, Badges, Credits" subtitle="Buttons, icon buttons, badges & the try-on credit counter" -->
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body{margin:0;background:var(--bg-base);font-family:var(--font-body);color:var(--text-body);padding:24px}
+  .block{margin-bottom:20px}
+  .h{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-subtle);font-weight:700;margin-bottom:10px}
+  .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+</style></head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script type="text/babel">
+  const { Button, IconButton, Badge, CreditCounter } = window.FantasiandoDesignSystem_43d79f;
+  const I = (p) => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" dangerouslySetInnerHTML={{__html:p}}/>;
+  const cart = '<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>';
+  const heart = '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>';
+  const sparkle = '<path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2Z"/>';
+  function App(){
+    return (<>
+      <div className="block"><div className="h">Buttons</div><div className="row">
+        <Button variant="primary">Comprar</Button>
+        <Button variant="accent" iconLeft={<I p={sparkle}/>}>Experimentar com IA</Button>
+        <Button variant="secondary">Ver vestidos</Button>
+        <Button variant="soft">Tabela de medidas</Button>
+        <Button variant="ghost">Cancelar</Button>
+        <Button variant="primary" disabled>Indisponível</Button>
+      </div></div>
+      <div className="block"><div className="h">Sizes &amp; icon buttons</div><div className="row">
+        <Button size="sm" variant="primary">Pequeno</Button>
+        <Button size="lg" variant="primary">Grande</Button>
+        <IconButton label="Favoritos" variant="soft"><I p={heart}/></IconButton>
+        <IconButton label="Carrinho" variant="plain" badge={3}><I p={cart}/></IconButton>
+        <IconButton label="Carrinho" variant="solid"><I p={cart}/></IconButton>
+      </div></div>
+      <div className="block"><div className="h">Badges &amp; credit counter</div><div className="row">
+        <Badge tone="violet" star>3 provas por conta</Badge>
+        <Badge tone="pink">Novidade</Badge>
+        <Badge tone="success" dot>Em estoque</Badge>
+        <Badge tone="yellow">-20%</Badge>
+        <CreditCounter remaining={2} total={3} />
+        <CreditCounter remaining={0} total={3} />
+      </div></div>
+    </>);
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body></html>
