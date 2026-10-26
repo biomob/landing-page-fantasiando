@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pixel-perfect Next migration"
+  short_description: "Migrate UI with measured visual parity"
+  default_prompt: "Use $pixel-perfect-next-migration to migrate this source UI to Next.js with measured parity."
