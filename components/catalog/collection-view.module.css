@@ -1,0 +1,64 @@
+/* Faixa de título */
+.band { background-color: var(--rosa-100); }
+
+.bandInner { max-width: var(--container); margin: 0 auto; padding: 26px 24px 38px; }
+
+.breadcrumb { font-size: 0.875rem; font-weight: 700; color: var(--text-secondary); }
+.breadcrumb a { color: var(--brand-ink); text-decoration: none; }
+.breadcrumb [aria-current] { color: var(--text-strong); }
+
+.bandRow { display: flex; justify-content: space-between; align-items: end; gap: 20px; flex-wrap: wrap; margin-top: 14px; }
+
+.title { margin: 0; font: 600 clamp(2.5rem, 4.6vw, 4rem)/1 var(--font-display); color: var(--text-strong); }
+
+.description { margin-top: 10px; max-width: 560px; font-size: 1.0625rem; line-height: 1.6; }
+
+.pills { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.pill { padding: 10px 16px; border: 0; border-radius: var(--radius-pill); background: var(--surface); color: var(--text-body); font-weight: 800; font-size: 0.875rem; }
+.pill[aria-pressed="true"] { background: var(--ink); color: var(--on-ink); }
+
+/* Banner do topo */
+.topBanner { max-width: var(--container); margin: 0 auto; padding: 28px 24px 0; }
+
+/* Conteúdo */
+.content { max-width: var(--container); margin: 0 auto; padding: 36px 24px 80px; }
+
+.layout { display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start; }
+
+.results { flex: 999 1 560px; min-width: 0; }
+
+.resultsHeader { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+
+.count { font-weight: 800; }
+.count strong { color: var(--text-strong); }
+
+.sort { display: flex; align-items: center; gap: 10px; font-weight: 800; }
+
+.sort select {
+  padding: 10px 16px;
+  border: 1.5px solid var(--line-input);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--text-body);
+  font-weight: 700;
+}
+
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+
+.inGrid { margin: 22px 0; }
+
+.empty { padding: 40px 24px; border: 2px dashed var(--line-input); border-radius: 22px; text-align: center; }
+.empty img { width: 90px; margin: 0 auto 12px; }
+.empty p { margin-bottom: 16px; font-weight: 800; color: var(--text-strong); }
+
+@media (max-width: 1000px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 700px) {
+  .bandInner { padding: 20px 16px 28px; }
+  .topBanner { padding: 22px 16px 0; }
+  .content { padding: 26px 16px 48px; }
+  .grid { gap: 12px; }
+}

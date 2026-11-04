@@ -2,7 +2,6 @@
 import { Button } from "./button";
 import { Section } from "./section";
 import { Eyebrow, Lede, PageTitle } from "./typography";
-// Por último: as classes deste módulo sobrescrevem as dos primitivos acima.
 import styles from "./empty-state.module.css";
 
 type Props = { image: string; eyebrow: string; title: string; description: string; action: { href: string; label: string } };

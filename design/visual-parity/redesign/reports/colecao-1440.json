@@ -1,0 +1,49 @@
+{
+  "case": "colecao-1440",
+  "overall": 98.36,
+  "worstBand": {
+    "y": 1200,
+    "similarity": 95.15
+  },
+  "heightRef": 1617,
+  "heightTarget": 1617,
+  "bands": [
+    {
+      "y": 0,
+      "similarity": 100.0
+    },
+    {
+      "y": 200,
+      "similarity": 100.0
+    },
+    {
+      "y": 400,
+      "similarity": 100.0
+    },
+    {
+      "y": 600,
+      "similarity": 98.4
+    },
+    {
+      "y": 800,
+      "similarity": 97.71
+    },
+    {
+      "y": 1000,
+      "similarity": 95.46
+    },
+    {
+      "y": 1200,
+      "similarity": 95.15
+    },
+    {
+      "y": 1400,
+      "similarity": 100.0
+    },
+    {
+      "y": 1600,
+      "similarity": 100.0
+    }
+  ],
+  "status": "PASS"
+}

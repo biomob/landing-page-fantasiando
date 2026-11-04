@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Annapê — produto</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=Nunito:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#a8475d}a:hover{color:#7a2e45}
+.tx-dots{background-image:radial-gradient(rgba(168,71,93,.16) 1.3px,transparent 1.6px);background-size:16px 16px}
+.tx-gingham{background-color:#fde5e8;background-image:linear-gradient(90deg,rgba(245,152,164,.32) 50%,transparent 50%),linear-gradient(rgba(245,152,164,.32) 50%,transparent 50%);background-size:24px 24px}
+.tx-stars{background-image:radial-gradient(rgba(233,185,92,.55) 1.4px,transparent 1.8px),radial-gradient(rgba(255,255,255,.18) 1px,transparent 1.4px);background-size:46px 46px,23px 23px;background-position:0 0,11px 13px}
+.tx-hatch{background-image:repeating-linear-gradient(135deg,rgba(168,71,93,.07) 0 10px,transparent 10px 20px)}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:1000px){.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr}}
+</style>
+</helmet>
+<div style="background: #fcf8f5; color: #45373b; font-family: Nunito, sans-serif; min-height: 100vh;">
+
+  <div style="background: #105144; color: #ffffff; padding: 6px max(24px, calc((100% - 1272px) / 2)); display: flex; align-items: center; gap: 16px; font-size: 14px;">
+    <span>by <span style="width: 18px; height: 18px; border-radius: 50%; background: conic-gradient(#f2b51c, #e2412b, #d63b8a, #7b2f8f, #2e4fa0, #1f9b4c, #f2b51c); display: inline-block; vertical-align: middle;"></span></span>
+    <strong style="font-weight: 600;">Acessibilidade</strong>
+    <span style="width: 40px; height: 20px; border-radius: 999px; background: #ffffff; display: inline-block;"></span>
+    <span style="font-weight: 700;">A — A</span>
+  </div>
+
+  <header style="background: #fffdfb; border-bottom: 1px solid #eee3df;">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; gap: 24px; flex-wrap: wrap;">
+      <a href="Main.dc.html"><img src="/_blob/eb8a7ee1e344f177b81fd6c234171e91" alt="Annapê Ateliê — início" style="height: 62px; width: auto; display: block;"></a>
+      <label style="flex: 1 1 320px; display: flex; align-items: center; gap: 10px; background: #fcf8f5; border: 1.5px solid #ead7d1; border-radius: 999px; padding: 0 18px; height: 46px;">
+        <span class="sr">Buscar na loja</span>
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a8475d" stroke-width="2.2" stroke-linecap="round"><path d="M21 21l-4.3-4.3M11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14"></path></svg>
+        <input type="search" placeholder="Buscar vestidos, fantasias, temas…" style="border: 0; background: transparent; flex: 1; font: inherit; font-size: 15px; color: #45373b; outline: none; min-width: 0;">
+      </label>
+      <a href="#" style="display: flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 999px; background: {{accent}}; color: #3a1d25; text-decoration: none; font-weight: 900; font-size: 14px;">Falar no WhatsApp</a>
+    </div>
+  </header>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 22px 24px 64px;">
+    <nav aria-label="Você está em" style="font-size: 14px; font-weight: 700; color: #6d5257; margin-bottom: 22px;"><a href="Main.dc.html" style="text-decoration: none;">Início</a> / <a href="Colecao.dc.html" style="text-decoration: none;">Princesas</a> / <span style="color: #2e2226;">Vestido Estrela Dourada</span></nav>
+    <div class="split">
+      <!-- Galeria -->
+      <div style="display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap-reverse;">
+        <div role="group" aria-label="Fotos da peça" style="display: flex; flex-direction: column; gap: 12px; flex: 0 0 auto;">
+          <sc-for list="{{thumbs}}" as="t" hint-placeholder-count="3">
+            <button type="button" onClick="{{t.pick}}" aria-label="{{t.label}}" aria-pressed="{{t.active}}" style="width: 84px; height: 96px; padding: 0; border-radius: 16px; overflow: hidden; background: #fff4f5; border: {{t.border}}; cursor: pointer;">
+              <img src="{{t.img}}" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </button>
+          </sc-for>
+        </div>
+        <div style="flex: 1 1 380px; position: relative;">
+          <div class="tx-gingham" style="position: absolute; inset: 22px -10px -14px 22px; border-radius: 300px 300px 34px 34px;"></div>
+          <div class="tx-dots" style="position: relative; border-radius: 300px 300px 30px 30px; overflow: hidden; background-color: #fff4f5; aspect-ratio: 4 / 4.8; outline: 2px dashed #ffffff; outline-offset: -14px;">
+            <img src="{{mainImg}}" alt="Vestido Estrela Dourada" style="width: 100%; height: 100%; object-fit: cover; display: block; mix-blend-mode: multiply;">
+          </div>
+          <span style="position: absolute; left: 18px; top: 60px; background: #2e2226; color: #fcf8f5; border-radius: 999px; padding: 8px 14px; font-weight: 900; font-size: 13px;">Edição limitada</span>
+        </div>
+      </div>
+
+      <!-- Informações -->
+      <div style="background: #ffffff; border: 1px solid #f0e2dd; border-radius: 28px; padding: 32px;">
+        <p style="margin: 0; font-weight: 900; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #a8475d;">Princesas · Aniversário</p>
+        <h1 style="margin: 10px 0 8px; font-family: Fredoka, sans-serif; font-weight: 600; font-size: clamp(36px, 3.6vw, 52px); line-height: 1; color: #2e2226;">Vestido Estrela Dourada</h1>
+        <p style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 600; font-size: 32px; color: #a8475d;">R$ 159,90</p>
+        <p style="margin: 16px 0 0; font-size: 17px; line-height: 1.65;">Tule dourado salpicado de estrelas bordadas e cinto brilhante. Para quem quer ser a estrela da festa.</p>
+
+        <fieldset style="border: 0; padding: 0; margin: 26px 0 0;">
+          <legend style="width: 100%; padding: 0; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; font-weight: 900; color: #2e2226;"><span>Tamanho: {{size}}</span><a href="#" style="font-weight: 800; font-size: 14px;">Guia de medidas</a></legend>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <sc-for list="{{sizes}}" as="s" hint-placeholder-count="5">
+              <button type="button" onClick="{{s.pick}}" aria-pressed="{{s.active}}" title="{{s.title}}" style="width: 52px; height: 52px; border-radius: 16px; font: inherit; font-weight: 900; font-size: 17px; cursor: pointer; background: {{s.bg}}; border: {{s.border}}; color: {{s.color}}; text-decoration: {{s.deco}};">{{s.label}}</button>
+            </sc-for>
+          </div>
+          <p style="margin: 10px 0 0; font-size: 14px; color: #6d5257;">Riscados: feitos sob encomenda em [PRAZO] dias.</p>
+        </fieldset>
+
+        <div style="display: grid; gap: 12px; margin-top: 24px;">
+          <a href="#" style="display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 58px; border-radius: 999px; background: {{accent}}; color: #3a1d25; text-decoration: none; font-weight: 900; font-size: 17px; box-shadow: 0 6px 0 #d97c8a;">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.5-4.3a8.5 8.5 0 1 1 15.5-4.6Z"></path></svg>
+            Quero este vestido no tamanho {{size}}
+          </a>
+          <a href="#" style="display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; border-radius: 999px; background: #ffffff; border: 2px solid #2e2226; color: #2e2226; text-decoration: none; font-weight: 900; font-size: 16px;">Experimentar com IA ✦</a>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 24px;">
+          <div style="border: 2px dashed #ead7d1; border-radius: 16px; padding: 12px 8px; text-align: center; font-weight: 800; font-size: 13px;">Feito à mão</div>
+          <div style="border: 2px dashed #ead7d1; border-radius: 16px; padding: 12px 8px; text-align: center; font-weight: 800; font-size: 13px;">Ajuste sob medida</div>
+          <div style="border: 2px dashed #ead7d1; border-radius: 16px; padding: 12px 8px; text-align: center; font-weight: 800; font-size: 13px;">Envio Brasil</div>
+        </div>
+
+        <div style="margin-top: 24px; border-top: 1px solid #f0e2dd;">
+          <details open style="border-bottom: 1px solid #f0e2dd; padding: 14px 0;">
+            <summary style="font-weight: 900; color: #2e2226; cursor: pointer;">Composição e cuidados</summary>
+            <p style="margin: 10px 0 0; line-height: 1.6;">Tule de poliéster, forro 100% algodão. Lavar à mão, à sombra.</p>
+          </details>
+          <details style="border-bottom: 1px solid #f0e2dd; padding: 14px 0;">
+            <summary style="font-weight: 900; color: #2e2226; cursor: pointer;">Prazo e envio</summary>
+            <p style="margin: 10px 0 0; line-height: 1.6;">[PRAZO DE PRODUÇÃO] + frete calculado pelo CEP no WhatsApp.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner 6: produto -->
+  <section style="max-width: 1320px; margin: 0 auto; padding: 0 24px;">
+    <div class="tx-hatch" style="height: 190px; border-radius: 24px; background-color: #f6ece8; border: 2px dashed #d9b7ac; display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; text-align: center; padding: 16px;">
+      <p style="margin: 0; font-weight: 900; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #a8475d;">Espaço para banner · B6</p>
+      <p style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 600; font-size: 24px; color: #2e2226;">Complete o look / acessórios</p>
+      <sc-if value="{{showSpecs}}" hint-placeholder-val="{{ true }}"><p style="margin: 0; font-size: 14px; color: #6d5257;">1920 × 300 px · mobile 750 × 420 px</p></sc-if>
+    </div>
+  </section>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 64px 24px 80px;">
+    <p style="margin: 0 0 8px; font-weight: 900; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #a8475d;">Combina com</p>
+    <h2 style="margin: 0 0 26px; font-family: Fredoka, sans-serif; font-weight: 600; font-size: clamp(30px, 3vw, 42px); color: #2e2226;">Você também vai amar</h2>
+    <div class="g4">
+      <sc-for list="{{related}}" as="p" hint-placeholder-count="4">
+        <a href="Produto.dc.html" style="text-decoration: none; color: #2e2226; background: #ffffff; border: 1px solid #f0e2dd; border-radius: 22px; overflow: hidden; display: block;">
+          <span class="tx-dots" style="display: block; background-color: #fff4f5; aspect-ratio: 1;"><img src="{{p.img}}" alt="{{p.name}}" style="width: 100%; height: 100%; object-fit: cover; display: block; mix-blend-mode: multiply;"></span>
+          <span style="display: block; padding: 14px 16px 18px;"><span style="display: block; font-family: Fredoka, sans-serif; font-weight: 600; font-size: 18px;">{{p.name}}</span><span style="display: block; margin-top: 6px; font-weight: 900; color: #a8475d;">{{p.price}}</span></span>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <footer class="tx-stars" style="background-color: #7a2e45; color: #f3dfe3; padding: 34px max(24px, calc((100% - 1272px) / 2)); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: center;">
+    <img src="/_blob/90f17e90c2ca1e5ca896b3ab15f05ff2" alt="Annapê Ateliê" style="height: 64px; width: auto;">
+    <span style="font-size: 14px;">© 2026 Annapê Ateliê · Acessibilidade by Instituto Biomob</span>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#f598a4","options":["#f598a4","#e9b95c","#9ec9b4","#b8a3e0"],"section":"Marca"},"showSpecs":{"editor":"boolean","default":true,"section":"Banners"},"$preview":{"width":1440,"height":2900}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { size: '2', thumb: 0 };
+  }
+  renderVals() {
+    const images = [
+      { img: '/_blob/cb76df8096dd38ba7fa42e7a4ca2f1ee', label: 'Foto de frente' },
+      { img: '/_blob/8c215611b62fe20f88091a6954c465a2', label: 'Detalhe do tecido' },
+      { img: '/_blob/933aa25204c97460660e028566f59355', label: 'Peça vestida' }
+    ];
+    const sizes = [
+      { label: '2', available: true },
+      { label: '4', available: true },
+      { label: '6', available: true },
+      { label: '8', available: false },
+      { label: '10', available: false }
+    ];
+    return {
+      accent: this.props.accent ?? '#f598a4',
+      showSpecs: this.props.showSpecs ?? true,
+      size: this.state.size,
+      mainImg: images[this.state.thumb].img,
+      thumbs: images.map((t, i) => ({
+        ...t,
+        active: i === this.state.thumb,
+        border: i === this.state.thumb ? '3px solid #a8475d' : '1px solid #f0e2dd',
+        pick: () => this.setState({ thumb: i })
+      })),
+      sizes: sizes.map((s) => {
+        const active = s.label === this.state.size;
+        return {
+          ...s,
+          active,
+          title: s.available ? 'Pronta entrega' : 'Sob encomenda',
+          bg: active ? '#f598a4' : '#ffffff',
+          border: active ? '2px solid #f598a4' : '1.5px solid #ead7d1',
+          color: s.available ? '#2e2226' : '#9a8389',
+          deco: s.available ? 'none' : 'line-through',
+          pick: () => this.setState({ size: s.label })
+        };
+      }),
+      related: [
+        { name: 'Vestido Princesa Aurora', price: 'R$ 129,90', img: '/_blob/64ee5353ce98dcc41186c9ee1f7380eb' },
+        { name: 'Vestido Tule Lilás', price: 'R$ 149,90', img: '/_blob/a44d90afa28912a2b160153cb7b8ec71' },
+        { name: 'Vestido Festa Vermelho', price: 'R$ 129,90', img: '/_blob/1691da4f4b0cb393da15a5027f6083bc' },
+        { name: 'Vestido Floral Encantado', price: 'R$ 119,90', img: '/_blob/a4e21ac1c54626a3d75340943eb2270c' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

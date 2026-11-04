@@ -1,0 +1,20 @@
+.strip {
+  padding: 10px 24px;
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  flex-wrap: wrap;
+  color: var(--on-berry);
+  font-weight: 800;
+  font-size: 0.8125rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.trail { display: none; }
+
+@media (max-width: 700px) {
+  .strip { padding: 8px 12px; font-size: 0.75rem; }
+  .item:not(:first-child) { display: none; }
+  .trail { display: inline; }
+}

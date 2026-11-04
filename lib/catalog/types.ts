@@ -13,6 +13,8 @@ export type ProductSummary = {
   available: boolean;
   image: ProductImage;
   categories: CategoryRef[];
+  /** Tamanhos oferecidos (vazio quando a origem não informa na listagem). */
+  sizeLabels: string[];
   badge?: string;
 };
 

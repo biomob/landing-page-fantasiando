@@ -1,37 +1,46 @@
-.eyebrow {
-  margin: 0 0 10px;
-  text-transform: uppercase;
-  letter-spacing: .12em;
-  color: var(--brand-ink);
-  font-weight: 900;
-  font-size: 0.75rem;
-}
+/* Camada "primitives": classes de componentes (sem layer) sempre sobrescrevem estas, em qualquer ordem de carregamento.
+   A ordem das camadas é repetida aqui porque este arquivo pode carregar antes do globals.css. */
+@layer base, primitives;
 
-.pageTitle {
-  font-family: var(--font-display);
-  color: var(--text-strong);
-  font-size: clamp(2.625rem, 5vw, 4.25rem);
-  line-height: .98;
-  margin: 0 0 20px;
-}
+@layer primitives {
+  .eyebrow {
+    margin: 0 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    color: var(--brand-ink);
+    font-weight: 900;
+    font-size: 0.75rem;
+  }
 
-.sectionTitle {
-  font: 600 clamp(1.875rem, 3vw, 2.625rem)/1.1 var(--font-display);
-  color: var(--text-strong);
-  margin: 0;
-}
+  .pageTitle {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--text-strong);
+    font-size: clamp(2.625rem, 5vw, 4.25rem);
+    line-height: .98;
+    margin: 0 0 1.25rem;
+  }
 
-.lede {
-  line-height: 1.65;
-  font-size: 1.0625rem;
-  max-width: 610px;
-}
+  .sectionTitle {
+    font: 600 clamp(2rem, 3.4vw, 2.875rem)/1.05 var(--font-display);
+    color: var(--text-strong);
+    margin: 0;
+  }
 
-.textLink {
-  color: var(--brand-ink);
-  display: inline-flex;
-  gap: 5px;
-  align-items: center;
-  font-weight: 900;
-  text-decoration: none;
+  .lede {
+    line-height: 1.65;
+    font-size: 1.0625rem;
+    max-width: 610px;
+  }
+
+  .textLink {
+    color: var(--brand-ink);
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  .textLink:hover { color: var(--berry); }
 }

@@ -1,29 +1,47 @@
-.button {
-  border: 1px solid transparent;
-  border-radius: var(--radius-pill);
-  min-height: 44px;
-  padding: 0 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-weight: 800;
-  color: var(--text-on-brand);
-  text-decoration: none;
-  transition: transform 140ms ease, background 140ms ease;
-}
+/* Camada "primitives": classes de componentes (sem layer) sempre sobrescrevem estas, em qualquer ordem de carregamento.
+   A ordem das camadas é repetida aqui porque este arquivo pode carregar antes do globals.css. */
+@layer base, primitives;
 
-.button:hover { transform: translateY(-1px); }
+@layer primitives {
+  .button {
+    --lift: var(--rosa-shadow);
+    border: 2px solid transparent;
+    border-radius: var(--radius-pill);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+    transition: transform 140ms ease, box-shadow 140ms ease;
+  }
 
-.primary { background: var(--rosa-400); }
+  .button:hover { transform: translateY(-1px); }
 
-.soft { background: var(--surface-soft); border-color: var(--line-strong); color: var(--text-strong); }
+  /* Variantes */
+  .primary { background: var(--rosa-400); color: var(--text-on-brand); }
+  .dark { --lift: var(--brand-ink); background: var(--ink); color: var(--on-ink); }
+  .outline { background: var(--surface); border-color: var(--ink); color: var(--ink); }
+  .soft { background: var(--surface-soft); border-color: var(--line-strong); color: var(--text-strong); border-width: 1px; }
+  .whatsapp { background: var(--whatsapp); color: var(--whatsapp-ink); }
 
-.compact { min-height: 2.4375rem; padding: 0 0.9375rem; font-size: 0.875rem; }
+  /* Tamanhos */
+  .sm { min-height: 40px; padding: 0 14px; gap: 6px; font-size: 0.8125rem; border-width: 0; }
+  .md { padding: 10px 18px; font-size: 0.875rem; }
+  .lg { min-height: 52px; padding: 0 24px; gap: 10px; font-size: 1rem; }
+  .xl { min-height: 58px; padding: 0 24px; gap: 10px; font-size: 1.0625rem; }
 
-.block { width: 100%; }
+  .lifted { box-shadow: 0 6px 0 var(--lift); }
+  .lifted:hover { box-shadow: 0 7px 0 var(--lift); }
 
-@media (prefers-reduced-motion: reduce) {
-  .button { transition: none; }
-  .button:hover { transform: none; }
+  /* Contorno de 2px soma à altura, como no canvas. */
+  .outline.lg { min-height: 56px; }
+
+  .block { width: 100%; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .button { transition: none; }
+    .button:hover { transform: none; }
+  }
 }

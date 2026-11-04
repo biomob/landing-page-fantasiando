@@ -1,0 +1,53 @@
+{
+  "case": "produto-1440",
+  "overall": 99.93,
+  "worstBand": {
+    "y": 200,
+    "similarity": 99.38
+  },
+  "heightRef": 1964,
+  "heightTarget": 1964,
+  "bands": [
+    {
+      "y": 0,
+      "similarity": 99.95
+    },
+    {
+      "y": 200,
+      "similarity": 99.38
+    },
+    {
+      "y": 400,
+      "similarity": 99.98
+    },
+    {
+      "y": 600,
+      "similarity": 100.0
+    },
+    {
+      "y": 800,
+      "similarity": 100.0
+    },
+    {
+      "y": 1000,
+      "similarity": 100.0
+    },
+    {
+      "y": 1200,
+      "similarity": 100.0
+    },
+    {
+      "y": 1400,
+      "similarity": 100.0
+    },
+    {
+      "y": 1600,
+      "similarity": 100.0
+    },
+    {
+      "y": 1800,
+      "similarity": 100.0
+    }
+  ],
+  "status": "PASS"
+}

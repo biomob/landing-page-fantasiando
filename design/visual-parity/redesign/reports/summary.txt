@@ -1,0 +1,4 @@
+colecao-1440   PASS  geral  98.36%  pior faixa  95.15% @y=1200  altura ref 1617 / alvo 1617  faixas<95: []
+home-1440      PASS  geral  99.07%  pior faixa  98.10% @y=3640  altura ref 4948 / alvo 4949  faixas<95: []
+home-390       PASS  geral  99.72%  pior faixa  98.49% @y=440  altura ref 3710 / alvo 3710  faixas<95: []
+produto-1440   PASS  geral  99.93%  pior faixa  99.38% @y=200  altura ref 1964 / alvo 1964  faixas<95: []

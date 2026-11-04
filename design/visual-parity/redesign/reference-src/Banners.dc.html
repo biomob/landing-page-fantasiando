@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Annapê — guia de banners</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=Nunito:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.tx-dots{background-image:radial-gradient(rgba(168,71,93,.16) 1.3px,transparent 1.6px);background-size:16px 16px}
+.tx-gingham{background-color:#fde5e8;background-image:linear-gradient(90deg,rgba(245,152,164,.32) 50%,transparent 50%),linear-gradient(rgba(245,152,164,.32) 50%,transparent 50%);background-size:24px 24px}
+.tx-stars{background-image:radial-gradient(rgba(233,185,92,.55) 1.4px,transparent 1.8px),radial-gradient(rgba(255,255,255,.18) 1px,transparent 1.4px);background-size:46px 46px,23px 23px;background-position:0 0,11px 13px}
+.tx-hatch{background-image:repeating-linear-gradient(135deg,rgba(168,71,93,.07) 0 10px,transparent 10px 20px)}
+</style>
+</helmet>
+<div style="width: 1440px; height: 1700px; box-sizing: border-box; padding: 64px 72px; background: #fcf8f5; color: #45373b; font-family: Nunito, sans-serif; display: flex; flex-direction: column; gap: 36px;">
+  <div style="display: flex; justify-content: space-between; align-items: end; gap: 24px;">
+    <div>
+      <p style="margin: 0 0 8px; font-weight: 900; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: #a8475d;">Para quem vai criar as artes</p>
+      <h1 style="margin: 0; font-family: Fredoka, sans-serif; font-weight: 600; font-size: 56px; line-height: 1; color: #2e2226;">Guia de banners da vitrine</h1>
+    </div>
+    <p style="margin: 0; max-width: 460px; font-size: 16px; line-height: 1.6;">Exporte em JPG ou WebP, até 400 KB. Texto e logo sempre dentro da área segura: as bordas podem ser cortadas em telas menores.</p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px;">
+    <sc-for list="{{banners}}" as="b" hint-placeholder-count="6">
+      <article style="background: #ffffff; border: 1px solid #f0e2dd; border-radius: 22px; padding: 22px; display: flex; gap: 20px; align-items: center;">
+        <div style="flex: 0 0 210px; display: grid; gap: 8px; justify-items: center;">
+          <div class="tx-hatch" style="width: {{b.thumbW}}; height: {{b.thumbH}}; border-radius: 8px; background-color: #f6ece8; border: 2px dashed #d9b7ac; position: relative; box-sizing: border-box;">
+            <div style="position: absolute; top: 4px; bottom: 4px; left: {{b.safe}}; right: {{b.safe}}; border: 1.5px solid #a8475d; border-radius: 4px;"></div>
+          </div>
+          <span style="font-size: 12px; font-weight: 800; color: #6d5257;">proporção desktop</span>
+        </div>
+        <div style="flex: 1; min-width: 0;">
+          <p style="margin: 0; font-weight: 900; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #a8475d;">{{b.code}} · {{b.where}}</p>
+          <p style="margin: 4px 0 10px; font-family: Fredoka, sans-serif; font-weight: 600; font-size: 24px; color: #2e2226;">{{b.name}}</p>
+          <div style="display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; font-size: 14px;">
+            <span style="font-weight: 900; color: #2e2226;">Desktop</span><span>{{b.desktop}}</span>
+            <span style="font-weight: 900; color: #2e2226;">Mobile</span><span>{{b.mobile}}</span>
+            <span style="font-weight: 900; color: #2e2226;">Uso</span><span>{{b.use}}</span>
+          </div>
+        </div>
+      </article>
+    </sc-for>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; flex: 1;">
+    <section style="background: #ffffff; border: 1px solid #f0e2dd; border-radius: 22px; padding: 26px;">
+      <h2 style="margin: 0 0 18px; font-family: Fredoka, sans-serif; font-weight: 600; font-size: 26px; color: #2e2226;">Paleta da nova vitrine</h2>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px;">
+        <div><div style="height: 70px; border-radius: 14px; background: #f598a4;"></div><p style="margin: 8px 0 0; font-weight: 800; font-size: 14px;">Rosa Annapê · #F598A4</p></div>
+        <div><div style="height: 70px; border-radius: 14px; background: #7a2e45;"></div><p style="margin: 8px 0 0; font-weight: 800; font-size: 14px;">Amora · #7A2E45</p></div>
+        <div><div style="height: 70px; border-radius: 14px; background: #c38a67;"></div><p style="margin: 8px 0 0; font-weight: 800; font-size: 14px;">Caramelo · #C38A67</p></div>
+        <div><div style="height: 70px; border-radius: 14px; background: #fde5e8; border: 1px solid #f0e2dd;"></div><p style="margin: 8px 0 0; font-weight: 800; font-size: 14px;">Blush · #FDE5E8</p></div>
+        <div><div style="height: 70px; border-radius: 14px; background: #2e2226;"></div><p style="margin: 8px 0 0; font-weight: 800; font-size: 14px;">Tinta · #2E2226</p></div>
+        <div><div style="height: 70px; border-radius: 14px; background: #e9b95c;"></div><p style="margin: 8px 0 0; font-weight: 800; font-size: 14px;">Ouro (estrelas) · #E9B95C</p></div>
+      </div>
+      <p style="margin: 18px 0 0; font-size: 14px; line-height: 1.6;">Títulos em Fredoka 600, textos em Nunito. Em banners sobre foto, texto em Tinta ou branco com contraste mínimo 4.5:1.</p>
+    </section>
+    <section style="background: #ffffff; border: 1px solid #f0e2dd; border-radius: 22px; padding: 26px;">
+      <h2 style="margin: 0 0 18px; font-family: Fredoka, sans-serif; font-weight: 600; font-size: 26px; color: #2e2226;">Texturas (CSS, sem imagem)</h2>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;">
+        <div><div class="tx-dots" style="height: 90px; border-radius: 14px; background-color: #fde5e8;"></div><p style="margin: 8px 0 0; font-weight: 800; font-size: 14px;">Poá · fundos de hero e fotos</p></div>
+        <div><div class="tx-gingham" style="height: 90px; border-radius: 14px;"></div><p style="margin: 8px 0 0; font-weight: 800; font-size: 14px;">Xadrez vichy · molduras</p></div>
+        <div><div class="tx-stars" style="height: 90px; border-radius: 14px; background-color: #7a2e45;"></div><p style="margin: 8px 0 0; font-weight: 800; font-size: 14px;">Céu de estrelas · faixas escuras</p></div>
+        <div><div style="height: 90px; border-radius: 14px; background: #fcf8f5; border: 2px dashed #c38a67; outline: 2px dashed #f598a4; outline-offset: -12px;"></div><p style="margin: 8px 0 0; font-weight: 800; font-size: 14px;">Costura · selos e cartões</p></div>
+      </div>
+      <div style="margin-top: 16px; height: 22px; background: radial-gradient(circle at 50% 0, #fde5e8 15px, transparent 16px) 0 0 / 32px 22px repeat-x; border-top: 1px solid #f0e2dd;"></div>
+      <p style="margin: 8px 0 0; font-weight: 800; font-size: 14px;">Borda recortada (scallop) · transição entre seções</p>
+    </section>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1700}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const thumb = (w, h) => {
+      const scale = 200 / w;
+      return { thumbW: '200px', thumbH: Math.max(24, Math.round(h * scale)) + 'px' };
+    };
+    return {
+      banners: [
+        { code: 'B1', where: 'Home, abaixo do destaque', name: 'Banner principal (carrossel)', desktop: '1920 × 560 px · área segura 1320 px', mobile: '750 × 900 px', use: 'Campanha do mês, lançamento de coleção. Até 3 slides.', safe: '15%', ...thumb(1920, 560) },
+        { code: 'B2', where: 'Home, depois dos mais amados', name: 'Dupla promocional', desktop: '2 × 960 × 440 px', mobile: '750 × 520 px (vira carrossel)', use: 'Promoção + tema da estação lado a lado.', safe: '8%', ...thumb(960, 440) },
+        { code: 'B3', where: 'Home, antes do rodapé', name: 'Faixa fina', desktop: '1920 × 200 px · área segura 1320 px', mobile: '750 × 240 px', use: 'Cupom, aviso de prazo, frete.', safe: '15%', ...thumb(1920, 200) },
+        { code: 'B4', where: 'Topo de cada categoria', name: 'Banner da categoria', desktop: '1920 × 400 px · área segura 1320 px', mobile: '750 × 420 px', use: 'Um por tema: Princesas, Festa junina…', safe: '15%', ...thumb(1920, 400) },
+        { code: 'B5', where: 'Coleção, entre produtos', name: 'Banner entre produtos', desktop: '1320 × 260 px', mobile: '750 × 420 px', use: 'Chamada para sob medida ou prova virtual.', safe: '6%', ...thumb(1320, 260) },
+        { code: 'B6', where: 'Página de produto', name: 'Complete o look', desktop: '1920 × 300 px · área segura 1320 px', mobile: '750 × 420 px', use: 'Acessórios, tiaras, kits.', safe: '15%', ...thumb(1920, 300) }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

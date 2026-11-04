@@ -1,23 +1,154 @@
-.hero {
-  min-height: 635px;
-  display: flex;
+.hero { overflow: hidden; background-color: var(--rosa-100); }
+
+.inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 64px 24px 48px;
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 56px;
   align-items: center;
-  background:
-    linear-gradient(90deg, color-mix(in srgb, var(--bg-base) 98%, transparent) 0%, color-mix(in srgb, var(--bg-base) 90%, transparent) 38%, color-mix(in srgb, var(--bg-base) 16%, transparent) 75%),
-    var(--hero-image) center / cover;
 }
 
-.content { width: min(var(--container), 100%); margin: auto; padding: 76px 24px; }
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border: 1.5px dashed var(--caramel);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--caramel-ink);
+  font-weight: 900;
+  font-size: 0.75rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
 
-.content > * { max-width: 610px; }
+.title {
+  margin: 22px 0 18px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.75rem, 5.4vw, 5.125rem);
+  line-height: .95;
+  color: var(--text-strong);
+}
 
+.highlight { color: var(--brand-ink); }
+
+.text { max-width: 520px; font-size: 1.125rem; line-height: 1.6; }
+
+.actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+
+.perks { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 34px; color: var(--text-secondary); font-weight: 800; font-size: 0.875rem; }
+.perk { display: flex; align-items: center; gap: 8px; }
+.perkIcon { width: 30px; height: 30px; border-radius: 50%; background: var(--surface); color: var(--brand-ink); display: grid; place-items: center; }
+
+/* Colagem */
+.media { position: relative; min-height: 520px; }
+
+.frame {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  width: 76%;
+  height: 500px;
+  border-radius: 260px 260px 32px 32px;
+  transform: rotate(3deg);
+}
+
+.photo {
+  position: absolute;
+  right: 54px;
+  top: 18px;
+  width: 70%;
+  height: 480px;
+  border-radius: 240px 240px 26px 26px;
+  overflow: hidden;
+  background: #fff;
+  outline: 2px dashed #fff;
+  outline-offset: -12px;
+}
+
+.photo img { width: 100%; height: 100%; object-fit: cover; }
+
+.polaroid {
+  box-sizing: content-box;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 190px;
+  padding: 10px 10px 16px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: var(--shadow-polaroid);
+  transform: rotate(-6deg);
+}
+
+.polaroid img { display: inline-block; vertical-align: baseline; width: 100%; height: 170px; object-fit: cover; border-radius: 3px; }
+.polaroid p { margin-top: 10px; font-family: var(--font-display); font-weight: 600; font-size: 0.9375rem; color: #2e2226; text-align: center; }
+
+.sticker {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 118px;
+  height: 118px;
+  border-radius: 50%;
+  background: var(--rosa-400);
+  color: var(--text-on-brand);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  transform: rotate(12deg);
+  box-shadow: 0 0 0 6px #fff;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.stickerLabel { display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: .08em; }
+.stickerPrice { display: block; font-family: var(--font-display); font-size: 1.75rem; }
+
+.ready {
+  position: absolute;
+  right: 70px;
+  bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: #2e2226;
+  color: #fcf8f5;
+  font-weight: 800;
+  font-size: 0.875rem;
+  box-shadow: 0 12px 30px rgba(46, 34, 38, .25);
+}
+
+.readyDot { width: 10px; height: 10px; border-radius: 50%; background: var(--whatsapp); }
+
+.mobileOnly { display: none; }
+.desktopOnly { display: contents; }
+
+@media (max-width: 1000px) {
+  .inner { grid-template-columns: 1fr; }
+}
+
+/* Celular: colagem entre o título e o botão */
 @media (max-width: 700px) {
-  .hero {
-    min-height: 570px;
-    background:
-      linear-gradient(90deg, color-mix(in srgb, var(--bg-base) 98%, transparent), color-mix(in srgb, var(--bg-base) 75%, transparent)),
-      var(--hero-image) 65% center / cover;
-  }
-
-  .content { padding-inline: 20px; }
+  .inner { display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 26px 16px 30px; }
+  .copy { display: contents; }
+  .pill { align-self: flex-start; padding: 6px 12px; font-size: 0.6875rem; order: 1; }
+  .title { margin: 14px 0 12px; font-size: 2.625rem; line-height: .98; order: 2; }
+  /* No canvas as margens colapsam (18px); aqui, em flex, compensamos a margem do título. */
+  .media { order: 3; min-height: 0; height: 330px; margin: 6px 0 18px; }
+  .actions { order: 4; margin-top: 0; }
+  .actions > * { width: 100%; box-shadow: 0 5px 0 var(--brand-ink); }
+  .text, .perks, .polaroid, .ready, .secondary, .desktopOnly { display: none; }
+  .mobileOnly { display: inline; }
+  .frame { left: 34px; right: 20px; bottom: 6px; width: auto; height: auto; border-radius: 200px 200px 24px 24px; }
+  .photo { left: 44px; right: 34px; top: 10px; bottom: 0; width: auto; height: auto; border-radius: 180px 180px 20px 20px; outline-offset: -10px; }
+  .sticker { top: 18px; width: 86px; height: 86px; box-shadow: 0 0 0 5px #fff; }
+  .stickerLabel { font-size: 0.625rem; letter-spacing: 0; }
+  .stickerPrice { font-size: 1.375rem; }
 }

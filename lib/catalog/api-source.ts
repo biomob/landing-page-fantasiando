@@ -28,6 +28,7 @@ export function mapListItem(item: ApiProductListItem): ProductSummary {
     available: item.available,
     image: toImage(item.images[0], item.name),
     categories: item.categories,
+    sizeLabels: [],
   };
 }
 
@@ -50,6 +51,7 @@ export function mapDetail(item: ApiProductDetail): ProductDetail {
     images: item.images.length ? item.images.map((image) => toImage(image, item.name)) : [toImage(undefined, item.name)],
     categories: item.categories,
     sizes: [...sizes].map(([label, available]) => ({ label, available })),
+    sizeLabels: [...sizes.keys()],
     details: [item.composition, item.careInstructions, item.origin].filter((value): value is string => Boolean(value)),
   };
 }

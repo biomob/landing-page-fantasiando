@@ -1,0 +1,113 @@
+{
+  "case": "home-1440",
+  "overall": 99.07,
+  "worstBand": {
+    "y": 3640,
+    "similarity": 98.1
+  },
+  "heightRef": 4948,
+  "heightTarget": 4949,
+  "bands": [
+    {
+      "y": 40,
+      "similarity": 99.88
+    },
+    {
+      "y": 240,
+      "similarity": 98.84
+    },
+    {
+      "y": 440,
+      "similarity": 98.62
+    },
+    {
+      "y": 640,
+      "similarity": 98.49
+    },
+    {
+      "y": 840,
+      "similarity": 100.0
+    },
+    {
+      "y": 1040,
+      "similarity": 99.31
+    },
+    {
+      "y": 1240,
+      "similarity": 99.19
+    },
+    {
+      "y": 1440,
+      "similarity": 99.54
+    },
+    {
+      "y": 1640,
+      "similarity": 99.17
+    },
+    {
+      "y": 1840,
+      "similarity": 98.16
+    },
+    {
+      "y": 2040,
+      "similarity": 99.93
+    },
+    {
+      "y": 2240,
+      "similarity": 98.52
+    },
+    {
+      "y": 2440,
+      "similarity": 99.22
+    },
+    {
+      "y": 2640,
+      "similarity": 99.27
+    },
+    {
+      "y": 2840,
+      "similarity": 99.09
+    },
+    {
+      "y": 3040,
+      "similarity": 98.13
+    },
+    {
+      "y": 3240,
+      "similarity": 99.27
+    },
+    {
+      "y": 3440,
+      "similarity": 99.25
+    },
+    {
+      "y": 3640,
+      "similarity": 98.1
+    },
+    {
+      "y": 3840,
+      "similarity": 98.14
+    },
+    {
+      "y": 4040,
+      "similarity": 99.46
+    },
+    {
+      "y": 4240,
+      "similarity": 99.68
+    },
+    {
+      "y": 4440,
+      "similarity": 98.76
+    },
+    {
+      "y": 4640,
+      "similarity": 99.09
+    },
+    {
+      "y": 4840,
+      "similarity": 99.97
+    }
+  ],
+  "status": "PASS"
+}

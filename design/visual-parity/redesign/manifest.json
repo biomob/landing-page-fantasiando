@@ -1,0 +1,31 @@
+{
+  "browser": "156.0.8078.80",
+  "dpr": 1,
+  "capturedAt": "2026-11-04T15:22:43.649Z",
+  "cases": [
+    {
+      "name": "home-1440",
+      "reference": "Main.html",
+      "target": "/",
+      "viewport": "1440x900"
+    },
+    {
+      "name": "home-390",
+      "reference": "Mobile.html",
+      "target": "/",
+      "viewport": "390x900"
+    },
+    {
+      "name": "colecao-1440",
+      "reference": "Colecao.html",
+      "target": "/colecao#princesas",
+      "viewport": "1440x900"
+    },
+    {
+      "name": "produto-1440",
+      "reference": "Produto.html",
+      "target": "/produto/vestido-estrela-dourada",
+      "viewport": "1440x900"
+    }
+  ]
+}

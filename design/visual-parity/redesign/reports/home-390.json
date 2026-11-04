@@ -1,0 +1,89 @@
+{
+  "case": "home-390",
+  "overall": 99.72,
+  "worstBand": {
+    "y": 440,
+    "similarity": 98.49
+  },
+  "heightRef": 3710,
+  "heightTarget": 3710,
+  "bands": [
+    {
+      "y": 40,
+      "similarity": 99.51
+    },
+    {
+      "y": 240,
+      "similarity": 99.46
+    },
+    {
+      "y": 440,
+      "similarity": 98.49
+    },
+    {
+      "y": 640,
+      "similarity": 99.04
+    },
+    {
+      "y": 840,
+      "similarity": 100.0
+    },
+    {
+      "y": 1040,
+      "similarity": 98.92
+    },
+    {
+      "y": 1240,
+      "similarity": 100.0
+    },
+    {
+      "y": 1440,
+      "similarity": 100.0
+    },
+    {
+      "y": 1640,
+      "similarity": 100.0
+    },
+    {
+      "y": 1840,
+      "similarity": 99.82
+    },
+    {
+      "y": 2040,
+      "similarity": 100.0
+    },
+    {
+      "y": 2240,
+      "similarity": 99.82
+    },
+    {
+      "y": 2440,
+      "similarity": 100.0
+    },
+    {
+      "y": 2640,
+      "similarity": 100.0
+    },
+    {
+      "y": 2840,
+      "similarity": 100.0
+    },
+    {
+      "y": 3040,
+      "similarity": 99.77
+    },
+    {
+      "y": 3240,
+      "similarity": 100.0
+    },
+    {
+      "y": 3440,
+      "similarity": 100.0
+    },
+    {
+      "y": 3640,
+      "similarity": 100.0
+    }
+  ],
+  "status": "PASS"
+}

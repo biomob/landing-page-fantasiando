@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { ProductDetail } from "@/components/catalog/product-detail";
-import { RelatedProducts } from "@/components/catalog/related-products";
+import { ProductBanner, ProductDetail, RelatedProducts } from "@/components/catalog/product-detail";
 import { getProduct, getProducts } from "@/lib/catalog";
 import { relatedProducts } from "@/lib/catalog/selectors";
 
@@ -23,6 +22,7 @@ export default async function ProductPage({ params }: PageProps<"/produto/[slug]
   return (
     <>
       <ProductDetail product={product} />
+      <ProductBanner />
       <RelatedProducts products={relatedProducts(product, products)} />
     </>
   );

@@ -1,30 +1,39 @@
-import type { IconName } from "@/components/ui/icon";
-
 export const homeContent = {
   hero: {
-    eyebrow: "Feito para viver histórias",
-    title: "Fantasiar é o começo de toda aventura.",
-    description: "Vestidos e fantasias infantis criados com carinho no nosso ateliê. Escolha sua peça e fale com a gente pelo WhatsApp.",
-    image: "/assets/banner-atelie.png",
+    eyebrow: "Coleção Primavera",
+    eyebrowSuffix: " · Feita à mão",
+    titleStart: "Vestidos que viram",
+    titleHighlight: "contos de fada",
+    description: "Peças costuradas uma a uma no nosso ateliê em Petrópolis, com tule, renda e muito brilho. Escolha a sua e combine tudo pelo WhatsApp.",
   },
+  categories: { eyebrow: "Compre por tema", title: "Um mundo para cada imaginação", action: "Ver todos os temas →" },
+  featured: { eyebrow: "Mais amados do ateliê", title: "Peças que encantam" },
   tryOnTeaser: {
-    eyebrow: "Prova virtual",
+    eyebrow: "Prova virtual ✦",
+    eyebrowSuffix: " em breve com IA",
     title: "Veja a fantasia antes de escolher.",
-    description: "Envie uma foto, escolha a peça e receba uma prévia para tornar a decisão ainda mais especial.",
-    image: "/assets/mascote-prova-virtual.png",
+    description: "Envie uma foto, escolha a peça e receba uma prévia para decidir com o coração — e com o tamanho certo.",
+    steps: ["Escolha uma foto de corpo inteiro", "Selecione o vestido", "Receba a prévia e chame no WhatsApp"],
+    photo: { src: "/assets/foto-exemplo-crianca-vestido-rosa.png", alt: "Prévia de prova virtual com criança usando vestido rosa" },
+    mascot: "/assets/mascote-prova-virtual.png",
   },
-  steps: [
-    { icon: "heart", title: "Escolha a peça", description: "Navegue pela coleção e separe as favoritas." },
-    { icon: "whatsapp", title: "Chame no WhatsApp", description: "Tiramos dúvidas de tamanho, prazo e personalização." },
-    { icon: "truck", title: "Receba em casa", description: "Produzimos com carinho e enviamos para todo o Brasil." },
-  ] satisfies { icon: IconName; title: string; description: string }[],
+  atelier: {
+    eyebrow: "Do nosso ateliê",
+    title: "Cada ponto é dado à mão, pensando em quem vai brincar.",
+    description: "Desenhamos, cortamos e costuramos em pequenas tiragens. Forros de algodão, tule que não pinica e acabamento que aguenta a festa inteira.",
+    photo: { src: "/assets/atelie-maos-costurando.png", alt: "Mãos costurando um vestido no ateliê" },
+    detail: { src: "/assets/detalhe-tecido-renda.png", alt: "Detalhe de renda" },
+    facts: [
+      { title: "Sob medida", description: "Ajuste de comprimento" },
+      { title: "Tamanhos 2–10", description: "E outros sob consulta" },
+      { title: "Brasil todo", description: "Envio pelos Correios" },
+    ],
+  },
 };
 
 export const collectionContent = {
-  eyebrow: "Coleção Annapê",
-  title: "Vestidos que fazem a imaginação florescer",
   description: "Peças pensadas para celebrar festas, brincadeiras e os dias que viram memória.",
-  empty: "Nenhuma peça nesta coleção por enquanto.",
+  empty: "Nenhuma peça com esses filtros por enquanto.",
 };
 
 export const aboutContent = {

@@ -1,3 +1,9 @@
-.row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+/* Camada "primitives": classes de componentes (sem layer) sempre sobrescrevem estas, em qualquer ordem de carregamento.
+   A ordem das camadas é repetida aqui porque este arquivo pode carregar antes do globals.css. */
+@layer base, primitives;
 
-.center { justify-content: center; margin-top: 20px; }
+@layer primitives {
+  .row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+
+  .center { justify-content: center; margin-top: 20px; }
+}

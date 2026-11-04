@@ -9,17 +9,18 @@ pagamento — o interesse em cada peça é encaminhado para o WhatsApp do ateli�
 | Pasta | Conteúdo |
 | --- | --- |
 | `app/` | Rotas. Cada página só busca dados e compõe componentes. `globals.css` guarda tokens e reset. |
-| `components/ui/` | Primitivos sem regra de negócio: `Button`, `Section`, tipografia, `CardGrid`, `Skeleton`, `EmptyState`, `Icon`. |
-| `components/layout/` | Barra de anúncio, header, footer e botão flutuante de WhatsApp. |
+| `components/ui/` | Primitivos sem regra de negócio: `Button`, `Section`, tipografia, texturas e `Scallop`, `BannerSlot`, `Skeleton`, `EmptyState`, `Icon`. |
+| `components/layout/` | Faixa promocional, header de loja (busca, categorias, favoritos), rodapé e barra de atalhos do celular. |
+| `components/accessibility/` | Barra de acessibilidade (VLibras, tema, tamanho da fonte). |
 | `components/<domínio>/` | Blocos por tela: `catalog`, `home`, `try-on`, `about`, `contact`. |
-| `hooks/` | Estado de cliente reutilizável: `useHashState`, `useDisclosure`, `useSizeSelection`, `useTryOnFlow`. |
-| `content/` | Textos e links fixos (`site.ts`, `pages.ts`). |
+| `hooks/` | Estado de cliente: `useCatalogFilters`, `useHashList`, `useFavorites`, `useDisclosure`, `useSizeSelection`, `useTryOnFlow`, `useTheme`, `useFontSize`. |
+| `content/` | Textos e links fixos (`site.ts`, `pages.ts`) e espaços de banner (`banners.ts`). |
 | `lib/` | Catálogo (`lib/catalog`), formatação, WhatsApp e variáveis de ambiente. |
 
 Convenções:
 
 - Cada componente tem seu `*.module.css` ao lado; não há classes globais além do reset.
-- O import do CSS Module vem por último no arquivo: as classes passadas via `className` sobrescrevem as dos primitivos importados antes.
+- Os primitivos de `components/ui` (botão, tipografia, seção, texturas) ficam em `@layer primitives`: uma classe passada via `className` sempre os sobrescreve, sem depender da ordem do CSS no bundle.
 - Componentes de cliente (`"use client"`) só onde há interação; a lógica de estado fica nos hooks.
 - Sem barrel files: importe direto do arquivo.
 
@@ -71,6 +72,10 @@ A origem é escolhida por `CATALOG_SOURCE`:
 
 Com `api`, o build precisa alcançar a API para pré-renderizar as páginas de produto.
 
+## Banners
+
+Os espaços B1–B6 ficam em `content/banners.ts`. Para publicar uma arte, preencha `image` com as versões desktop e mobile (arquivos em `public/assets/banners/`). Enquanto `image` for `null`, aparece o marcador com as medidas. As medidas completas estão no canvas de design (prancheta "Guia de banners").
+
 ## Verificação
 
 ```bash
@@ -78,3 +83,5 @@ pnpm test
 pnpm lint
 pnpm build
 ```
+
+Paridade visual com o design aprovado: veja `design/visual-parity/redesign/README.md`.

@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { featuredProducts, productsInCategory, relatedProducts } from "../lib/catalog/selectors";
+import { filterCatalog } from "../lib/catalog/filters";
+import { featuredProducts, productsInCategory, relatedProducts, startingPrice } from "../lib/catalog/selectors";
 import { createMockSource } from "../lib/catalog/mock-source";
 import { formatPhone, pluralize, priceLabel } from "../lib/format";
 import { productMessage, whatsappLink } from "../lib/whatsapp";
@@ -48,5 +49,32 @@ describe("catalog selectors", async () => {
   it("returns everything without a category and filters with one", () => {
     expect(productsInCategory(products, null)).toHaveLength(products.length);
     expect(productsInCategory(products, "festa-junina").map((product) => product.slug)).toEqual(["festa-junina-docura"]);
+  });
+});
+
+describe("catalog filters", async () => {
+  const products = await createMockSource().listProducts();
+  const base = { themes: [], query: "", size: null, availability: "all" as const, sort: "new" as const };
+
+  it("matches search terms without accents across name and category", () => {
+    expect(filterCatalog(products, { ...base, query: "junina" }).map((p) => p.slug)).toEqual(["festa-junina-docura"]);
+    expect(filterCatalog(products, { ...base, query: "TULE lilas" }).map((p) => p.slug)).toEqual(["vestido-tule-lilas"]);
+  });
+
+  it("filters by availability and keeps products without size data", () => {
+    expect(filterCatalog(products, { ...base, availability: "custom" }).map((p) => p.slug)).toEqual(["vestido-coral-verao"]);
+    const unknownSizes = [{ ...products[0], sizeLabels: [] }];
+    expect(filterCatalog(unknownSizes, { ...base, size: "12" })).toHaveLength(1);
+  });
+
+  it("sorts by price or by loved (badged first)", () => {
+    const byPrice = filterCatalog(products, { ...base, sort: "price" }).map((p) => p.priceCents);
+    expect(byPrice).toEqual([...byPrice].sort((a, b) => a - b));
+    expect(filterCatalog(products, { ...base, sort: "loved" }).slice(0, 3).every((p) => p.badge)).toBe(true);
+  });
+
+  it("computes the starting price in whole reais", () => {
+    expect(startingPrice(products)).toBe(99);
+    expect(startingPrice([])).toBe(0);
   });
 });

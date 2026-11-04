@@ -1,3 +1,6 @@
+/* Ordem das camadas: reset < primitivos de UI < estilos de componente (sem layer). */
+@layer base, primitives;
+
 /* Só o reset do Tailwind; o visual vive nos CSS Modules de cada componente. */
 @import "tailwindcss/preflight.css" layer(base);
 
@@ -17,26 +20,41 @@
   --rosa-100: #fde5e8;
   --rosa-200: #e4b7be;
   --rosa-400: #f598a4;
+  --rosa-shadow: #d97c8a;
   --brand-ink: #a8475d;
+  --berry: #7a2e45;
+  --berry-soft: #f5c6ce;
+  --caramel: #c38a67;
+  --caramel-ink: #8a5a3c;
+  --gold: #e9b95c;
   --whatsapp: #25d366;
+  --whatsapp-ink: #0f3b22;
 
   /* Superfícies */
   --bg-base: #fcf8f5;
   --surface: #fff;
+  --surface-header: #fffdfb;
   --surface-soft: #fff7f5;
   --surface-muted: #f5ece8;
-  --surface-inverse: #2e2226;
+  --surface-banner: #f6ece8;
+  --surface-banner-alt: #f3e7df;
+  --ink: #2e2226;
+  --on-ink: #fcf8f5;
 
   /* Texto */
   --text-strong: #2e2226;
   --text-body: #45373b;
+  --text-secondary: #6d5257;
   --text-subtle: #59494c;
   --text-muted: #80666c;
   --text-on-brand: #3a1d25;
-  --text-on-inverse: #fcf8f5;
+  --on-berry: #fcf1f2;
+  --on-berry-muted: #f3dfe3;
 
   /* Linhas */
   --line-200: #eee3df;
+  --line-card: #f0e2dd;
+  --line-input: #ead7d1;
   --line-strong: #d9b7ac;
 
   /* Tipografia */
@@ -44,10 +62,11 @@
   --font-body: "Nunito", sans-serif;
 
   /* Layout e efeitos */
-  --container: 1320px;
+  /* 1320px de conteúdo + 24px de respiro de cada lado (containers usam border-box). */
+  --container: 1368px;
   --radius-pill: 999px;
   --shadow-card: 0 12px 30px #2e22221a;
-  --shadow-float: 0 10px 28px #1b5e3a55;
+  --shadow-polaroid: 0 18px 40px rgba(46, 34, 38, .18);
   --ring: 0 0 0 3px var(--rosa-200);
 }
 
@@ -56,23 +75,35 @@
   --rosa-100: #3b2a30;
   --rosa-200: #6b4650;
   --brand-ink: #f5a9b6;
+  --caramel-ink: #e2b593;
 
   --bg-base: #181214;
   --surface: #221a1d;
+  --surface-header: #1d1518;
   --surface-soft: #2a2024;
   --surface-muted: #1f171a;
+  --surface-banner: #2a2024;
+  --surface-banner-alt: #2e2327;
+  --ink: #fcf1f2;
+  --on-ink: #2e2226;
 
   --text-strong: #fcf1f2;
   --text-body: #e8dbdc;
+  --text-secondary: #cdb9bc;
   --text-subtle: #cdb9bc;
   --text-muted: #a8939a;
 
   --line-200: #3a2f32;
+  --line-card: #3a2f32;
+  --line-input: #4a3a3f;
   --line-strong: #5a4448;
 
   --shadow-card: 0 12px 30px #0006;
+  --shadow-polaroid: 0 18px 40px #0008;
   color-scheme: dark;
 }
+
+html { line-height: normal; }
 
 body {
   min-height: 100vh;

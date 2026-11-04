@@ -3,7 +3,8 @@ import { AccessibilityBar, SkipLink } from "@/components/accessibility/accessibi
 import { VLibras } from "@/components/accessibility/vlibras";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import { WhatsappFloat } from "@/components/layout/whatsapp-float";
+import { MobileTabBar } from "@/components/layout/mobile-tab-bar";
+import { PromoStrip } from "@/components/layout/promo-strip";
 import { site } from "@/content/site";
 import { siteUrl } from "@/lib/env";
 import { preferencesScript } from "@/lib/preferences";
@@ -26,10 +27,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body>
         <SkipLink />
         <AccessibilityBar />
+        <PromoStrip />
         <SiteHeader />
         <main id="conteudo" tabIndex={-1}>{children}</main>
         <SiteFooter />
-        <WhatsappFloat />
+        <MobileTabBar />
         <VLibras />
       </body>
     </html>

@@ -1,8 +1,10 @@
-import { mockCategories, mockProducts } from "./mock-data";
+import { type MockProduct, mockCategories, mockProducts } from "./mock-data";
 import type { CatalogSource, ProductDetail, ProductSummary } from "./types";
 
-const toSummary = ({ slug, name, summary, priceCents, maxPriceCents, available, image, categories, badge }: ProductDetail): ProductSummary =>
-  ({ slug, name, summary, priceCents, maxPriceCents, available, image, categories, badge });
+const withSizeLabels = (product: MockProduct): ProductDetail => ({ ...product, sizeLabels: product.sizes.map((size) => size.label) });
+
+const toSummary = ({ slug, name, summary, priceCents, maxPriceCents, available, image, categories, badge, sizes }: MockProduct): ProductSummary =>
+  ({ slug, name, summary, priceCents, maxPriceCents, available, image, categories, badge, sizeLabels: sizes.map((size) => size.label) });
 
 export function createMockSource(products = mockProducts, categories = mockCategories): CatalogSource {
   return {
@@ -10,7 +12,8 @@ export function createMockSource(products = mockProducts, categories = mockCateg
       return products.map(toSummary);
     },
     async getProduct(slug) {
-      return products.find((product) => product.slug === slug) ?? null;
+      const product = products.find((item) => item.slug === slug);
+      return product ? withSizeLabels(product) : null;
     },
     async listCategories() {
       return categories.map((item) => ({

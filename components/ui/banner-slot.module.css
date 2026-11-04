@@ -1,0 +1,63 @@
+.slot {
+  /* Medidas do canvas: altura sem contar borda e padding. */
+  box-sizing: content-box;
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 16px;
+  border: 2px dashed var(--line-strong);
+  background-color: var(--surface-banner);
+  overflow: hidden;
+}
+
+.alt { background-color: var(--surface-banner-alt); }
+
+.code { margin: 0; font-weight: 900; font-size: 0.75rem; letter-spacing: .14em; text-transform: uppercase; color: var(--brand-ink); }
+.title { margin: 8px 0 6px; font-family: var(--font-display); font-weight: 600; color: var(--text-strong); }
+.specs { margin: 0; font-size: 0.875rem; color: var(--text-secondary); }
+
+.mobileOnly { display: none; }
+
+/* Layouts */
+.hero { height: 380px; padding: 0; border-radius: 28px; }
+.hero .title { font-size: 2.125rem; }
+.hero .specs { font-size: 0.9375rem; }
+
+.card { height: 300px; border-radius: 24px; padding: 20px; }
+.card .title { font-size: 1.625rem; }
+
+.category { height: 230px; border-radius: 24px; }
+.category .title { font-size: 1.75rem; }
+
+.row { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+.row .title { margin: 0; font-size: 1.5rem; }
+
+.strip { height: 150px; border-radius: 20px; }
+.product { height: 190px; border-radius: 24px; }
+
+.inGridFrame { border-radius: 24px; padding: 6px; }
+.inGrid { height: 200px; border-radius: 20px; background-color: var(--bg-base); }
+
+.dots { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); display: flex; gap: 8px; }
+.dot { width: 8px; height: 8px; border-radius: 99px; background: var(--line-strong); }
+.dotActive { width: 26px; background: var(--brand-ink); }
+
+/* Banner com arte */
+.picture { display: block; overflow: hidden; }
+.picture img { width: 100%; height: auto; display: block; }
+
+@media (max-width: 700px) {
+  .desktopOnly { display: none; }
+  .mobileOnly { display: block; }
+  .code { font-size: 0.6875rem; }
+  .specs { font-size: 0.8125rem; }
+  .hero { height: 410px; padding: 16px; border-radius: 22px; }
+  .hero .title { font-size: 1.5rem; }
+  .card { height: 290px; border-radius: 22px; padding: 16px; }
+  .card .title { font-size: 1.375rem; }
+  .strip { height: 120px; padding: 0; border-radius: 18px; display: grid; }
+  .strip .specs { margin-top: 6px; }
+  .strip > div { display: block; }
+  .hero .dots { display: none; }
+}
