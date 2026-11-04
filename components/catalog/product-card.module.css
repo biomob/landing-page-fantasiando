@@ -35,8 +35,8 @@
   position: absolute;
   right: 12px;
   top: 12px;
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   border: 0;
   border-radius: 50%;
   background: #fff;
@@ -51,7 +51,7 @@
 
 .category { font-weight: 900; font-size: 0.75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--brand-ink); }
 
-.name { font-family: var(--font-display); font-weight: 600; font-size: 1.1875rem; line-height: 1.2; color: var(--text-strong); text-decoration: none; }
+.name { min-height: 24px; font-family: var(--font-display); font-weight: 600; font-size: 1.1875rem; line-height: 1.2; color: var(--text-strong); text-decoration: none; }
 .name:hover { color: var(--brand-ink); }
 
 .sizes { display: flex; gap: 6px; margin-top: 4px; }
@@ -69,7 +69,7 @@
 @media (max-width: 700px) {
   .card { border-radius: 18px; }
   .mediaLink { aspect-ratio: auto; height: 190px; }
-  .badge { left: 8px; top: 8px; padding: 4px 8px; font-size: 0.625rem; }
+  .badge { left: 8px; top: 8px; padding: 4px 8px; font-size: 0.75rem; }
   .favorite, .category, .sizes { display: none; }
   .body, .simple .body { padding: 10px 10px 12px; gap: 0; }
   .name { font-size: 0.9375rem; }

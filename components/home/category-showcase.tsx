@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element -- direct static assets preserve storefront image crops. */
 import Link from "next/link";
+import { Icon } from "@/components/ui/icon";
 import textures from "@/components/ui/textures.module.css";
 import { Eyebrow, SectionTitle, TextLink } from "@/components/ui/typography";
 import { homeContent } from "@/content/pages";
@@ -22,7 +23,7 @@ export function CategoryShowcase({ categories }: { categories: Category[] }) {
           <Eyebrow>{copy.eyebrow}</Eyebrow>
           <SectionTitle>{copy.title}</SectionTitle>
         </div>
-        <TextLink className={styles.action} href="/colecao">{copy.action}</TextLink>
+        <TextLink className={styles.action} href="/colecao">{copy.action}<Icon name="arrow" size={18} /></TextLink>
       </div>
       <div className={styles.grid}>
         {categories.slice(0, 4).map((category) => (

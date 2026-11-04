@@ -11,10 +11,6 @@ import styles from "./hero.module.css";
 
 const { hero } = homeContent;
 
-const perkIcons = {
-  scissors: "M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12",
-};
-
 type Props = { cover: ProductSummary; polaroid?: ProductSummary; startingPrice: number };
 
 export function Hero({ cover, polaroid, startingPrice }: Props) {
@@ -26,16 +22,16 @@ export function Hero({ cover, polaroid, startingPrice }: Props) {
           <h1 className={styles.title}>{hero.titleStart} <span className={styles.highlight}>{hero.titleHighlight}</span>.</h1>
           <p className={styles.text}>{hero.description}</p>
           <div className={styles.actions}>
-            <Button variant="dark" lifted href="/colecao">Ver a coleção <span className={styles.desktopOnly}><Icon name="arrow" size={18} /></span><span className={styles.mobileOnly} aria-hidden="true">→</span></Button>
+            <Button variant="dark" lifted href="/colecao">Ver a coleção <Icon name="arrow" size={18} /></Button>
             <Button className={styles.secondary} variant="outline" href={generalWhatsappLink} external><Icon name="whatsapp" size={18} /> Falar no WhatsApp</Button>
           </div>
           <ul className={styles.perks}>
             <li className={styles.perk}>
-              <span className={styles.perkIcon}><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d={perkIcons.scissors} /></svg></span>
+              <span className={styles.perkIcon}><Icon name="scissors" size={16} /></span>
               Ajuste sob medida
             </li>
-            <li className={styles.perk}><span className={styles.perkIcon} aria-hidden="true">✦</span>Tecidos macios</li>
-            <li className={styles.perk}><span className={styles.perkIcon} aria-hidden="true">♥</span>Atendimento próximo</li>
+            <li className={styles.perk}><span className={styles.perkIcon}><Icon name="sparkle" size={16} /></span>Tecidos macios</li>
+            <li className={styles.perk}><span className={styles.perkIcon}><Icon name="heart" size={16} /></span>Atendimento próximo</li>
           </ul>
         </div>
 

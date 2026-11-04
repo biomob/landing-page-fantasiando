@@ -64,3 +64,6 @@ AGENTS.md
 /design/visual-parity/redesign/target/
 /design/visual-parity/redesign/diff/
 /design/visual-parity/redesign/side/
+
+# relatório completo da auditoria (o resumo latest.txt é versionado)
+/design/a11y/reports/latest.json

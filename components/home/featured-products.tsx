@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
 import { ProductCard } from "@/components/catalog/product-card";
+import { Icon } from "@/components/ui/icon";
 import { Eyebrow, SectionTitle } from "@/components/ui/typography";
 import { homeContent } from "@/content/pages";
+import { categoryIcon } from "@/content/site";
 import { productsInCategory } from "@/lib/catalog/selectors";
 import type { CategoryRef, ProductSummary } from "@/lib/catalog/types";
 import styles from "./featured-products.module.css";
@@ -25,6 +27,7 @@ export function FeaturedProducts({ featured, products, filters }: Props) {
         <div className={styles.chips} role="group" aria-label="Filtrar destaques por tema">
           {options.map((option) => (
             <button key={option.slug ?? "todos"} type="button" className={styles.chip} aria-pressed={active === option.slug} onClick={() => setActive(option.slug)}>
+              <Icon name={option.slug ? categoryIcon(option.slug) : "grid"} size={16} />
               {option.name}
             </button>
           ))}

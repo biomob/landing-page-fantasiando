@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element -- direct static assets preserve storefront image crops. */
+import { Icon } from "@/components/ui/icon";
 import { site } from "@/content/site";
 import { FontSizeControl } from "./font-size-control";
 import { ThemeToggle } from "./theme-toggle";
@@ -13,7 +14,7 @@ export function AccessibilityBar() {
           by
           <img src="/assets/parceiros/instituto-biomob-branco.png" alt="Instituto Biomob" />
         </span>
-        <span className={styles.label}>Acessibilidade</span>
+        <span className={styles.label}><Icon name="accessibility" size={20} />Acessibilidade</span>
         <ThemeToggle />
         <FontSizeControl />
       </div>

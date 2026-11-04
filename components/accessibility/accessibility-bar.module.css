@@ -19,7 +19,7 @@
 
 .credit img { width: auto; height: 26px; }
 
-.label { font-weight: 600; font-size: 1.15rem; }
+.label { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: 1.15rem; }
 
 .message { font-size: 0.8125rem; font-weight: 700; }
 
@@ -58,9 +58,9 @@
 .themeKnob svg { width: 16px; height: 16px; }
 
 /* Tamanho da fonte */
-.fontSize { display: flex; align-items: center; gap: 8px; }
+.fontSize { display: flex; align-items: center; gap: 2px; }
 
-.fontSmall, .fontLarge { color: inherit; font-weight: 700; line-height: 1; transition: opacity 150ms ease; }
+.fontSmall, .fontLarge { min-width: 32px; min-height: 32px; display: grid; place-items: center; border-radius: 8px; color: inherit; font-weight: 700; line-height: 1; transition: opacity 150ms ease; }
 
 .fontSmall { font-size: 0.75rem; }
 .fontLarge { font-size: 1.125rem; }
@@ -69,18 +69,22 @@
 
 .fontSmall:disabled, .fontLarge:disabled { opacity: .5; cursor: not-allowed; }
 
+/* Régua com 24px de área clicável; a trilha visível continua fina, como na Biomob. */
 .slider {
   width: 96px;
-  height: 2px;
+  height: 24px;
   appearance: none;
-  border-radius: 5px;
-  background: color-mix(in srgb, currentColor 70%, transparent);
+  background: transparent;
   color: inherit;
   cursor: pointer;
 }
 
+.slider::-webkit-slider-runnable-track { height: 2px; border-radius: 5px; background: color-mix(in srgb, currentColor 70%, transparent); }
+.slider::-moz-range-track { height: 2px; border-radius: 5px; background: color-mix(in srgb, currentColor 70%, transparent); }
+
 .slider::-webkit-slider-thumb {
   appearance: none;
+  margin-top: -9px;
   width: 4px;
   height: 20px;
   border-radius: 12px;

@@ -36,16 +36,18 @@
   box-sizing: content-box;
   height: 48px;
   padding: 0 18px;
-  border: 1.5px solid var(--line-input);
+  border: 1.5px solid var(--line-field);
   border-radius: var(--radius-pill);
   background: var(--bg-base);
   color: var(--brand-ink);
 }
 
-.search:focus-within { box-shadow: var(--ring); }
+.search:focus-within { outline: 3px solid var(--brand-ink); outline-offset: 2px; }
+.search input:focus-visible { outline: none; }
 
 .search input {
   flex: 1;
+  align-self: stretch;
   min-width: 0;
   border: 0;
   background: transparent;
@@ -90,6 +92,9 @@
 }
 
 .categoryLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 14px 16px;
   border-bottom: 3px solid transparent;
   color: var(--text-body);
@@ -100,6 +105,7 @@
 }
 
 .categoryLink:hover { color: var(--brand-ink); }
+.categoryLink:focus-visible { outline-offset: -3px; }
 .categoryLink[aria-current="page"] { color: var(--text-strong); font-weight: 800; border-bottom-color: var(--rosa-400); }
 
 /* Celular */
@@ -108,6 +114,10 @@
 .mobileNav { border-top: 1px solid var(--line-200); display: grid; padding: 4px 16px 12px; }
 
 .mobileNav a {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   padding: 12px 4px;
   border-bottom: 1px solid var(--line-200);
   color: var(--text-strong);
@@ -147,6 +157,9 @@
 
   .chip {
     flex: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     padding: 8px 14px;
     border-radius: var(--radius-pill);
     background: var(--rosa-100);

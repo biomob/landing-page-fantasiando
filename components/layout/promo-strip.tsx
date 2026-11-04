@@ -1,3 +1,4 @@
+import { Icon } from "@/components/ui/icon";
 import textures from "@/components/ui/textures.module.css";
 import { promoMessages } from "@/content/site";
 import { cx } from "@/lib/cx";
@@ -7,9 +8,10 @@ import styles from "./promo-strip.module.css";
 export function PromoStrip() {
   return (
     <div className={cx(textures.stars, styles.strip)}>
-      {promoMessages.map((message, index) => (
-        <span key={message} className={styles.item}>
-          ✦ {message}{index === 0 ? <span className={styles.trail} aria-hidden="true"> ✦</span> : null}
+      {promoMessages.map((message) => (
+        <span key={message.text} className={styles.item}>
+          <Icon name={message.icon} size={16} />
+          {message.text}
         </span>
       ))}
     </div>

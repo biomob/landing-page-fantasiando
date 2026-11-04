@@ -17,7 +17,7 @@
 .column { display: grid; gap: 10px; align-content: start; }
 .columnTitle { color: #fff; font-family: var(--font-display); font-weight: 600; font-size: 1.1875rem; }
 
-.link { color: var(--on-berry-muted); text-decoration: none; }
+.link { min-height: 24px; display: inline-flex; align-items: center; gap: 8px; color: var(--on-berry-muted); text-decoration: none; }
 .link:hover { color: #fff; text-decoration: underline; }
 
 .contact { gap: 12px; }

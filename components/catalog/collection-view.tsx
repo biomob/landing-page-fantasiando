@@ -3,11 +3,12 @@
 import Link from "next/link";
 import { BannerSlot } from "@/components/ui/banner-slot";
 import { Button } from "@/components/ui/button";
+import { Icon } from "@/components/ui/icon";
 import { Scallop } from "@/components/ui/scallop";
 import textures from "@/components/ui/textures.module.css";
 import { banners } from "@/content/banners";
 import { collectionContent } from "@/content/pages";
-import { categoryNav } from "@/content/site";
+import { categoryIcon, categoryNav } from "@/content/site";
 import { useCatalogFilters } from "@/hooks/use-catalog-filters";
 import type { Availability, SortOrder } from "@/lib/catalog/filters";
 import type { Category, ProductSummary } from "@/lib/catalog/types";
@@ -42,7 +43,7 @@ export function CollectionView({ products, categories }: { products: ProductSumm
       <section className={cx(styles.band, textures.dots)}>
         <div className={styles.bandInner}>
           <nav aria-label="Você está em" className={styles.breadcrumb}>
-            <Link href="/">Início</Link> / {single ? <><Link href="/colecao" onClick={filters.clear}>Coleção</Link> / <span aria-current="page">{single.name}</span></> : <span aria-current="page">Coleção</span>}
+            <Link href="/"><Icon name="home" size={16} />Início</Link> / {single ? <><Link href="/colecao" onClick={filters.clear}>Coleção</Link> / <span aria-current="page">{single.name}</span></> : <span aria-current="page">Coleção</span>}
           </nav>
           <div className={styles.bandRow}>
             <div>
@@ -52,6 +53,7 @@ export function CollectionView({ products, categories }: { products: ProductSumm
             <div className={styles.pills} role="group" aria-label="Temas">
               {categories.map((category) => (
                 <button key={category.slug} type="button" className={styles.pill} aria-pressed={single?.slug === category.slug} onClick={() => filters.selectOnlyTheme(category.slug)}>
+                  <Icon name={categoryIcon(category.slug)} size={16} />
                   {shortLabel(category)}
                 </button>
               ))}
@@ -82,6 +84,7 @@ export function CollectionView({ products, categories }: { products: ProductSumm
             <div className={styles.resultsHeader}>
               <p className={styles.count} role="status"><strong>{pluralize(filters.results.length, "peça", "peças")}</strong>{scope}</p>
               <label className={styles.sort}>
+                <Icon name="sort" size={18} />
                 Ordenar por
                 <select value={filters.sort} onChange={(event) => filters.setSort(event.target.value as SortOrder)}>
                   {sortOptions.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}
@@ -99,7 +102,7 @@ export function CollectionView({ products, categories }: { products: ProductSumm
               <div className={styles.empty}>
                 <img src="/assets/mascote-vazio.png" alt="" />
                 <p>{collectionContent.empty}</p>
-                <Button variant="outline" size="md" onClick={filters.clear}>Limpar filtros</Button>
+                <Button variant="outline" size="md" onClick={filters.clear}><Icon name="refresh" size={16} />Limpar filtros</Button>
               </div>
             )}
           </div>

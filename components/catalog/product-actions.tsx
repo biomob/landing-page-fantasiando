@@ -26,7 +26,7 @@ export function ProductActions({ product, sizes }: Props) {
         <fieldset className={styles.sizes}>
           <legend className={styles.sizesLegend}>
             <span>Tamanho{size ? `: ${size}` : ""}</span>
-            <a href={measuresLink} target="_blank" rel="noopener noreferrer">Guia de medidas</a>
+            <a href={measuresLink} target="_blank" rel="noopener noreferrer"><Icon name="ruler" size={16} />Guia de medidas</a>
           </legend>
           <div className={styles.sizeList}>
             {sizes.map((item) => (

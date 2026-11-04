@@ -56,6 +56,8 @@
   --line-card: #f0e2dd;
   --line-input: #ead7d1;
   --line-strong: #d9b7ac;
+  /* Borda de campos e controles: >= 3:1 contra o fundo (WCAG 1.4.11). */
+  --line-field: #9c7a80;
 
   /* Tipografia */
   --font-display: "Fredoka", sans-serif;
@@ -67,7 +69,6 @@
   --radius-pill: 999px;
   --shadow-card: 0 12px 30px #2e22221a;
   --shadow-polaroid: 0 18px 40px rgba(46, 34, 38, .18);
-  --ring: 0 0 0 3px var(--rosa-200);
 }
 
 :root[data-theme="dark"] {
@@ -97,6 +98,7 @@
   --line-card: #3a2f32;
   --line-input: #4a3a3f;
   --line-strong: #5a4448;
+  --line-field: #86696f;
 
   --shadow-card: 0 12px 30px #0006;
   --shadow-polaroid: 0 18px 40px #0008;
@@ -116,6 +118,7 @@ body {
 
 button { cursor: pointer; }
 
-a:focus-visible, button:focus-visible, select:focus-visible { outline: none; box-shadow: var(--ring); }
+/* Foco visível com contraste >= 3:1 em todos os controles (WCAG 2.4.7 / 1.4.11). */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible { outline: 3px solid var(--brand-ink); outline-offset: 2px; }
 
 ::selection { background: var(--rosa-100); }

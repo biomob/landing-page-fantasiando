@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element -- direct static assets preserve storefront image crops. */
 import { Button } from "./button";
+import { Icon } from "./icon";
 import { Section } from "./section";
 import { Eyebrow, Lede, PageTitle } from "./typography";
 import styles from "./empty-state.module.css";
@@ -13,7 +14,7 @@ export function EmptyState({ image, eyebrow, title, description, action }: Props
       <Eyebrow>{eyebrow}</Eyebrow>
       <PageTitle className={styles.title}>{title}</PageTitle>
       <Lede className={styles.lede}>{description}</Lede>
-      <Button className={styles.action} href={action.href}>{action.label}</Button>
+      <Button className={styles.action} href={action.href}>{action.label} <Icon name="arrow" size={18} /></Button>
     </Section>
   );
 }

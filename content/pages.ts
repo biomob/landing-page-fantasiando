@@ -1,3 +1,5 @@
+import type { IconName } from "@/components/ui/icon";
+
 export const homeContent = {
   hero: {
     eyebrow: "Coleção Primavera",
@@ -6,7 +8,7 @@ export const homeContent = {
     titleHighlight: "contos de fada",
     description: "Peças costuradas uma a uma no nosso ateliê em Petrópolis, com tule, renda e muito brilho. Escolha a sua e combine tudo pelo WhatsApp.",
   },
-  categories: { eyebrow: "Compre por tema", title: "Um mundo para cada imaginação", action: "Ver todos os temas →" },
+  categories: { eyebrow: "Compre por tema", title: "Um mundo para cada imaginação", action: "Ver todos os temas" },
   featured: { eyebrow: "Mais amados do ateliê", title: "Peças que encantam" },
   atelier: {
     eyebrow: "Do nosso ateliê",
@@ -15,10 +17,10 @@ export const homeContent = {
     photo: { src: "/assets/atelie-maos-costurando.png", alt: "Mãos costurando um vestido no ateliê" },
     detail: { src: "/assets/detalhe-tecido-renda.png", alt: "Detalhe de renda" },
     facts: [
-      { title: "Sob medida", description: "Ajuste de comprimento" },
-      { title: "Tamanhos 2–10", description: "E outros sob consulta" },
-      { title: "Brasil todo", description: "Envio pelos Correios" },
-    ],
+      { title: "Sob medida", description: "Ajuste de comprimento", icon: "scissors" },
+      { title: "Tamanhos 2–10", description: "E outros sob consulta", icon: "ruler" },
+      { title: "Brasil todo", description: "Envio pelos Correios", icon: "truck" },
+    ] satisfies { title: string; description: string; icon: IconName }[],
   },
 };
 

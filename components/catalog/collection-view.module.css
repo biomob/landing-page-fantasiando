@@ -4,7 +4,7 @@
 .bandInner { max-width: var(--container); margin: 0 auto; padding: 26px 24px 38px; }
 
 .breadcrumb { font-size: 0.875rem; font-weight: 700; color: var(--text-secondary); }
-.breadcrumb a { color: var(--brand-ink); text-decoration: none; }
+.breadcrumb a { min-height: 24px; display: inline-flex; align-items: center; gap: 6px; vertical-align: middle; color: var(--brand-ink); text-decoration: none; }
 .breadcrumb [aria-current] { color: var(--text-strong); }
 
 .bandRow { display: flex; justify-content: space-between; align-items: end; gap: 20px; flex-wrap: wrap; margin-top: 14px; }
@@ -15,7 +15,7 @@
 
 .pills { display: flex; gap: 8px; flex-wrap: wrap; }
 
-.pill { padding: 10px 16px; border: 0; border-radius: var(--radius-pill); background: var(--surface); color: var(--text-body); font-weight: 800; font-size: 0.875rem; }
+.pill { min-height: 44px; display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border: 0; border-radius: var(--radius-pill); background: var(--surface); color: var(--text-body); font-weight: 800; font-size: 0.875rem; }
 .pill[aria-pressed="true"] { background: var(--ink); color: var(--on-ink); }
 
 /* Banner do topo */
@@ -36,8 +36,9 @@
 .sort { display: flex; align-items: center; gap: 10px; font-weight: 800; }
 
 .sort select {
+  min-height: 44px;
   padding: 10px 16px;
-  border: 1.5px solid var(--line-input);
+  border: 1.5px solid var(--line-field);
   border-radius: var(--radius-pill);
   background: var(--surface);
   color: var(--text-body);

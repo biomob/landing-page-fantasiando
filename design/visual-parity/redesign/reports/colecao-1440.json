@@ -1,49 +1,49 @@
 {
   "case": "colecao-1440",
-  "overall": 98.36,
+  "overall": 91.13,
   "worstBand": {
-    "y": 1200,
-    "similarity": 95.15
+    "y": 1400,
+    "similarity": 80.35
   },
   "heightRef": 1617,
-  "heightTarget": 1617,
+  "heightTarget": 1648,
   "bands": [
     {
       "y": 0,
-      "similarity": 99.97
+      "similarity": 92.59
     },
     {
       "y": 200,
-      "similarity": 99.48
+      "similarity": 98.53
     },
     {
       "y": 400,
-      "similarity": 100.0
+      "similarity": 97.32
     },
     {
       "y": 600,
-      "similarity": 98.4
+      "similarity": 92.22
     },
     {
       "y": 800,
-      "similarity": 98.26
+      "similarity": 96.16
     },
     {
       "y": 1000,
-      "similarity": 95.46
+      "similarity": 84.58
     },
     {
       "y": 1200,
-      "similarity": 95.15
+      "similarity": 86.69
     },
     {
       "y": 1400,
-      "similarity": 100.0
+      "similarity": 80.35
     },
     {
       "y": 1600,
-      "similarity": 100.0
+      "similarity": 98.42
     }
   ],
-  "status": "PASS"
+  "status": "FAIL"
 }

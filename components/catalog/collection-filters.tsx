@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element -- direct static assets preserve storefront image crops. */
 import { Button } from "@/components/ui/button";
+import { Icon } from "@/components/ui/icon";
 import textures from "@/components/ui/textures.module.css";
+import { categoryIcon } from "@/content/site";
 import type { Availability } from "@/lib/catalog/filters";
 import type { CategoryRef } from "@/lib/catalog/types";
 import { cx } from "@/lib/cx";
@@ -32,14 +34,15 @@ export function CollectionFilters({ categories, sizes, themes, size, availabilit
     <aside className={styles.panel} aria-label="Filtros">
       <div className={styles.header}>
         <strong className={styles.heading}>Filtrar</strong>
-        <button type="button" className={styles.clear} onClick={onClear}>Limpar</button>
+        <button type="button" className={styles.clear} onClick={onClear}><Icon name="refresh" size={16} />Limpar</button>
       </div>
 
       <fieldset className={styles.group}>
-        <legend className={styles.legend}>Tema</legend>
+        <legend className={styles.legend}><Icon name="tag" size={18} />Tema</legend>
         {categories.map((category) => (
           <label key={category.slug} className={styles.option}>
             <input type="checkbox" checked={themes.includes(category.slug)} onChange={() => onToggleTheme(category.slug)} />
+            <Icon className={styles.optionIcon} name={categoryIcon(category.slug)} size={16} />
             {category.name}
           </label>
         ))}
@@ -47,7 +50,7 @@ export function CollectionFilters({ categories, sizes, themes, size, availabilit
 
       {sizes.length ? (
         <fieldset className={styles.group}>
-          <legend className={styles.legend}>Tamanho</legend>
+          <legend className={styles.legend}><Icon name="ruler" size={18} />Tamanho</legend>
           <div className={styles.sizes}>
             {sizes.map((label) => (
               <button key={label} type="button" className={styles.size} aria-pressed={size === label} onClick={() => onToggleSize(label)}>{label}</button>
@@ -57,7 +60,7 @@ export function CollectionFilters({ categories, sizes, themes, size, availabilit
       ) : null}
 
       <fieldset className={styles.group}>
-        <legend className={styles.legend}>Disponibilidade</legend>
+        <legend className={styles.legend}><Icon name="clock" size={18} />Disponibilidade</legend>
         {availabilityOptions.map((option) => (
           <label key={option.value} className={styles.option}>
             <input type="radio" name="disponibilidade" checked={availability === option.value} onChange={() => onAvailability(option.value)} />
@@ -69,7 +72,7 @@ export function CollectionFilters({ categories, sizes, themes, size, availabilit
       <div className={cx(styles.custom, textures.gingham)}>
         <img src="/assets/mascote-icone.png" alt="" />
         <p>Não achou o tamanho? A gente faz sob medida.</p>
-        <Button className={styles.customAction} variant="dark" size="md" href={customSizeLink} external>Chamar no WhatsApp</Button>
+        <Button className={styles.customAction} variant="dark" size="md" href={customSizeLink} external><Icon name="whatsapp" size={16} />Chamar no WhatsApp</Button>
       </div>
     </aside>
   );

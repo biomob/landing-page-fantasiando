@@ -127,7 +127,6 @@
 
 .readyDot { width: 10px; height: 10px; border-radius: 50%; background: var(--whatsapp); }
 
-.mobileOnly { display: none; }
 .desktopOnly { display: contents; }
 
 @media (max-width: 1000px) {
@@ -138,17 +137,16 @@
 @media (max-width: 700px) {
   .inner { display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 26px 16px 30px; }
   .copy { display: contents; }
-  .pill { align-self: flex-start; padding: 6px 12px; font-size: 0.6875rem; order: 1; }
+  .pill { align-self: flex-start; padding: 6px 12px; font-size: 0.75rem; order: 1; }
   .title { margin: 14px 0 12px; font-size: 2.625rem; line-height: .98; order: 2; }
   /* No canvas as margens colapsam (18px); aqui, em flex, compensamos a margem do título. */
   .media { order: 3; min-height: 0; height: 330px; margin: 6px 0 18px; }
   .actions { order: 4; margin-top: 0; }
   .actions > * { width: 100%; box-shadow: 0 5px 0 var(--brand-ink); }
   .text, .perks, .polaroid, .ready, .secondary, .desktopOnly { display: none; }
-  .mobileOnly { display: inline; }
   .frame { left: 34px; right: 20px; bottom: 6px; width: auto; height: auto; border-radius: 200px 200px 24px 24px; }
   .photo { left: 44px; right: 34px; top: 10px; bottom: 0; width: auto; height: auto; border-radius: 180px 180px 20px 20px; outline-offset: -10px; }
   .sticker { top: 18px; width: 86px; height: 86px; box-shadow: 0 0 0 5px #fff; }
-  .stickerLabel { font-size: 0.625rem; letter-spacing: 0; }
+  .stickerLabel { font-size: 0.75rem; letter-spacing: 0; }
   .stickerPrice { font-size: 1.375rem; }
 }

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element -- direct static assets preserve storefront image crops. */
 "use client";
 import { Button } from "@/components/ui/button";
+import { Icon } from "@/components/ui/icon";
 import { Eyebrow } from "@/components/ui/typography";
 import { useFavorites } from "@/hooks/use-favorites";
 import type { ProductSummary } from "@/lib/catalog/types";
@@ -25,7 +26,7 @@ export function FavoritesView({ products }: { products: ProductSummary[] }) {
         <div className={styles.empty}>
           <img src="/assets/mascote-vazio.png" alt="" />
           <p>Nenhuma peça salva ainda. Toque no coração dos vestidos para guardar aqui.</p>
-          <Button variant="dark" lifted href="/colecao">Ver a coleção</Button>
+          <Button variant="dark" lifted href="/colecao">Ver a coleção <Icon name="arrow" size={18} /></Button>
         </div>
       )}
     </section>

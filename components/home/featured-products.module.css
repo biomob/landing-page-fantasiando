@@ -5,6 +5,10 @@
 .chips { display: flex; gap: 8px; flex-wrap: wrap; }
 
 .chip {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 10px 16px;
   border: 1.5px solid var(--line-input);
   border-radius: var(--radius-pill);

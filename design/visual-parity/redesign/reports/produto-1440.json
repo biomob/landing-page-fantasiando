@@ -1,53 +1,53 @@
 {
   "case": "produto-1440",
-  "overall": 99.89,
+  "overall": 85.43,
   "worstBand": {
-    "y": 200,
-    "similarity": 99.37
+    "y": 1800,
+    "similarity": 59.8
   },
   "heightRef": 1964,
-  "heightTarget": 1964,
+  "heightTarget": 2023,
   "bands": [
     {
       "y": 0,
-      "similarity": 99.97
+      "similarity": 93.77
     },
     {
       "y": 200,
-      "similarity": 99.37
+      "similarity": 93.85
     },
     {
       "y": 400,
-      "similarity": 99.98
+      "similarity": 89.17
     },
     {
       "y": 600,
-      "similarity": 99.59
+      "similarity": 90.7
     },
     {
       "y": 800,
-      "similarity": 100.0
+      "similarity": 97.87
     },
     {
       "y": 1000,
-      "similarity": 100.0
+      "similarity": 96.27
     },
     {
       "y": 1200,
-      "similarity": 100.0
+      "similarity": 85.2
     },
     {
       "y": 1400,
-      "similarity": 100.0
+      "similarity": 78.04
     },
     {
       "y": 1600,
-      "similarity": 100.0
+      "similarity": 64.97
     },
     {
       "y": 1800,
-      "similarity": 100.0
+      "similarity": 59.8
     }
   ],
-  "status": "PASS"
+  "status": "FAIL"
 }

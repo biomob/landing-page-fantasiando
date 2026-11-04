@@ -86,3 +86,4 @@ pnpm build
 ```
 
 Paridade visual com o design aprovado: veja `design/visual-parity/redesign/README.md`.
+Auditoria de acessibilidade (WCAG 2.1 AA): veja `design/a11y/README.md`.

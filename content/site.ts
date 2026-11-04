@@ -1,7 +1,8 @@
 // Textos e links fixos da vitrine. Trocar aqui reflete em todas as telas.
+import type { IconName } from "@/components/ui/icon";
 import { generalWhatsappLink } from "@/lib/whatsapp";
 
-export type SiteLink = { href: string; label: string; external?: boolean };
+export type SiteLink = { href: string; label: string; icon: IconName; external?: boolean };
 
 export const site = {
   name: "Annapê Ateliê",
@@ -19,29 +20,57 @@ export const site = {
   foundedYear: null as number | null,
 };
 
-export const promoMessages = ["Envio para todo o Brasil", "Ajustes sob medida", "Atendimento pelo WhatsApp"];
+export const promoMessages: { text: string; icon: IconName }[] = [
+  { text: "Envio para todo o Brasil", icon: "truck" },
+  { text: "Ajustes sob medida", icon: "scissors" },
+  { text: "Atendimento pelo WhatsApp", icon: "whatsapp" },
+];
+
+/** Ícone de cada tema do catálogo (slug → ícone). Temas novos caem em "tag". */
+export const categoryIcons: Record<string, IconName> = {
+  princesas: "crown",
+  "festa-junina": "bunting",
+  fantasias: "wand",
+  aniversario: "cake",
+};
+export const categoryIcon = (slug: string): IconName => categoryIcons[slug] ?? "tag";
 
 /** Menu do celular (botão ☰). */
 export const mainNav: SiteLink[] = [
-  { href: "/colecao", label: "Coleção" },
-  { href: "/favoritos", label: "Favoritos" },
-  { href: "/sobre", label: "Sobre" },
-  { href: "/contato", label: "Contato" },
+  { href: "/colecao", label: "Coleção", icon: "grid" },
+  { href: "/favoritos", label: "Favoritos", icon: "heart" },
+  { href: "/sobre", label: "Sobre", icon: "info" },
+  { href: "/contato", label: "Contato", icon: "chat" },
 ];
 
 /** Faixa de categorias abaixo do header. `short` aparece nos chips do celular. */
 export const categoryNav: (SiteLink & { short?: string })[] = [
-  { href: "/colecao", label: "Novidades" },
-  { href: "/colecao#princesas", label: "Princesas" },
-  { href: "/colecao#festa-junina", label: "Festa junina" },
-  { href: "/colecao#fantasias", label: "Fantasias temáticas", short: "Fantasias" },
-  { href: "/colecao#aniversario", label: "Aniversário" },
-  { href: "/contato", label: "Sob medida" },
+  { href: "/colecao", label: "Novidades", icon: "sparkle" },
+  { href: "/colecao#princesas", label: "Princesas", icon: "crown" },
+  { href: "/colecao#festa-junina", label: "Festa junina", icon: "bunting" },
+  { href: "/colecao#fantasias", label: "Fantasias temáticas", short: "Fantasias", icon: "wand" },
+  { href: "/colecao#aniversario", label: "Aniversário", icon: "cake" },
+  { href: "/contato", label: "Sob medida", icon: "scissors" },
 ];
 
 export const footerColumns: { title: string; links: SiteLink[] }[] = [
-  { title: "Vitrine", links: [{ href: "/colecao", label: "Novidades" }, { href: "/colecao#princesas", label: "Princesas" }, { href: "/colecao#festa-junina", label: "Festa junina" }, { href: "/favoritos", label: "Favoritos" }] },
-  { title: "Ateliê", links: [{ href: "/sobre", label: "Sobre" }, { href: "/contato", label: "Guia de tamanhos" }, { href: "/contato", label: "Contato" }] },
+  {
+    title: "Vitrine",
+    links: [
+      { href: "/colecao", label: "Novidades", icon: "sparkle" },
+      { href: "/colecao#princesas", label: "Princesas", icon: "crown" },
+      { href: "/colecao#festa-junina", label: "Festa junina", icon: "bunting" },
+      { href: "/favoritos", label: "Favoritos", icon: "heart" },
+    ],
+  },
+  {
+    title: "Ateliê",
+    links: [
+      { href: "/sobre", label: "Sobre", icon: "info" },
+      { href: "/contato", label: "Guia de tamanhos", icon: "ruler" },
+      { href: "/contato", label: "Contato", icon: "chat" },
+    ],
+  },
 ];
 
 export const whatsappContact = { label: "WhatsApp do ateliê", href: generalWhatsappLink };

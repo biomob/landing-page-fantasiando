@@ -43,6 +43,7 @@
 .facts { margin: 28px 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
 
 .fact { padding: 16px; border: 2px dashed var(--line-input); border-radius: 18px; text-align: center; }
+.factIcon { margin: 0 auto 6px; color: var(--brand-ink); }
 .factTitle { font-family: var(--font-display); font-weight: 600; font-size: 1.375rem; color: var(--brand-ink); }
 .factText { margin-top: 4px; font-size: 0.875rem; }
 

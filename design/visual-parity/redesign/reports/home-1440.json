@@ -1,28 +1,28 @@
 {
   "case": "home-1440",
-  "overall": 99.9,
+  "overall": 97.89,
   "worstBand": {
-    "y": 640,
-    "similarity": 99.3
+    "y": 3040,
+    "similarity": 88.37
   },
   "heightRef": 4216,
-  "heightTarget": 4216,
+  "heightTarget": 4217,
   "bands": [
     {
       "y": 40,
-      "similarity": 99.32
+      "similarity": 94.06
     },
     {
       "y": 240,
-      "similarity": 99.85
+      "similarity": 98.83
     },
     {
       "y": 440,
-      "similarity": 99.59
+      "similarity": 98.63
     },
     {
       "y": 640,
-      "similarity": 99.3
+      "similarity": 97.96
     },
     {
       "y": 840,
@@ -30,31 +30,31 @@
     },
     {
       "y": 1040,
-      "similarity": 100.0
+      "similarity": 99.31
     },
     {
       "y": 1240,
-      "similarity": 100.0
+      "similarity": 98.99
     },
     {
       "y": 1440,
-      "similarity": 100.0
+      "similarity": 99.46
     },
     {
       "y": 1640,
-      "similarity": 100.0
+      "similarity": 99.17
     },
     {
       "y": 1840,
-      "similarity": 99.92
+      "similarity": 94.98
     },
     {
       "y": 2040,
-      "similarity": 100.0
+      "similarity": 99.79
     },
     {
       "y": 2240,
-      "similarity": 100.0
+      "similarity": 98.58
     },
     {
       "y": 2440,
@@ -66,19 +66,19 @@
     },
     {
       "y": 2840,
-      "similarity": 100.0
+      "similarity": 99.75
     },
     {
       "y": 3040,
-      "similarity": 100.0
+      "similarity": 88.37
     },
     {
       "y": 3240,
-      "similarity": 100.0
+      "similarity": 91.17
     },
     {
       "y": 3440,
-      "similarity": 100.0
+      "similarity": 98.93
     },
     {
       "y": 3640,
@@ -86,12 +86,12 @@
     },
     {
       "y": 3840,
-      "similarity": 100.0
+      "similarity": 98.8
     },
     {
       "y": 4040,
-      "similarity": 100.0
+      "similarity": 99.06
     }
   ],
-  "status": "PASS"
+  "status": "FAIL"
 }

@@ -50,7 +50,7 @@
 @media (max-width: 700px) {
   .desktopOnly { display: none; }
   .mobileOnly { display: block; }
-  .code { font-size: 0.6875rem; }
+  .code { font-size: 0.75rem; }
   .specs { font-size: 0.8125rem; }
   .hero { height: 410px; padding: 16px; border-radius: 22px; }
   .hero .title { font-size: 1.5rem; }

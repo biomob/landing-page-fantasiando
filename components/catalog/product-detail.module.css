@@ -1,7 +1,7 @@
 .section { max-width: var(--container); margin: 0 auto; padding: 22px 24px 64px; }
 
 .breadcrumb { margin-bottom: 22px; font-size: 0.875rem; font-weight: 700; color: var(--text-secondary); }
-.breadcrumb a { color: var(--brand-ink); text-decoration: none; }
+.breadcrumb a { min-height: 24px; display: inline-flex; align-items: center; gap: 6px; vertical-align: middle; color: var(--brand-ink); text-decoration: none; }
 .breadcrumb [aria-current] { color: var(--text-strong); }
 
 .layout { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: start; }
@@ -29,14 +29,14 @@
 .sizes { margin: 26px 0 0; padding: 0; border: 0; }
 
 .sizesLegend { width: 100%; margin-bottom: 12px; padding: 0; display: flex; justify-content: space-between; align-items: center; font-weight: 900; color: var(--text-strong); }
-.sizesLegend a { font-weight: 800; font-size: 0.875rem; color: var(--brand-ink); text-decoration: none; }
+.sizesLegend a { min-height: 32px; display: inline-flex; align-items: center; gap: 6px; font-weight: 800; font-size: 0.875rem; color: var(--brand-ink); text-decoration: none; }
 
 .sizeList { display: flex; gap: 10px; flex-wrap: wrap; }
 
 .size {
   width: 52px;
   height: 52px;
-  border: 1.5px solid var(--line-input);
+  border: 1.5px solid var(--line-field);
   border-radius: 16px;
   background: var(--surface);
   color: var(--text-strong);
@@ -46,7 +46,7 @@
 
 .size[aria-pressed="true"] { border: 2px solid var(--rosa-400); background: var(--rosa-400); color: var(--text-on-brand); }
 
-.sizeUnavailable { color: #9a8389; text-decoration: line-through; }
+.sizeUnavailable { color: var(--text-muted); text-decoration: line-through; }
 
 .sizeNote { margin-top: 10px; font-size: 0.875rem; color: var(--text-secondary); }
 
@@ -73,11 +73,13 @@
 
 /* Selos e detalhes */
 .trust { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 24px; }
-.trustItem { padding: 12px 8px; border: 2px dashed var(--line-input); border-radius: 16px; text-align: center; font-weight: 800; font-size: 0.8125rem; }
+.trustItem svg { color: var(--brand-ink); }
+.trustItem { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 12px 8px; border: 2px dashed var(--line-input); border-radius: 16px; text-align: center; font-weight: 800; font-size: 0.8125rem; }
 
 .details { margin-top: 24px; border-top: 1px solid var(--line-card); }
 .details details { padding: 14px 0; border-bottom: 1px solid var(--line-card); }
-.details summary { font-weight: 900; color: var(--text-strong); cursor: pointer; }
+.details summary svg { color: var(--brand-ink); }
+.details summary { min-height: 32px; display: flex; align-items: center; gap: 8px; font-weight: 900; color: var(--text-strong); cursor: pointer; }
 .details p { margin-top: 10px; line-height: 1.6; }
 
 /* Banner e relacionados */

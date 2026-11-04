@@ -1,0 +1,11 @@
+
+## 2.5.5 alvo < 44px (AAA, recomendado) — 172
+  - button._0YmYiW_themeToggle "Trocar para o tema escuro" | 48×24  [light/desktop light/mobile] / /colecao /colecao?busca=tule
+  - button._0YmYiW_fontSmall "A" | 32×32  [light/desktop light/mobile dark/desktop dark/mobile] / /colecao /colecao?busca=tule
+  - button._0YmYiW_fontLarge "A" | 32×32  [light/desktop light/mobile dark/desktop dark/mobile] / /colecao /colecao?busca=tule
+  - button.R88LKG_clear "Limpar" | 84×32  [light/desktop light/mobile dark/desktop dark/mobile] /colecao /colecao?busca=tule
+  - input. "" | 250×32  [light/desktop dark/desktop] /colecao /colecao?busca=tule
+  - input. "" | 312×32  [light/mobile dark/mobile] /colecao /colecao?busca=tule
+  - button._0YmYiW_themeToggle "Trocar para o tema claro" | 48×24  [dark/desktop dark/mobile] / /colecao /colecao?busca=tule
+
+Total: 172

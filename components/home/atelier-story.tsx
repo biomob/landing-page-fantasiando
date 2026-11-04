@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element -- direct static assets preserve storefront image crops. */
+import { Icon } from "@/components/ui/icon";
 import { Eyebrow, TextLink } from "@/components/ui/typography";
 import { homeContent } from "@/content/pages";
 import { site } from "@/content/site";
@@ -23,12 +24,13 @@ export function AtelierStory() {
           <ul className={styles.facts}>
             {copy.facts.map((fact) => (
               <li key={fact.title} className={styles.fact}>
+                <Icon className={styles.factIcon} name={fact.icon} size={22} />
                 <p className={styles.factTitle}>{fact.title}</p>
                 <p className={styles.factText}>{fact.description}</p>
               </li>
             ))}
           </ul>
-          <TextLink href="/sobre">Conheça a nossa história →</TextLink>
+          <TextLink href="/sobre">Conheça a nossa história<Icon name="arrow" size={18} /></TextLink>
         </div>
       </div>
     </section>

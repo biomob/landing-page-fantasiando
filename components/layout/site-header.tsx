@@ -54,20 +54,20 @@ export function SiteHeader() {
         </nav>
         <nav aria-label="Categorias" className={styles.chips}>
           {categoryNav.map((item) => (
-            <Link key={item.label} className={styles.chip} href={item.href} aria-current={current(item.href)}>{item.short ?? item.label}</Link>
+            <Link key={item.label} className={styles.chip} href={item.href} aria-current={current(item.href)}><Icon name={item.icon} size={16} />{item.short ?? item.label}</Link>
           ))}
         </nav>
       </div>
       <nav aria-label="Categorias" className={styles.categories}>
         <div className={styles.categoriesInner}>
           {categoryNav.map((item) => (
-            <Link key={item.label} className={styles.categoryLink} href={item.href} aria-current={current(item.href)}>{item.label}</Link>
+            <Link key={item.label} className={styles.categoryLink} href={item.href} aria-current={current(item.href)}><Icon name={item.icon} size={18} />{item.label}</Link>
           ))}
         </div>
       </nav>
       {menu.open ? (
         <nav id="menu-mobile" aria-label="Menu" className={styles.mobileNav}>
-          {mainNav.map((item) => <Link key={item.href} href={item.href} onClick={menu.close} aria-current={current(item.href, true)}>{item.label}</Link>)}
+          {mainNav.map((item) => <Link key={item.href} href={item.href} onClick={menu.close} aria-current={current(item.href, true)}><Icon name={item.icon} size={20} />{item.label}</Link>)}
         </nav>
       ) : null}
     </header>

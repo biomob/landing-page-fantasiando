@@ -2,6 +2,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Icon } from "@/components/ui/icon";
 import { Scallop } from "@/components/ui/scallop";
 import textures from "@/components/ui/textures.module.css";
 import { footerColumns, site, whatsappContact } from "@/content/site";
@@ -9,7 +10,7 @@ import { cx } from "@/lib/cx";
 import styles from "./site-footer.module.css";
 
 function WhatsappButton() {
-  return <a className={styles.whatsapp} href={whatsappContact.href} target="_blank" rel="noopener noreferrer">{whatsappContact.label}</a>;
+  return <a className={styles.whatsapp} href={whatsappContact.href} target="_blank" rel="noopener noreferrer"><Icon name="whatsapp" size={18} />{whatsappContact.label}</a>;
 }
 
 /** Rodapé: completo na home, compacto nas páginas internas, centralizado no celular. */
@@ -30,7 +31,7 @@ export function SiteFooter() {
               {footerColumns.map((column) => (
                 <nav key={column.title} className={styles.column} aria-label={column.title}>
                   <strong className={styles.columnTitle}>{column.title}</strong>
-                  {column.links.map((link) => <Link key={link.label} className={styles.link} href={link.href}>{link.label}</Link>)}
+                  {column.links.map((link) => <Link key={link.label} className={styles.link} href={link.href}><Icon name={link.icon} size={16} />{link.label}</Link>)}
                 </nav>
               ))}
               <div className={cx(styles.column, styles.contact)}>
