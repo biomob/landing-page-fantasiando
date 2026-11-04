@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Arquivo de design e app legado, fora do build.
+    "design/**",
   ]),
 ]);
 
