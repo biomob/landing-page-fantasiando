@@ -1,0 +1,29 @@
+.button {
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  min-height: 44px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 800;
+  color: var(--text-on-brand);
+  text-decoration: none;
+  transition: transform 140ms ease, background 140ms ease;
+}
+
+.button:hover { transform: translateY(-1px); }
+
+.primary { background: var(--rosa-400); }
+
+.soft { background: var(--surface-soft); border-color: var(--line-strong); }
+
+.compact { min-height: 39px; padding: 0 15px; font-size: 14px; }
+
+.block { width: 100%; }
+
+@media (prefers-reduced-motion: reduce) {
+  .button { transition: none; }
+  .button:hover { transform: none; }
+}

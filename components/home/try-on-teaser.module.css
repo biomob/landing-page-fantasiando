@@ -1,0 +1,26 @@
+.panel {
+  max-width: 1272px;
+  margin: 10px auto;
+  border-radius: 30px;
+  background: var(--rosa-100);
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  align-items: center;
+  overflow: hidden;
+}
+
+.description { max-width: 560px; line-height: 1.65; }
+
+.action { margin-top: 24px; }
+
+.mascot { max-height: 250px; margin: auto; }
+
+@media (max-width: 900px) {
+  .panel { grid-template-columns: 1fr; }
+  .mascot { display: none; }
+}
+
+@media (max-width: 700px) {
+  .panel { margin-inline: 12px; padding: 38px 25px; border-radius: 22px; }
+}

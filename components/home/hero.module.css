@@ -1,0 +1,23 @@
+.hero {
+  min-height: 635px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(252, 248, 245, .98) 0%, rgba(252, 248, 245, .9) 38%, rgba(252, 248, 245, .16) 75%),
+    var(--hero-image) center / cover;
+}
+
+.content { width: min(var(--container), 100%); margin: auto; padding: 76px 24px; }
+
+.content > * { max-width: 610px; }
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 570px;
+    background:
+      linear-gradient(90deg, rgba(252, 248, 245, .98), rgba(252, 248, 245, .75)),
+      var(--hero-image) 65% center / cover;
+  }
+
+  .content { padding-inline: 20px; }
+}

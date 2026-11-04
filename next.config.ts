@@ -1,12 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {
     rules: {
-      "*.css": {
+      // Só o CSS global passa pelo Tailwind (reset). CSS Modules seguem o pipeline padrão do Next.
+      "app/globals.css": {
         loaders: ["@tailwindcss/turbopack"],
         as: "*.css",
       },

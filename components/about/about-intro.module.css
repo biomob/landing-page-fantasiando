@@ -1,0 +1,19 @@
+.intro {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: clamp(35px, 6vw, 90px);
+  align-items: center;
+}
+
+.title { font-size: clamp(38px, 4.5vw, 60px); }
+
+.paragraph { margin: 0 0 18px; }
+
+.action { margin-top: 14px; }
+
+.photo { width: 100%; height: 520px; object-fit: cover; border-radius: 28px; }
+
+@media (max-width: 900px) {
+  .intro { grid-template-columns: 1fr; }
+  .photo { height: 360px; }
+}

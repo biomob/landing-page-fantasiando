@@ -1,0 +1,11 @@
+.bar {
+  height: 38px;
+  display: grid;
+  place-items: center;
+  background: var(--surface-inverse);
+  color: var(--text-on-inverse);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.heart { color: var(--rosa-400); margin-right: 8px; }

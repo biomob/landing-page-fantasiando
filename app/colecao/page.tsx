@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
-import { Catalogue } from "@/components/storefront/catalogue";
+import { Catalogue } from "@/components/catalog/catalogue";
+import { Section } from "@/components/ui/section";
+import { Eyebrow, Lede, PageTitle } from "@/components/ui/typography";
+import { collectionContent } from "@/content/pages";
 import { getCategories, getProducts } from "@/lib/catalog";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = { title: "Coleção" };
 
@@ -8,11 +12,11 @@ export default async function CollectionPage() {
   const [products, categories] = await Promise.all([getProducts(), getCategories()]);
 
   return (
-    <section className="section catalogue">
-      <p className="eyebrow">Coleção Annapê</p>
-      <h1>Vestidos que fazem a imaginação florescer</h1>
-      <p className="lede">Peças pensadas para celebrar festas, brincadeiras e os dias que viram memória.</p>
+    <Section top="compact">
+      <Eyebrow>{collectionContent.eyebrow}</Eyebrow>
+      <PageTitle className={styles.title}>{collectionContent.title}</PageTitle>
+      <Lede>{collectionContent.description}</Lede>
       <Catalogue products={products} categories={categories.map(({ slug, name }) => ({ slug, name }))} />
-    </section>
+    </Section>
   );
 }

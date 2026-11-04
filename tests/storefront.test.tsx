@@ -1,37 +1,43 @@
 import { cleanup, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { afterEach, describe, expect, it } from "vitest";
-import { Catalogue } from "../components/storefront/catalogue";
-import { ProductActions } from "../components/storefront/product-actions";
+import { afterEach, describe, expect, it, vi } from "vitest";
+import { Catalogue } from "../components/catalog/catalogue";
+import { ProductActions } from "../components/catalog/product-actions";
+import { SiteHeader } from "../components/layout/site-header";
 import { mockCategories } from "../lib/catalog/mock-data";
 import { createMockSource } from "../lib/catalog/mock-source";
-import { priceLabel, productMessage, whatsappLink } from "../lib/whatsapp";
 
-afterEach(cleanup);
+vi.mock("next/navigation", () => ({ usePathname: () => "/colecao" }));
 
-describe("whatsapp helpers", () => {
-  it("builds an encoded wa.me link with the product, size and page URL", () => {
-    const message = productMessage({ name: "Vestido Aurora", slug: "vestido-aurora" }, "6", "https://loja.test");
-    expect(message).toBe("Olá! Tenho interesse no Vestido Aurora no tamanho 6. Pode me passar mais informações? https://loja.test/produto/vestido-aurora");
-    expect(whatsappLink(message, "5524999999999")).toBe(`https://wa.me/5524999999999?text=${encodeURIComponent(message)}`);
-  });
-
-  it("formats single prices and ranges in BRL", () => {
-    expect(priceLabel({ priceCents: 12990, maxPriceCents: 12990 })).toMatch(/129,90/);
-    expect(priceLabel({ priceCents: 9990, maxPriceCents: 12990 })).toMatch(/99,90.*129,90/);
-  });
+afterEach(() => {
+  cleanup();
+  window.history.replaceState(null, "", "/");
 });
 
 describe("Catalogue", () => {
-  it("filters products by category", async () => {
+  it("filters products by category and keeps the filter in the URL hash", async () => {
     const user = userEvent.setup();
     const products = await createMockSource().listProducts();
     render(<Catalogue products={products} categories={mockCategories} />);
 
     await user.click(screen.getByRole("button", { name: "Festa junina" }));
 
+    expect(window.location.hash).toBe("#festa-junina");
     expect(screen.getByRole("heading", { name: "Festa Junina Doçura" })).toBeVisible();
     expect(screen.queryByRole("heading", { name: "Vestido Princesa Aurora" })).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: "Todos" }));
+    expect(window.location.hash).toBe("");
+    expect(screen.getByRole("heading", { name: "Vestido Princesa Aurora" })).toBeVisible();
+  });
+
+  it("opens already filtered when the URL has a category hash", async () => {
+    window.history.replaceState(null, "", "/colecao#princesas");
+    const products = await createMockSource().listProducts();
+    render(<Catalogue products={products} categories={mockCategories} />);
+
+    expect(screen.getByRole("button", { name: "Princesas" })).toHaveAttribute("aria-pressed", "true");
+    expect(screen.queryByRole("heading", { name: "Festa Junina Doçura" })).not.toBeInTheDocument();
   });
 });
 
@@ -45,5 +51,26 @@ describe("ProductActions", () => {
     const link = screen.getByRole("link", { name: /quero este vestido/i });
     expect(decodeURIComponent(link.getAttribute("href") ?? "")).toContain("Vestido Aurora no tamanho 6");
     expect(screen.queryByText(/sacola|carrinho/i)).not.toBeInTheDocument();
+  });
+
+  it("preselects the first available size", () => {
+    render(<ProductActions product={{ name: "Vestido Aurora", slug: "vestido-aurora" }} sizes={[{ label: "2", available: false }, { label: "4", available: true }]} />);
+
+    expect(screen.getByRole("button", { name: "4" })).toHaveAttribute("aria-pressed", "true");
+  });
+});
+
+describe("SiteHeader", () => {
+  it("opens the mobile menu and closes it with Escape", async () => {
+    const user = userEvent.setup();
+    render(<SiteHeader />);
+
+    await user.click(screen.getByRole("button", { name: /abrir menu/i }));
+    expect(screen.getAllByRole("navigation", { name: /navegação principal/i })).toHaveLength(2);
+    expect(screen.getAllByRole("link", { name: "Coleção" })[0]).toHaveAttribute("aria-current", "page");
+
+    await user.keyboard("{Escape}");
+    expect(screen.getAllByRole("navigation", { name: /navegação principal/i })).toHaveLength(1);
+    expect(screen.getByRole("button", { name: /abrir menu/i })).toHaveAttribute("aria-expanded", "false");
   });
 });

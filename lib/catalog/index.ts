@@ -4,7 +4,6 @@ import { createApiSource } from "./api-source";
 import { createMockSource } from "./mock-source";
 import type { CatalogSource } from "./types";
 
-export type * from "./types";
 
 // Único ponto que escolhe a origem dos dados. As telas só conhecem estas funções.
 function source(): CatalogSource {

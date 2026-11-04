@@ -1,11 +1,5 @@
 import { siteUrl, whatsappNumber } from "./env";
 
-export const brl = (cents: number) => (cents / 100).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
-
-export function priceLabel({ priceCents, maxPriceCents }: { priceCents: number; maxPriceCents: number }) {
-  return maxPriceCents > priceCents ? `${brl(priceCents)} – ${brl(maxPriceCents)}` : brl(priceCents);
-}
-
 export function whatsappLink(message: string, number = whatsappNumber) {
   const text = encodeURIComponent(message);
   return number ? `https://wa.me/${number}?text=${text}` : `https://wa.me/?text=${text}`;
@@ -17,3 +11,5 @@ export function productMessage(product: { name: string; slug: string }, size?: s
 }
 
 export const generalMessage = "Olá! Vim pelo site da Annapê Ateliê e gostaria de mais informações.";
+
+export const generalWhatsappLink = whatsappLink(generalMessage);

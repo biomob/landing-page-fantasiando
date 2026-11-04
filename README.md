@@ -6,7 +6,25 @@ pagamento — o interesse em cada peça é encaminhado para o WhatsApp do ateli�
 
 ## Estrutura
 
-- Raiz: aplicação Next.js da vitrine (`app/`, `components/`, `hooks/`, `lib/`, `public/`).
+| Pasta | Conteúdo |
+| --- | --- |
+| `app/` | Rotas. Cada página só busca dados e compõe componentes. `globals.css` guarda tokens e reset. |
+| `components/ui/` | Primitivos sem regra de negócio: `Button`, `Section`, tipografia, `CardGrid`, `Skeleton`, `EmptyState`, `Icon`. |
+| `components/layout/` | Barra de anúncio, header, footer e botão flutuante de WhatsApp. |
+| `components/<domínio>/` | Blocos por tela: `catalog`, `home`, `try-on`, `about`, `contact`. |
+| `hooks/` | Estado de cliente reutilizável: `useHashState`, `useDisclosure`, `useSizeSelection`, `useTryOnFlow`. |
+| `content/` | Textos e links fixos (`site.ts`, `pages.ts`). |
+| `lib/` | Catálogo (`lib/catalog`), formatação, WhatsApp e variáveis de ambiente. |
+
+Convenções:
+
+- Cada componente tem seu `*.module.css` ao lado; não há classes globais além do reset.
+- O import do CSS Module vem por último no arquivo: as classes passadas via `className` sobrescrevem as dos primitivos importados antes.
+- Componentes de cliente (`"use client"`) só onde há interação; a lógica de estado fica nos hooks.
+- Sem barrel files: importe direto do arquivo.
+
+Arquivo de design (fora do build, lint e testes):
+
 - `design/prototipo-html/`: protótipo HTML exportado do design system, com o export original em `reference/`. Só referência visual.
 - `design/legacy-next/`: implementação Next anterior, arquivada.
 - `design/visual-parity/`: capturas de comparação visual.

@@ -1,0 +1,9 @@
+.emptyState { text-align: center; }
+
+.image { width: 95px; margin: auto; }
+
+.title { font-size: clamp(38px, 5vw, 56px); }
+
+.lede { margin-inline: auto; }
+
+.action { margin-top: 12px; }

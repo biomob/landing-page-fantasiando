@@ -1,0 +1,11 @@
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 32px 0; }
+
+.filter {
+  border: 1px solid var(--line-200);
+  background: transparent;
+  border-radius: var(--radius-pill);
+  padding: 9px 14px;
+  font-weight: 800;
+}
+
+.filter[aria-pressed="true"] { border-color: var(--rosa-400); background: var(--rosa-100); color: var(--brand-ink); }

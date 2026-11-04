@@ -1,0 +1,26 @@
+.section {
+  max-width: var(--container);
+  margin: auto;
+  padding: 86px 24px;
+}
+
+.narrow { max-width: 680px; }
+
+.compactTop { padding-top: 70px; }
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+  .section { padding: 55px 20px; }
+  .heading { align-items: start; }
+  .headingAction { display: none; }
+}
+
+/* Depois do media query: some com o topo também no mobile. */
+.flushTop { padding-top: 0; }
