@@ -5,8 +5,10 @@ import { BrandLogo } from "@/components/ui/brand-logo";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
 import { categoryNav, mainNav } from "@/content/site";
+import { useActiveLink } from "@/hooks/use-active-link";
 import { useDisclosure } from "@/hooks/use-disclosure";
 import { useFavorites } from "@/hooks/use-favorites";
+import { useScrolled } from "@/hooks/use-scrolled";
 import { cx } from "@/lib/cx";
 import { generalWhatsappLink } from "@/lib/whatsapp";
 import styles from "./site-header.module.css";
@@ -24,9 +26,12 @@ function SearchForm({ placeholder }: { placeholder: string }) {
 export function SiteHeader() {
   const menu = useDisclosure();
   const favorites = useFavorites();
+  const isActive = useActiveLink();
+  const scrolled = useScrolled();
+  const current = (href: string, ignoreHash = false) => (isActive(href, { ignoreHash }) ? "page" : undefined);
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} data-scrolled={scrolled || undefined}>
       <div className={styles.main}>
         <button className={styles.menuToggle} type="button" aria-label={menu.open ? "Fechar menu" : "Abrir menu"} aria-expanded={menu.open} aria-controls="menu-mobile" onClick={menu.toggle}>
           <Icon name={menu.open ? "x" : "menu"} size={24} />
@@ -39,7 +44,7 @@ export function SiteHeader() {
         </a>
         <SearchForm placeholder="Buscar vestidos, fantasias, temas…" />
         <nav aria-label="Atalhos" className={styles.shortcuts}>
-          <Link className={styles.favorites} href="/favoritos">
+          <Link className={styles.favorites} href="/favoritos" aria-current={current("/favoritos")}>
             <Icon name="heart" size={20} />
             Favoritos
             {favorites.slugs.length ? <span className={styles.count} aria-label={`${favorites.slugs.length} salvos`}>{favorites.slugs.length}</span> : null}
@@ -50,20 +55,20 @@ export function SiteHeader() {
         </nav>
         <nav aria-label="Categorias" className={styles.chips}>
           {categoryNav.map((item) => (
-            <Link key={item.label} className={cx(styles.chip, item.emphasis === "featured" && styles.chipFeatured)} href={item.href}>{item.short ?? item.label}</Link>
+            <Link key={item.label} className={styles.chip} href={item.href} aria-current={current(item.href)}>{item.short ?? item.label}</Link>
           ))}
         </nav>
       </div>
       <nav aria-label="Categorias" className={styles.categories}>
         <div className={styles.categoriesInner}>
           {categoryNav.map((item) => (
-            <Link key={item.label} className={cx(styles.categoryLink, item.emphasis && styles[item.emphasis])} href={item.href}>{item.label}</Link>
+            <Link key={item.label} className={cx(styles.categoryLink, item.emphasis && styles[item.emphasis])} href={item.href} aria-current={current(item.href)}>{item.label}</Link>
           ))}
         </div>
       </nav>
       {menu.open ? (
         <nav id="menu-mobile" aria-label="Menu" className={styles.mobileNav}>
-          {mainNav.map((item) => <Link key={item.href} href={item.href} onClick={menu.close}>{item.label}</Link>)}
+          {mainNav.map((item) => <Link key={item.href} href={item.href} onClick={menu.close} aria-current={current(item.href, true)}>{item.label}</Link>)}
         </nav>
       ) : null}
     </header>

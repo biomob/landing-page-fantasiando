@@ -1,4 +1,4 @@
-import { cleanup, render, screen, within } from "@testing-library/react";
+import { act, cleanup, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import type { ReactNode } from "react";
 import { afterEach, describe, expect, it, vi } from "vitest";
@@ -121,5 +121,40 @@ describe("SiteHeader", () => {
     expect(screen.getByRole("navigation", { name: "Menu" })).toBeVisible();
     await user.keyboard("{Escape}");
     expect(screen.queryByRole("navigation", { name: "Menu" })).not.toBeInTheDocument();
+  });
+});
+
+describe("SiteHeader tabs", () => {
+  it("marks the tab of the current route and follows hash navigation", async () => {
+    nav.pathname = "/colecao";
+    window.history.replaceState(null, "", "/colecao");
+    render(<SiteHeader />);
+    const categories = () => screen.getAllByRole("navigation", { name: "Categorias" }).at(-1)!;
+
+    expect(within(categories()).getByRole("link", { name: "Novidades" })).toHaveAttribute("aria-current", "page");
+
+    // O Next troca o hash com pushState (sem "hashchange"); a aba precisa acompanhar.
+    await act(async () => window.history.pushState(null, "", "/colecao#princesas"));
+    expect(within(categories()).getByRole("link", { name: "Princesas" })).toHaveAttribute("aria-current", "page");
+    expect(within(categories()).getByRole("link", { name: "Novidades" })).not.toHaveAttribute("aria-current");
+    nav.pathname = "/colecao";
+  });
+
+  it("compacts when the page scrolls", async () => {
+    render(<SiteHeader />);
+    const header = screen.getByRole("banner");
+    expect(header).not.toHaveAttribute("data-scrolled");
+
+    await act(async () => {
+      Object.defineProperty(window, "scrollY", { value: 400, configurable: true });
+      window.dispatchEvent(new Event("scroll"));
+    });
+    expect(header).toHaveAttribute("data-scrolled");
+
+    await act(async () => {
+      Object.defineProperty(window, "scrollY", { value: 0, configurable: true });
+      window.dispatchEvent(new Event("scroll"));
+    });
+    expect(header).not.toHaveAttribute("data-scrolled");
   });
 });

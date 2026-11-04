@@ -1,6 +1,6 @@
 {
   "case": "home-1440",
-  "overall": 99.07,
+  "overall": 99.04,
   "worstBand": {
     "y": 3640,
     "similarity": 98.1
@@ -10,7 +10,7 @@
   "bands": [
     {
       "y": 40,
-      "similarity": 99.88
+      "similarity": 99.28
     },
     {
       "y": 240,

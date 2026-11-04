@@ -1,4 +1,13 @@
-.header { background: var(--surface-header); border-bottom: 1px solid var(--line-200); }
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: var(--surface-header);
+  border-bottom: 1px solid var(--line-200);
+  transition: box-shadow 200ms ease;
+}
+
+.header[data-scrolled] { box-shadow: 0 8px 24px rgba(46, 34, 38, .12); }
 
 .main {
   max-width: var(--container);
@@ -11,7 +20,12 @@
 }
 
 .logo { display: flex; flex: none; }
-.logo img { width: auto; height: 72px; }
+.logo img { width: auto; height: 72px; transition: height 200ms ease; }
+
+/* Rolagem: header fixo fica mais baixo */
+.header[data-scrolled] .main { padding-block: 8px; }
+.header[data-scrolled] .logo img { height: 52px; }
+.header[data-scrolled] .categoryLink { padding-block: 10px; }
 
 /* Busca */
 .search {
@@ -59,7 +73,7 @@
   font-size: 0.875rem;
 }
 
-.favorites:hover { background: var(--rosa-100); color: var(--brand-ink); }
+.favorites:hover, .favorites[aria-current="page"] { background: var(--rosa-100); color: var(--brand-ink); }
 
 .count { min-width: 20px; height: 20px; padding: 0 6px; border-radius: 99px; background: var(--brand-ink); color: #fff; font-size: 0.6875rem; display: grid; place-items: center; }
 
@@ -86,7 +100,7 @@
 }
 
 .categoryLink:hover { color: var(--brand-ink); }
-.featured { color: var(--text-strong); font-weight: 800; border-bottom-color: var(--rosa-400); }
+.categoryLink[aria-current="page"] { color: var(--text-strong); font-weight: 800; border-bottom-color: var(--rosa-400); }
 .magic { color: var(--brand-ink); font-weight: 900; margin-left: auto; }
 
 /* Celular */
@@ -101,6 +115,8 @@
   text-decoration: none;
   font-weight: 800;
 }
+
+.mobileNav a[aria-current="page"] { color: var(--brand-ink); }
 
 @media (max-width: 700px) {
   .main { padding: 8px 12px 12px; gap: 0; justify-content: space-between; }
@@ -142,5 +158,13 @@
     white-space: nowrap;
   }
 
-  .chipFeatured { background: var(--ink); color: var(--on-ink); }
+  .chip[aria-current="page"] { background: var(--ink); color: var(--on-ink); }
+
+  .header[data-scrolled] .main { padding-block: 6px 8px; }
+  .header[data-scrolled] .logo img { height: 40px; }
+  .header[data-scrolled] .chips { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header, .logo img { transition: none; }
 }

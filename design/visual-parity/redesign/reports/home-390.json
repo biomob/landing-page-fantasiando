@@ -1,16 +1,16 @@
 {
   "case": "home-390",
-  "overall": 99.72,
+  "overall": 99.51,
   "worstBand": {
-    "y": 440,
-    "similarity": 98.49
+    "y": 40,
+    "similarity": 95.7
   },
   "heightRef": 3710,
   "heightTarget": 3710,
   "bands": [
     {
       "y": 40,
-      "similarity": 99.51
+      "similarity": 95.7
     },
     {
       "y": 240,

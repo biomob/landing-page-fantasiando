@@ -24,6 +24,8 @@ const cases = [
 ];
 
 async function settle(page) {
+  // Header fixo: capturar sempre a partir do topo, no estado não rolado.
+  await page.evaluate(() => window.scrollTo(0, 0));
   await page.evaluate(async () => {
     await document.fonts.ready;
     await Promise.all([...document.images].map((img) => (img.complete ? null : new Promise((resolve) => { img.onload = img.onerror = resolve; }))));

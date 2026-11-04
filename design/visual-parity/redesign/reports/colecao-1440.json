@@ -10,11 +10,11 @@
   "bands": [
     {
       "y": 0,
-      "similarity": 100.0
+      "similarity": 99.95
     },
     {
       "y": 200,
-      "similarity": 100.0
+      "similarity": 99.49
     },
     {
       "y": 400,
@@ -26,7 +26,7 @@
     },
     {
       "y": 800,
-      "similarity": 97.71
+      "similarity": 98.26
     },
     {
       "y": 1000,

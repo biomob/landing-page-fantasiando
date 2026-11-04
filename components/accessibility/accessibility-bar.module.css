@@ -1,6 +1,6 @@
-/* Barra de acessibilidade reaproveitada da Biomob (mesmas cores e controles). */
+/* Barra de acessibilidade reaproveitada da Biomob (mesmos controles), nas cores da marca. */
 .bar {
-  --bar-bg: #105144;
+  --bar-bg: #2e2226;
   min-height: 40px;
   padding: 4px max(24px, calc((100vw - 1272px) / 2));
   display: flex;
@@ -11,7 +11,7 @@
   color: #fff;
 }
 
-:global([data-theme="dark"]) .bar { --bar-bg: #073b32; }
+:global([data-theme="dark"]) .bar { --bar-bg: #0f0a0c; }
 
 .tools { display: flex; align-items: center; gap: 16px; }
 

@@ -31,8 +31,8 @@ export const mainNav: SiteLink[] = [
 ];
 
 /** Faixa de categorias abaixo do header. `short` aparece nos chips do celular. */
-export const categoryNav: (SiteLink & { short?: string; emphasis?: "featured" | "magic" })[] = [
-  { href: "/colecao", label: "Novidades", emphasis: "featured" },
+export const categoryNav: (SiteLink & { short?: string; emphasis?: "magic" })[] = [
+  { href: "/colecao", label: "Novidades" },
   { href: "/colecao#princesas", label: "Princesas" },
   { href: "/colecao#festa-junina", label: "Festa junina" },
   { href: "/colecao#fantasias", label: "Fantasias temáticas", short: "Fantasias" },
