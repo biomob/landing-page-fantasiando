@@ -14,11 +14,11 @@
 
 .media img { width: 100%; height: 100%; min-height: 580px; object-fit: cover; object-position: center 12%; }
 
-.back { margin-bottom: 18px; font-size: 14px; }
+.back { margin-bottom: 1.125rem; font-size: 0.875rem; }
 
-.title { font-size: clamp(38px, 4vw, 58px); }
+.title { font-size: clamp(2.375rem, 4vw, 3.625rem); }
 
-.price { color: var(--brand-ink); font-size: 26px; font-weight: 900; line-height: 1.65; }
+.price { color: var(--brand-ink); font-size: 1.625rem; font-weight: 900; line-height: 1.65; }
 
 .notice {
   margin-top: 14px;

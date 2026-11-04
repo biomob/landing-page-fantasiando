@@ -2,7 +2,7 @@
 
 .image { width: 95px; margin: auto; }
 
-.title { font-size: clamp(38px, 5vw, 56px); }
+.title { font-size: clamp(2.375rem, 5vw, 3.5rem); }
 
 .lede { margin-inline: auto; }
 

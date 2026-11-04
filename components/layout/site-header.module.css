@@ -26,7 +26,7 @@
   padding: 8px 12px;
   border-radius: var(--radius-pill);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: inherit;
   text-decoration: none;
 }
@@ -55,7 +55,7 @@
   border-radius: 0;
   border-bottom: 1px solid var(--line-200);
   font-weight: 800;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .mobileNav .navLink:hover, .mobileNav .navLink[aria-current="page"] { background: none; }

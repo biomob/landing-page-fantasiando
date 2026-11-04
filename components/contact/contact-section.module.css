@@ -22,7 +22,7 @@
 
 .cardImage { width: 110px; margin: auto; }
 
-.cardTitle { font: 600 28px var(--font-display); color: var(--text-strong); margin: 12px 0 8px; }
+.cardTitle { font: 600 1.75rem var(--font-display); color: var(--text-strong); margin: 0.75rem 0 0.5rem; }
 
 .cardText { margin-inline: auto; }
 

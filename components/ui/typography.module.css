@@ -4,26 +4,26 @@
   letter-spacing: .12em;
   color: var(--brand-ink);
   font-weight: 900;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .pageTitle {
   font-family: var(--font-display);
   color: var(--text-strong);
-  font-size: clamp(42px, 5vw, 68px);
+  font-size: clamp(2.625rem, 5vw, 4.25rem);
   line-height: .98;
   margin: 0 0 20px;
 }
 
 .sectionTitle {
-  font: 600 clamp(30px, 3vw, 42px)/1.1 var(--font-display);
+  font: 600 clamp(1.875rem, 3vw, 2.625rem)/1.1 var(--font-display);
   color: var(--text-strong);
   margin: 0;
 }
 
 .lede {
   line-height: 1.65;
-  font-size: 17px;
+  font-size: 1.0625rem;
   max-width: 610px;
 }
 

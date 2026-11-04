@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { AnnouncementBar } from "@/components/layout/announcement-bar";
+import { AccessibilityBar, SkipLink } from "@/components/accessibility/accessibility-bar";
+import { VLibras } from "@/components/accessibility/vlibras";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { WhatsappFloat } from "@/components/layout/whatsapp-float";
 import { site } from "@/content/site";
 import { siteUrl } from "@/lib/env";
+import { preferencesScript } from "@/lib/preferences";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,13 +18,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="pt-BR">
+    // data-theme e font-size são definidos pelo script antes da hidratação.
+    <html lang="pt-BR" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: preferencesScript }} />
+      </head>
       <body>
-        <AnnouncementBar message={site.announcement} />
+        <SkipLink />
+        <AccessibilityBar />
         <SiteHeader />
-        <main>{children}</main>
+        <main id="conteudo" tabIndex={-1}>{children}</main>
         <SiteFooter />
         <WhatsappFloat />
+        <VLibras />
       </body>
     </html>
   );

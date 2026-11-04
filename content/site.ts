@@ -6,6 +6,7 @@ export type SiteLink = { href: string; label: string; external?: boolean };
 export const site = {
   name: "Annapê Ateliê",
   logo: "/assets/logo-cor.png",
+  logoDark: "/assets/logo-branco.png",
   announcement: "Peças feitas à mão · Atendimento pelo WhatsApp",
   tagline: "Vestidos e fantasias infantis feitos com carinho, de Petrópolis para todo o Brasil.",
   copyright: "© 2026 Annapê Ateliê · Cores e caimento podem variar.",

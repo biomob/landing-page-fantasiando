@@ -51,6 +51,29 @@
   --ring: 0 0 0 3px var(--rosa-200);
 }
 
+:root[data-theme="dark"] {
+  --rosa-50: #2a1f23;
+  --rosa-100: #3b2a30;
+  --rosa-200: #6b4650;
+  --brand-ink: #f5a9b6;
+
+  --bg-base: #181214;
+  --surface: #221a1d;
+  --surface-soft: #2a2024;
+  --surface-muted: #1f171a;
+
+  --text-strong: #fcf1f2;
+  --text-body: #e8dbdc;
+  --text-subtle: #cdb9bc;
+  --text-muted: #a8939a;
+
+  --line-200: #3a2f32;
+  --line-strong: #5a4448;
+
+  --shadow-card: 0 12px 30px #0006;
+  color-scheme: dark;
+}
+
 body {
   min-height: 100vh;
   background: var(--bg-base);

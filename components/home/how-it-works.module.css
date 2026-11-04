@@ -15,7 +15,7 @@
   color: var(--brand-ink);
 }
 
-.title { font: 600 21px var(--font-display); color: var(--text-strong); }
+.title { font: 600 1.3125rem var(--font-display); color: var(--text-strong); }
 
 .description { color: var(--text-body); line-height: 1.55; }
 

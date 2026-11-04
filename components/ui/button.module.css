@@ -17,9 +17,9 @@
 
 .primary { background: var(--rosa-400); }
 
-.soft { background: var(--surface-soft); border-color: var(--line-strong); }
+.soft { background: var(--surface-soft); border-color: var(--line-strong); color: var(--text-strong); }
 
-.compact { min-height: 39px; padding: 0 15px; font-size: 14px; }
+.compact { min-height: 2.4375rem; padding: 0 0.9375rem; font-size: 0.875rem; }
 
 .block { width: 100%; }
 

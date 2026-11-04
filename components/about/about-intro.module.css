@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.title { font-size: clamp(38px, 4.5vw, 60px); }
+.title { font-size: clamp(2.375rem, 4.5vw, 3.75rem); }
 
 .paragraph { margin: 0 0 18px; }
 

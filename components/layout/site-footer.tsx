@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element -- direct static assets preserve storefront image crops. */
 import Link from "next/link";
+import { BrandLogo } from "@/components/ui/brand-logo";
 import { Icon } from "@/components/ui/icon";
 import { footerColumns, site, type SiteLink } from "@/content/site";
 import styles from "./site-footer.module.css";
@@ -15,7 +15,7 @@ export function SiteFooter() {
   return (
     <footer className={styles.footer}>
       <div className={styles.brand}>
-        <img className={styles.logo} src={site.logo} alt={site.name} />
+        <BrandLogo className={styles.logo} />
         <p className={styles.tagline}>{site.tagline}</p>
       </div>
       {footerColumns.map((column) => (

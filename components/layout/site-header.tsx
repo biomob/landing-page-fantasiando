@@ -1,10 +1,10 @@
-/* eslint-disable @next/next/no-img-element -- direct static assets preserve storefront image crops. */
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { BrandLogo } from "@/components/ui/brand-logo";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
-import { mainNav, site } from "@/content/site";
+import { mainNav } from "@/content/site";
 import { useDisclosure } from "@/hooks/use-disclosure";
 import { generalWhatsappLink } from "@/lib/whatsapp";
 import styles from "./site-header.module.css";
@@ -28,7 +28,7 @@ export function SiteHeader() {
           <Icon name={menu.open ? "x" : "menu"} size={23} />
         </button>
         <Link className={styles.logo} href="/" onClick={menu.close}>
-          <img src={site.logo} alt={site.name} />
+          <BrandLogo />
         </Link>
         <nav aria-label="Navegação principal" className={styles.desktopNav}>
           <NavLinks onNavigate={menu.close} />
