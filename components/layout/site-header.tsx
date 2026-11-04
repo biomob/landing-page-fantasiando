@@ -9,7 +9,6 @@ import { useActiveLink } from "@/hooks/use-active-link";
 import { useDisclosure } from "@/hooks/use-disclosure";
 import { useFavorites } from "@/hooks/use-favorites";
 import { useScrolled } from "@/hooks/use-scrolled";
-import { cx } from "@/lib/cx";
 import { generalWhatsappLink } from "@/lib/whatsapp";
 import styles from "./site-header.module.css";
 
@@ -62,7 +61,7 @@ export function SiteHeader() {
       <nav aria-label="Categorias" className={styles.categories}>
         <div className={styles.categoriesInner}>
           {categoryNav.map((item) => (
-            <Link key={item.label} className={cx(styles.categoryLink, item.emphasis && styles[item.emphasis])} href={item.href} aria-current={current(item.href)}>{item.label}</Link>
+            <Link key={item.label} className={styles.categoryLink} href={item.href} aria-current={current(item.href)}>{item.label}</Link>
           ))}
         </div>
       </nav>

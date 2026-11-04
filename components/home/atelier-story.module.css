@@ -1,4 +1,5 @@
-.section { max-width: var(--container); margin: 0 auto; padding: 80px 24px 40px; }
+/* Vem logo após os banners B2 (que já têm 72px embaixo). */
+.section { max-width: var(--container); margin: 0 auto; padding: 8px 24px 40px; }
 
 .inner { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
 

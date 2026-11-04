@@ -101,7 +101,6 @@
 
 .categoryLink:hover { color: var(--brand-ink); }
 .categoryLink[aria-current="page"] { color: var(--text-strong); font-weight: 800; border-bottom-color: var(--rosa-400); }
-.magic { color: var(--brand-ink); font-weight: 900; margin-left: auto; }
 
 /* Celular */
 .menuToggle, .whatsappRound, .chips { display: none; }

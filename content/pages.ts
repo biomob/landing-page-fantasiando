@@ -8,15 +8,6 @@ export const homeContent = {
   },
   categories: { eyebrow: "Compre por tema", title: "Um mundo para cada imaginação", action: "Ver todos os temas →" },
   featured: { eyebrow: "Mais amados do ateliê", title: "Peças que encantam" },
-  tryOnTeaser: {
-    eyebrow: "Prova virtual ✦",
-    eyebrowSuffix: " em breve com IA",
-    title: "Veja a fantasia antes de escolher.",
-    description: "Envie uma foto, escolha a peça e receba uma prévia para decidir com o coração — e com o tamanho certo.",
-    steps: ["Escolha uma foto de corpo inteiro", "Selecione o vestido", "Receba a prévia e chame no WhatsApp"],
-    photo: { src: "/assets/foto-exemplo-crianca-vestido-rosa.png", alt: "Prévia de prova virtual com criança usando vestido rosa" },
-    mascot: "/assets/mascote-prova-virtual.png",
-  },
   atelier: {
     eyebrow: "Do nosso ateliê",
     title: "Cada ponto é dado à mão, pensando em quem vai brincar.",
@@ -62,14 +53,6 @@ export const contactContent = {
     description: "Respondemos em horário comercial. Conte qual peça você viu e a idade da criança para agilizar.",
     image: "/assets/mascote-icone.png",
   },
-};
-
-export const tryOnContent = {
-  eyebrow: "Prova virtual · demonstração",
-  title: "Sua prova virtual",
-  description: "Uma prévia carinhosa para ajudar a escolher a fantasia que mais combina com esse momento.",
-  steps: { photo: "Escolha uma foto", dress: "Confira a peça", result: "Veja a prévia" },
-  previewImage: "/assets/foto-exemplo-crianca-vestido-rosa.png",
 };
 
 export const notFoundContent = {

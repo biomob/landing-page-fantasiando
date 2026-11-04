@@ -1,8 +1,9 @@
 # Annapê Ateliê — vitrine Next.js
 
-Vitrine de apresentação dos produtos: home, coleção com filtros, página de
-produto, prova virtual (demonstração), sobre e contato. Não há carrinho nem
-pagamento — o interesse em cada peça é encaminhado para o WhatsApp do ateliê.
+Vitrine de apresentação dos produtos: home, coleção com filtros e busca, página
+de produto, favoritos, sobre e contato. Não há carrinho nem pagamento — o
+interesse em cada peça é encaminhado para o WhatsApp do ateliê. A prova virtual
+ficou fora desta versão (`/prova-virtual` redireciona para a coleção).
 
 ## Estrutura
 
@@ -12,8 +13,8 @@ pagamento — o interesse em cada peça é encaminhado para o WhatsApp do ateli�
 | `components/ui/` | Primitivos sem regra de negócio: `Button`, `Section`, tipografia, texturas e `Scallop`, `BannerSlot`, `Skeleton`, `EmptyState`, `Icon`. |
 | `components/layout/` | Faixa promocional, header de loja (busca, categorias, favoritos), rodapé e barra de atalhos do celular. |
 | `components/accessibility/` | Barra de acessibilidade (VLibras, tema, tamanho da fonte). |
-| `components/<domínio>/` | Blocos por tela: `catalog`, `home`, `try-on`, `about`, `contact`. |
-| `hooks/` | Estado de cliente: `useCatalogFilters`, `useHashList`, `useFavorites`, `useDisclosure`, `useSizeSelection`, `useTryOnFlow`, `useTheme`, `useFontSize`. |
+| `components/<domínio>/` | Blocos por tela: `catalog`, `home`, `about`, `contact`. |
+| `hooks/` | Estado de cliente: `useCatalogFilters`, `useHashList`, `useFavorites`, `useActiveLink`, `useScrolled`, `useDisclosure`, `useSizeSelection`, `useTheme`, `useFontSize`. |
 | `content/` | Textos e links fixos (`site.ts`, `pages.ts`) e espaços de banner (`banners.ts`). |
 | `lib/` | Catálogo (`lib/catalog`), formatação, WhatsApp e variáveis de ambiente. |
 

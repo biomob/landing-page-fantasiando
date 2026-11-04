@@ -1,20 +1,20 @@
 {
   "case": "produto-1440",
-  "overall": 99.93,
+  "overall": 99.89,
   "worstBand": {
     "y": 200,
-    "similarity": 99.38
+    "similarity": 99.37
   },
   "heightRef": 1964,
   "heightTarget": 1964,
   "bands": [
     {
       "y": 0,
-      "similarity": 99.95
+      "similarity": 99.97
     },
     {
       "y": 200,
-      "similarity": 99.38
+      "similarity": 99.37
     },
     {
       "y": 400,
@@ -22,7 +22,7 @@
     },
     {
       "y": 600,
-      "similarity": 100.0
+      "similarity": 99.59
     },
     {
       "y": 800,

@@ -6,6 +6,7 @@ import { homeContent } from "@/content/pages";
 import { site } from "@/content/site";
 import type { ProductSummary } from "@/lib/catalog/types";
 import { cx } from "@/lib/cx";
+import { generalWhatsappLink } from "@/lib/whatsapp";
 import styles from "./hero.module.css";
 
 const { hero } = homeContent;
@@ -26,7 +27,7 @@ export function Hero({ cover, polaroid, startingPrice }: Props) {
           <p className={styles.text}>{hero.description}</p>
           <div className={styles.actions}>
             <Button variant="dark" lifted href="/colecao">Ver a coleção <span className={styles.desktopOnly}><Icon name="arrow" size={18} /></span><span className={styles.mobileOnly} aria-hidden="true">→</span></Button>
-            <Button className={styles.secondary} variant="outline" href="/prova-virtual">Experimentar com IA ✦</Button>
+            <Button className={styles.secondary} variant="outline" href={generalWhatsappLink} external><Icon name="whatsapp" size={18} /> Falar no WhatsApp</Button>
           </div>
           <ul className={styles.perks}>
             <li className={styles.perk}>

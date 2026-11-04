@@ -52,6 +52,25 @@
 
 .actions { display: grid; gap: 12px; margin-top: 24px; }
 
+/* Mesmo visual do botão de contorno (lg), mas é um <button> com estado */
+.saveButton {
+  min-height: 56px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid var(--ink);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.saveButton[aria-pressed="true"] { border-color: var(--brand-ink); color: var(--brand-ink); }
+.saveButton[aria-pressed="true"] svg { fill: currentColor; }
+
 /* Selos e detalhes */
 .trust { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 24px; }
 .trustItem { padding: 12px 8px; border: 2px dashed var(--line-input); border-radius: 16px; text-align: center; font-weight: 800; font-size: 0.8125rem; }

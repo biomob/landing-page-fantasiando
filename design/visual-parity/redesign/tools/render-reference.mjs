@@ -110,8 +110,29 @@ function evaluate(html) {
   return new Component(props).renderVals();
 }
 
-// Diferenças acordadas com o cliente (campos ainda sem dado real).
+// Diferenças acordadas com o cliente: campos ainda sem dado real e prova virtual fora desta versão.
+function removeTryOn(doc) {
+  for (const section of [...doc.querySelectorAll("section")]) {
+    if (!section.textContent.includes("Veja a fantasia antes de escolher")) continue;
+    for (const sibling of [section.previousElementSibling, section.nextElementSibling]) {
+      if (sibling && sibling.tagName === "DIV" && !sibling.textContent.trim()) sibling.remove();
+    }
+    section.remove();
+  }
+  for (const link of [...doc.querySelectorAll("a")]) if (link.textContent.trim() === "✦ Prova virtual") link.remove();
+  for (const span of [...doc.querySelectorAll("span")]) if (span.textContent.trim() === "✦ Prova virtual com IA") span.textContent = "✦ Atendimento pelo WhatsApp";
+  for (const link of [...doc.querySelectorAll("footer a")]) if (link.textContent.trim() === "Prova virtual") link.textContent = "Favoritos";
+  for (const el of [...doc.querySelectorAll("a")]) {
+    if (el.textContent.trim() === "Experimentar com IA ✦") el.textContent = el.closest("div[style*='grid']") ? "Salvar nos favoritos" : "Falar no WhatsApp";
+  }
+  for (const section of [...doc.querySelectorAll("section")]) {
+    const style = section.getAttribute("style") ?? "";
+    if (style.includes("padding: 80px 24px 40px")) section.setAttribute("style", style.replace("padding: 80px 24px 40px", "padding: 8px 24px 40px"));
+  }
+}
+
 function applyAgreedChanges(doc) {
+  removeTryOn(doc);
   const walker = doc.createTreeWalker(doc.body, 4);
   const hits = [];
   while (walker.nextNode()) if (/\[(PRAZO|ANO)/.test(walker.currentNode.textContent)) hits.push(walker.currentNode);

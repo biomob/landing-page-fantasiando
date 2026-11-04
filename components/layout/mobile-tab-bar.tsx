@@ -8,7 +8,7 @@ import styles from "./mobile-tab-bar.module.css";
 const tabs = [
   { href: "/", label: "Início", path: "M3 11 12 4l9 7v9H3Z" },
   { href: "/colecao", label: "Coleção", path: "M4 4h7v7H4ZM13 4h7v7h-7ZM4 13h7v7H4ZM13 13h7v7h-7Z" },
-  { href: "/prova-virtual", label: "Prova", path: "M12 3l1.7 5.2L19 10l-5.3 1.8L12 17l-1.7-5.2L5 10l5.3-1.8Z" },
+  { href: "/favoritos", label: "Favoritos", path: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" },
 ];
 
 const TabIcon = ({ path }: { path: string }) => (

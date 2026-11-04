@@ -6,6 +6,7 @@ import { useSizeSelection } from "@/hooks/use-size-selection";
 import type { ProductSize } from "@/lib/catalog/types";
 import { cx } from "@/lib/cx";
 import { productMessage, whatsappLink } from "@/lib/whatsapp";
+import { FavoriteButton } from "./favorite-button";
 import styles from "./product-detail.module.css";
 
 type Props = { product: { name: string; slug: string }; sizes: ProductSize[] };
@@ -48,7 +49,7 @@ export function ProductActions({ product, sizes }: Props) {
         <Button size="xl" lifted block href={whatsappLink(productMessage(product, size))} external>
           <Icon name="whatsapp" size={20} /> Quero este vestido{size ? ` no tamanho ${size}` : ""}
         </Button>
-        <Button variant="outline" block href={`/prova-virtual?produto=${product.slug}`}>Experimentar com IA ✦</Button>
+        <FavoriteButton className={styles.saveButton} slug={product.slug} name={product.name} withLabel />
       </div>
     </>
   );

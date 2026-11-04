@@ -19,30 +19,28 @@ export const site = {
   foundedYear: null as number | null,
 };
 
-export const promoMessages = ["Envio para todo o Brasil", "Ajustes sob medida", "Prova virtual com IA"];
+export const promoMessages = ["Envio para todo o Brasil", "Ajustes sob medida", "Atendimento pelo WhatsApp"];
 
 /** Menu do celular (botão ☰). */
 export const mainNav: SiteLink[] = [
   { href: "/colecao", label: "Coleção" },
-  { href: "/prova-virtual", label: "Prova virtual" },
   { href: "/favoritos", label: "Favoritos" },
   { href: "/sobre", label: "Sobre" },
   { href: "/contato", label: "Contato" },
 ];
 
 /** Faixa de categorias abaixo do header. `short` aparece nos chips do celular. */
-export const categoryNav: (SiteLink & { short?: string; emphasis?: "magic" })[] = [
+export const categoryNav: (SiteLink & { short?: string })[] = [
   { href: "/colecao", label: "Novidades" },
   { href: "/colecao#princesas", label: "Princesas" },
   { href: "/colecao#festa-junina", label: "Festa junina" },
   { href: "/colecao#fantasias", label: "Fantasias temáticas", short: "Fantasias" },
   { href: "/colecao#aniversario", label: "Aniversário" },
   { href: "/contato", label: "Sob medida" },
-  { href: "/prova-virtual", label: "✦ Prova virtual", short: "Prova virtual", emphasis: "magic" },
 ];
 
 export const footerColumns: { title: string; links: SiteLink[] }[] = [
-  { title: "Vitrine", links: [{ href: "/colecao", label: "Novidades" }, { href: "/colecao#princesas", label: "Princesas" }, { href: "/colecao#festa-junina", label: "Festa junina" }, { href: "/prova-virtual", label: "Prova virtual" }] },
+  { title: "Vitrine", links: [{ href: "/colecao", label: "Novidades" }, { href: "/colecao#princesas", label: "Princesas" }, { href: "/colecao#festa-junina", label: "Festa junina" }, { href: "/favoritos", label: "Favoritos" }] },
   { title: "Ateliê", links: [{ href: "/sobre", label: "Sobre" }, { href: "/contato", label: "Guia de tamanhos" }, { href: "/contato", label: "Contato" }] },
 ];
 

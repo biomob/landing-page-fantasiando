@@ -105,6 +105,15 @@ describe("ProductActions", () => {
     expect(screen.getByRole("button", { name: "4" })).toHaveAttribute("aria-pressed", "true");
     expect(screen.getByText("Tamanho: 4")).toBeVisible();
   });
+
+  it("offers saving to favorites instead of the virtual try-on", async () => {
+    const user = userEvent.setup();
+    render(<ProductActions product={{ name: "Vestido Aurora", slug: "vestido-aurora" }} sizes={[]} />);
+
+    expect(screen.queryByText(/experimentar com ia|prova virtual/i)).not.toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "Salvar nos favoritos" }));
+    expect(screen.getByRole("button", { name: "Salvo nos favoritos" })).toHaveAttribute("aria-pressed", "true");
+  });
 });
 
 describe("SiteHeader", () => {

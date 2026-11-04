@@ -2,7 +2,6 @@ import { AtelierStory } from "@/components/home/atelier-story";
 import { CategoryShowcase } from "@/components/home/category-showcase";
 import { FeaturedProducts } from "@/components/home/featured-products";
 import { Hero } from "@/components/home/hero";
-import { TryOnTeaser } from "@/components/home/try-on-teaser";
 import { BannerSlot } from "@/components/ui/banner-slot";
 import { Scallop } from "@/components/ui/scallop";
 import { banners } from "@/content/banners";
@@ -30,7 +29,6 @@ export default async function HomePage() {
         <BannerSlot slot={banners.homePromoA} layout="card" />
         <BannerSlot slot={banners.homePromoB} layout="card" alt />
       </section>
-      <TryOnTeaser />
       <AtelierStory />
       <section className={styles.strip} aria-label="Avisos">
         <BannerSlot slot={banners.homeStrip} layout="strip" />

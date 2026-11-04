@@ -1,28 +1,28 @@
 {
   "case": "home-1440",
-  "overall": 99.04,
+  "overall": 99.9,
   "worstBand": {
-    "y": 3640,
-    "similarity": 98.1
+    "y": 640,
+    "similarity": 99.3
   },
-  "heightRef": 4948,
-  "heightTarget": 4949,
+  "heightRef": 4216,
+  "heightTarget": 4216,
   "bands": [
     {
       "y": 40,
-      "similarity": 99.28
+      "similarity": 99.32
     },
     {
       "y": 240,
-      "similarity": 98.84
+      "similarity": 99.85
     },
     {
       "y": 440,
-      "similarity": 98.62
+      "similarity": 99.59
     },
     {
       "y": 640,
-      "similarity": 98.49
+      "similarity": 99.3
     },
     {
       "y": 840,
@@ -30,83 +30,67 @@
     },
     {
       "y": 1040,
-      "similarity": 99.31
+      "similarity": 100.0
     },
     {
       "y": 1240,
-      "similarity": 99.19
+      "similarity": 100.0
     },
     {
       "y": 1440,
-      "similarity": 99.54
+      "similarity": 100.0
     },
     {
       "y": 1640,
-      "similarity": 99.17
+      "similarity": 100.0
     },
     {
       "y": 1840,
-      "similarity": 98.16
+      "similarity": 99.92
     },
     {
       "y": 2040,
-      "similarity": 99.93
+      "similarity": 100.0
     },
     {
       "y": 2240,
-      "similarity": 98.52
+      "similarity": 100.0
     },
     {
       "y": 2440,
-      "similarity": 99.22
+      "similarity": 99.96
     },
     {
       "y": 2640,
-      "similarity": 99.27
+      "similarity": 100.0
     },
     {
       "y": 2840,
-      "similarity": 99.09
+      "similarity": 100.0
     },
     {
       "y": 3040,
-      "similarity": 98.13
+      "similarity": 100.0
     },
     {
       "y": 3240,
-      "similarity": 99.27
+      "similarity": 100.0
     },
     {
       "y": 3440,
-      "similarity": 99.25
+      "similarity": 100.0
     },
     {
       "y": 3640,
-      "similarity": 98.1
+      "similarity": 100.0
     },
     {
       "y": 3840,
-      "similarity": 98.14
+      "similarity": 100.0
     },
     {
       "y": 4040,
-      "similarity": 99.46
-    },
-    {
-      "y": 4240,
-      "similarity": 99.68
-    },
-    {
-      "y": 4440,
-      "similarity": 98.76
-    },
-    {
-      "y": 4640,
-      "similarity": 99.09
-    },
-    {
-      "y": 4840,
-      "similarity": 99.97
+      "similarity": 100.0
     }
   ],
   "status": "PASS"
