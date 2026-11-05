@@ -1,0 +1,79 @@
+.carousel { max-width: var(--container); margin: 0 auto; padding: 36px 24px 0; }
+
+.stage { position: relative; }
+
+/* Só o slide ativo fica montado; entra com um fade curto. */
+.slide { animation: enter 450ms ease both; }
+
+@keyframes enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.artLink { display: block; border-radius: 28px; }
+
+.art { display: block; width: 100%; height: auto; aspect-ratio: 2172 / 724; }
+
+.copy { display: none; }
+
+/* Controles */
+.controls { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 12px; }
+
+.control {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid var(--line-field);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text-strong);
+}
+
+.control:hover { border-color: var(--brand-ink); color: var(--brand-ink); }
+
+.dots { display: flex; align-items: center; gap: 2px; margin: 0 6px; }
+
+.dot {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  padding: 0;
+}
+
+.dot::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 99px;
+  background: var(--line-field);
+  transition: width 200ms ease, background 200ms ease;
+}
+
+.dot[aria-current="true"]::before { width: 22px; background: var(--brand-ink); }
+
+.dot:hover::before { background: var(--brand-ink); }
+
+@media (max-width: 700px) {
+  .carousel { padding: 22px 16px 0; }
+  .artLink { border-radius: 22px; }
+  .art { aspect-ratio: 900 / 592; }
+
+  .copy { display: block; margin-top: 14px; text-align: center; }
+  .eyebrow { margin: 0 0 6px; font-size: 0.75rem; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; color: var(--brand-ink); }
+  .title { margin: 0; font: 600 1.75rem/1.1 var(--font-display); color: var(--text-strong); }
+  .text { margin: 8px auto 0; max-width: 320px; line-height: 1.5; }
+  .actions { display: grid; justify-items: center; gap: 6px; margin-top: 16px; }
+  .cta { width: 100%; }
+  .productLink { min-height: 32px; display: inline-flex; align-items: center; gap: 6px; color: var(--brand-ink); font-weight: 800; text-decoration: none; }
+  .dots { gap: 0; margin: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide { animation: none; }
+  .dot::before { transition: none; }
+}

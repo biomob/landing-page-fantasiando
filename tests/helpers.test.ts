@@ -40,15 +40,15 @@ describe("catalog selectors", async () => {
   });
 
   it("finds related products sharing a category, excluding the product itself", () => {
-    const aurora = products.find((product) => product.slug === "vestido-princesa-aurora")!;
-    const related = relatedProducts(aurora, products);
-    expect(related.map((product) => product.slug)).not.toContain(aurora.slug);
-    expect(related.every((product) => product.categories.some((ref) => ["princesas", "aniversario"].includes(ref.slug)))).toBe(true);
+    const morango = products.find((product) => product.slug === "vestido-morango")!;
+    const related = relatedProducts(morango, products);
+    expect(related.map((product) => product.slug)).not.toContain(morango.slug);
+    expect(related.every((product) => product.categories.some((ref) => ["fantasias", "aniversario"].includes(ref.slug)))).toBe(true);
   });
 
   it("returns everything without a category and filters with one", () => {
     expect(productsInCategory(products, null)).toHaveLength(products.length);
-    expect(productsInCategory(products, "festa-junina").map((product) => product.slug)).toEqual(["festa-junina-docura"]);
+    expect(productsInCategory(products, "festa-junina").map((product) => product.slug)).toEqual(["vestido-junino-patchwork", "vestido-vaquinha"]);
   });
 });
 
@@ -57,12 +57,13 @@ describe("catalog filters", async () => {
   const base = { themes: [], query: "", size: null, availability: "all" as const, sort: "new" as const };
 
   it("matches search terms without accents across name and category", () => {
-    expect(filterCatalog(products, { ...base, query: "junina" }).map((p) => p.slug)).toEqual(["festa-junina-docura"]);
-    expect(filterCatalog(products, { ...base, query: "TULE lilas" }).map((p) => p.slug)).toEqual(["vestido-tule-lilas"]);
+    expect(filterCatalog(products, { ...base, query: "junina" }).map((p) => p.slug)).toEqual(["vestido-junino-patchwork", "vestido-vaquinha"]);
+    expect(filterCatalog(products, { ...base, query: "TULE azul" }).map((p) => p.slug)).toEqual(["vestido-tule-azul"]);
+    expect(filterCatalog(products, { ...base, query: "maca" }).map((p) => p.slug)).toEqual(["vestido-princesa-azul-amarelo"]);
   });
 
   it("filters by availability and keeps products without size data", () => {
-    expect(filterCatalog(products, { ...base, availability: "custom" }).map((p) => p.slug)).toEqual(["vestido-coral-verao"]);
+    expect(filterCatalog(products, { ...base, availability: "custom" }).map((p) => p.slug)).toEqual(["vestido-vaquinha"]);
     const unknownSizes = [{ ...products[0], sizeLabels: [] }];
     expect(filterCatalog(unknownSizes, { ...base, size: "12" })).toHaveLength(1);
   });

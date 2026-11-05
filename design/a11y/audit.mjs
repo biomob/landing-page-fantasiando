@@ -126,7 +126,8 @@ for (const theme of themes) {
     await context.addInitScript((t) => localStorage.setItem("fantasiando-theme", t), theme);
     const page = await context.newPage();
     for (const route of routes) {
-      await page.goto(BASE + route, { waitUntil: "networkidle" });
+      await page.goto(BASE + route, { waitUntil: "load" });
+      await page.waitForTimeout(1200);
       await page.evaluate(() => document.fonts.ready);
       const issues = await page.evaluate(auditPage);
       for (const issue of issues) report.push({ theme, viewport: vp.name, route, ...issue });

@@ -33,8 +33,8 @@ describe("CollectionView", () => {
     await renderCollection();
 
     expect(screen.getByRole("heading", { level: 1, name: "Festa junina" })).toBeVisible();
-    expect(screen.getByRole("status")).toHaveTextContent("1 peça em Festa junina");
-    expect(productNames()).toEqual(["Festa Junina Doçura"]);
+    expect(screen.getByRole("status")).toHaveTextContent("2 peças em Festa junina");
+    expect(productNames()).toEqual(["Vestido Junino Patchwork", "Vestido Fazendinha"]);
   });
 
   it("combines theme checkboxes, size and availability, and clears them", async () => {
@@ -44,10 +44,10 @@ describe("CollectionView", () => {
 
     await user.click(within(filters).getByRole("checkbox", { name: "Princesas" }));
     expect(window.location.hash).toBe("#princesas");
-    expect(productNames()).toHaveLength(3);
+    expect(productNames()).toHaveLength(2);
 
     await user.click(within(filters).getByRole("button", { name: "4" }));
-    expect(screen.getByRole("status")).toHaveTextContent("3 peças em Princesas · tamanho 4");
+    expect(screen.getByRole("status")).toHaveTextContent("2 peças em Princesas · tamanho 4");
 
     await user.click(within(filters).getByRole("radio", { name: "Sob encomenda" }));
     expect(screen.getByText(/nenhuma peça com esses filtros/i)).toBeVisible();
@@ -58,11 +58,11 @@ describe("CollectionView", () => {
   });
 
   it("searches by the ?busca= query ignoring accents", async () => {
-    nav.search = new URLSearchParams("busca=lilas");
+    nav.search = new URLSearchParams("busca=maca");
     await renderCollection();
 
-    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Busca: “lilas”");
-    expect(productNames()).toEqual(["Vestido Tule Lilás"]);
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Busca: “maca”");
+    expect(productNames()).toEqual(["Vestido Princesa da Maçã"]);
   });
 
   it("sorts by lowest price", async () => {
@@ -70,20 +70,20 @@ describe("CollectionView", () => {
     await renderCollection();
 
     await user.selectOptions(screen.getByRole("combobox", { name: "Ordenar por" }), "price");
-    expect(productNames()[0]).toBe("Festa Junina Doçura");
+    expect(productNames()[0]).toBe("Vestido Laranja Florzinha");
   });
 });
 
 describe("ProductCard", () => {
   it("saves the product in favorites and orders through WhatsApp", async () => {
     const user = userEvent.setup();
-    const [aurora] = await source.listProducts();
-    render(<ProductCard product={aurora} />);
+    const [morango] = await source.listProducts();
+    render(<ProductCard product={morango} />);
 
-    await user.click(screen.getByRole("button", { name: "Salvar Vestido Princesa Aurora nos favoritos" }));
-    expect(JSON.parse(localStorage.getItem(FAVORITES_KEY) ?? "[]")).toEqual(["vestido-princesa-aurora"]);
+    await user.click(screen.getByRole("button", { name: "Salvar Vestido Moranguinho nos favoritos" }));
+    expect(JSON.parse(localStorage.getItem(FAVORITES_KEY) ?? "[]")).toEqual(["vestido-morango"]);
     expect(screen.getByRole("button", { name: /remover .* dos favoritos/i })).toHaveAttribute("aria-pressed", "true");
-    expect(screen.getByRole("link", { name: "Pedir Vestido Princesa Aurora no WhatsApp" })).toHaveAttribute("href", expect.stringContaining("wa.me"));
+    expect(screen.getByRole("link", { name: "Pedir Vestido Moranguinho no WhatsApp" })).toHaveAttribute("href", expect.stringContaining("wa.me"));
   });
 });
 

@@ -28,8 +28,8 @@ describe("mock source", () => {
   it("counts products per category and finds products by slug", async () => {
     const source = createMockSource();
     const categories = await source.listCategories();
-    expect(categories.find((category) => category.slug === "festa-junina")?.productCount).toBe(1);
-    expect((await source.getProduct("fantasia-arco-iris"))?.name).toBe("Fantasia Arco-Íris");
+    expect(categories.find((category) => category.slug === "festa-junina")?.productCount).toBe(2);
+    expect((await source.getProduct("vestido-morango"))?.name).toBe("Vestido Moranguinho");
     expect(await source.getProduct("nao-existe")).toBeNull();
   });
 });

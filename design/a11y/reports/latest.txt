@@ -1,11 +1,19 @@
 
-## 2.5.5 alvo < 44px (AAA, recomendado) — 172
+## 2.5.5 alvo < 44px (AAA, recomendado) — 204
   - button._0YmYiW_themeToggle "Trocar para o tema escuro" | 48×24  [light/desktop light/mobile] / /colecao /colecao?busca=tule
   - button._0YmYiW_fontSmall "A" | 32×32  [light/desktop light/mobile dark/desktop dark/mobile] / /colecao /colecao?busca=tule
   - button._0YmYiW_fontLarge "A" | 32×32  [light/desktop light/mobile dark/desktop dark/mobile] / /colecao /colecao?busca=tule
+  - button.cFG8kG_dot "Mostrar banner 1: Nova coleção" | 24×24  [light/desktop light/mobile dark/desktop dark/mobile] /
+  - button.cFG8kG_dot "Mostrar banner 2: Coleção encantada" | 24×24  [light/desktop light/mobile dark/desktop dark/mobile] /
+  - button.cFG8kG_dot "Mostrar banner 3: Coleção princesas" | 24×24  [light/desktop light/mobile dark/desktop dark/mobile] /
+  - button.cFG8kG_dot "Mostrar banner 4: Coleção festa" | 24×24  [light/desktop light/mobile dark/desktop dark/mobile] /
+  - button.cFG8kG_dot "Mostrar banner 5: Coleção fazendinha" | 24×24  [light/desktop light/mobile dark/desktop dark/mobile] /
+  - button.cFG8kG_dot "Mostrar banner 6: Coleção junina" | 24×24  [light/desktop light/mobile dark/desktop dark/mobile] /
+  - button.cFG8kG_dot "Mostrar banner 7: Coleção sonhos" | 24×24  [light/desktop light/mobile dark/desktop dark/mobile] /
+  - button.cFG8kG_dot "Mostrar banner 8: Coleção aniversário" | 24×24  [light/desktop light/mobile dark/desktop dark/mobile] /
   - button.R88LKG_clear "Limpar" | 84×32  [light/desktop light/mobile dark/desktop dark/mobile] /colecao /colecao?busca=tule
   - input. "" | 250×32  [light/desktop dark/desktop] /colecao /colecao?busca=tule
   - input. "" | 312×32  [light/mobile dark/mobile] /colecao /colecao?busca=tule
   - button._0YmYiW_themeToggle "Trocar para o tema claro" | 48×24  [dark/desktop dark/mobile] / /colecao /colecao?busca=tule
 
-Total: 172
+Total: 204
