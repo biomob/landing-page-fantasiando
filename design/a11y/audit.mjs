@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 import { chromium } from "@playwright/test";
 
 const BASE = process.argv[2] ?? "http://localhost:3200";
-const routes = ["/", "/colecao", "/colecao?busca=tule", "/produto/vestido-estrela-dourada", "/produto/vestido-coral-verao", "/favoritos", "/sobre", "/contato", "/nao-existe"];
+const routes = ["/", "/colecao", "/colecao?busca=tule", "/produto/vestido-morango", "/produto/vestido-vaquinha", "/favoritos", "/sobre", "/contato", "/nao-existe"];
 const viewports = [{ name: "desktop", width: 1440, height: 900 }, { name: "mobile", width: 390, height: 844 }];
 const themes = ["light", "dark"];
 
